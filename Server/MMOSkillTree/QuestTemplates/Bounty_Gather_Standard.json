@@ -1,0 +1,18 @@
+{
+  "Name": "Bounty_Gather_Standard",
+  "Payload": {
+    "category": "bounty",
+    "repeatable": true,
+    "cooldownSeconds": 79200,
+    "autoClaimRewards": true,
+    "npcViewId": "bounty_board",
+    "visibility": { "hidden": true },
+    "tags": ["bounty", "board:{{boards}}", "diff:{{difficulty}}", "weight:{{weight}}"],
+    "objectives": [
+      { "id": "main", "type": "BREAK_BLOCK", "target": "{{target}}", "amount": 1, "matchMode": "CONTAINS" }
+    ],
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 1 }
+    ]
+  }
+}

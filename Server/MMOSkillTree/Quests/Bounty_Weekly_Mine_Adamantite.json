@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Mine_Adamantite",
+  "Payload": {
+    "extends": "bounty_gather_standard",
+    "id": "bounty_weekly_mine_adamantite",
+    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Ore_Adamantite" },
+    "objectiveOverrides": { "main": { "amount": 40 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 700 },
+      { "type": "XP", "skill": "MINING", "amount": 8000 }
+    ]
+  }
+}

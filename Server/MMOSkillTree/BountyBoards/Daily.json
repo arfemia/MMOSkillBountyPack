@@ -1,0 +1,18 @@
+{
+  "Name": "Daily",
+  "Payload": {
+    "titleKey": "ui.bounty.board.daily",
+    "descriptionKey": "ui.bounty.board.daily.desc",
+    "order": 0,
+    "rotation": { "type": "interval", "period": "daily", "anchor": "utc", "offsetMinutes": 0 },
+    "selection": { "type": "weighted_random", "seed": "period" },
+    "slots": [
+      { "filter": { "difficulty": "easy" } },
+      { "filter": { "difficulty": "normal" } },
+      { "filter": { "difficulty": "normal" } },
+      { "filter": { "difficulty": "hard" }, "optional": true }
+    ],
+    "rerollCost": { "currency": "bounty_token", "amount": 50 },
+    "requiresFeatures": []
+  }
+}

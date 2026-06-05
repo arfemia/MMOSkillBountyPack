@@ -1,0 +1,16 @@
+{
+  "Name": "Bounty_Token",
+  "Payload": {
+    "displayName": "Bounty Tokens",
+    "iconItemId": "Ingredient_Crystal_Purple",
+    "color": "#ffcc44",
+    "cap": 0,
+    "lossOnDeathPercent": 0,
+    "decayPerDayPercent": 0,
+    "showOnSidebar": false,
+    "showOnMasteryPage": false,
+    "sources": {
+      "xpConversionPercent": 0
+    }
+  }
+}

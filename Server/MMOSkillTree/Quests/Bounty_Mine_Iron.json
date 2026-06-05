@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Mine_Iron",
+  "Payload": {
+    "extends": "bounty_gather_standard",
+    "id": "bounty_mine_iron",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ore_Iron" },
+    "objectiveOverrides": { "main": { "amount": 25 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 150 },
+      { "type": "XP", "skill": "MINING", "amount": 1400 }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "Weekly",
+  "Payload": {
+    "titleKey": "ui.bounty.board.weekly",
+    "descriptionKey": "ui.bounty.board.weekly.desc",
+    "order": 1,
+    "rotation": { "type": "interval", "period": "weekly", "anchor": "utc_monday", "offsetMinutes": 0 },
+    "selection": { "type": "weighted_random", "seed": "period" },
+    "slots": [
+      { "filter": { "difficulty": "normal" } },
+      { "filter": { "difficulty": "hard" } },
+      { "filter": { "difficulty": "hard" }, "optional": true }
+    ],
+    "rerollCost": { "currency": "bounty_token", "amount": 100 },
+    "requiresFeatures": []
+  }
+}
