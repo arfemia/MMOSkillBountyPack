@@ -1,0 +1,17 @@
+{
+  "Name": "Boost_Mining",
+  "Payload": {
+    "id": "shop_boost_mining",
+    "displayName": "Mining Rush (3x, 20m)",
+    "description": "Triples Mining XP for 20 minutes.",
+    "currencyId": "bounty_token",
+    "cost": 150,
+    "icon": "Tool_Pickaxe_Crude",
+    "category": "boosts",
+    "order": 20,
+    "limitPerDay": 3,
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "MINING", "multiplier": 3.0, "durationMinutes": 20, "displayName": "Mining XP x3 for 20 minutes" }
+    ]
+  }
+}

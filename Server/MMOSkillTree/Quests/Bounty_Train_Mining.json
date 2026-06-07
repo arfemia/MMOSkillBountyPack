@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Train_Mining",
+  "Payload": {
+    "extends": "bounty_xp_standard",
+    "id": "bounty_train_mining",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "1", "target": "MINING" },
+    "objectiveOverrides": { "main": { "amount": 3000 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 140 },
+      { "type": "XP", "skill": "MINING", "amount": 1000 }
+    ]
+  }
+}

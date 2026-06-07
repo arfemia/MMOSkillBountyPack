@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Train_Excavation",
+  "Payload": {
+    "extends": "bounty_xp_standard",
+    "id": "bounty_train_excavation",
+    "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "EXCAVATION" },
+    "objectiveOverrides": { "main": { "amount": 8000 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 220 },
+      { "type": "XP", "skill": "EXCAVATION", "amount": 2000 }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Bounty_Daily_T3",
+  "Payload": {
+    "extends": "bounty_board_counter",
+    "id": "bounty_board_daily_t3",
+    "params": { "board": "daily" },
+    "displayName": "Daily Centurion",
+    "description": "Complete 100 daily bounties.",
+    "requiredAmount": 100,
+    "sortOrder": 52,
+    "points": 100,
+    "chainId": "bounty_board_daily",
+    "tier": 3,
+    "manualClaimRewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 1500 }
+    ]
+  }
+}

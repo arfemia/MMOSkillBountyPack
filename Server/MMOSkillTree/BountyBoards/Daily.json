@@ -6,6 +6,7 @@
     "order": 0,
     "rotation": { "type": "interval", "period": "daily", "anchor": "utc", "offsetMinutes": 0 },
     "selection": { "type": "weighted_random", "seed": "period" },
+    "combatLevelRequirements": { "normal": 25, "hard": 60 },
     "slots": [
       { "filter": { "difficulty": "easy" } },
       { "filter": { "difficulty": "normal" } },

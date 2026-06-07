@@ -1,0 +1,18 @@
+{
+  "Name": "Bounty_Weekly_T1",
+  "Payload": {
+    "extends": "bounty_board_counter",
+    "id": "bounty_board_weekly_t1",
+    "params": { "board": "weekly" },
+    "displayName": "Weekly Warrant",
+    "description": "Complete 3 weekly bounties.",
+    "requiredAmount": 3,
+    "sortOrder": 60,
+    "points": 20,
+    "chainId": "bounty_board_weekly",
+    "tier": 1,
+    "manualClaimRewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 250 }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Bounty_Board_Counter",
+  "Payload": {
+    "triggerType": "COMPLETE_BOUNTY",
+    "target": "{{board}}",
+    "matchMode": "EXACT",
+    "category": "quests",
+    "subcategory": "bounties"
+  }
+}

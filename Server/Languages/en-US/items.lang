@@ -1,6 +1,9 @@
 MMO_Bounty_Board.name = Bounty Board
 MMO_Bounty_Board.description = Mount on a wall and interact to view and accept the rotating daily bounties.
-MMO_Bounty_Board.hint = Open bounty board ({key})
+MMO_Bounty_Board.hint = Press [{key}] to open bounty board
 MMO_Bounty_Board_Weekly.name = Weekly Bounty Board
 MMO_Bounty_Board_Weekly.description = Mount on a wall and interact to view and accept the rotating weekly bounties.
-MMO_Bounty_Board_Weekly.hint = Open weekly bounty board ({key})
+MMO_Bounty_Board_Weekly.hint = Press [{key}] to open weekly bounty board
+MMO_Token_Trader.name = Token Trader
+MMO_Token_Trader.description = Mount on a wall and interact to spend Bounty Tokens at the Token Shop.
+MMO_Token_Trader.hint = Press [{key}] to open token shop

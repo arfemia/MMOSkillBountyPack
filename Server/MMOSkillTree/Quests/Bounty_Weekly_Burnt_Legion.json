@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Burnt_Legion",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_weekly_burnt_legion",
+    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Skeleton_Burnt" },
+    "objectiveOverrides": { "main": { "amount": 35 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 700 },
+      { "type": "XP", "skill": "ARCHERY", "amount": 8000 }
+    ]
+  }
+}

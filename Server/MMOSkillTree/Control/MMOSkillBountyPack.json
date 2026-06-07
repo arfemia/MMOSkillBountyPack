@@ -2,6 +2,9 @@
   "Name": "MMOSkillBountyPack",
   "Quests": "add",
   "QuestTemplates": "add",
+  "Achievements": "add",
+  "AchievementTemplates": "add",
   "Currencies": "add",
-  "BountyBoards": "add"
+  "BountyBoards": "add",
+  "TokenShop": "add"
 }

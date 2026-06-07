@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Smash_Ogres",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_smash_ogres",
+    "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "Goblin_Ogre" },
+    "objectiveOverrides": { "main": { "amount": 6 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 300 },
+      { "type": "XP", "skill": "BLUNT", "amount": 2500 }
+    ]
+  }
+}

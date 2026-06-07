@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Train_Woodcutting",
+  "Payload": {
+    "extends": "bounty_xp_standard",
+    "id": "bounty_train_woodcutting",
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "1", "target": "WOODCUTTING" },
+    "objectiveOverrides": { "main": { "amount": 2500 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 70 },
+      { "type": "XP", "skill": "WOODCUTTING", "amount": 800 }
+    ]
+  }
+}

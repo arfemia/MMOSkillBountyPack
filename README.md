@@ -19,10 +19,11 @@ The mod jar ships only the Bounty Board *engine* (the service, config, page UI, 
 ## Build
 
 ```powershell
-& .\build.ps1
+.\build.ps1                  # build the zip, and install it if a Mods folder is known
+.\build.ps1 -Install:$false  # build only, no copy
 ```
 
-Produces `MMOSkillBountyPack.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` file needs) and copies it into the local Hytale `Mods/` folder. Start a server with both the mod jar and this zip in `Mods/`, then craft and place a board block in the world, or use `/mmobountyui <player> daily` (console/admin).
+Produces `MMOSkillBountyPack.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` file needs). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`); without it the script just builds the zip. Start a server with both the mod jar and this zip in `Mods/`, then craft and place a board block in the world, or use `/mmobountyui <player> daily` (console/admin).
 
 ## Multiple boards in one world
 

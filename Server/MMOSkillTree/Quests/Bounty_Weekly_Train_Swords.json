@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Train_Swords",
+  "Payload": {
+    "extends": "bounty_xp_standard",
+    "id": "bounty_weekly_train_swords",
+    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "SWORDS" },
+    "objectiveOverrides": { "main": { "amount": 25000 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 650 },
+      { "type": "XP", "skill": "SWORDS", "amount": 6000 }
+    ]
+  }
+}

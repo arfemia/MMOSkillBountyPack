@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Outlander",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_weekly_outlander",
+    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Outlander" },
+    "objectiveOverrides": { "main": { "amount": 40 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 700 },
+      { "type": "XP", "skill": "SWORDS", "amount": 8000 }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Cache_Adamantite_Ore",
+  "Payload": {
+    "id": "shop_cache_adamantite_ore",
+    "displayName": "Crate of Adamantite Ore",
+    "description": "A crate of 12 Adamantite Ore. For seasoned fighters only.",
+    "currencyId": "bounty_token",
+    "cost": 600,
+    "icon": "Ore_Adamantite",
+    "category": "items",
+    "order": 20,
+    "requirements": { "minCombatLevel": 60 },
+    "limitPerDay": 2,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12", "displayName": "12 Adamantite Ore" }
+    ]
+  }
+}

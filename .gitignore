@@ -1,2 +1,2 @@
-# Built artifact, produced by build.ps1
-MMOSkillBountyPack.zip
+# Built artifacts, produced by build.ps1 (versioned zip names, e.g. MMOSkillBountyPack-1.0.0.zip)
+MMOSkillBountyPack*.zip

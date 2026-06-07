@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "items.MMO_Bounty_Board.name",
-    "Description": "items.MMO_Bounty_Board.description"
+    "Name": "items.MMO_Token_Trader.name",
+    "Description": "items.MMO_Token_Trader.description"
   },
   "PlayerAnimationsId": "Block",
   "Categories": ["Furniture.Signs"],
@@ -54,9 +54,9 @@
       ]
     },
     "VariantRotation": "NESW",
-    "InteractionHint": "items.MMO_Bounty_Board.hint",
+    "InteractionHint": "items.MMO_Token_Trader.hint",
     "Interactions": {
-      "Use": "MMO_BountyBoard_Open"
+      "Use": "MMO_TokenTrader_Open"
     },
     "TextureComputedColor": "#674429"
   },

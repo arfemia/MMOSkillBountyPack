@@ -4,9 +4,7 @@
     "Description": "items.MMO_Bounty_Board_Weekly.description"
   },
   "PlayerAnimationsId": "Block",
-  "Categories": [
-    "Furniture.Signs"
-  ],
+  "Categories": ["Furniture.Signs"],
   "Icon": "Icons/ItemsGenerated/Furniture_Crude_Sign.png",
   "MaxStack": 25,
   "IconProperties": {
@@ -18,22 +16,7 @@
     "Primary": "Block_Primary",
     "Secondary": "Block_Secondary"
   },
-  "Recipe": {
-    "Input": [
-      {
-        "ResourceTypeId": "Wood_Lightwood_Softwood"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Id": "Builders",
-        "Type": "StructuralCrafting",
-        "Categories": [
-          "Sign"
-        ]
-      }
-    ]
-  },
+
   "BlockType": {
     "BlockParticleSetId": "Wood",
     "BlockSoundSetId": "Wood",
@@ -78,12 +61,8 @@
     "TextureComputedColor": "#33507a"
   },
   "Tags": {
-    "Type": [
-      "Furniture"
-    ],
-    "Family": [
-      "MMOSkillTree"
-    ]
+    "Type": ["Furniture"],
+    "Family": ["MMOSkillTree"]
   },
   "ItemSoundSetId": "ISS_Blocks_Wood"
 }

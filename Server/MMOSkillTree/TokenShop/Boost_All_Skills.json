@@ -1,0 +1,17 @@
+{
+  "Name": "Boost_All_Skills",
+  "Payload": {
+    "id": "shop_boost_all_skills",
+    "displayName": "All-Skills Surge (2x, 30m)",
+    "description": "Doubles XP gain across every skill for 30 minutes.",
+    "currencyId": "bounty_token",
+    "cost": 400,
+    "icon": "Ingredient_Crystal_Purple",
+    "category": "boosts",
+    "order": 10,
+    "limitPerDay": 1,
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 30, "displayName": "All-Skills XP x2 for 30 minutes" }
+    ]
+  }
+}
