@@ -1,0 +1,12 @@
+{
+  "Name": "Xp_Packet_Base",
+  "Payload": {
+    "forEachSkill": true,
+    "category": "conversion",
+    "shop": "xpexchange",
+    "groupKey": "{{SKILL}}",
+    "displayName": "{{SKILL_NAME}} {{TIER_NAME}}",
+    "cost": { "currencies": { "bounty_token": "{{TOKENS}}", "life_essence": "{{ESSENCE}}" } },
+    "rewards": [{ "type": "XP", "skill": "{{SKILL}}", "amount": "{{XP}}" }]
+  }
+}

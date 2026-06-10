@@ -6,7 +6,7 @@
     "order": 0,
     "rotation": { "type": "interval", "period": "daily", "anchor": "utc", "offsetMinutes": 0 },
     "selection": { "type": "weighted_random", "seed": "period" },
-    "rerollCost": { "currency": "bounty_token", "amount": 40, "maxPerPeriod": 2 },
-    "requiresFeatures": []
+    "rerollCost": { "currency": "bounty_token", "amount": 40, "maxPerPeriod": 2 }
+
   }
 }

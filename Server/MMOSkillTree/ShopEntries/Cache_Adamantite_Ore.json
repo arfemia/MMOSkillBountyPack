@@ -4,8 +4,7 @@
     "id": "shop_cache_adamantite_ore",
     "titleKey": "shop.cache_adamantite_ore.title",
     "descriptionKey": "shop.cache_adamantite_ore.desc",
-    "currencyId": "bounty_token",
-    "cost": 600,
+    "cost": { "currencies": { "bounty_token": 600 } },
     "icon": "Ore_Adamantite",
     "category": "items",
     "order": 20,
@@ -13,7 +12,7 @@
     "requirements": { "minCombatLevel": 60 },
     "limitPerDay": 2,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12", "displayName": "12 Adamantite Ore" }
+      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12" }
     ]
   }
 }

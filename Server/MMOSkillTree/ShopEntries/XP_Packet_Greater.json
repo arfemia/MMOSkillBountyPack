@@ -1,16 +1,11 @@
 {
   "Name": "XP_Packet_Greater",
   "Payload": {
-    "forEachSkill": true,
+    "extends": "xp_packet_base",
+    "params": { "TIER_NAME": "Training", "TOKENS": "200", "ESSENCE": "80", "XP": "7500" },
     "id": "shop_xp_greater_{{SKILL}}",
-    "displayName": "{{SKILL_NAME}} Training",
-    "category": "conversion",
     "order": 42,
-    "shop": "xpexchange",
-    "groupKey": "{{SKILL}}",
     "requireSelfLevel": 30,
-    "cost": { "currencies": { "bounty_token": 200, "life_essence": 80 } },
-    "limitPerDay": 2,
-    "rewards": [{ "type": "XP", "skill": "{{SKILL}}", "amount": 7500 }]
+    "limitPerDay": 2
   }
 }

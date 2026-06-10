@@ -5,8 +5,6 @@
     "descriptionKey": "shop.general.desc",
     "icon": "Ore_Iron",
     "order": 0,
-    "enabled": true,
-    "requiresFeatures": [],
-    "requiresSkills": {}
+    "enabled": true
   }
 }

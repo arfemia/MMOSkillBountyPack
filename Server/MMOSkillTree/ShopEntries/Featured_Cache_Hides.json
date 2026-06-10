@@ -4,8 +4,7 @@
     "id": "shop_featured_cache_hides",
     "titleKey": "shop.featured_cache_hides.title",
     "descriptionKey": "shop.featured_cache_hides.desc",
-    "currencyId": "bounty_token",
-    "cost": 160,
+    "cost": { "currencies": { "bounty_token": 160 } },
     "icon": "Ingredient_Hide_Light",
     "category": "featured",
     "pool": "featured",
@@ -13,7 +12,7 @@
     "weight": 1,
     "limitPerDay": 3,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Hide_Light 48", "displayName": "48 Light Hide" }
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Hide_Light 48" }
     ]
   }
 }

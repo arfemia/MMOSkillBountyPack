@@ -6,8 +6,6 @@
     "icon": "Tool_Pickaxe_Crude",
     "order": 1,
     "enabled": true,
-    "layout": "skillGrouped",
-    "requiresFeatures": [],
-    "requiresSkills": {}
+    "layout": "skillGrouped"
   }
 }

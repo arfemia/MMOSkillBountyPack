@@ -4,8 +4,7 @@
     "id": "shop_featured_cache_adamantite",
     "titleKey": "shop.featured_cache_adamantite.title",
     "descriptionKey": "shop.featured_cache_adamantite.desc",
-    "currencyId": "bounty_token",
-    "cost": 260,
+    "cost": { "currencies": { "bounty_token": 260 } },
     "icon": "Ore_Adamantite",
     "category": "featured",
     "pool": "featured",
@@ -13,7 +12,7 @@
     "weight": 1,
     "limitPerDay": 2,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12", "displayName": "12 Adamantite Ore" }
+      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12" }
     ]
   }
 }
