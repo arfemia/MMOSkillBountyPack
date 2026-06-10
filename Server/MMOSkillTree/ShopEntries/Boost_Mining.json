@@ -12,7 +12,7 @@
     "limitPerDay": 3,
     "requirements": { "requiresSkills": { "MINING": 1 } },
     "rewards": [
-      { "type": "BOOST_TOKEN", "skill": "MINING", "multiplier": 3.0, "durationMinutes": 20, "displayName": "Mining XP x3 for 20 minutes" }
+      { "type": "BOOST_TOKEN", "skill": "MINING", "multiplier": 3.0, "durationMinutes": 20 }
     ]
   }
 }

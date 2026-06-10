@@ -11,7 +11,7 @@
     "shop": "general",
     "limitPerDay": 1,
     "rewards": [
-      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 30, "displayName": "All-Skills XP x2 for 30 minutes" }
+      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 30 }
     ]
   }
 }

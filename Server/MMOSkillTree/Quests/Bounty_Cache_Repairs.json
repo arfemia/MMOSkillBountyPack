@@ -8,7 +8,7 @@
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 110 },
       { "type": "XP", "skill": "MINING", "amount": 900 },
-      { "type": "COMMAND", "command": "/give {player} Tool_Repair_Kit_Crude 3", "displayName": "3 Crude Repair Kits" }
+      { "type": "COMMAND", "command": "/give {player} Tool_Repair_Kit_Crude --quantity=3" }
     ]
   }
 }

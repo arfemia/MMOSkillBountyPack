@@ -12,7 +12,7 @@
     "requirements": { "minCombatLevel": 60 },
     "limitPerDay": 2,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite 12" }
+      { "type": "COMMAND", "command": "/give {player} Ore_Adamantite --quantity=12" }
     ]
   }
 }

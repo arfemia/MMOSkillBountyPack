@@ -12,7 +12,7 @@
     "weight": 2,
     "limitPerDay": 3,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Iron 48" }
+      { "type": "COMMAND", "command": "/give {player} Ore_Iron --quantity=48" }
     ]
   }
 }

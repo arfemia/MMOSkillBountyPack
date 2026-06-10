@@ -16,7 +16,8 @@ The mod jar ships only the *engine* (services, configs, page UIs, and the regist
 | `Server/MMOSkillTree/Quests/Bounty_*.json` | The bounty pool (daily + weekly; kill / gather / train / deliver) |
 | `Server/MMOSkillTree/QuestTemplates/*.json` | Reusable contract skeletons so each bounty is a few lines |
 | `Server/MMOSkillTree/Currencies/Bounty_Token.json` | The reward currency |
-| `Server/MMOSkillTree/TokenShop/*.json` | Token-shop offers (static catalog + `Featured_*` pooled) |
+| `Server/MMOSkillTree/ShopEntries/*.json` | Token-shop offers (static catalog + `Featured_*` pooled) |
+| `Server/MMOSkillTree/ShopTemplates/*.json` | Reusable shop-offer skeletons (`extends` + `params`) |
 | `Server/MMOSkillTree/ShopPools/Featured.json` | The rotating "Featured" token-shop pool (schedule + reroll) |
 | `Server/NPC/Roles/Passive/MMO_Bounty_Master.json` (+ `MMO_Bounty_Daily`/`Weekly`, `MMO_Token_Trader_NPC`) | The press-F "open MMO UI" NPC roles: a hub auto-spawned at world spawn, plus per-board + shop NPCs you hand-place |
 | `Server/Languages/en-US/npcs.lang` | NPC display names + interact hints |
@@ -38,7 +39,7 @@ Each board has its own placeable block. The block's interaction reads the board 
 
 - **A bounty** is a repeatable quest that extends one of the templates and self-enrolls in a board pool by tag (`board:<id>`, `diff:<x>`, `weight:<n>`). Give it a `quest.<id>.title` + `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both `bounty_token` + `XP`.
 - **A board** is a schedule file under `BountyBoards/`; its filename (lowercased) is the board id.
-- **A shop offer** is a file under `TokenShop/` (static by default; add `"pool": "<id>"` to rotate it). **A shop pool** is a schedule file under `ShopPools/` with the same rotation/selection/reroll shape as a board.
+- **A shop offer** is a file under `ShopEntries/` (static by default; add `"pool": "<id>"` to rotate it). **A shop pool** is a schedule file under `ShopPools/` with the same rotation/selection/reroll shape as a board.
 - **A spawn NPC** is a native Hytale role under `Server/NPC/Roles/Passive/` whose `InteractionInstruction` runs the mod's `{ "Type": "OpenMmoUi", "Target": "<hub|shop|boardId>" }` action on press-F. The hub (`MMO_Bounty_Master`) auto-spawns at world spawn (toggle in `mods/mmoskilltree/spawn-hub.json`; an owner can remove it once via `/mmonpc remove <id>`, the native `EditorTool_Entity` creative tool, or by disabling it before first join). Add a board NPC by copying `MMO_Bounty_Daily.json` → `MMO_Bounty_<X>.json`, setting `Target` to the board id, and adding the name to `npcs.lang` (`/mmonpc spawn board <x>` resolves role `MMO_Bounty_<X>` by convention).
 - Run `/mmobounty validate` and `/mmoshop validate` (console/admin) to catch empty pools, unfillable slots, orphaned offers, malformed icons, or missing currencies before you ship.
 
