@@ -1,0 +1,14 @@
+{
+  "Name": "Bounty_Cache_Repairs",
+  "Payload": {
+    "extends": "bounty_gather_standard",
+    "id": "bounty_cache_repairs",
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "2", "target": "Stone" },
+    "objectiveOverrides": { "main": { "amount": 80 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 110 },
+      { "type": "XP", "skill": "MINING", "amount": 900 },
+      { "type": "COMMAND", "command": "/give {player} Tool_Repair_Kit_Crude 3", "displayName": "3 Crude Repair Kits" }
+    ]
+  }
+}

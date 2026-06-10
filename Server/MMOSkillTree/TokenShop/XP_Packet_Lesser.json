@@ -1,0 +1,15 @@
+{
+  "Name": "XP_Packet_Lesser",
+  "Payload": {
+    "forEachSkill": true,
+    "id": "shop_xp_{{SKILL}}",
+    "displayName": "{{SKILL_NAME}} Lesson",
+    "category": "conversion",
+    "order": 40,
+    "shop": "xpexchange",
+    "groupKey": "{{SKILL}}",
+    "cost": { "currencies": { "bounty_token": 90, "life_essence": 40 } },
+    "limitPerDay": 3,
+    "rewards": [{ "type": "XP", "skill": "{{SKILL}}", "amount": 1500 }]
+  }
+}

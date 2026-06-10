@@ -1,0 +1,173 @@
+# MMOSkillBountyPack - titres + textes d'ambiance des primes.
+# Les clés sont nues ; l'I18nModule de Hytale ajoute le nom de fichier en préfixe,
+# donc chaque clé se charge comme mmoskilltree.quest.<id>.title / .flavor et est reprise
+# par l'UI du Tableau des primes (BountyBoardPage résout quest.<id>.title / quest.<id>.flavor
+# par convention). Ajoutez un fichier <locale>/mmoskilltree.lang avec les mêmes clés pour
+# traduire ; les clés manquantes retombent sur l'anglais clé par clé.
+
+# --- Quotidiennes : tuer ---
+quest.bounty_swat_bats.title = Chasse aux chauves-souris
+quest.bounty_swat_bats.flavor = Les grottes grouillent d'ailes de cuir cette nuit. Réduisez l'essaim avant qu'il ne s'installe en nid.
+quest.bounty_clear_spiders.title = Dégager les toiles
+quest.bounty_clear_spiders.flavor = Les araignées ont muré les vieux sentiers. Frayez-vous un passage avant que quelqu'un n'y entre tête la première.
+quest.bounty_slay_zombies.title = Abattage de zombies
+quest.bounty_slay_zombies.flavor = Les morts agités errent trop près de la route. Renvoyez-les sous terre.
+quest.bounty_cull_skeletons.title = Faire claquer les os
+quest.bounty_cull_skeletons.flavor = Les squelettes sortent des tumulus chaque crépuscule. Renvoyez-les en morceaux.
+quest.bounty_hunt_wolves.title = Chasse aux loups
+quest.bounty_hunt_wolves.flavor = Une meute s'est enhardie près des pâturages. Chassez-la avant que les troupeaux n'en paient le prix.
+quest.bounty_goblin_cleanup.title = Nettoyage de gobelins
+quest.bounty_goblin_cleanup.flavor = Les gobelins pillent encore les charrettes de ravitaillement. Videz la tanière et ils y réfléchiront à deux fois.
+quest.bounty_cull_scaraks.title = Abattage de Scaraks
+quest.bounty_cull_scaraks.flavor = Les Scaraks remontent des dunes en masse. Éliminez-les tant qu'ils sont dispersés.
+quest.bounty_hunt_trork.title = Chasse aux Trorks
+quest.bounty_hunt_trork.flavor = Les bandes de guerre trorks se massent dans les collines. Réduisez leur nombre avant qu'elles ne s'organisent.
+quest.bounty_bear_hunt.title = Chasse à l'ours
+quest.bounty_bear_hunt.flavor = De grands ours ont pris le sentier du nord. Celle-ci n'est que pour une main sûre.
+quest.bounty_smash_ogres.title = Écraser les ogres
+quest.bounty_smash_ogres.flavor = Les ogres défoncent les palissades. Abattez-les avant que les murs ne tombent avec eux.
+quest.bounty_hunt_risen.title = Coucher les Relevés
+quest.bounty_hunt_risen.flavor = Les morts refusent de rester enterrés. Remettez les Relevés en terre.
+
+# --- Quotidiennes : récolter ---
+quest.bounty_mine_stone.title = Travail de carrière
+quest.bounty_mine_stone.flavor = Les maçons ont besoin de pierre, et en quantité. À la pioche.
+quest.bounty_chop_wood.title = Bois !
+quest.bounty_chop_wood.flavor = La scierie tourne à vide. Abattez ce que vous pouvez et empilez-le haut.
+quest.bounty_mine_iron.title = Du fer pour la forge
+quest.bounty_mine_iron.flavor = Les forgerons sont à court de fer. Rapportez du minerai des filons profonds.
+quest.bounty_mine_adamantite.title = Expédition d'adamantite
+quest.bounty_mine_adamantite.flavor = L'adamantite ne se trouve que dans les veines les plus profondes. Minez-la si vous osez affronter l'obscurité.
+quest.bounty_cache_copper.title = Réserve de cuivre
+quest.bounty_cache_copper.flavor = La fonderie échangera des lingots fraîchement fondus contre du cuivre brut. Apportez le minerai, repartez avec le métal.
+quest.bounty_cache_repairs.title = Outils du métier
+quest.bounty_cache_repairs.flavor = Cassez de la pierre pour la carrière et le forgeron ajoutera quelques kits de réparation pour votre peine.
+
+# --- Quotidiennes : entraîner ---
+quest.bounty_train_woodcutting.title = Affûter la hache
+quest.bounty_train_woodcutting.flavor = C'est en pratiquant que la coupe devient plus rapide. Passez la journée à la lisière des bois.
+quest.bounty_train_mining.title = Forcer la pioche
+quest.bounty_train_mining.flavor = La valeur d'un mineur se mesure au nombre de coups. Faites vos heures.
+quest.bounty_train_excavation.title = Creuser profond
+quest.bounty_train_excavation.flavor = Il n'y a pas de raccourci vers les callosités d'un terrassier. Déplacez de la terre.
+
+# --- Quotidiennes : livrer ---
+quest.bounty_deliver_iron.title = Livraison de fer
+quest.bounty_deliver_iron.flavor = L'intendant paie bien le fer, sans poser de questions. Apportez-le au tableau.
+quest.bounty_deliver_hides.title = Cargaison de peaux
+quest.bounty_deliver_hides.flavor = Les tanneurs ont besoin de peaux légères par pleines charrettes. Déposez-les ici.
+quest.bounty_deliver_essence.title = Consignation d'essence
+quest.bounty_deliver_essence.flavor = L'essence de vie en flacon vaut une fortune. Cédez votre stock.
+quest.bounty_deliver_adamantite.title = Consignation d'adamantite
+quest.bounty_deliver_adamantite.flavor = Des mains expertes veulent de l'adamantite, et seul le meilleur minerai fera l'affaire.
+
+# --- Hebdomadaires ---
+quest.bounty_weekly_slay_zombies.title = Les morts sans fin
+quest.bounty_weekly_slay_zombies.flavor = Une semaine entière de morts agités. Tenez la ligne jusqu'à ce que les tombes redeviennent silencieuses.
+quest.bounty_weekly_hunt_trork.title = Bande de guerre trork
+quest.bounty_weekly_hunt_trork.flavor = Une bande de guerre au complet a établi son camp. Réduisez-la au fil de la semaine.
+quest.bounty_weekly_goblin_purge.title = Purge des gobelins
+quest.bounty_weekly_goblin_purge.flavor = La tanière ne cesse de proliférer. Il faut une semaine de travail pour vraiment l'éclaircir.
+quest.bounty_weekly_mine_adamantite.title = Quota d'adamantite
+quest.bounty_weekly_mine_adamantite.flavor = Un contrat d'une semaine pour les forges profondes. Remplissez le quota.
+quest.bounty_weekly_outlander.title = Prime aux Outrelandais
+quest.bounty_weekly_outlander.flavor = Les Outrelandais pressent les frontières toute la semaine. Repoussez-les.
+quest.bounty_weekly_burnt_legion.title = La Légion calcinée
+quest.bounty_weekly_burnt_legion.flavor = Les morts carbonisés marchent hors des terres de cendres. Dispersez la légion pour de bon.
+quest.bounty_weekly_wraiths.title = Chasse aux spectres
+quest.bounty_weekly_wraiths.flavor = Les spectres glissent entre ce monde et l'autre. Bannissez-en assez pour faire la différence.
+quest.bounty_weekly_werewolves.title = Sous la pleine lune
+quest.bounty_weekly_werewolves.flavor = La lune est pleine toute la semaine et la meute court sauvagement. Mettez fin à la malédiction.
+quest.bounty_weekly_golems.title = Briseur de golems
+quest.bounty_weekly_golems.flavor = D'anciens golems se sont réveillés dans les ruines. Brisez-les pierre par pierre.
+quest.bounty_weekly_train_swords.title = Maîtrise de l'épée
+quest.bounty_weekly_train_swords.flavor = Une semaine d'exercices sépare un soldat d'un maître d'armes. Entraînez-vous dur.
+quest.bounty_weekly_train_defense.title = Tenir la ligne
+quest.bounty_weekly_train_defense.flavor = La robustesse se gagne coup après coup. Passez la semaine à encaisser et à tenir bon.
+quest.bounty_weekly_sharks.title = Eaux ensanglantées
+quest.bounty_weekly_sharks.flavor = Les requins-marteaux ont transformé les routes maritimes en garde-manger. Réduisez la meute avant que le prochain équipage ne disparaisse.
+quest.bounty_weekly_leviathan.title = Le Léviathan
+quest.bounty_weekly_leviathan.flavor = Quelque chose d'immense se meut sous la houle. Abattez les grandes bêtes avant qu'elles n'entraînent la flotte par le fond.
+
+# --- Hub / accueil (livré ici pour que les administrateurs reformulent l'accueil sans ---
+# --- toucher au jar ; le jar conserve ces valeurs anglaises comme repli clé par clé). ---
+ui.hub.title = Maître des primes et marchand
+ui.hub.subtitle = Que puis-je faire pour vous, aventurier ?
+ui.hub.bounties_button = Voir les primes
+ui.hub.bounties_hint = Relevez des contrats rotatifs pour des récompenses.
+ui.hub.shop_button = Boutique de tokens
+ui.hub.shop_hint = Dépensez vos tokens de prime.
+ui.hub.tutorial.step = {0} / {1}
+ui.hub.tutorial.next = Suivant
+ui.hub.tutorial.back = Retour
+ui.hub.tutorial.finish = Compris !
+ui.hub.tutorial.welcome.title = Bienvenue, aventurier !
+ui.hub.tutorial.welcome.body = Je suis le Maître des primes. Venez me voir à tout moment pour relever des contrats et commercer. Laissez-moi vous montrer les ficelles.
+ui.hub.tutorial.bounties.title = Primes
+ui.hub.tutorial.bounties.body = Les primes sont des contrats rotatifs : tuer, récolter ou livrer contre des récompenses. Acceptez-en une pour l'ajouter à votre journal de quêtes, terminez l'objectif, et vous gagnez des tokens de prime ainsi que de l'XP. Le tableau se renouvelle selon un calendrier, et vous pouvez relancer un seul contrat qui ne vous plaît pas contre quelques tokens.
+ui.hub.tutorial.shop.title = Boutique de tokens
+ui.hub.tutorial.shop.body = Dépensez les tokens de prime que vous gagnez à ma Boutique de tokens : boosts d'XP, objets, et plus encore. Certaines offres à la une changent chaque jour, et vous pouvez relancer une offre à la une pour l'échanger contre une autre.
+
+# --- Noms + descriptions de la devanture de la boutique (shop.<id>.title / .desc, résolus par convention) ---
+shop.general.title = Boutique de tokens
+shop.general.desc = Dépensez vos tokens de prime en boosts, caisses et offres à la une.
+shop.xpexchange.title = Échange d'XP
+shop.xpexchange.desc = Échangez vos tokens de prime contre une bouffée d'XP de compétence.
+
+# --- Noms + descriptions des offres (les offres définissent un titleKey/descriptionKey explicite -> ces clés) ---
+shop.boost_mining.title = Ruée minière (3x, 20m)
+shop.boost_mining.desc = Triple l'XP de minage pendant 20 minutes.
+shop.boost_all_skills.title = Déferlante toutes compétences (2x, 30m)
+shop.boost_all_skills.desc = Double le gain d'XP de toutes les compétences pendant 30 minutes.
+shop.boost_polearms.title = Allonge du chasseur (3x lances, 20m)
+shop.boost_polearms.desc = Triple l'XP de lances pendant 20 minutes.
+shop.cache_iron_ore.title = Caisse de minerai de fer
+shop.cache_iron_ore.desc = Une caisse de 32 minerais de fer, livrée directement dans votre inventaire.
+shop.cache_adamantite_ore.title = Caisse de minerai d'adamantite
+shop.cache_adamantite_ore.desc = Une caisse de 12 minerais d'adamantite. Réservée aux combattants aguerris.
+shop.cache_scaled_hide.title = Lot de peaux écailleuses
+shop.cache_scaled_hide.desc = Un lot de 16 peaux écailleuses, prélevées sur les chasseurs des profondeurs.
+shop.featured_cache_iron.title = À la une : caisse de fer
+shop.featured_cache_iron.desc = Une caisse à la une de 48 minerais de fer.
+shop.featured_cache_adamantite.title = À la une : réserve d'adamantite
+shop.featured_cache_adamantite.desc = Une réserve à la une de 12 minerais d'adamantite.
+shop.featured_cache_essence.title = À la une : fioles d'essence
+shop.featured_cache_essence.desc = Un lot à la une de 64 essences de vie.
+shop.featured_cache_hides.title = À la une : lot de peaux
+shop.featured_cache_hides.desc = Un lot à la une de 48 peaux légères.
+shop.featured_cache_lobster.title = À la une : prise de homards
+shop.featured_cache_lobster.desc = Une prise à la une de 24 homards de la pêche de la semaine.
+shop.featured_boost_combat.title = Tranchant du guerrier (2x épées, 30m)
+shop.featured_boost_combat.desc = Double l'XP d'épées pendant 30 minutes.
+shop.featured_boost_woodcutting.title = Frénésie du bûcheron (3x bûcheronnage, 20m)
+shop.featured_boost_woodcutting.desc = Triple l'XP de bûcheronnage pendant 20 minutes.
+shop.xp_all_skills.title = Lot d'XP toutes compétences
+shop.xp_all_skills.desc = Un lot premium d'XP pour chaque compétence à la fois.
+
+# --- Les paquets d'XP par compétence conservent la clé par convention shop.<id>.title (id = shop_xp_<skill>) ---
+shop.shop_xp_mining.title = Paquet d'XP de minage
+shop.shop_xp_mining.desc = Convertissez vos tokens de prime en une bouffée d'XP de minage.
+shop.shop_xp_woodcutting.title = Paquet d'XP de bûcheronnage
+shop.shop_xp_woodcutting.desc = Convertissez vos tokens de prime en une bouffée d'XP de bûcheronnage.
+shop.shop_xp_excavation.title = Paquet d'XP d'excavation
+shop.shop_xp_excavation.desc = Convertissez vos tokens de prime en une bouffée d'XP d'excavation.
+shop.shop_xp_swords.title = Paquet d'XP d'épées
+shop.shop_xp_swords.desc = Convertissez vos tokens de prime en une bouffée d'XP d'épées.
+shop.shop_xp_defense.title = Paquet d'XP de blocage
+shop.shop_xp_defense.desc = Convertissez vos tokens de prime en une bouffée d'XP de blocage.
+shop.shop_xp_combat_any.title = XP toutes compétences du vétéran
+shop.shop_xp_combat_any.desc = La récompense d'un vétéran du combat : une bouffée d'XP pour chaque compétence.
+
+# --- Monnaies (currency.<id>.name, résolu par convention ; id = nom de fichier en minuscules) ---
+currency.bounty_token.name = Token de prime
+
+# --- Succès (achievement.<id>.title / .desc, résolus par convention) ---
+achievement.bounty_board_daily_t1.title = Contractant quotidien
+achievement.bounty_board_daily_t2.title = Contractant aguerri
+achievement.bounty_board_daily_t3.title = Centurion quotidien
+achievement.bounty_board_weekly_t1.title = Mandat hebdomadaire
+achievement.bounty_board_weekly_t2.title = Exécuteur hebdomadaire
+achievement.bounty_board_weekly_t3.title = Légende hebdomadaire
+# Modèles de description de série partagés : {0} = le nombre de complétions du palier, injecté depuis @amount (requiredAmount).
+achievement.bounty_streak.daily.desc = Terminez {0} primes quotidiennes.
+achievement.bounty_streak.weekly.desc = Terminez {0} primes hebdomadaires.

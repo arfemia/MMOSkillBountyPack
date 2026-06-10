@@ -4,8 +4,6 @@
     "extends": "bounty_board_counter",
     "id": "bounty_board_weekly_t3",
     "params": { "board": "weekly" },
-    "displayName": "Weekly Legend",
-    "description": "Complete 60 weekly bounties.",
     "requiredAmount": 60,
     "sortOrder": 62,
     "points": 175,

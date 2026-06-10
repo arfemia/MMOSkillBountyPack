@@ -1,0 +1,13 @@
+{
+  "Name": "XpExchange",
+  "Payload": {
+    "titleKey": "shop.xpexchange.title",
+    "descriptionKey": "shop.xpexchange.desc",
+    "icon": "Tool_Pickaxe_Crude",
+    "order": 1,
+    "enabled": true,
+    "layout": "skillGrouped",
+    "requiresFeatures": [],
+    "requiresSkills": {}
+  }
+}

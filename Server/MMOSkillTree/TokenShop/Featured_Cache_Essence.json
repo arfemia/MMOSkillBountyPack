@@ -1,0 +1,19 @@
+{
+  "Name": "Featured_Cache_Essence",
+  "Payload": {
+    "id": "shop_featured_cache_essence",
+    "titleKey": "shop.featured_cache_essence.title",
+    "descriptionKey": "shop.featured_cache_essence.desc",
+    "currencyId": "bounty_token",
+    "cost": 180,
+    "icon": "Ingredient_Life_Essence",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 1,
+    "limitPerDay": 3,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Life_Essence 64", "displayName": "64 Life Essence" }
+    ]
+  }
+}

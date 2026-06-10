@@ -1,0 +1,173 @@
+# MMOSkillBountyPack - Kopfgeld-Titel + Fließtext.
+# Die Schlüssel stehen ohne Präfix; Hytales I18nModule stellt den Dateinamen voran, sodass jeder
+# als mmoskilltree.quest.<id>.title / .flavor geladen und von der Kopfgeld-Tafel-UI aufgegriffen wird
+# (BountyBoardPage löst quest.<id>.title / quest.<id>.flavor per Konvention auf).
+# Füge eine <locale>/mmoskilltree.lang mit denselben Schlüsseln hinzu, um zu übersetzen; fehlende Schlüssel
+# fallen pro Schlüssel auf Englisch zurück.
+
+# --- Täglich: Töten ---
+quest.bounty_swat_bats.title = Fledermäuse zerschlagen
+quest.bounty_swat_bats.flavor = Die Höhlen wimmeln heute Nacht von Lederschwingen. Dünne den Schwarm aus, bevor er sich ein Nest baut.
+quest.bounty_clear_spiders.title = Netze beseitigen
+quest.bounty_clear_spiders.flavor = Spinnen haben die alten Pfade zugesponnen. Schaffe einen Durchgang, bevor jemand kopfüber in eines läuft.
+quest.bounty_slay_zombies.title = Zombie-Keulung
+quest.bounty_slay_zombies.flavor = Die ruhelosen Toten wandern zu nah an die Straße. Lege sie wieder um.
+quest.bounty_cull_skeletons.title = Knochen klappern lassen
+quest.bounty_cull_skeletons.flavor = Jede Dämmerung klettern Skelette aus den Grabhügeln. Schicke sie in Stücken zurück.
+quest.bounty_hunt_wolves.title = Wolfsjagd
+quest.bounty_hunt_wolves.flavor = Ein Rudel ist nahe den Weiden dreist geworden. Jage es, bevor die Herden den Preis zahlen.
+quest.bounty_goblin_cleanup.title = Goblin-Säuberung
+quest.bounty_goblin_cleanup.flavor = Goblins überfallen wieder die Versorgungskarren. Räume den Bau aus, dann überlegen sie es sich zweimal.
+quest.bounty_cull_scaraks.title = Scarak-Keulung
+quest.bounty_cull_scaraks.flavor = Scaraks quellen aus den Dünen empor. Dezimiere sie, solange sie noch verstreut sind.
+quest.bounty_hunt_trork.title = Trork-Jagd
+quest.bounty_hunt_trork.flavor = Trork-Kriegsbanden sammeln sich in den Hügeln. Brich ihre Zahl, bevor sie sich organisieren.
+quest.bounty_bear_hunt.title = Bärenjagd
+quest.bounty_bear_hunt.flavor = Große Bären haben den Nordpfad in Besitz genommen. Diese hier ist nur etwas für eine ruhige Hand.
+quest.bounty_smash_ogres.title = Oger zerschmettern
+quest.bounty_smash_ogres.flavor = Oger reißen die Palisaden nieder. Bring sie zu Fall, bevor die Mauern mit ihnen einstürzen.
+quest.bounty_hunt_risen.title = Die Auferstandenen niederlegen
+quest.bounty_hunt_risen.flavor = Die Toten bleiben nicht begraben. Bring die Auferstandenen zurück in die Erde.
+
+# --- Täglich: Sammeln ---
+quest.bounty_mine_stone.title = Steinbrucharbeit
+quest.bounty_mine_stone.flavor = Die Maurer brauchen Stein, und reichlich davon. Leg dich ins Zeug.
+quest.bounty_chop_wood.title = Holz!
+quest.bounty_chop_wood.flavor = Der Holzlagerplatz läuft leer. Fälle, was du kannst, und stapele es hoch.
+quest.bounty_mine_iron.title = Eisen für die Schmiede
+quest.bounty_mine_iron.flavor = Den Schmieden ist das Eisen ausgegangen. Bring Erz aus den tiefen Adern zurück.
+quest.bounty_mine_adamantite.title = Adamantit-Tour
+quest.bounty_mine_adamantite.flavor = Adamantit sitzt nur in den tiefsten Adern. Bau es ab, wenn du dich ins Dunkel wagst.
+quest.bounty_cache_copper.title = Kupfer-Vorrat
+quest.bounty_cache_copper.flavor = Die Gießerei tauscht frisch geschmolzene Barren gegen rohes Kupfer. Bring Erz, geh mit Metall.
+quest.bounty_cache_repairs.title = Werkzeug des Handwerks
+quest.bounty_cache_repairs.flavor = Brich Stein für den Steinbruch, und der Schmied legt für deine Mühe ein paar Reparatursätze drauf.
+
+# --- Täglich: Trainieren ---
+quest.bounty_train_woodcutting.title = Die Axt schärfen
+quest.bounty_train_woodcutting.flavor = Übung macht den schnelleren Schnitt. Verbringe den Tag an der Baumlinie.
+quest.bounty_train_mining.title = Die Spitzhacke schwingen
+quest.bounty_train_mining.flavor = Der Wert eines Bergmanns bemisst sich in Schwüngen. Steck die Stunden rein.
+quest.bounty_train_excavation.title = Tief graben
+quest.bounty_train_excavation.flavor = Es gibt keine Abkürzung zu den Schwielen eines Buddlers. Beweg etwas Erde.
+
+# --- Täglich: Liefern ---
+quest.bounty_deliver_iron.title = Eisen-Lieferung
+quest.bounty_deliver_iron.flavor = Der Quartiermeister zahlt gut für Eisen, ohne Fragen zu stellen. Bring es zur Tafel.
+quest.bounty_deliver_hides.title = Häute-Fuhre
+quest.bounty_deliver_hides.flavor = Die Gerber brauchen leichte Häute zu Karrenladungen. Liefere sie hier ab.
+quest.bounty_deliver_essence.title = Essenz-Konsignation
+quest.bounty_deliver_essence.flavor = Abgefüllte Lebensessenz bringt ein Vermögen. Gib deinen Vorrat ab.
+quest.bounty_deliver_adamantite.title = Adamantit-Konsignation
+quest.bounty_deliver_adamantite.flavor = Erlesene Hände wollen Adamantit, und nur das beste Erz reicht aus.
+
+# --- Wöchentlich ---
+quest.bounty_weekly_slay_zombies.title = Die endlosen Toten
+quest.bounty_weekly_slay_zombies.flavor = Eine ganze Woche ruheloser Toter. Halte die Stellung, bis die Gräber verstummen.
+quest.bounty_weekly_hunt_trork.title = Trork-Kriegsbande
+quest.bounty_weekly_hunt_trork.flavor = Eine ganze Kriegsbande hat ihr Lager aufgeschlagen. Schmälere sie im Laufe der Woche.
+quest.bounty_weekly_goblin_purge.title = Goblin-Säuberung
+quest.bounty_weekly_goblin_purge.flavor = Der Bau brütet ständig nach. Es braucht eine Woche Arbeit, um ihn wirklich auszudünnen.
+quest.bounty_weekly_mine_adamantite.title = Adamantit-Quote
+quest.bounty_weekly_mine_adamantite.flavor = Ein wochenlanger Vertrag für die tiefen Schmieden. Erfülle die Quote.
+quest.bounty_weekly_outlander.title = Outlander-Kopfgeld
+quest.bounty_weekly_outlander.flavor = Outlander bedrängen die ganze Woche die Grenzen. Treibe sie zurück.
+quest.bounty_weekly_burnt_legion.title = Die Verbrannte Legion
+quest.bounty_weekly_burnt_legion.flavor = Verkohlte Tote marschieren aus den Aschelanden. Zerstreue die Legion ein für alle Mal.
+quest.bounty_weekly_wraiths.title = Schemen-Jagd
+quest.bounty_weekly_wraiths.flavor = Schemen schlüpfen zwischen dieser Welt und der nächsten. Verbanne genug von ihnen, um etwas zu bewirken.
+quest.bounty_weekly_werewolves.title = Unter dem Vollmond
+quest.bounty_weekly_werewolves.flavor = Der Mond ist die ganze Woche voll und das Rudel läuft wild. Beende den Fluch.
+quest.bounty_weekly_golems.title = Golem-Brecher
+quest.bounty_weekly_golems.flavor = Uralte Golems sind in den Ruinen erwacht. Zerschmettere sie Stein für Stein.
+quest.bounty_weekly_train_swords.title = Schwertmeisterschaft
+quest.bounty_weekly_train_swords.flavor = Eine Woche Drill trennt den Soldaten vom Schwertmeister. Trainiere hart.
+quest.bounty_weekly_train_defense.title = Halte die Stellung
+quest.bounty_weekly_train_defense.flavor = Zähigkeit verdient man sich Schlag um Schlag. Verbringe die Woche damit, Treffer einzustecken und standhaft zu bleiben.
+quest.bounty_weekly_sharks.title = Blutige Gewässer
+quest.bounty_weekly_sharks.flavor = Hammerhaie haben die Schifffahrtsrouten in ein Jagdrevier verwandelt. Dünne das Rudel aus, bevor die nächste Crew verschwindet.
+quest.bounty_weekly_leviathan.title = Der Leviathan
+quest.bounty_weekly_leviathan.flavor = Etwas Gewaltiges bewegt sich unter den Wellen. Strecke die großen Bestien nieder, bevor sie die Flotte in die Tiefe ziehen.
+
+# --- Hub / Einführung (hier ausgeliefert, damit Serverbetreiber die Einführung umformulieren können, ---
+# --- ohne das Jar anzufassen; das Jar behält diese englischen Werte als Rückfall pro Schlüssel). ---
+ui.hub.title = Kopfgeldmeister & Händler
+ui.hub.subtitle = Was kann ich für dich tun, Abenteurer?
+ui.hub.bounties_button = Kopfgelder ansehen
+ui.hub.bounties_hint = Nimm rotierende Aufträge für Belohnungen an.
+ui.hub.shop_button = Token-Shop
+ui.hub.shop_hint = Gib deine Kopfgeld-Token aus.
+ui.hub.tutorial.step = {0} / {1}
+ui.hub.tutorial.next = Weiter
+ui.hub.tutorial.back = Zurück
+ui.hub.tutorial.finish = Verstanden!
+ui.hub.tutorial.welcome.title = Willkommen, Abenteurer!
+ui.hub.tutorial.welcome.body = Ich bin der Kopfgeldmeister. Sprich mich jederzeit an, um Aufträge anzunehmen und zu handeln. Lass mich dir die Grundlagen zeigen.
+ui.hub.tutorial.bounties.title = Kopfgelder
+ui.hub.tutorial.bounties.body = Kopfgelder sind rotierende Aufträge: erschlage, sammle oder liefere für Belohnungen. Nimm eines an, um es deinem Questlog hinzuzufügen, schließe das Ziel ab, und du verdienst Kopfgeld-Token sowie XP. Die Tafel erneuert sich nach einem Zeitplan, und du kannst einen einzelnen Auftrag, der dir nicht gefällt, für ein paar Token neu auswürfeln.
+ui.hub.tutorial.shop.title = Token-Shop
+ui.hub.tutorial.shop.body = Gib die verdienten Kopfgeld-Token in meinem Token-Shop aus: XP-Boosts, Gegenstände und mehr. Manche vorgestellten Angebote rotieren täglich, und du kannst ein vorgestelltes Angebot neu auswürfeln, um es gegen ein anderes zu tauschen.
+
+# --- Shop-Storefront-Namen + Beschreibungen (shop.<id>.title / .desc, per Konvention aufgelöst) ---
+shop.general.title = Token-Shop
+shop.general.desc = Gib deine Kopfgeld-Token für Boosts, Kisten und vorgestellte Angebote aus.
+shop.xpexchange.title = XP-Tausch
+shop.xpexchange.desc = Tausche Kopfgeld-Token gegen einen Schub Fähigkeits-XP.
+
+# --- Shop-Angebotsnamen + Beschreibungen (Angebote setzen explizite titleKey/descriptionKey -> diese Schlüssel) ---
+shop.boost_mining.title = Bergbau-Rausch (3x, 20 Min)
+shop.boost_mining.desc = Verdreifacht Bergbau-XP für 20 Minuten.
+shop.boost_all_skills.title = Allskill-Schub (2x, 30 Min)
+shop.boost_all_skills.desc = Verdoppelt den XP-Gewinn in allen Fähigkeiten für 30 Minuten.
+shop.boost_polearms.title = Jägerreichweite (3x Stangenwaffen, 20 Min)
+shop.boost_polearms.desc = Verdreifacht Stangenwaffen-XP für 20 Minuten.
+shop.cache_iron_ore.title = Kiste Eisenerz
+shop.cache_iron_ore.desc = Eine Kiste mit 32 Eisenerz, direkt in dein Inventar geliefert.
+shop.cache_adamantite_ore.title = Kiste Adamantiterz
+shop.cache_adamantite_ore.desc = Eine Kiste mit 12 Adamantiterz. Nur für erfahrene Kämpfer.
+shop.cache_scaled_hide.title = Bündel Schuppenhaut
+shop.cache_scaled_hide.desc = Ein Bündel mit 16 Schuppenhaut, den Tiefenjägern abgezogen.
+shop.featured_cache_iron.title = Vorgestellt: Eisenkiste
+shop.featured_cache_iron.desc = Eine vorgestellte Kiste mit 48 Eisenerz.
+shop.featured_cache_adamantite.title = Vorgestellt: Adamantit-Hort
+shop.featured_cache_adamantite.desc = Ein vorgestellter Hort von 12 Adamantiterz.
+shop.featured_cache_essence.title = Vorgestellt: Essenz-Fläschchen
+shop.featured_cache_essence.desc = Eine vorgestellte Charge von 64 Lebensessenz.
+shop.featured_cache_hides.title = Vorgestellt: Häute-Bündel
+shop.featured_cache_hides.desc = Ein vorgestelltes Bündel von 48 Leichter Haut.
+shop.featured_cache_lobster.title = Vorgestellt: Hummer-Fang
+shop.featured_cache_lobster.desc = Ein vorgestellter Fang von 24 Hummern aus dem Wochenfang.
+shop.featured_boost_combat.title = Klinge des Kriegers (2x Schwerter, 30 Min)
+shop.featured_boost_combat.desc = Verdoppelt Schwerter-XP für 30 Minuten.
+shop.featured_boost_woodcutting.title = Holzfäller-Rausch (3x Holzfällen, 20 Min)
+shop.featured_boost_woodcutting.desc = Verdreifacht Holzfällen-XP für 20 Minuten.
+shop.xp_all_skills.title = Allskill-XP-Paket
+shop.xp_all_skills.desc = Ein Premium-Paket mit XP für jede Fähigkeit auf einmal.
+
+# --- Aufgefächerte XP-Pakete pro Fähigkeit behalten den Konventions-Schlüssel shop.<id>.title (id = shop_xp_<skill>) ---
+shop.shop_xp_mining.title = Bergbau-XP-Päckchen
+shop.shop_xp_mining.desc = Wandle Kopfgeld-Token in einen Schub Bergbau-XP um.
+shop.shop_xp_woodcutting.title = Holzfällen-XP-Päckchen
+shop.shop_xp_woodcutting.desc = Wandle Kopfgeld-Token in einen Schub Holzfällen-XP um.
+shop.shop_xp_excavation.title = Ausgrabungs-XP-Päckchen
+shop.shop_xp_excavation.desc = Wandle Kopfgeld-Token in einen Schub Ausgrabungs-XP um.
+shop.shop_xp_swords.title = Schwerter-XP-Päckchen
+shop.shop_xp_swords.desc = Wandle Kopfgeld-Token in einen Schub Schwerter-XP um.
+shop.shop_xp_defense.title = Blocken-XP-Päckchen
+shop.shop_xp_defense.desc = Wandle Kopfgeld-Token in einen Schub Blocken-XP um.
+shop.shop_xp_combat_any.title = Veteranen-Allskill-XP
+shop.shop_xp_combat_any.desc = Die Belohnung eines Kampfveteranen: ein Schub XP in jeder Fähigkeit.
+
+# --- Währungen (currency.<id>.name, per Konvention aufgelöst; id = Dateiname in Kleinbuchstaben) ---
+currency.bounty_token.name = Kopfgeld-Token
+
+# --- Erfolge (achievement.<id>.title / .desc, per Konvention aufgelöst) ---
+achievement.bounty_board_daily_t1.title = Täglicher Auftragnehmer
+achievement.bounty_board_daily_t2.title = Erfahrener Auftragnehmer
+achievement.bounty_board_daily_t3.title = Täglicher Zenturio
+achievement.bounty_board_weekly_t1.title = Wöchentlicher Haftbefehl
+achievement.bounty_board_weekly_t2.title = Wöchentlicher Vollstrecker
+achievement.bounty_board_weekly_t3.title = Wöchentliche Legende
+# Gemeinsame Serien-Beschreibungsvorlagen: {0} = die Abschlusszahl der Stufe, eingefügt aus @amount (requiredAmount).
+achievement.bounty_streak.daily.desc = Schließe {0} tägliche Kopfgelder ab.
+achievement.bounty_streak.weekly.desc = Schließe {0} wöchentliche Kopfgelder ab.

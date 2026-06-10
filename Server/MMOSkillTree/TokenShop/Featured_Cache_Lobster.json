@@ -1,0 +1,19 @@
+{
+  "Name": "Featured_Cache_Lobster",
+  "Payload": {
+    "id": "shop_featured_cache_lobster",
+    "titleKey": "shop.featured_cache_lobster.title",
+    "descriptionKey": "shop.featured_cache_lobster.desc",
+    "currencyId": "bounty_token",
+    "cost": 160,
+    "icon": "Fish_Lobster_Item",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 1,
+    "limitPerDay": 3,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Fish_Lobster_Item 24", "displayName": "24 Lobster" }
+    ]
+  }
+}

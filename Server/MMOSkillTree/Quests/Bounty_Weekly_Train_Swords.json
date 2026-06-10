@@ -3,6 +3,7 @@
   "Payload": {
     "extends": "bounty_xp_standard",
     "id": "bounty_weekly_train_swords",
+    "requiresSkills": { "SWORDS": 1 },
     "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "SWORDS" },
     "objectiveOverrides": { "main": { "amount": 25000 } },
     "rewards": [

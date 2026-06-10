@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Hunt_Risen",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_hunt_risen",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Risen" },
+    "objectiveOverrides": { "main": { "amount": 10 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 150 },
+      { "type": "XP", "skill": "SWORDS", "amount": 1200 }
+    ]
+  }
+}

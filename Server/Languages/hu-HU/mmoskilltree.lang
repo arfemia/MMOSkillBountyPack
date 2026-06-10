@@ -1,0 +1,173 @@
+# MMOSkillBountyPack - bounty címek + ízelítő szövegek.
+# A kulcsok csupaszok; a Hytale I18nModule elé fűzi a fájlnevet, így mindegyik így
+# töltődik be: mmoskilltree.quest.<id>.title / .flavor, és a Bounty Board felület veszi át
+# (a BountyBoardPage konvenció szerint feloldja a quest.<id>.title / quest.<id>.flavor kulcsokat).
+# Adj hozzá egy <locale>/mmoskilltree.lang fájlt ugyanezekkel a kulcsokkal a fordításhoz; a hiányzó kulcsok
+# kulcsonként visszaesnek angolra.
+
+# --- Napi: ölés ---
+quest.bounty_swat_bats.title = Csapd Agyon a Denevéreket
+quest.bounty_swat_bats.flavor = A barlangok ma este nyüzsögnek a bőrszárnyúaktól. Ritkítsd a rajt, mielőtt fészket vernek.
+quest.bounty_clear_spiders.title = Tisztítsd Meg a Hálókat
+quest.bounty_clear_spiders.flavor = A pókok beszőtték a régi ösvényeket. Vágj utat, mielőtt valaki arccal belerohan egybe.
+quest.bounty_slay_zombies.title = Zombiritkítás
+quest.bounty_slay_zombies.flavor = A nyughatatlan holtak túl közel kóborolnak az úthoz. Tedd vissza őket a sírba.
+quest.bounty_cull_skeletons.title = Csörgesd Meg a Csontokat
+quest.bounty_cull_skeletons.flavor = A csontvázak minden alkonyatkor felkapaszkodnak a sírhalmokból. Küldd vissza őket darabokban.
+quest.bounty_hunt_wolves.title = Farkasvadászat
+quest.bounty_hunt_wolves.flavor = Egy falka túl merésszé vált a legelők közelében. Vadászd le őket, mielőtt a nyájak megfizetik az árát.
+quest.bounty_goblin_cleanup.title = Goblintakarítás
+quest.bounty_goblin_cleanup.flavor = A goblinok megint az ellátmányos szekereket fosztogatják. Takarítsd ki az odújukat, és kétszer is meggondolják.
+quest.bounty_cull_scaraks.title = Scarak Ritkítás
+quest.bounty_cull_scaraks.flavor = A scarakok özönlenek a dűnékből. Ritkítsd őket, amíg még szét vannak szóródva.
+quest.bounty_hunt_trork.title = Trork Vadászat
+quest.bounty_hunt_trork.flavor = A trork hadicsapatok gyülekeznek a dombokban. Törd meg a soraikat, mielőtt megszerveződnek.
+quest.bounty_bear_hunt.title = Medvevadászat
+quest.bounty_bear_hunt.flavor = A nagy medvék elfoglalták az északi ösvényt. Ez csak biztos kéznek való.
+quest.bounty_smash_ogres.title = Ogre Zúzás
+quest.bounty_smash_ogres.flavor = Az ogrék áttörik a cölöpkerítést. Verd le őket, mielőtt a falak is velük dőlnek.
+quest.bounty_hunt_risen.title = Fektesd Le a Feltámadtakat
+quest.bounty_hunt_risen.flavor = A holtak nem maradnak eltemetve. Tedd vissza a Feltámadtakat a földbe.
+
+# --- Napi: gyűjtés ---
+quest.bounty_mine_stone.title = Kőfejtő Munka
+quest.bounty_mine_stone.flavor = A kőműveseknek kő kell, méghozzá bőven. Csapj bele.
+quest.bounty_chop_wood.title = Vigyázz, Dől!
+quest.bounty_chop_wood.flavor = A fatelep kiürülőben van. Vágj ki, amennyit tudsz, és rakd magasra.
+quest.bounty_mine_iron.title = Vas a Kohónak
+quest.bounty_mine_iron.flavor = A kovácsok kifogytak a vasból. Hozz ércet a mély telérekből.
+quest.bounty_mine_adamantite.title = Adamantit Túra
+quest.bounty_mine_adamantite.flavor = Az adamantit csak a legmélyebb telérekben ül. Bányászd ki, ha mered a sötétet.
+quest.bounty_cache_copper.title = Rézkészlet
+quest.bounty_cache_copper.flavor = Az öntöde frissen olvasztott rudakra cseréli a nyers rezet. Hozz ércet, távozz fémmel.
+quest.bounty_cache_repairs.title = A Szakma Eszközei
+quest.bounty_cache_repairs.flavor = Törj követ a kőfejtőnek, és a kovács dob néhány javítókészletet a fáradozásodért.
+
+# --- Napi: edzés ---
+quest.bounty_train_woodcutting.title = Élesítsd a Fejszét
+quest.bounty_train_woodcutting.flavor = A gyakorlat gyorsabb vágást hoz. Töltsd a napot a favágásnál.
+quest.bounty_train_mining.title = Élesítsd a Csákányt
+quest.bounty_train_mining.flavor = Egy bányász értékét a csapásai mérik. Tedd bele az órákat.
+quest.bounty_train_excavation.title = Áss Mélyre
+quest.bounty_train_excavation.flavor = Az ásó kérgéhez nincs gyorsabb út. Mozgass meg egy kis földet.
+
+# --- Napi: szállítás ---
+quest.bounty_deliver_iron.title = Vasszállítás
+quest.bounty_deliver_iron.flavor = A szállásmester jól fizet a vasért, kérdés nélkül. Hozd el a táblához.
+quest.bounty_deliver_hides.title = Bőrszállítmány
+quest.bounty_deliver_hides.flavor = A tímároknak szekérszámra kell a könnyű bőr. Tedd le ide.
+quest.bounty_deliver_essence.title = Esszencia Megbízás
+quest.bounty_deliver_essence.flavor = A palackozott életesszencia vagyont ér. Add át a készletedet.
+quest.bounty_deliver_adamantite.title = Adamantit Megbízás
+quest.bounty_deliver_adamantite.flavor = A finomultabb kezek adamantitot akarnak, és csak a legjobb érc felel meg.
+
+# --- Heti ---
+quest.bounty_weekly_slay_zombies.title = A Végtelen Holtak
+quest.bounty_weekly_slay_zombies.flavor = Egy egész hét a nyughatatlan holtakkal. Tartsd a vonalat, amíg a sírok el nem csendesednek.
+quest.bounty_weekly_hunt_trork.title = Trork Hadicsapat
+quest.bounty_weekly_hunt_trork.flavor = Egy teljes hadicsapat ütött tábort. Apaszd el a héten át.
+quest.bounty_weekly_goblin_purge.title = Goblintisztogatás
+quest.bounty_weekly_goblin_purge.flavor = Az odú folyton szaporodik. Egy hét munkája kell, hogy igazán megritkítsd.
+quest.bounty_weekly_mine_adamantite.title = Adamantit Kvóta
+quest.bounty_weekly_mine_adamantite.flavor = Egy hetes szerződés a mély kohóknak. Töltsd ki a kvótát.
+quest.bounty_weekly_outlander.title = Outlander Fejvadászat
+quest.bounty_weekly_outlander.flavor = Az Outlanderek egész héten a határokat szorongatják. Szorítsd vissza őket.
+quest.bounty_weekly_burnt_legion.title = Az Égett Légió
+quest.bounty_weekly_burnt_legion.flavor = Szénné égett holtak menetelnek elő a hamuvidékről. Szórd szét a légiót egyszer s mindenkorra.
+quest.bounty_weekly_wraiths.title = Lidérvadászat
+quest.bounty_weekly_wraiths.flavor = A lidércek átsiklanak e világ és a túlvilág között. Űzz ki belőlük annyit, hogy számítson.
+quest.bounty_weekly_werewolves.title = Telihold Alatt
+quest.bounty_weekly_werewolves.flavor = A hold egész héten telinek látszik, és a falka elszabadul. Vess véget az átoknak.
+quest.bounty_weekly_golems.title = Gólemtörő
+quest.bounty_weekly_golems.flavor = Ősi gólemek ébredtek a romokban. Zúzd szét őket kőről kőre.
+quest.bounty_weekly_train_swords.title = Kardmesterség
+quest.bounty_weekly_train_swords.flavor = Egy hét gyakorlás választja el a katonát a kardmestertől. Eddz keményen.
+quest.bounty_weekly_train_defense.title = Tartsd a Vonalat
+quest.bounty_weekly_train_defense.flavor = A szívósságot ütésről ütésre szerzed meg. Töltsd a hetet azzal, hogy ütéseket fogadsz és állva maradsz.
+quest.bounty_weekly_sharks.title = Vérben Úszó Vizek
+quest.bounty_weekly_sharks.flavor = A pörölycápák etetőhellyé változtatták a hajózási útvonalakat. Ritkítsd a falkát, mielőtt a következő legénység eltűnik.
+quest.bounty_weekly_leviathan.title = A Leviatán
+quest.bounty_weekly_leviathan.flavor = Valami hatalmas mozog a hullámok alatt. Verd le a nagy bestiákat, mielőtt a flottát a mélybe rántják.
+
+# --- Hub / bevezetés (itt szállítjuk, hogy a szervergazdák átfogalmazhassák a bevezetőt anélkül, ---
+# --- hogy a jar-hoz nyúlnának; a jar megtartja ezeket az angol értékeket kulcsonkénti tartalékként). ---
+ui.hub.title = Bounty Mester és Kereskedő
+ui.hub.subtitle = Mit tehetek érted, kalandor?
+ui.hub.bounties_button = Bountyk Megtekintése
+ui.hub.bounties_hint = Vállalj forgó szerződéseket jutalmakért.
+ui.hub.shop_button = Token Shop
+ui.hub.shop_hint = Költsd el a bounty tokenjeidet.
+ui.hub.tutorial.step = {0} / {1}
+ui.hub.tutorial.next = Tovább
+ui.hub.tutorial.back = Vissza
+ui.hub.tutorial.finish = Értem!
+ui.hub.tutorial.welcome.title = Üdv, kalandor!
+ui.hub.tutorial.welcome.body = Én vagyok a Bounty Mester. Beszélj velem bármikor, ha szerződéseket vállalnál vagy kereskednél. Hadd mutassam meg a fortélyokat.
+ui.hub.tutorial.bounties.title = Bountyk
+ui.hub.tutorial.bounties.body = A bountyk forgó szerződések: ölj, gyűjts vagy szállíts jutalmakért. Fogadj el egyet, hogy bekerüljön a küldetésnaplódba, teljesítsd a célt, és bounty tokeneket plusz XP-t keresel. A tábla ütemezés szerint frissül, és néhány tokenért újradobhatsz egyetlen szerződést, ami nem tetszik.
+ui.hub.tutorial.shop.title = Token Shop
+ui.hub.tutorial.shop.body = Költsd el a megszerzett bounty tokeneket a Token Shopomban: XP boostok, tárgyak és még sok más. Néhány kiemelt ajánlat naponta forog, és újradobhatsz egy kiemelt ajánlatot, hogy másikra cseréld.
+
+# --- Bolti kirakatnevek + leírások (shop.<id>.title / .desc, konvenció szerint feloldva) ---
+shop.general.title = Token Shop
+shop.general.desc = Költsd el a bounty tokenjeidet boostokra, ládákra és kiemelt ajánlatokra.
+shop.xpexchange.title = XP Csere
+shop.xpexchange.desc = Cseréld a bounty tokeneket egy adag képesség-XP-re.
+
+# --- Bolti ajánlatok nevei + leírásai (az ajánlatok explicit titleKey/descriptionKey-t adnak meg -> ezek a kulcsok) ---
+shop.boost_mining.title = Bányász Roham (3x, 20p)
+shop.boost_mining.desc = Megháromszorozza a Bányászat XP-t 20 percre.
+shop.boost_all_skills.title = Összes Képesség Lendület (2x, 30p)
+shop.boost_all_skills.desc = Megduplázza az XP-szerzést minden képességben 30 percre.
+shop.boost_polearms.title = Vadász Hatótáv (3x Lándzsák, 20p)
+shop.boost_polearms.desc = Megháromszorozza a Lándzsák XP-t 20 percre.
+shop.cache_iron_ore.title = Láda Vasérc
+shop.cache_iron_ore.desc = Egy láda 32 Vasérc, egyenesen a leltáradba szállítva.
+shop.cache_adamantite_ore.title = Láda Adamantitérc
+shop.cache_adamantite_ore.desc = Egy láda 12 Adamantitérc. Csak tapasztalt harcosoknak.
+shop.cache_scaled_hide.title = Köteg Pikkelyes Bőr
+shop.cache_scaled_hide.desc = Egy köteg 16 Pikkelyes Bőr, a mély vadászokról lehúzva.
+shop.featured_cache_iron.title = Kiemelt: Vasláda
+shop.featured_cache_iron.desc = Egy kiemelt láda 48 Vasérc.
+shop.featured_cache_adamantite.title = Kiemelt: Adamantit Készlet
+shop.featured_cache_adamantite.desc = Egy kiemelt készlet 12 Adamantitérc.
+shop.featured_cache_essence.title = Kiemelt: Esszencia Fiolák
+shop.featured_cache_essence.desc = Egy kiemelt adag 64 Életesszencia.
+shop.featured_cache_hides.title = Kiemelt: Bőrköteg
+shop.featured_cache_hides.desc = Egy kiemelt köteg 48 Könnyű Bőr.
+shop.featured_cache_lobster.title = Kiemelt: Homárfogás
+shop.featured_cache_lobster.desc = Egy kiemelt fogás 24 Homár a heti zsákmányból.
+shop.featured_boost_combat.title = Harcos Éle (2x Kardok, 30p)
+shop.featured_boost_combat.desc = Megduplázza a Kardok XP-t 30 percre.
+shop.featured_boost_woodcutting.title = Favágó Tombolás (3x Favágás, 20p)
+shop.featured_boost_woodcutting.desc = Megháromszorozza a Favágás XP-t 20 percre.
+shop.xp_all_skills.title = Összes Képesség XP Csomag
+shop.xp_all_skills.desc = Egy prémium XP-csomag minden képességhez egyszerre.
+
+# --- A szétbontott / képességenkénti XP csomagok a konvenciós shop.<id>.title kulcsot tartják (id = shop_xp_<skill>) ---
+shop.shop_xp_mining.title = Bányászat XP Csomag
+shop.shop_xp_mining.desc = Alakítsd a bounty tokeneket egy adag Bányászat XP-vé.
+shop.shop_xp_woodcutting.title = Favágás XP Csomag
+shop.shop_xp_woodcutting.desc = Alakítsd a bounty tokeneket egy adag Favágás XP-vé.
+shop.shop_xp_excavation.title = Ásás XP Csomag
+shop.shop_xp_excavation.desc = Alakítsd a bounty tokeneket egy adag Ásás XP-vé.
+shop.shop_xp_swords.title = Kardok XP Csomag
+shop.shop_xp_swords.desc = Alakítsd a bounty tokeneket egy adag Kardok XP-vé.
+shop.shop_xp_defense.title = Blokkolás XP Csomag
+shop.shop_xp_defense.desc = Alakítsd a bounty tokeneket egy adag Blokkolás XP-vé.
+shop.shop_xp_combat_any.title = Veterán Összes Képesség XP
+shop.shop_xp_combat_any.desc = Egy harci veterán jutalma: egy adag XP minden képességben.
+
+# --- Valuták (currency.<id>.name, konvenció szerint feloldva; id = a fájlnév kisbetűsítve) ---
+currency.bounty_token.name = Bounty Token
+
+# --- Teljesítmények (achievement.<id>.title / .desc, konvenció szerint feloldva) ---
+achievement.bounty_board_daily_t1.title = Napi Szerződő
+achievement.bounty_board_daily_t2.title = Tapasztalt Szerződő
+achievement.bounty_board_daily_t3.title = Napi Centurió
+achievement.bounty_board_weekly_t1.title = Heti Megbízás
+achievement.bounty_board_weekly_t2.title = Heti Végrehajtó
+achievement.bounty_board_weekly_t3.title = Heti Legenda
+# Közös sorozat-leírás sablonok: {0} = az adott fokozat teljesítési darabszáma, az @amount (requiredAmount) értékből behelyettesítve.
+achievement.bounty_streak.daily.desc = Teljesíts {0} napi bountyt.
+achievement.bounty_streak.weekly.desc = Teljesíts {0} heti bountyt.

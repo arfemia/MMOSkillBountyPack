@@ -4,8 +4,6 @@
     "extends": "bounty_board_counter",
     "id": "bounty_board_weekly_t1",
     "params": { "board": "weekly" },
-    "displayName": "Weekly Warrant",
-    "description": "Complete 3 weekly bounties.",
     "requiredAmount": 3,
     "sortOrder": 60,
     "points": 20,

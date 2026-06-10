@@ -1,0 +1,19 @@
+{
+  "Name": "Featured_Cache_Iron",
+  "Payload": {
+    "id": "shop_featured_cache_iron",
+    "titleKey": "shop.featured_cache_iron.title",
+    "descriptionKey": "shop.featured_cache_iron.desc",
+    "currencyId": "bounty_token",
+    "cost": 150,
+    "icon": "Ore_Iron",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 2,
+    "limitPerDay": 3,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ore_Iron 48", "displayName": "48 Iron Ore" }
+    ]
+  }
+}

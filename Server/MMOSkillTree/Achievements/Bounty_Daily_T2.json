@@ -4,8 +4,6 @@
     "extends": "bounty_board_counter",
     "id": "bounty_board_daily_t2",
     "params": { "board": "daily" },
-    "displayName": "Seasoned Contractor",
-    "description": "Complete 25 daily bounties.",
     "requiredAmount": 25,
     "sortOrder": 51,
     "points": 40,

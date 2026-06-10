@@ -1,0 +1,173 @@
+# MMOSkillBountyPack - ödül başlıkları + atmosfer metni.
+# Anahtarlar çıplaktır; Hytale'in I18nModule dosya adını başa ekler, böylece her biri
+# mmoskilltree.quest.<id>.title / .flavor olarak yüklenir ve Ödül Tahtası arayüzü tarafından alınır
+# (BountyBoardPage, quest.<id>.title / quest.<id>.flavor anahtarlarını kurala göre çözer).
+# Çevirmek için aynı anahtarlarla bir <locale>/mmoskilltree.lang ekleyin; eksik anahtarlar
+# anahtar bazında İngilizceye geri döner.
+
+# --- Günlük: öldürme ---
+quest.bounty_swat_bats.title = Yarasaları Ez
+quest.bounty_swat_bats.flavor = Bu gece mağaralar deri kanatlılarla dolu. Bir yuva kurmadan önce sürüyü seyrelt.
+quest.bounty_clear_spiders.title = Ağları Temizle
+quest.bounty_clear_spiders.flavor = Örümcekler eski yolları örerek kapadı. Biri yüzü önde içine yürümeden önce bir geçit aç.
+quest.bounty_slay_zombies.title = Zombi İtlafı
+quest.bounty_slay_zombies.flavor = Huzursuz ölüler yola fazla yaklaşıyor. Onları geri yatır.
+quest.bounty_cull_skeletons.title = Kemikleri Şıngırdat
+quest.bounty_cull_skeletons.flavor = İskeletler her akşam karanlığında mezarlardan tırmanıyor. Onları parça parça geri gönder.
+quest.bounty_hunt_wolves.title = Kurt Avı
+quest.bounty_hunt_wolves.flavor = Bir sürü meraların yakınında fazla cesurlaştı. Sürüler bedelini ödemeden onları avla.
+quest.bounty_goblin_cleanup.title = Goblin Temizliği
+quest.bounty_goblin_cleanup.flavor = Goblinler yine erzak arabalarına saldırıyor. İni temizle, iki kez düşünsünler.
+quest.bounty_cull_scaraks.title = Scarak İtlafı
+quest.bounty_cull_scaraks.flavor = Scaraklar kumullardan kaynayıp çıkıyor. Hâlâ dağınıkken onları seyrelt.
+quest.bounty_hunt_trork.title = Trork Avı
+quest.bounty_hunt_trork.flavor = Trork savaş takımları tepelerde toplanıyor. Örgütlenmeden önce sayılarını kır.
+quest.bounty_bear_hunt.title = Ayı Avı
+quest.bounty_bear_hunt.flavor = Büyük ayılar kuzey patikasını ele geçirdi. Bu yalnızca sağlam ellere göre.
+quest.bounty_smash_ogres.title = Devleri Ezme
+quest.bounty_smash_ogres.flavor = Devler palisadları parçalıyor. Duvarlar onlarla birlikte gelmeden önce indir.
+quest.bounty_hunt_risen.title = Dirilenleri Yatır
+quest.bounty_hunt_risen.flavor = Ölüler gömülü kalmayacak. Dirilenleri toprağa geri koy.
+
+# --- Günlük: toplama ---
+quest.bounty_mine_stone.title = Taş Ocağı İşi
+quest.bounty_mine_stone.flavor = Duvarcıların taşa, hem de bolca taşa ihtiyacı var. Kazmaya koyul.
+quest.bounty_chop_wood.title = Devrilen Ağaç
+quest.bounty_chop_wood.flavor = Kereste deposu tükeniyor. Kesebildiğini kes ve yüksekçe istifle.
+quest.bounty_mine_iron.title = Ocak İçin Demir
+quest.bounty_mine_iron.flavor = Demircilerin demiri kalmadı. Derin damarlardan cevher getir.
+quest.bounty_mine_adamantite.title = Adamantit Seferi
+quest.bounty_mine_adamantite.flavor = Adamantit yalnızca en derin damarlarda bulunur. Karanlığa cesaret edersen çıkar.
+quest.bounty_cache_copper.title = Bakır Stoku
+quest.bounty_cache_copper.flavor = Dökümhane ham bakır karşılığında taze eritilmiş külçe verir. Cevher getir, metalle ayrıl.
+quest.bounty_cache_repairs.title = İşin Aletleri
+quest.bounty_cache_repairs.flavor = Taş ocağı için taş kır, demirci de zahmetin karşılığında birkaç tamir kiti ekler.
+
+# --- Günlük: eğitim ---
+quest.bounty_train_woodcutting.title = Baltayı Bile
+quest.bounty_train_woodcutting.flavor = Pratik daha hızlı bir kesiş sağlar. Günü ağaç sırasında geçir.
+quest.bounty_train_mining.title = Kazmayı Çalıştır
+quest.bounty_train_mining.flavor = Bir madencinin değeri vuruşlarıyla ölçülür. Saatlerini harca.
+quest.bounty_train_excavation.title = Derine Kaz
+quest.bounty_train_excavation.flavor = Bir kazıcının nasırlarına kestirme yol yoktur. Biraz toprak kaldır.
+
+# --- Günlük: teslimat ---
+quest.bounty_deliver_iron.title = Demir Teslimatı
+quest.bounty_deliver_iron.flavor = Levazımcı demir için iyi para öder, soru sormadan. Tahtaya getir.
+quest.bounty_deliver_hides.title = Post Taşıma
+quest.bounty_deliver_hides.flavor = Tabakçılar araba dolusu hafif post istiyor. Onları buraya bırak.
+quest.bounty_deliver_essence.title = Öz Sevkiyatı
+quest.bounty_deliver_essence.flavor = Şişelenmiş yaşam özü bir servet eder. Stokunu teslim et.
+quest.bounty_deliver_adamantite.title = Adamantit Sevkiyatı
+quest.bounty_deliver_adamantite.flavor = Usta eller adamantit ister ve yalnızca en iyi cevher işe yarar.
+
+# --- Haftalık ---
+quest.bounty_weekly_slay_zombies.title = Bitmek Bilmeyen Ölüler
+quest.bounty_weekly_slay_zombies.flavor = Bir haftalık huzursuz ölü. Mezarlar sessizleşene kadar hattı tut.
+quest.bounty_weekly_hunt_trork.title = Trork Savaş Takımı
+quest.bounty_weekly_hunt_trork.flavor = Tam bir savaş takımı kamp kurdu. Hafta boyunca onu yontup azalt.
+quest.bounty_weekly_goblin_purge.title = Goblin Tasfiyesi
+quest.bounty_weekly_goblin_purge.flavor = İn üremeye devam ediyor. Gerçekten seyreltmek bir haftalık iş ister.
+quest.bounty_weekly_mine_adamantite.title = Adamantit Kotası
+quest.bounty_weekly_mine_adamantite.flavor = Derin ocaklar için bir haftalık sözleşme. Kotayı doldur.
+quest.bounty_weekly_outlander.title = Outlander Ödülü
+quest.bounty_weekly_outlander.flavor = Outlanderlar hafta boyunca sınırları zorluyor. Onları geri püskürt.
+quest.bounty_weekly_burnt_legion.title = Yanık Lejyon
+quest.bounty_weekly_burnt_legion.flavor = Kavrulmuş ölüler kül topraklarından yürüyor. Lejyonu temelli dağıt.
+quest.bounty_weekly_wraiths.title = Hayalet Avı
+quest.bounty_weekly_wraiths.flavor = Hayaletler bu dünya ile öteki arasında kayıp gidiyor. Fark yaratacak kadarını kov.
+quest.bounty_weekly_werewolves.title = Dolunay Altında
+quest.bounty_weekly_werewolves.flavor = Ay hafta boyunca dolunay ve sürü çılgına dönüyor. Laneti sona erdir.
+quest.bounty_weekly_golems.title = Golem Kırıcı
+quest.bounty_weekly_golems.flavor = Antik golemler harabelerde uyandı. Onları taş taş parçala.
+quest.bounty_weekly_train_swords.title = Kılıç Ustalığı
+quest.bounty_weekly_train_swords.flavor = Bir haftalık talim, bir askeri kılıç ustasından ayırır. Sıkı çalış.
+quest.bounty_weekly_train_defense.title = Hattı Tut
+quest.bounty_weekly_train_defense.flavor = Dayanıklılık darbe darbe kazanılır. Haftayı darbe alarak ve sağlam durarak geçir.
+quest.bounty_weekly_sharks.title = Kanlı Sular
+quest.bounty_weekly_sharks.flavor = Çekiç başlı köpekbalıkları nakliye yollarını av sahasına çevirdi. Bir sonraki mürettebat kaybolmadan sürüyü seyrelt.
+quest.bounty_weekly_leviathan.title = Leviathan
+quest.bounty_weekly_leviathan.flavor = Dalgaların altında devasa bir şey kımıldıyor. Filoyu derine çekmeden önce büyük canavarları indir.
+
+# --- Karşılama / başlangıç (sunucu sahipleri jar'a dokunmadan başlangıç metnini yeniden yazabilsin diye ---
+# --- burada gönderilir; jar bu İngilizce değerleri anahtar bazında geri dönüş olarak tutar). ---
+ui.hub.title = Ödül Ustası & Tüccar
+ui.hub.subtitle = Senin için ne yapabilirim, maceracı?
+ui.hub.bounties_button = Ödülleri Görüntüle
+ui.hub.bounties_hint = Ödüller için rotasyonlu sözleşmeler üstlen.
+ui.hub.shop_button = Jeton Mağazası
+ui.hub.shop_hint = Ödül jetonlarını harca.
+ui.hub.tutorial.step = {0} / {1}
+ui.hub.tutorial.next = İleri
+ui.hub.tutorial.back = Geri
+ui.hub.tutorial.finish = Anladım!
+ui.hub.tutorial.welcome.title = Hoş geldin, maceracı!
+ui.hub.tutorial.welcome.body = Ben Ödül Ustasıyım. Sözleşme üstlenmek ve ticaret yapmak için istediğin zaman benimle konuş. Sana işin püf noktalarını göstereyim.
+ui.hub.tutorial.bounties.title = Ödüller
+ui.hub.tutorial.bounties.body = Ödüller rotasyonlu sözleşmelerdir: ödüller için öldür, topla ya da teslim et. Birini kabul ederek görev günlüğüne ekle, hedefi tamamla; ödül jetonları ile birlikte XP kazanırsın. Tahta bir programa göre yenilenir ve beğenmediğin tek bir sözleşmeyi birkaç jeton karşılığında yeniden çevirebilirsin.
+ui.hub.tutorial.shop.title = Jeton Mağazası
+ui.hub.tutorial.shop.body = Kazandığın ödül jetonlarını Jeton Mağazamda harca: XP boostları, eşyalar ve daha fazlası. Bazı öne çıkan teklifler her gün rotasyona girer ve öne çıkan bir teklifi başkasıyla değiştirmek için yeniden çevirebilirsin.
+
+# --- Mağaza vitrin adları + açıklamaları (shop.<id>.title / .desc, kurala göre çözülür) ---
+shop.general.title = Jeton Mağazası
+shop.general.desc = Ödül jetonlarını boostlara, kasalara ve öne çıkan fırsatlara harca.
+shop.xpexchange.title = XP Takası
+shop.xpexchange.desc = Ödül jetonlarını bir patlama yetenek XP'siyle takas et.
+
+# --- Mağaza teklifi adları + açıklamaları (teklifler açık titleKey/descriptionKey ayarlar -> bu anahtarlar) ---
+shop.boost_mining.title = Madencilik Hücumu (3x, 20dk)
+shop.boost_mining.desc = 20 dakika boyunca Madencilik XP'sini üçe katlar.
+shop.boost_all_skills.title = Tüm Yetenek Dalgası (2x, 30dk)
+shop.boost_all_skills.desc = 30 dakika boyunca her yetenekte XP kazancını ikiye katlar.
+shop.boost_polearms.title = Avcının Erişimi (3x Mızraklar, 20dk)
+shop.boost_polearms.desc = 20 dakika boyunca Mızraklar XP'sini üçe katlar.
+shop.cache_iron_ore.title = Demir Cevheri Sandığı
+shop.cache_iron_ore.desc = 32 Demir Cevherinden oluşan bir sandık, doğrudan envanterine teslim edilir.
+shop.cache_adamantite_ore.title = Adamantit Cevheri Sandığı
+shop.cache_adamantite_ore.desc = 12 Adamantit Cevherinden oluşan bir sandık. Yalnızca deneyimli dövüşçüler için.
+shop.cache_scaled_hide.title = Pullu Post Demeti
+shop.cache_scaled_hide.desc = Derin avcılardan soyulmuş 16 Pullu Posttan oluşan bir demet.
+shop.featured_cache_iron.title = Öne Çıkan: Demir Sandığı
+shop.featured_cache_iron.desc = 48 Demir Cevherinden oluşan öne çıkan bir sandık.
+shop.featured_cache_adamantite.title = Öne Çıkan: Adamantit Zulası
+shop.featured_cache_adamantite.desc = 12 Adamantit Cevherinden oluşan öne çıkan bir zula.
+shop.featured_cache_essence.title = Öne Çıkan: Öz Şişeleri
+shop.featured_cache_essence.desc = 64 Yaşam Özünden oluşan öne çıkan bir parti.
+shop.featured_cache_hides.title = Öne Çıkan: Post Demeti
+shop.featured_cache_hides.desc = 48 Hafif Posttan oluşan öne çıkan bir demet.
+shop.featured_cache_lobster.title = Öne Çıkan: Istakoz Avı
+shop.featured_cache_lobster.desc = Haftanın avından 24 Istakozdan oluşan öne çıkan bir av.
+shop.featured_boost_combat.title = Savaşçının Keskinliği (2x Kılıçlar, 30dk)
+shop.featured_boost_combat.desc = 30 dakika boyunca Kılıçlar XP'sini ikiye katlar.
+shop.featured_boost_woodcutting.title = Oduncunun Çılgınlığı (3x Odunculuk, 20dk)
+shop.featured_boost_woodcutting.desc = 20 dakika boyunca Odunculuk XP'sini üçe katlar.
+shop.xp_all_skills.title = Tüm Yetenek XP Paketi
+shop.xp_all_skills.desc = Her yetenek için aynı anda premium bir XP paketi.
+
+# --- Dağıtılmış/yetenek bazlı XP paketleri kurala göre shop.<id>.title anahtarını korur (id = shop_xp_<skill>) ---
+shop.shop_xp_mining.title = Madencilik XP Paketi
+shop.shop_xp_mining.desc = Ödül jetonlarını bir patlama Madencilik XP'sine çevir.
+shop.shop_xp_woodcutting.title = Odunculuk XP Paketi
+shop.shop_xp_woodcutting.desc = Ödül jetonlarını bir patlama Odunculuk XP'sine çevir.
+shop.shop_xp_excavation.title = Kazı XP Paketi
+shop.shop_xp_excavation.desc = Ödül jetonlarını bir patlama Kazı XP'sine çevir.
+shop.shop_xp_swords.title = Kılıçlar XP Paketi
+shop.shop_xp_swords.desc = Ödül jetonlarını bir patlama Kılıçlar XP'sine çevir.
+shop.shop_xp_defense.title = Blok XP Paketi
+shop.shop_xp_defense.desc = Ödül jetonlarını bir patlama Blok XP'sine çevir.
+shop.shop_xp_combat_any.title = Gazinin Tüm Yetenek XP'si
+shop.shop_xp_combat_any.desc = Bir savaş gazisinin ödülü: her yetenekte bir patlama XP.
+
+# --- Para birimleri (currency.<id>.name, kurala göre çözülür; id = küçük harfli dosya adı) ---
+currency.bounty_token.name = Ödül Jetonu
+
+# --- Başarımlar (achievement.<id>.title / .desc, kurala göre çözülür) ---
+achievement.bounty_board_daily_t1.title = Günlük Sözleşmeci
+achievement.bounty_board_daily_t2.title = Deneyimli Sözleşmeci
+achievement.bounty_board_daily_t3.title = Günlük Yüzbaşı
+achievement.bounty_board_weekly_t1.title = Haftalık Yetki
+achievement.bounty_board_weekly_t2.title = Haftalık İcracı
+achievement.bounty_board_weekly_t3.title = Haftalık Efsane
+# Paylaşılan seri açıklama şablonları: {0} = kademenin tamamlama sayısı, @amount (requiredAmount) üzerinden eklenir.
+achievement.bounty_streak.daily.desc = {0} günlük ödül avı tamamla.
+achievement.bounty_streak.weekly.desc = {0} haftalık ödül avı tamamla.

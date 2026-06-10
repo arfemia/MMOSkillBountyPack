@@ -3,6 +3,7 @@
   "Payload": {
     "extends": "bounty_xp_standard",
     "id": "bounty_train_mining",
+    "requiresSkills": { "MINING": 1 },
     "params": { "boards": "daily", "difficulty": "normal", "weight": "1", "target": "MINING" },
     "objectiveOverrides": { "main": { "amount": 3000 } },
     "rewards": [

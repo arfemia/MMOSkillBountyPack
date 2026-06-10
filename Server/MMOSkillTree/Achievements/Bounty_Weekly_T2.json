@@ -4,8 +4,6 @@
     "extends": "bounty_board_counter",
     "id": "bounty_board_weekly_t2",
     "params": { "board": "weekly" },
-    "displayName": "Weekly Enforcer",
-    "description": "Complete 15 weekly bounties.",
     "requiredAmount": 15,
     "sortOrder": 61,
     "points": 60,

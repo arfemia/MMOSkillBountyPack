@@ -6,5 +6,7 @@
   "AchievementTemplates": "add",
   "Currencies": "add",
   "BountyBoards": "add",
-  "TokenShop": "add"
+  "TokenShop": "add",
+  "ShopPools": "add",
+  "Shops": "add"
 }

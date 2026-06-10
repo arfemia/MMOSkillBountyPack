@@ -1,0 +1,15 @@
+# MMOSkillBountyPack - per-board / shop NPC role display names + F-interact hints.
+# Hytale's I18nModule prepends the filename, so each key loads as npcs.<key>
+# (e.g. npcs.MMO_Bounty_Daily.name). The role JSONs reference these via their
+# NameTranslationKey / SetInteractable Hint. Add a <locale>/npcs.lang with the
+# same keys to translate; missing keys fall back to the raw key text.
+# The hub NPC (MMO_Hub) + its keys now ship in the mod jar, not this pack.
+
+MMO_Bounty_Daily.name = Daily Bounties
+MMO_Bounty_Weekly.name = Weekly Bounties
+MMO_Token_Trader.name = Token Trader
+MMO_Shop_General.name = Token Shop
+MMO_Shop_Xpexchange.name = XP Exchange
+
+MMO_Board.hint = Press [{key}] to view bounties
+MMO_Shop.hint = Press [{key}] to trade tokens

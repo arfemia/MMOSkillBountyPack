@@ -1,0 +1,12 @@
+{
+  "Name": "General",
+  "Payload": {
+    "titleKey": "shop.general.title",
+    "descriptionKey": "shop.general.desc",
+    "icon": "Ore_Iron",
+    "order": 0,
+    "enabled": true,
+    "requiresFeatures": [],
+    "requiresSkills": {}
+  }
+}

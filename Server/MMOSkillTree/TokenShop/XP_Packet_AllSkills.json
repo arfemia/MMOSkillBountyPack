@@ -1,0 +1,15 @@
+{
+  "Name": "XP_Packet_AllSkills",
+  "Payload": {
+    "id": "shop_xp_all_skills",
+    "titleKey": "shop.xp_all_skills.title",
+    "descriptionKey": "shop.xp_all_skills.desc",
+    "icon": "Ingredient_Crystal_Purple",
+    "category": "conversion",
+    "order": 46,
+    "shop": "xpexchange",
+    "cost": { "currencies": { "bounty_token": 500, "life_essence": 300 } },
+    "limitPerDay": 1,
+    "rewards": [ { "type": "XP", "skill": "ALL", "amount": 2500 } ]
+  }
+}

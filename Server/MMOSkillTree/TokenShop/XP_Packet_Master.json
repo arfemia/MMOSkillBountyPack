@@ -1,0 +1,16 @@
+{
+  "Name": "XP_Packet_Master",
+  "Payload": {
+    "forEachSkill": true,
+    "id": "shop_xp_master_{{SKILL}}",
+    "displayName": "{{SKILL_NAME}} Mastery",
+    "category": "conversion",
+    "order": 44,
+    "shop": "xpexchange",
+    "groupKey": "{{SKILL}}",
+    "requireSelfLevel": 60,
+    "cost": { "currencies": { "bounty_token": 340, "life_essence": 120 } },
+    "limitPerDay": 1,
+    "rewards": [{ "type": "XP", "skill": "{{SKILL}}", "amount": 50000 }]
+  }
+}

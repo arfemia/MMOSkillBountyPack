@@ -1,0 +1,20 @@
+{
+  "Name": "Featured_Boost_Woodcutting",
+  "Payload": {
+    "id": "shop_featured_boost_woodcutting",
+    "titleKey": "shop.featured_boost_woodcutting.title",
+    "descriptionKey": "shop.featured_boost_woodcutting.desc",
+    "currencyId": "bounty_token",
+    "cost": 130,
+    "icon": "Tool_Hatchet_Crude",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 2,
+    "limitPerDay": 2,
+    "requirements": { "requiresSkills": { "WOODCUTTING": 1 } },
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "WOODCUTTING", "multiplier": 3.0, "durationMinutes": 20, "displayName": "Woodcutting XP x3 for 20 minutes" }
+    ]
+  }
+}

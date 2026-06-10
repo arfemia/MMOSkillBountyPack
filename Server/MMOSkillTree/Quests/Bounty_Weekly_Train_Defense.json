@@ -3,6 +3,7 @@
   "Payload": {
     "extends": "bounty_xp_standard",
     "id": "bounty_weekly_train_defense",
+    "requiresSkills": { "DEFENSE": 1 },
     "params": { "boards": "weekly", "difficulty": "normal", "weight": "1", "target": "DEFENSE" },
     "objectiveOverrides": { "main": { "amount": 18000 } },
     "rewards": [

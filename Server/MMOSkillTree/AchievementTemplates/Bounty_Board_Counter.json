@@ -5,6 +5,8 @@
     "target": "{{board}}",
     "matchMode": "EXACT",
     "category": "quests",
-    "subcategory": "bounties"
+    "subcategory": "bounties",
+    "descriptionKey": "achievement.bounty_streak.{{board}}.desc",
+    "descriptionArgs": ["@amount"]
   }
 }

@@ -5,12 +5,12 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": ["Furniture.Signs"],
-  "Icon": "Icons/ItemsGenerated/Furniture_Crude_Sign.png",
+  "Icon": "Icons/ItemsGenerated/Lobby_Wall_Poster01.png",
   "MaxStack": 25,
   "IconProperties": {
     "Rotation": [22.5, 45, 22.5],
-    "Scale": 0.58823,
-    "Translation": [8.4, -17.4]
+    "Scale": 1.1,
+    "Translation": [11.0, -19.0]
   },
   "Interactions": {
     "Primary": "Block_Primary",
@@ -18,13 +18,13 @@
   },
 
   "BlockType": {
-    "BlockParticleSetId": "Wood",
-    "BlockSoundSetId": "Wood",
-    "PhysicalMaterialId": "Wood",
-    "CustomModel": "Blocks/Decorative_Sets/Crude/Sign.blockymodel",
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Cloth",
+    "PhysicalMaterialId": "Wool",
+    "CustomModel": "Blocks/Hypixel/Lobby/Poster_Wall.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Crude/Sign_Texture.png",
+        "Texture": "Blocks/Hypixel/Lobby/Poster_Wall_01.png",
         "Weight": 1
       }
     ],
@@ -40,14 +40,9 @@
     "HitboxType": "Sign_Wall",
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#63412c",
+    "ParticleColor": "#b58b4c",
     "Support": {
-      "East": [
-        {
-          "FaceType": "Full"
-        }
-      ],
-      "West": [
+      "North": [
         {
           "FaceType": "Full"
         }
@@ -58,11 +53,11 @@
     "Interactions": {
       "Use": "MMO_BountyBoard_Open"
     },
-    "TextureComputedColor": "#674429"
+    "TextureComputedColor": "#b58b4c"
   },
   "Tags": {
     "Type": ["Furniture"],
     "Family": ["MMOSkillTree"]
   },
-  "ItemSoundSetId": "ISS_Blocks_Wood"
+  "ItemSoundSetId": "ISS_Items_Paper"
 }

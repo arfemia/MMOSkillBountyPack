@@ -12,7 +12,7 @@
       { "filter": { "difficulty": "hard" } },
       { "filter": { "difficulty": "hard" }, "optional": true }
     ],
-    "rerollCost": { "currency": "bounty_token", "amount": 100 },
+    "rerollCost": { "currency": "bounty_token", "amount": 100, "maxPerPeriod": 2 },
     "requiresFeatures": []
   }
 }

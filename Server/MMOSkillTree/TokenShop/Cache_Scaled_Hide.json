@@ -1,0 +1,18 @@
+{
+  "Name": "Cache_Scaled_Hide",
+  "Payload": {
+    "id": "shop_cache_scaled_hide",
+    "titleKey": "shop.cache_scaled_hide.title",
+    "descriptionKey": "shop.cache_scaled_hide.desc",
+    "currencyId": "bounty_token",
+    "cost": 140,
+    "icon": "Ingredient_Hide_Scaled",
+    "category": "items",
+    "order": 14,
+    "shop": "general",
+    "limitPerDay": 5,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Hide_Scaled 16", "displayName": "16 Scaled Hide" }
+    ]
+  }
+}

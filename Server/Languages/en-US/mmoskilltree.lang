@@ -1,0 +1,173 @@
+# MMOSkillBountyPack - bounty titles + flavor text.
+# Keys are bare; Hytale's I18nModule prepends the filename, so each loads as
+# mmoskilltree.quest.<id>.title / .flavor and is picked up by the Bounty Board UI
+# (BountyBoardPage resolves quest.<id>.title / quest.<id>.flavor by convention).
+# Add a <locale>/mmoskilltree.lang with the same keys to translate; missing keys
+# fall back to English per key.
+
+# --- Daily: kill ---
+quest.bounty_swat_bats.title = Swat the Bats
+quest.bounty_swat_bats.flavor = The caves are thick with leatherwings tonight. Thin the swarm before they settle into a nest.
+quest.bounty_clear_spiders.title = Clear the Webs
+quest.bounty_clear_spiders.flavor = Spiders have spun the old paths shut. Cut a way through before someone walks into one face-first.
+quest.bounty_slay_zombies.title = Zombie Cull
+quest.bounty_slay_zombies.flavor = The restless dead are wandering too close to the road. Put them back down.
+quest.bounty_cull_skeletons.title = Rattle the Bones
+quest.bounty_cull_skeletons.flavor = Skeletons claw up from the barrows every dusk. Send them back in pieces.
+quest.bounty_hunt_wolves.title = Wolf Hunt
+quest.bounty_hunt_wolves.flavor = A pack has grown bold near the pastures. Hunt them before the herds pay the price.
+quest.bounty_goblin_cleanup.title = Goblin Cleanup
+quest.bounty_goblin_cleanup.flavor = Goblins are raiding the supply carts again. Clear out the warren and they will think twice.
+quest.bounty_cull_scaraks.title = Scarak Cull
+quest.bounty_cull_scaraks.flavor = Scaraks are boiling up from the dunes. Cull them while they are still scattered.
+quest.bounty_hunt_trork.title = Trork Hunt
+quest.bounty_hunt_trork.flavor = Trork warbands are massing in the hills. Break their numbers before they organize.
+quest.bounty_bear_hunt.title = Bear Hunt
+quest.bounty_bear_hunt.flavor = Great bears have claimed the north trail. This one is for a steady hand only.
+quest.bounty_smash_ogres.title = Ogre Smash
+quest.bounty_smash_ogres.flavor = Ogres are tearing through the palisades. Bring them down before the walls come with them.
+quest.bounty_hunt_risen.title = Lay the Risen
+quest.bounty_hunt_risen.flavor = The dead will not stay buried. Put the Risen back in the ground.
+
+# --- Daily: gather ---
+quest.bounty_mine_stone.title = Quarry Work
+quest.bounty_mine_stone.flavor = The masons need stone, and plenty of it. Get swinging.
+quest.bounty_chop_wood.title = Timber
+quest.bounty_chop_wood.flavor = The lumber yard is running dry. Fell what you can and stack it high.
+quest.bounty_mine_iron.title = Iron for the Forge
+quest.bounty_mine_iron.flavor = The smiths are out of iron. Bring ore back from the deep seams.
+quest.bounty_mine_adamantite.title = Adamantite Run
+quest.bounty_mine_adamantite.flavor = Adamantite only sits in the deepest veins. Mine it if you dare the dark.
+quest.bounty_cache_copper.title = Copper Cache
+quest.bounty_cache_copper.flavor = The foundry will trade fresh-smelted bars for raw copper. Bring ore, leave with metal.
+quest.bounty_cache_repairs.title = Tools of the Trade
+quest.bounty_cache_repairs.flavor = Break stone for the quarry and the smith throws in a few repair kits for your trouble.
+
+# --- Daily: train ---
+quest.bounty_train_woodcutting.title = Sharpen the Axe
+quest.bounty_train_woodcutting.flavor = Practice makes a faster cut. Spend the day at the woodline.
+quest.bounty_train_mining.title = Drill the Pick
+quest.bounty_train_mining.flavor = A miner's worth is measured in swings. Put in the hours.
+quest.bounty_train_excavation.title = Dig Deep
+quest.bounty_train_excavation.flavor = There is no shortcut to a digger's calluses. Move some earth.
+
+# --- Daily: deliver ---
+quest.bounty_deliver_iron.title = Iron Delivery
+quest.bounty_deliver_iron.flavor = The quartermaster pays well for iron, no questions asked. Bring it to the board.
+quest.bounty_deliver_hides.title = Hide Haul
+quest.bounty_deliver_hides.flavor = The tanners need light hides by the cartload. Drop them here.
+quest.bounty_deliver_essence.title = Essence Consignment
+quest.bounty_deliver_essence.flavor = Bottled life essence fetches a fortune. Hand over your stock.
+quest.bounty_deliver_adamantite.title = Adamantite Consignment
+quest.bounty_deliver_adamantite.flavor = Refined hands want adamantite, and only the best ore will do.
+
+# --- Weekly ---
+quest.bounty_weekly_slay_zombies.title = The Endless Dead
+quest.bounty_weekly_slay_zombies.flavor = A whole week of restless dead. Hold the line until the graves go quiet.
+quest.bounty_weekly_hunt_trork.title = Trork Warband
+quest.bounty_weekly_hunt_trork.flavor = A full warband has set up camp. Whittle it down over the week.
+quest.bounty_weekly_goblin_purge.title = Goblin Purge
+quest.bounty_weekly_goblin_purge.flavor = The warren keeps breeding. It takes a week's work to truly thin it.
+quest.bounty_weekly_mine_adamantite.title = Adamantite Quota
+quest.bounty_weekly_mine_adamantite.flavor = A week-long contract for the deep forges. Fill the quota.
+quest.bounty_weekly_outlander.title = Outlander Bounty
+quest.bounty_weekly_outlander.flavor = Outlanders are pressing the borders all week. Drive them back.
+quest.bounty_weekly_burnt_legion.title = The Burnt Legion
+quest.bounty_weekly_burnt_legion.flavor = Charred dead march out of the ashlands. Scatter the legion for good.
+quest.bounty_weekly_wraiths.title = Wraith Hunt
+quest.bounty_weekly_wraiths.flavor = Wraiths slip between this world and the next. Banish enough of them to make a difference.
+quest.bounty_weekly_werewolves.title = Under the Full Moon
+quest.bounty_weekly_werewolves.flavor = The moon is full all week and the pack runs wild. End the curse.
+quest.bounty_weekly_golems.title = Golem Breaker
+quest.bounty_weekly_golems.flavor = Ancient golems have woken in the ruins. Shatter them stone by stone.
+quest.bounty_weekly_train_swords.title = Sword Mastery
+quest.bounty_weekly_train_swords.flavor = A week of drills separates a soldier from a swordmaster. Train hard.
+quest.bounty_weekly_train_defense.title = Hold the Line
+quest.bounty_weekly_train_defense.flavor = Toughness is earned blow by blow. Spend the week taking hits and standing firm.
+quest.bounty_weekly_sharks.title = Bloodied Waters
+quest.bounty_weekly_sharks.flavor = Hammerheads have turned the shipping lanes into a feeding ground. Thin the pack before the next crew goes missing.
+quest.bounty_weekly_leviathan.title = The Leviathan
+quest.bounty_weekly_leviathan.flavor = Something vast moves beneath the swells. Bring down the great beasts before they drag the fleet under.
+
+# --- Hub / onboarding (shipped here so server owners can reword onboarding without ---
+# --- touching the jar; the jar keeps these English values as a per-key fallback). ---
+ui.hub.title = Bounty Master & Trader
+ui.hub.subtitle = What can I do for you, adventurer?
+ui.hub.bounties_button = View Bounties
+ui.hub.bounties_hint = Take rotating contracts for rewards.
+ui.hub.shop_button = Token Shop
+ui.hub.shop_hint = Spend your bounty tokens.
+ui.hub.tutorial.step = {0} / {1}
+ui.hub.tutorial.next = Next
+ui.hub.tutorial.back = Back
+ui.hub.tutorial.finish = Got it!
+ui.hub.tutorial.welcome.title = Welcome, adventurer!
+ui.hub.tutorial.welcome.body = I'm the Bounty Master. Talk to me any time to take on contracts and trade. Let me show you the ropes.
+ui.hub.tutorial.bounties.title = Bounties
+ui.hub.tutorial.bounties.body = Bounties are rotating contracts - slay, gather, or deliver for rewards. Accept one to add it to your quest log, finish the objective, and you earn bounty tokens plus XP. The board refreshes on a schedule, and you can reroll a single contract you don't like for a few tokens.
+ui.hub.tutorial.shop.title = Token Shop
+ui.hub.tutorial.shop.body = Spend the bounty tokens you earn at my Token Shop - XP boosts, items, and more. Some featured offers rotate daily, and you can reroll a featured offer to swap it for another.
+
+# --- Shop storefront names + descriptions (shop.<id>.title / .desc, resolved by convention) ---
+shop.general.title = Token Shop
+shop.general.desc = Spend your bounty tokens on boosts, crates, and featured deals.
+shop.xpexchange.title = XP Exchange
+shop.xpexchange.desc = Trade bounty tokens for a burst of skill XP.
+
+# --- Shop offer names + descriptions (offers set explicit titleKey/descriptionKey -> these keys) ---
+shop.boost_mining.title = Mining Rush (3x, 20m)
+shop.boost_mining.desc = Triples Mining XP for 20 minutes.
+shop.boost_all_skills.title = All-Skills Surge (2x, 30m)
+shop.boost_all_skills.desc = Doubles XP gain across every skill for 30 minutes.
+shop.boost_polearms.title = Hunter's Reach (3x Polearms, 20m)
+shop.boost_polearms.desc = Triples Polearms XP for 20 minutes.
+shop.cache_iron_ore.title = Crate of Iron Ore
+shop.cache_iron_ore.desc = A crate of 32 Iron Ore, delivered straight to your inventory.
+shop.cache_adamantite_ore.title = Crate of Adamantite Ore
+shop.cache_adamantite_ore.desc = A crate of 12 Adamantite Ore. For seasoned fighters only.
+shop.cache_scaled_hide.title = Bundle of Scaled Hide
+shop.cache_scaled_hide.desc = A bundle of 16 Scaled Hide, stripped from the deep hunters.
+shop.featured_cache_iron.title = Featured: Iron Crate
+shop.featured_cache_iron.desc = A featured crate of 48 Iron Ore.
+shop.featured_cache_adamantite.title = Featured: Adamantite Stash
+shop.featured_cache_adamantite.desc = A featured stash of 12 Adamantite Ore.
+shop.featured_cache_essence.title = Featured: Essence Vials
+shop.featured_cache_essence.desc = A featured batch of 64 Life Essence.
+shop.featured_cache_hides.title = Featured: Hide Bundle
+shop.featured_cache_hides.desc = A featured bundle of 48 Light Hide.
+shop.featured_cache_lobster.title = Featured: Lobster Haul
+shop.featured_cache_lobster.desc = A featured haul of 24 Lobster from the week's catch.
+shop.featured_boost_combat.title = Warrior's Edge (2x Swords, 30m)
+shop.featured_boost_combat.desc = Doubles Swords XP for 30 minutes.
+shop.featured_boost_woodcutting.title = Lumberjack's Frenzy (3x Woodcutting, 20m)
+shop.featured_boost_woodcutting.desc = Triples Woodcutting XP for 20 minutes.
+shop.xp_all_skills.title = All-Skills XP Bundle
+shop.xp_all_skills.desc = A premium bundle of XP for every skill at once.
+
+# --- Fanned/per-skill XP packets keep the by-convention shop.<id>.title key (id = shop_xp_<skill>) ---
+shop.shop_xp_mining.title = Mining XP Packet
+shop.shop_xp_mining.desc = Convert bounty tokens into a burst of Mining XP.
+shop.shop_xp_woodcutting.title = Woodcutting XP Packet
+shop.shop_xp_woodcutting.desc = Convert bounty tokens into a burst of Woodcutting XP.
+shop.shop_xp_excavation.title = Excavation XP Packet
+shop.shop_xp_excavation.desc = Convert bounty tokens into a burst of Excavation XP.
+shop.shop_xp_swords.title = Swords XP Packet
+shop.shop_xp_swords.desc = Convert bounty tokens into a burst of Swords XP.
+shop.shop_xp_defense.title = Defense XP Packet
+shop.shop_xp_defense.desc = Convert bounty tokens into a burst of Defense XP.
+shop.shop_xp_combat_any.title = Veteran's All-Skills XP
+shop.shop_xp_combat_any.desc = A combat veteran's reward: a burst of XP across every skill.
+
+# --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
+currency.bounty_token.name = Bounty Token
+
+# --- Achievements (achievement.<id>.title / .desc, resolved by convention) ---
+achievement.bounty_board_daily_t1.title = Daily Contractor
+achievement.bounty_board_daily_t2.title = Seasoned Contractor
+achievement.bounty_board_daily_t3.title = Daily Centurion
+achievement.bounty_board_weekly_t1.title = Weekly Warrant
+achievement.bounty_board_weekly_t2.title = Weekly Enforcer
+achievement.bounty_board_weekly_t3.title = Weekly Legend
+# Shared streak description templates: {0} = the tier's completion count, injected from @amount (requiredAmount).
+achievement.bounty_streak.daily.desc = Complete {0} daily bounties.
+achievement.bounty_streak.weekly.desc = Complete {0} weekly bounties.

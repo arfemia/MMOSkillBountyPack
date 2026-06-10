@@ -3,6 +3,7 @@
   "Payload": {
     "extends": "bounty_xp_standard",
     "id": "bounty_train_excavation",
+    "requiresSkills": { "EXCAVATION": 1 },
     "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "EXCAVATION" },
     "objectiveOverrides": { "main": { "amount": 8000 } },
     "rewards": [

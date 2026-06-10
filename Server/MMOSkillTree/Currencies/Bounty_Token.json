@@ -1,7 +1,6 @@
 {
   "Name": "Bounty_Token",
   "Payload": {
-    "displayName": "Bounty Tokens",
     "iconItemId": "Ingredient_Bar_Gold",
     "color": "#ffcc44",
     "cap": 0,

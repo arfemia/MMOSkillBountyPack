@@ -1,0 +1,20 @@
+{
+  "Name": "Featured_Boost_Combat",
+  "Payload": {
+    "id": "shop_featured_boost_combat",
+    "titleKey": "shop.featured_boost_combat.title",
+    "descriptionKey": "shop.featured_boost_combat.desc",
+    "currencyId": "bounty_token",
+    "cost": 140,
+    "icon": "Ingredient_Crystal_Purple",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 2,
+    "limitPerDay": 2,
+    "requirements": { "minCombatLevel": 1 },
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "SWORDS", "multiplier": 2.0, "durationMinutes": 30, "displayName": "Swords XP x2 for 30 minutes" }
+    ]
+  }
+}
