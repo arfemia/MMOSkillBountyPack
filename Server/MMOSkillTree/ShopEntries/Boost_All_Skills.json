@@ -11,7 +11,7 @@
     "shop": "general",
     "limitPerDay": 1,
     "rewards": [
-      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 30 }
+      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 45 }
     ]
   }
 }

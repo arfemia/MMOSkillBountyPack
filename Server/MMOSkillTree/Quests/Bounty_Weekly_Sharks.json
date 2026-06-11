@@ -4,10 +4,10 @@
     "extends": "bounty_kill_standard",
     "id": "bounty_weekly_sharks",
     "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Shark" },
-    "objectiveOverrides": { "main": { "amount": 5 } },
+    "objectiveOverrides": { "main": { "amount": 10 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 600 },
-      { "type": "XP", "skill": "POLEARMS", "amount": 5000 }
+      { "type": "XP", "skill": "POLEARMS", "amount": 6000 }
     ]
   }
 }

@@ -1,0 +1,19 @@
+{
+  "Name": "Featured_Boost_Excavation",
+  "Payload": {
+    "id": "shop_featured_boost_excavation",
+    "titleKey": "shop.featured_boost_excavation.title",
+    "descriptionKey": "shop.featured_boost_excavation.desc",
+    "cost": { "currencies": { "bounty_token": 130 } },
+    "icon": "Tool_Shovel_Crude",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 1,
+    "limitPerDay": 2,
+    "requirements": { "requiresSkills": { "EXCAVATION": 1 } },
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "EXCAVATION", "multiplier": 3.0, "durationMinutes": 20 }
+    ]
+  }
+}

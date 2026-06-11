@@ -7,7 +7,7 @@
     "params": { "boards": "weekly", "difficulty": "normal", "weight": "1", "target": "DEFENSE" },
     "objectiveOverrides": { "main": { "amount": 18000 } },
     "rewards": [
-      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 550 },
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 450 },
       { "type": "XP", "skill": "DEFENSE", "amount": 5000 }
     ]
   }

@@ -6,7 +6,7 @@
     "cap": 0,
     "lossOnDeathPercent": 0,
     "decayPerDayPercent": 0,
-    "showOnSidebar": false,
+    "showOnSidebar": true,
     "showOnMasteryPage": false,
     "sources": {
       "xpConversionPercent": 0

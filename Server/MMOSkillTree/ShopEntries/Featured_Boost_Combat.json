@@ -4,7 +4,7 @@
     "id": "shop_featured_boost_combat",
     "titleKey": "shop.featured_boost_combat.title",
     "descriptionKey": "shop.featured_boost_combat.desc",
-    "cost": { "currencies": { "bounty_token": 140 } },
+    "cost": { "currencies": { "bounty_token": 110 } },
     "icon": "Ingredient_Crystal_Purple",
     "category": "featured",
     "pool": "featured",

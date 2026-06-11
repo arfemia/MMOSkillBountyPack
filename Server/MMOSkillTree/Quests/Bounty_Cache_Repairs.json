@@ -3,8 +3,8 @@
   "Payload": {
     "extends": "bounty_gather_standard",
     "id": "bounty_cache_repairs",
-    "params": { "boards": "daily", "difficulty": "easy", "weight": "2", "target": "Stone" },
-    "objectiveOverrides": { "main": { "amount": 80 } },
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "1", "target": "Stone" },
+    "objectiveOverrides": { "main": { "amount": 110 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 110 },
       { "type": "XP", "skill": "MINING", "amount": 900 },

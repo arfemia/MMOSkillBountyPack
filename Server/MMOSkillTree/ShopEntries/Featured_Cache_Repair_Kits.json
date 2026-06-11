@@ -1,0 +1,18 @@
+{
+  "Name": "Featured_Cache_Repair_Kits",
+  "Payload": {
+    "id": "shop_featured_cache_repair_kits",
+    "titleKey": "shop.featured_cache_repair_kits.title",
+    "descriptionKey": "shop.featured_cache_repair_kits.desc",
+    "cost": { "currencies": { "bounty_token": 90 } },
+    "icon": "Tool_Repair_Kit_Crude",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 1,
+    "limitPerDay": 2,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Tool_Repair_Kit_Crude --quantity=5" }
+    ]
+  }
+}
