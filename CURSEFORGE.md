@@ -48,4 +48,4 @@ Bounties and boards are plain pack files: add a contract by dropping in one smal
 
 | Pack  | Plugin | Notes |
 | ----- | ------ | ----- |
-| 1.0.0 | 1.2.1+ | First release. Daily and Weekly Bounty Boards, Bounty Tokens, delivery (turn-in) contracts, a Token Shop with a Token Trader block, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), and a Bounty Master NPC placed at spawn automatically (opt out in `spawn-hub.json` or remove it once in-game). |
+| 1.0.0 | 1.3.0+ | First release. Daily and Weekly Bounty Boards, Bounty Tokens, delivery (turn-in) contracts, a Token Shop with a Token Trader block, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), and a Bounty Master NPC placed at spawn automatically (opt out in `spawn-hub.json` or remove it once in-game). |

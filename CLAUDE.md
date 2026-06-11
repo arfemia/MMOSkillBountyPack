@@ -1,6 +1,6 @@
 # CLAUDE.md - MMOSkillBountyPack
 
-A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mmoskilltree) (1.2.1+). Ships the entire **Bounty Board** feature's content: the bounty pool, reusable templates, the Bounty Token currency, the board schedules, AND the in-world board blocks (item + interaction + textures-via-vanilla + item names). The mod jar ships only the Bounty Board *engine* (`BountyService`, `BountyBoardConfig`, `BountyBoardPage` + its `.ui`, the registered `mmo_bounty_board_open` interaction type, `/mmobounty*` commands) and no content, so this pack is what makes bounties appear. It is a **hard dependency** on the mod (the board block's interaction needs the jar-registered Java type), declared in `manifest.json`.
+A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mmoskilltree) (1.3.0+). Ships the entire **Bounty Board** feature's content: the bounty pool, reusable templates, the Bounty Token currency, the board schedules, AND the in-world board blocks (item + interaction + textures-via-vanilla + item names). The mod jar ships only the Bounty Board *engine* (`BountyService`, `BountyBoardConfig`, `BountyBoardPage` + its `.ui`, the registered `mmo_bounty_board_open` interaction type, `/mmobounty*` commands) and no content, so this pack is what makes bounties appear. It is a **hard dependency** on the mod (the board block's interaction needs the jar-registered Java type), declared in `manifest.json`.
 
 ## Layout
 
