@@ -4,7 +4,7 @@
     "extends": "bounty_turnin_standard",
     "id": "bounty_deliver_adamantite",
     "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "Ore_Adamantite" },
-    "objectiveOverrides": { "main": { "amount": 24, "displayText": "Turn in 24 Adamantite Ore" } },
+    "objectiveOverrides": { "main": { "amount": 24 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 300 },
       { "type": "XP", "skill": "MINING", "amount": 2500 }

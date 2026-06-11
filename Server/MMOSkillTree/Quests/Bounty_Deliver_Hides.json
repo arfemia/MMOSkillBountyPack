@@ -4,7 +4,7 @@
     "extends": "bounty_turnin_standard",
     "id": "bounty_deliver_hides",
     "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ingredient_Hide_Light" },
-    "objectiveOverrides": { "main": { "amount": 32, "displayText": "Turn in 32 Light Hide" } },
+    "objectiveOverrides": { "main": { "amount": 32 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 150 },
       { "type": "XP", "skill": "UNARMED", "amount": 1200 }
