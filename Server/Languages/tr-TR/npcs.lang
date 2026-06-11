@@ -1,0 +1,9 @@
+# MMOSkillBountyPack - NPC display names. Same keys as en-US/npcs.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Daily.name = Günlük Ödüller
+MMO_Bounty_Weekly.name = Haftalık Ödüller
+MMO_Token_Trader.name = Jeton Tüccarı
+MMO_Shop_General.name = Jeton Mağazası
+MMO_Shop_Xpexchange.name = XP Takası
+MMO_Board.hint = Ödülleri görüntülemek için [{key}] tuşuna bas
+MMO_Shop.hint = Jeton takası için [{key}] tuşuna bas

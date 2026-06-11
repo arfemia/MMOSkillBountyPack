@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Quadro de Recompensas
+MMO_Bounty_Board.description = Monte em uma parede e interaja para ver e aceitar as recompensas diárias rotativas.
+MMO_Bounty_Board.hint = Pressione [{key}] para abrir o quadro de recompensas
+MMO_Bounty_Board_Weekly.name = Quadro de Recompensas Semanal
+MMO_Bounty_Board_Weekly.description = Monte em uma parede e interaja para ver e aceitar as recompensas semanais rotativas.
+MMO_Bounty_Board_Weekly.hint = Pressione [{key}] para abrir o quadro de recompensas semanal
+MMO_Token_Trader.name = Comerciante de Fichas
+MMO_Token_Trader.description = Monte em uma parede e interaja para gastar Fichas de Recompensa na Loja de Fichas.
+MMO_Token_Trader.hint = Pressione [{key}] para abrir a loja de fichas

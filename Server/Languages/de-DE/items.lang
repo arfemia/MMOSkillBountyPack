@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Kopfgeld-Tafel
+MMO_Bounty_Board.description = An einer Wand anbringen und interagieren, um die rotierenden täglichen Kopfgelder anzusehen und anzunehmen.
+MMO_Bounty_Board.hint = Drücke [{key}], um die Kopfgeld-Tafel zu öffnen
+MMO_Bounty_Board_Weekly.name = Wöchentliche Kopfgeld-Tafel
+MMO_Bounty_Board_Weekly.description = An einer Wand anbringen und interagieren, um die rotierenden wöchentlichen Kopfgelder anzusehen und anzunehmen.
+MMO_Bounty_Board_Weekly.hint = Drücke [{key}], um die wöchentliche Kopfgeld-Tafel zu öffnen
+MMO_Token_Trader.name = Token-Händler
+MMO_Token_Trader.description = An einer Wand anbringen und interagieren, um Kopfgeld-Token im Token-Shop auszugeben.
+MMO_Token_Trader.hint = Drücke [{key}], um den Token-Shop zu öffnen

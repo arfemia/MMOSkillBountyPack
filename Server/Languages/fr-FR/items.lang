@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Tableau des primes
+MMO_Bounty_Board.description = Fixez-le à un mur et interagissez pour voir et accepter les primes quotidiennes rotatives.
+MMO_Bounty_Board.hint = Appuyez sur [{key}] pour ouvrir le tableau des primes
+MMO_Bounty_Board_Weekly.name = Tableau des primes hebdomadaires
+MMO_Bounty_Board_Weekly.description = Fixez-le à un mur et interagissez pour voir et accepter les primes hebdomadaires rotatives.
+MMO_Bounty_Board_Weekly.hint = Appuyez sur [{key}] pour ouvrir le tableau des primes hebdomadaires
+MMO_Token_Trader.name = Marchand de tokens
+MMO_Token_Trader.description = Fixez-le à un mur et interagissez pour dépenser vos Tokens de prime à la Boutique de tokens.
+MMO_Token_Trader.hint = Appuyez sur [{key}] pour ouvrir la boutique de tokens

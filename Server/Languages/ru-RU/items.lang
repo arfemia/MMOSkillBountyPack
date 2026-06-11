@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Доска контрактов
+MMO_Bounty_Board.description = Повесьте на стену и взаимодействуйте, чтобы просматривать и принимать сменяемые ежедневные контракты.
+MMO_Bounty_Board.hint = Нажмите [{key}], чтобы открыть доску контрактов
+MMO_Bounty_Board_Weekly.name = Еженедельная доска контрактов
+MMO_Bounty_Board_Weekly.description = Повесьте на стену и взаимодействуйте, чтобы просматривать и принимать сменяемые еженедельные контракты.
+MMO_Bounty_Board_Weekly.hint = Нажмите [{key}], чтобы открыть еженедельную доску контрактов
+MMO_Token_Trader.name = Торговец токенами
+MMO_Token_Trader.description = Повесьте на стену и взаимодействуйте, чтобы тратить токены контрактов в Магазине токенов.
+MMO_Token_Trader.hint = Нажмите [{key}], чтобы открыть магазин токенов

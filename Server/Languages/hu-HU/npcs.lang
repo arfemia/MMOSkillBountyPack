@@ -1,0 +1,9 @@
+# MMOSkillBountyPack - NPC display names. Same keys as en-US/npcs.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Daily.name = Napi Bountyk
+MMO_Bounty_Weekly.name = Heti Bountyk
+MMO_Token_Trader.name = Token Kereskedő
+MMO_Shop_General.name = Token Shop
+MMO_Shop_Xpexchange.name = XP Csere
+MMO_Board.hint = Nyomd meg: [{key}] a bountyk megtekintéséhez
+MMO_Shop.hint = Nyomd meg: [{key}] a tokenváltáshoz

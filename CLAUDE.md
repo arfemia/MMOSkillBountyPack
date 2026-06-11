@@ -2,6 +2,10 @@
 
 A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mmoskilltree) (1.3.0+). Ships the entire **Bounty Board** feature's content: the bounty pool, reusable templates, the Bounty Token currency, the board schedules, AND the in-world board blocks (item + interaction + textures-via-vanilla + item names). The mod jar ships only the Bounty Board *engine* (`BountyService`, `BountyBoardConfig`, `BountyBoardPage` + its `.ui`, the registered `mmo_bounty_board_open` interaction type, `/mmobounty*` commands) and no content, so this pack is what makes bounties appear. It is a **hard dependency** on the mod (the board block's interaction needs the jar-registered Java type), declared in `manifest.json`.
 
+## Release notes (patch-notes paradigm)
+
+Per-version public release notes live in `patch-notes/<version>.md`, same paradigm as the main mod repo: YAML frontmatter (`version`, `title`, `type: patch-note`, `status: held|released`), a one-line summary, then user-facing `- **New/Fixed: ...**` bullets. No em-dashes. `patch-notes/_INDEX.md` lists them newest-first. `CURSEFORGE.md` is the public listing copy; keep its Versions table in sync with each release. Naming: the SHOP feature is generic ("the shops"); "Token Shop" names only the general storefront (`shop.general.title`), beside the per-skill "XP Exchange". (No docs-site publishing for packs yet.)
+
 ## Layout
 
 ```

@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Leyenda Semanal
 # Plantillas de descripción de racha compartidas: {0} = el número de finalizaciones del nivel, inyectado desde @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Completa {0} contratos diarios.
 achievement.bounty_streak.weekly.desc = Completa {0} contratos semanales.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Cajón de Mineral de Cobre
+shop.cache_copper_ore.desc = Un cajón inicial con 24 unidades de Mineral de Cobre. Sin preguntas.
+shop.featured_cache_copper.title = Destacado: Cajón de Cobre
+shop.featured_cache_copper.desc = Un cajón destacado de 48 unidades de Mineral de Cobre.
+shop.featured_cache_repair_kits.title = Destacado: Kits de Reparación
+shop.featured_cache_repair_kits.desc = Un juego destacado de 5 kits de reparación toscos, listos para el campo.
+shop.featured_cache_copper_bars.title = Destacado: Barras de Cobre
+shop.featured_cache_copper_bars.desc = Un lote destacado de 12 Barras de Cobre fundidas.
+shop.featured_boost_defense.title = Determinación del Baluarte (3x Bloqueo, 20m)
+shop.featured_boost_defense.desc = Triplica la XP de Bloqueo durante 20 minutos.
+shop.featured_boost_excavation.title = Fervor del Excavador (3x Excavación, 20m)
+shop.featured_boost_excavation.desc = Triplica la XP de Excavación durante 20 minutos.

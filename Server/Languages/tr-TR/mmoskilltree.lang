@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Haftalık Efsane
 # Paylaşılan seri açıklama şablonları: {0} = kademenin tamamlama sayısı, @amount (requiredAmount) üzerinden eklenir.
 achievement.bounty_streak.daily.desc = {0} günlük ödül avı tamamla.
 achievement.bounty_streak.weekly.desc = {0} haftalık ödül avı tamamla.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Bakır Cevheri Sandığı
+shop.cache_copper_ore.desc = 24 Bakır Cevherinden oluşan bir başlangıç sandığı. Soru sorulmaz.
+shop.featured_cache_copper.title = Öne Çıkan: Bakır Sandığı
+shop.featured_cache_copper.desc = 48 Bakır Cevherinden oluşan öne çıkan bir sandık.
+shop.featured_cache_repair_kits.title = Öne Çıkan: Tamir Kitleri
+shop.featured_cache_repair_kits.desc = Sahaya hazır 5 kaba tamir kitinden oluşan öne çıkan bir set.
+shop.featured_cache_copper_bars.title = Öne Çıkan: Bakır Külçeler
+shop.featured_cache_copper_bars.desc = 12 eritilmiş Bakır Külçeden oluşan öne çıkan bir demet.
+shop.featured_boost_defense.title = Siperin Azmi (3x Blok, 20dk)
+shop.featured_boost_defense.desc = 20 dakika boyunca Blok XP'sini üçe katlar.
+shop.featured_boost_excavation.title = Kazıcının Şevki (3x Kazı, 20dk)
+shop.featured_boost_excavation.desc = 20 dakika boyunca Kazı XP'sini üçe katlar.

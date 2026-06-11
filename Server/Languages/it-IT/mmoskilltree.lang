@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Leggenda Settimanale
 # Modelli condivisi di descrizione delle serie: {0} = il conteggio di completamenti del grado, iniettato da @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Completa {0} taglie giornaliere.
 achievement.bounty_streak.weekly.desc = Completa {0} taglie settimanali.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Cassa di Minerale di Rame
+shop.cache_copper_ore.desc = Una cassa iniziale di 24 Minerali di Rame. Senza fare domande.
+shop.featured_cache_copper.title = In Evidenza: Cassa di Rame
+shop.featured_cache_copper.desc = Una cassa in evidenza di 48 Minerali di Rame.
+shop.featured_cache_repair_kits.title = In Evidenza: Kit di Riparazione
+shop.featured_cache_repair_kits.desc = Un set in evidenza di 5 kit di riparazione grezzi, pronti per il campo.
+shop.featured_cache_copper_bars.title = In Evidenza: Lingotti di Rame
+shop.featured_cache_copper_bars.desc = Un fascio in evidenza di 12 Lingotti di Rame fusi.
+shop.featured_boost_defense.title = Fermezza del Baluardo (3x Difesa, 20m)
+shop.featured_boost_defense.desc = Triplica gli XP di Difesa per 20 minuti.
+shop.featured_boost_excavation.title = Fervore dello Scavatore (3x Scavo, 20m)
+shop.featured_boost_excavation.desc = Triplica gli XP di Scavo per 20 minuti.

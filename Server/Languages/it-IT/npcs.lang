@@ -1,0 +1,9 @@
+# MMOSkillBountyPack - NPC display names. Same keys as en-US/npcs.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Daily.name = Taglie Giornaliere
+MMO_Bounty_Weekly.name = Taglie Settimanali
+MMO_Token_Trader.name = Mercante di Gettoni
+MMO_Shop_General.name = Negozio Gettoni
+MMO_Shop_Xpexchange.name = Scambio XP
+MMO_Board.hint = Premi [{key}] per vedere le taglie
+MMO_Shop.hint = Premi [{key}] per scambiare gettoni

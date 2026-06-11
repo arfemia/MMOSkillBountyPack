@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Wöchentliche Legende
 # Gemeinsame Serien-Beschreibungsvorlagen: {0} = die Abschlusszahl der Stufe, eingefügt aus @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Schließe {0} tägliche Kopfgelder ab.
 achievement.bounty_streak.weekly.desc = Schließe {0} wöchentliche Kopfgelder ab.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Kiste Kupfererz
+shop.cache_copper_ore.desc = Eine Starterkiste mit 24 Kupfererz. Keine Fragen.
+shop.featured_cache_copper.title = Vorgestellt: Kupferkiste
+shop.featured_cache_copper.desc = Eine vorgestellte Kiste mit 48 Kupfererz.
+shop.featured_cache_repair_kits.title = Vorgestellt: Reparatursätze
+shop.featured_cache_repair_kits.desc = Ein vorgestellter Satz von 5 groben Reparatursätzen, bereit für den Einsatz.
+shop.featured_cache_copper_bars.title = Vorgestellt: Kupferbarren
+shop.featured_cache_copper_bars.desc = Ein vorgestelltes Bündel von 12 geschmolzenen Kupferbarren.
+shop.featured_boost_defense.title = Bollwerks Entschlossenheit (3x Blocken, 20 Min)
+shop.featured_boost_defense.desc = Verdreifacht Blocken-XP für 20 Minuten.
+shop.featured_boost_excavation.title = Buddler-Eifer (3x Ausgrabung, 20 Min)
+shop.featured_boost_excavation.desc = Verdreifacht Ausgrabungs-XP für 20 Minuten.

@@ -1,0 +1,9 @@
+# MMOSkillBountyPack - NPC display names. Same keys as en-US/npcs.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Daily.name = Contratos Diarios
+MMO_Bounty_Weekly.name = Contratos Semanales
+MMO_Token_Trader.name = Mercader de Tokens
+MMO_Shop_General.name = Tienda de Tokens
+MMO_Shop_Xpexchange.name = Intercambio de XP
+MMO_Board.hint = Pulsa [{key}] para ver los contratos
+MMO_Shop.hint = Pulsa [{key}] para comerciar con tokens

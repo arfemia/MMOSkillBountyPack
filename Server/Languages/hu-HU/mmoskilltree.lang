@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Heti Legenda
 # Közös sorozat-leírás sablonok: {0} = az adott fokozat teljesítési darabszáma, az @amount (requiredAmount) értékből behelyettesítve.
 achievement.bounty_streak.daily.desc = Teljesíts {0} napi bountyt.
 achievement.bounty_streak.weekly.desc = Teljesíts {0} heti bountyt.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Láda Rézérc
+shop.cache_copper_ore.desc = Egy kezdőláda 24 Rézérc. Kérdések nélkül.
+shop.featured_cache_copper.title = Kiemelt: Rézláda
+shop.featured_cache_copper.desc = Egy kiemelt láda 48 Rézérc.
+shop.featured_cache_repair_kits.title = Kiemelt: Javítókészletek
+shop.featured_cache_repair_kits.desc = Egy kiemelt készlet 5 kezdetleges javítókészlet, terepre készen.
+shop.featured_cache_copper_bars.title = Kiemelt: Rézrudak
+shop.featured_cache_copper_bars.desc = Egy kiemelt köteg 12 olvasztott Rézrúd.
+shop.featured_boost_defense.title = Bástya Elszántsága (3x Blokkolás, 20p)
+shop.featured_boost_defense.desc = Megháromszorozza a Blokkolás XP-t 20 percre.
+shop.featured_boost_excavation.title = Ásó Buzgalma (3x Ásás, 20p)
+shop.featured_boost_excavation.desc = Megháromszorozza az Ásás XP-t 20 percre.

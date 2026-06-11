@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Bacheca delle Taglie
+MMO_Bounty_Board.description = Montala su un muro e interagisci per vedere e accettare le taglie giornaliere a rotazione.
+MMO_Bounty_Board.hint = Premi [{key}] per aprire la bacheca delle taglie
+MMO_Bounty_Board_Weekly.name = Bacheca delle Taglie Settimanale
+MMO_Bounty_Board_Weekly.description = Montala su un muro e interagisci per vedere e accettare le taglie settimanali a rotazione.
+MMO_Bounty_Board_Weekly.hint = Premi [{key}] per aprire la bacheca delle taglie settimanale
+MMO_Token_Trader.name = Mercante di Gettoni
+MMO_Token_Trader.description = Montalo su un muro e interagisci per spendere i Gettoni Taglia al Negozio Gettoni.
+MMO_Token_Trader.hint = Premi [{key}] per aprire il negozio gettoni

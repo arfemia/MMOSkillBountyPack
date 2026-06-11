@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Bounty Board
+MMO_Bounty_Board.description = Szereld fel egy falra, és lépj kapcsolatba vele a forgó napi bountyk megtekintéséhez és elfogadásához.
+MMO_Bounty_Board.hint = Nyomd meg: [{key}] a bounty board megnyitásához
+MMO_Bounty_Board_Weekly.name = Heti Bounty Board
+MMO_Bounty_Board_Weekly.description = Szereld fel egy falra, és lépj kapcsolatba vele a forgó heti bountyk megtekintéséhez és elfogadásához.
+MMO_Bounty_Board_Weekly.hint = Nyomd meg: [{key}] a heti bounty board megnyitásához
+MMO_Token_Trader.name = Token Kereskedő
+MMO_Token_Trader.description = Szereld fel egy falra, és lépj kapcsolatba vele, hogy Bounty Tokeneket költs a Token Shopban.
+MMO_Token_Trader.hint = Nyomd meg: [{key}] a token shop megnyitásához

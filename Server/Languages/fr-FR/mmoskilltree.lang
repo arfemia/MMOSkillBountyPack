@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Légende hebdomadaire
 # Modèles de description de série partagés : {0} = le nombre de complétions du palier, injecté depuis @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Terminez {0} primes quotidiennes.
 achievement.bounty_streak.weekly.desc = Terminez {0} primes hebdomadaires.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Caisse de minerai de cuivre
+shop.cache_copper_ore.desc = Une caisse de départ de 24 minerais de cuivre. Sans poser de questions.
+shop.featured_cache_copper.title = À la une : caisse de cuivre
+shop.featured_cache_copper.desc = Une caisse à la une de 48 minerais de cuivre.
+shop.featured_cache_repair_kits.title = À la une : kits de réparation
+shop.featured_cache_repair_kits.desc = Un lot à la une de 5 kits de réparation rudimentaires, prêts pour le terrain.
+shop.featured_cache_copper_bars.title = À la une : lingots de cuivre
+shop.featured_cache_copper_bars.desc = Un lot à la une de 12 lingots de cuivre fondus.
+shop.featured_boost_defense.title = Résolution du rempart (3x blocage, 20m)
+shop.featured_boost_defense.desc = Triple l'XP de blocage pendant 20 minutes.
+shop.featured_boost_excavation.title = Ferveur du terrassier (3x excavation, 20m)
+shop.featured_boost_excavation.desc = Triple l'XP d'excavation pendant 20 minutes.

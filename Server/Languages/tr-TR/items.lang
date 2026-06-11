@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Ödül Tahtası
+MMO_Bounty_Board.description = Bir duvara monte et ve günlük rotasyonlu ödül avlarını görüntüleyip kabul etmek için etkileşime geç.
+MMO_Bounty_Board.hint = Ödül tahtasını açmak için [{key}] tuşuna bas
+MMO_Bounty_Board_Weekly.name = Haftalık Ödül Tahtası
+MMO_Bounty_Board_Weekly.description = Bir duvara monte et ve haftalık rotasyonlu ödül avlarını görüntüleyip kabul etmek için etkileşime geç.
+MMO_Bounty_Board_Weekly.hint = Haftalık ödül tahtasını açmak için [{key}] tuşuna bas
+MMO_Token_Trader.name = Jeton Tüccarı
+MMO_Token_Trader.description = Bir duvara monte et ve Ödül Jetonlarını Jeton Mağazasında harcamak için etkileşime geç.
+MMO_Token_Trader.hint = Jeton mağazasını açmak için [{key}] tuşuna bas

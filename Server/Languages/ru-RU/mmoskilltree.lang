@@ -171,3 +171,17 @@ achievement.bounty_board_weekly_t3.title = Недельная легенда
 # Общие шаблоны описания серий: {0} = число выполнений для уровня, подставляется из @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Выполните {0} ежедневных контрактов.
 achievement.bounty_streak.weekly.desc = Выполните {0} еженедельных контрактов.
+
+# --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
+shop.cache_copper_ore.title = Ящик медной руды
+shop.cache_copper_ore.desc = Стартовый ящик из 24 единиц медной руды. Никаких лишних вопросов.
+shop.featured_cache_copper.title = Избранное: ящик меди
+shop.featured_cache_copper.desc = Избранный ящик из 48 единиц медной руды.
+shop.featured_cache_repair_kits.title = Избранное: ремонтные наборы
+shop.featured_cache_repair_kits.desc = Избранный комплект из 5 грубых ремонтных наборов, готовых к походу.
+shop.featured_cache_copper_bars.title = Избранное: медные слитки
+shop.featured_cache_copper_bars.desc = Избранная партия из 12 выплавленных медных слитков.
+shop.featured_boost_defense.title = Решимость бастиона (3x защита, 20м)
+shop.featured_boost_defense.desc = Утраивает опыт защиты на 20 минут.
+shop.featured_boost_excavation.title = Рвение землекопа (3x раскопки, 20м)
+shop.featured_boost_excavation.desc = Утраивает опыт раскопок на 20 минут.

@@ -1,0 +1,11 @@
+# MMOSkillBountyPack - block/item display names. Same keys as en-US/items.lang;
+# missing keys fall back to English per key.
+MMO_Bounty_Board.name = Tablón de Contratos
+MMO_Bounty_Board.description = Móntalo en una pared e interactúa para ver y aceptar los contratos diarios rotativos.
+MMO_Bounty_Board.hint = Pulsa [{key}] para abrir el tablón de contratos
+MMO_Bounty_Board_Weekly.name = Tablón de Contratos Semanal
+MMO_Bounty_Board_Weekly.description = Móntalo en una pared e interactúa para ver y aceptar los contratos semanales rotativos.
+MMO_Bounty_Board_Weekly.hint = Pulsa [{key}] para abrir el tablón de contratos semanal
+MMO_Token_Trader.name = Mercader de Tokens
+MMO_Token_Trader.description = Móntalo en una pared e interactúa para gastar Tokens de Contrato en la Tienda de Tokens.
+MMO_Token_Trader.hint = Pulsa [{key}] para abrir la tienda de tokens
