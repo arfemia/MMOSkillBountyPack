@@ -4,6 +4,14 @@ A free content pack for [MMO Skill Tree](https://www.curseforge.com/hytale/mods/
 
 Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies the board engine, so install both.
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/wintergreensolutions) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
+
+---
+
+[![Host your own Hytale server with Kinetic Hosting](https://i.imgur.com/UHn3FzW.png)](https://billing.kinetichosting.com/aff.php?aff=1262)
+
+---
+
 ## What it adds
 
 - **Daily Bounty Board** - a rotating mix of kill, gather, mine-and-deliver, and train-a-skill contracts that refresh every day, sending you after creatures from desert scorpions and cave raptors to swamp crocodiles, sabertooths, and ghouls.
@@ -50,3 +58,15 @@ Bounties and boards are plain pack files: add a contract by dropping in one smal
 | Pack  | Plugin | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.0.0 | 1.3.0+ | First release. Daily and Weekly Bounty Boards with a wide bestiary and marquee boss hunts, Bounty Tokens, mine-and-deliver and turn-in contracts, per-contract rerolls with a daily cap, two shop storefronts (the Token Shop and a per-skill XP Exchange) behind a Token Trader block/NPC, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), full 9-language translations, and spawn integration with the mod's Adventurer's Guide NPC (opt out in `spawn-hub.json` or remove it once in-game). |
+
+---
+
+## Links & Support
+
+[![MMO Skill Tree](https://img.shields.io/badge/CurseForge-MMO%20Skill%20Tree-F16436?style=for-the-badge&logo=curseforge&logoColor=white)](https://www.curseforge.com/hytale/mods/mmo-skill-tree) [![Get Pro Edition](https://img.shields.io/badge/Get%20Pro%20Edition-F59E0B?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com/commercial)
+
+Questions or suggestions? Join the [Discord](https://discord.gg/5NFdZsUxHZ) or leave a comment!
+
+**Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed) | [Buy Me a Coffee](https://buymeacoffee.com/wintergreensolutions)
+
+_MMO Skill Tree is not affiliated with Hypixel Studios or Hytale._
