@@ -1,0 +1,17 @@
+{
+  "Name": "Cache_Iron_Bars",
+  "Payload": {
+    "id": "shop_cache_iron_bars",
+    "titleKey": "shop.cache_iron_bars.title",
+    "descriptionKey": "shop.cache_iron_bars.desc",
+    "cost": { "currencies": { "bounty_token": 130, "life_essence": 60 } },
+    "icon": "Ingredient_Bar_Iron",
+    "category": "items",
+    "order": 12,
+    "shop": "general",
+    "limitPerDay": 2,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Bar_Iron --quantity=16" }
+    ]
+  }
+}

@@ -2,8 +2,9 @@
   "Name": "XP_Packet_Lesser",
   "Payload": {
     "extends": "xp_packet_base",
-    "params": { "TIER_NAME": "Lesson", "TOKENS": "90", "ESSENCE": "40", "XP": "1500" },
+    "params": { "TIER_NAME": "Lesson", "TOKENS": "75", "ESSENCE": "30", "XP": "1500" },
     "id": "shop_xp_{{SKILL}}",
+    "tier": "lesser",
     "order": 40,
     "limitPerDay": 3
   }

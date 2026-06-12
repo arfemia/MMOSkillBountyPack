@@ -1,0 +1,17 @@
+{
+  "Name": "Boost_Essence_Surge",
+  "Payload": {
+    "id": "shop_boost_essence_surge",
+    "titleKey": "shop.boost_essence_surge.title",
+    "descriptionKey": "shop.boost_essence_surge.desc",
+    "cost": { "currencies": { "bounty_token": 200, "life_essence": 100 } },
+    "icon": "Ingredient_Life_Essence_Concentrated",
+    "category": "boosts",
+    "order": 11,
+    "shop": "general",
+    "limitPerDay": 1,
+    "rewards": [
+      { "type": "BOOST_TOKEN", "skill": "ALL", "multiplier": 2.0, "durationMinutes": 30 }
+    ]
+  }
+}

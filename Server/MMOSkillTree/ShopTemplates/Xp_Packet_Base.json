@@ -4,6 +4,7 @@
     "forEachSkill": true,
     "category": "conversion",
     "shop": "xpexchange",
+    "pool": "xpexchange",
     "groupKey": "{{SKILL}}",
     "displayName": "{{SKILL_NAME}} {{TIER_NAME}}",
     "cost": { "currencies": { "bounty_token": "{{TOKENS}}", "life_essence": "{{ESSENCE}}" } },

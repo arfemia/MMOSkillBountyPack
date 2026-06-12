@@ -2,10 +2,11 @@
   "Name": "XP_Packet_Greater",
   "Payload": {
     "extends": "xp_packet_base",
-    "params": { "TIER_NAME": "Training", "TOKENS": "200", "ESSENCE": "80", "XP": "7500" },
+    "params": { "TIER_NAME": "Training", "TOKENS": "165", "ESSENCE": "65", "XP": "7500" },
     "id": "shop_xp_greater_{{SKILL}}",
+    "tier": "greater",
     "order": 42,
     "requireSelfLevel": 30,
-    "limitPerDay": 2
+    "limitPerDay": 3
   }
 }

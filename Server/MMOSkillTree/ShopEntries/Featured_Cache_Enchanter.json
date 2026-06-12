@@ -1,0 +1,19 @@
+{
+  "Name": "Featured_Cache_Enchanter",
+  "Payload": {
+    "id": "shop_featured_cache_enchanter",
+    "titleKey": "shop.featured_cache_enchanter.title",
+    "descriptionKey": "shop.featured_cache_enchanter.desc",
+    "cost": { "currencies": { "bounty_token": 150, "life_essence": 80 } },
+    "icon": "Ingredient_Crystal_Purple",
+    "category": "featured",
+    "pool": "featured",
+    "shop": "general",
+    "weight": 1,
+    "limitPerDay": 2,
+    "rewards": [
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Crystal_Purple --quantity=4" },
+      { "type": "COMMAND", "command": "/give {player} Ingredient_Crystal_Blue --quantity=4" }
+    ]
+  }
+}

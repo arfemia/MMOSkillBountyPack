@@ -37,7 +37,7 @@ bounty-contracts-pack/
         ├── BountyBoards/Daily.json, Weekly.json        board schedules (rotation/selection/slots/combat gate)
         ├── ShopEntries/*.json                          token-shop offers (static + Featured_* pooled)
         ├── ShopTemplates/Xp_Packet_Base.json           reusable shop-offer skeleton (extends + params)
-        ├── ShopPools/Featured.json                     rotating token-shop pool (rotation/selection/reroll)
+        ├── ShopPools/Featured.json, XpExchange.json    rotating token-shop pools (rotation/selection/slots/reroll)
         ├── AchievementTemplates/Bounty_Board_Counter.json  reusable per-board "complete N bounties" achievement skeleton
         └── Achievements/Bounty_Daily_T*.json, Bounty_Weekly_T*.json  per-board achievement chains (Daily Contractor / Weekly Warrant)
 ```
@@ -110,7 +110,8 @@ One file per offer in `ShopEntries/`. The id comes from the inner `Payload.id` (
     "rewards": [ { "type": "BOOST_TOKEN", "skill": "MINING", "multiplier": 3.0, "durationMinutes": 20 } ] } }
 ```
 
-- **`titleKey`** / **`descriptionKey`**: localization keys for the offer name + blurb (parity with `ShopBoard`/`ShopPool` and the bounty pattern), resolved per-player from `Server/Languages/<locale>/mmoskilltree.lang`. Add `shop.<name>.title = ...` and `shop.<name>.desc = ...` there (e.g. `shop.boost_mining.title = Mining Rush (3x, 20m)`). The mod's `LocalizedText` resolver tries the explicit key, then the by-convention `shop.<id>.title` / `.desc`, then a legacy raw `displayName`/`description` (deprecated, kept only as a fallback). The fanned per-skill XP packets keep a templated `displayName` (`{{SKILL_NAME}} {{TIER_NAME}}` in the base template) since one static key can't cover every skill.
+- **`titleKey`** / **`descriptionKey`**: localization keys for the offer name + blurb (parity with `ShopBoard`/`ShopPool` and the bounty pattern), resolved per-player from `Server/Languages/<locale>/mmoskilltree.lang`. Add `shop.<name>.title = ...` and `shop.<name>.desc = ...` there (e.g. `shop.boost_mining.title = Mining Rush`). The mod's `LocalizedText` resolver tries the explicit key, then the by-convention `shop.<id>.title` / `.desc`, then a legacy raw `displayName`/`description` (deprecated, kept only as a fallback). The fanned per-skill XP packets keep a templated `displayName` (`{{SKILL_NAME}} {{TIER_NAME}}` in the base template) since one static key can't cover every skill.
+- **Lang values are data-free flavor (HARD RULE).** Never bake amounts, durations, multipliers, quantities, or a currency's name into a `.lang` value - a balance pass must never require a localization edit (the all-skills boost once shipped titled "(2x, 30m)" in 8 languages after the JSON moved to 45m). The UI auto-renders localized reward/cost lines with their numbers, so titles/descs describe flavor only ("Mining Rush", not "Mining Rush (3x, 20m)"; "a featured batch of bottled life", not "64 Life Essence"). Only `currency.<id>.name` may carry the currency name. The mod repo's check-localization hook scans every locale on each lang edit and flags violations.
 - **`category`**: `boosts` | `items` | `conversion` | `featured` (groups + sorts the catalog; unknown categories warn in the audit).
 - **`cost`** is a cost OBJECT: `{ "currencies": { "<id>": N, ... }, "items": [ ... ], "combine": "all|any" }` (`all` is the default for multi-currency). There is no scalar form.
 - **`requirements`** is the unified gate block: `features` (hides the offer unless every feature is on; use `["mastery"]` for a mastery-point conversion, which needs the mastery pack's `mastery_point` currency), per-skill `skills` map, and `minCombatLevel` (any one COMBAT skill at/above the level). The flat `requiresFeatures`/`requiresSkills` spellings parse as aliases.
@@ -143,26 +144,27 @@ A rotating pool surfaces a changing subset of the offers tagged into it (`"pool"
 
 The pack ships **a few** XP-exchange tier definitions that the mod fans out to **every active skill** at load, instead of one file per skill per tier (the Token Shop analogue of CommandRewards' `{{ALL_SKILLS}}` sentinel). The shared shape lives once in `ShopTemplates/Xp_Packet_Base.json` (`"forEachSkill": true`, the `{{SKILL}}` / `{{SKILL_NAME}}` fan-out tokens, the dual-currency cost and XP reward as `{{TOKENS}}`/`{{ESSENCE}}`/`{{XP}}` params); each tier file is a thin `extends` + `params` + per-tier fields (`id` pattern, `order`, `requireSelfLevel`, `limitPerDay`). Template resolution runs FIRST, then `TokenShopConfig` clones the resolved JSON once per `SkillRegistry.isSkillAvailable(...)` skill, substituting the skill id (`{{SKILL}}`, e.g. `MINING`) and its display name (`{{SKILL_NAME}}`, e.g. `Mining`) - the two passes compose because unknown `{{...}}` tokens survive pass 1, which is also why `params` must never define `SKILL`/`SKILL_NAME`. The generated id comes from the consumer's `id` **pattern**, so distinct tiers don't collide. Templates need the `ShopTemplates` entry in `Control/MMOSkillBountyPack.json` (present).
 
-**Three static tiers** (always listed, no `pool`), gated by the fanned skill's own level and tuned to the shipped XP curve so a packet stays a sensible nudge at any level (the top caps at 40k XP, ~10% of a level at L90):
+**Three rotating tiers** in the `xpexchange` pool (`ShopPools/XpExchange.json`, 3 slots: one `lesser`, one `greater`, one `master` per day), gated by the fanned skill's own level and tuned to the shipped XP curve so a packet stays a sensible nudge at any level (the top caps at 40k XP, ~10% of a level at L90):
 
-| File | id pattern | `requireSelfLevel` | XP | cost (token + essence) | `limitPerDay` |
-|---|---|---:|---:|---|---:|
-| `XP_Packet_Lesser.json`  | `shop_xp_{{SKILL}}`         | none | 1,500  | 90 + 40   | 3 |
-| `XP_Packet_Greater.json` | `shop_xp_greater_{{SKILL}}` | 30   | 7,500  | 200 + 80  | 2 |
-| `XP_Packet_Master.json`  | `shop_xp_master_{{SKILL}}`  | 60   | 40,000 | 400 + 120 | 1 |
+| File | id pattern | tier | `requireSelfLevel` | XP | cost (token + essence) | `limitPerDay` |
+|---|---|---|---:|---:|---|---:|
+| `XP_Packet_Lesser.json`  | `shop_xp_{{SKILL}}`         | `lesser`  | none | 1,500  | 75 + 30   | 3 |
+| `XP_Packet_Greater.json` | `shop_xp_greater_{{SKILL}}` | `greater` | 30   | 7,500  | 165 + 65  | 3 |
+| `XP_Packet_Master.json`  | `shop_xp_master_{{SKILL}}`  | `master`  | 60   | 40,000 | 330 + 100 | 2 |
 
 ```json
 { "Name": "XP_Packet_Greater",
   "Payload": {
     "extends": "xp_packet_base",
-    "params": { "TIER_NAME": "Training", "TOKENS": "200", "ESSENCE": "80", "XP": "7500" },
+    "params": { "TIER_NAME": "Training", "TOKENS": "165", "ESSENCE": "65", "XP": "7500" },
     "id": "shop_xp_greater_{{SKILL}}",
+    "tier": "greater",
     "order": 42,
     "requireSelfLevel": 30,
-    "limitPerDay": 2 } }
+    "limitPerDay": 3 } }
 ```
 
-- **Static, not rotating.** All three tiers are always listed (no `pool`); the level gate is the progression, so a player is never RNG-locked out of training the skill they care about. The reroll/rotation token-sink lives in the General shop's `Featured` pool, not here. The **all-skills bundle** (`XP_Packet_AllSkills.json`) is a separate static premium (`skill: "ALL"`, `+2,500` to every skill, 1/day).
+- **Rotating, one skill per tier per day.** The base template carries `"pool": "xpexchange"` (shared by all tiers); each tier file sets its `tier` so the pool's slot filters draw exactly one skill's Lesser, one Greater, and one Master per daily period (every fanned per-skill entry is a pool candidate, ~25 per tier). The deal is the reward and scarcity is the balance lever: prices sit ~18% under the old always-on values and limits are looser, because a given skill+tier surfaces only every ~25 days (reroll: 30 tokens, 2/day, deliberately not viable for chasing a specific skill). The board (`Shops/XpExchange.json`) uses the default flat layout - the skill-grouped layout renders static entries only and would hide the pool. The **all-skills bundle** (`XP_Packet_AllSkills.json`) stays a separate STATIC premium (`skill: "ALL"`, every skill at once, 1/day) under Catalog, so there is always a reliable daily sink no matter what rotates in. The pool's `titleKey` (`shop.xpexchange.featured`, "Today's XP Deals") labels the rotating section on the page.
 - **`requireSelfLevel`** (scalar) gates the offer behind the *fanned* skill's own level: the fan-out injects `requirements.requiresSkills[<skill>] = N` in Java (you can't template a `requiresSkills` *key*, only string values). Omit it for an ungated tier.
 - **Unique per-skill icons** come free: an `XP` reward for a concrete skill resolves to that skill's registry icon (`ShopEntryIconResolver` → `SkillDisplayUtils.resolveSkillIconItemId`), so the tiers ship **no** `icon`. Only the all-skills bundle (`skill: "ALL"`) sets an explicit `icon`.
 - **Dual currency.** Every XP exchange costs `bounty_token` AND `life_essence` (`combine: ALL` is the default for a multi-currency `cost`). **`life_essence` is item-backed** (it lives in the inventory as `Ingredient_Life_Essence`), so the player must physically hold that many Life Essence items to afford an exchange — `CostService` removes the items on purchase.

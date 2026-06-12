@@ -2,10 +2,11 @@
   "Name": "XP_Packet_Master",
   "Payload": {
     "extends": "xp_packet_base",
-    "params": { "TIER_NAME": "Mastery", "TOKENS": "400", "ESSENCE": "120", "XP": "40000" },
+    "params": { "TIER_NAME": "Mastery", "TOKENS": "330", "ESSENCE": "100", "XP": "40000" },
     "id": "shop_xp_master_{{SKILL}}",
+    "tier": "master",
     "order": 44,
     "requireSelfLevel": 60,
-    "limitPerDay": 1
+    "limitPerDay": 2
   }
 }
