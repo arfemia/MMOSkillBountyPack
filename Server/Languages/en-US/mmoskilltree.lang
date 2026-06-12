@@ -57,7 +57,7 @@ quest.bounty_deliver_iron.flavor = The quartermaster pays well for iron, no ques
 quest.bounty_deliver_hides.title = Hide Haul
 quest.bounty_deliver_hides.flavor = The tanners need light hides by the cartload. Drop them here.
 quest.bounty_deliver_essence.title = Essence Consignment
-quest.bounty_deliver_essence.flavor = Bottled life essence fetches a fortune. Hand over your stock.
+quest.bounty_deliver_essence.flavor = Bottled vitality fetches a fortune. Hand over your stock.
 quest.bounty_deliver_adamantite.title = Adamantite Consignment
 quest.bounty_deliver_adamantite.flavor = Refined hands want adamantite, and only the best ore will do.
 
@@ -179,6 +179,7 @@ shop.shop_xp_combat_any.desc = A combat veteran's reward: a burst of XP across e
 
 # --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
 currency.bounty_token.name = Bounty Token
+currency.life_essence.name = Life Essence
 
 # --- Achievements (achievement.<id>.title / .desc, resolved by convention) ---
 achievement.bounty_board_daily_t1.title = Daily Contractor

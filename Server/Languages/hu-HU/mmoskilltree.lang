@@ -57,7 +57,7 @@ quest.bounty_deliver_iron.flavor = A szállásmester jól fizet a vasért, kérd
 quest.bounty_deliver_hides.title = Bőrszállítmány
 quest.bounty_deliver_hides.flavor = A tímároknak szekérszámra kell a könnyű bőr. Tedd le ide.
 quest.bounty_deliver_essence.title = Esszencia Megbízás
-quest.bounty_deliver_essence.flavor = A palackozott életesszencia vagyont ér. Add át a készletedet.
+quest.bounty_deliver_essence.flavor = A palackozott életerő vagyont ér. Add át a készletedet.
 quest.bounty_deliver_adamantite.title = Adamantit Megbízás
 quest.bounty_deliver_adamantite.flavor = A finomultabb kezek adamantitot akarnak, és csak a legjobb érc felel meg.
 
@@ -167,6 +167,7 @@ shop.shop_xp_combat_any.desc = Egy harci veterán jutalma: egy adag XP minden k�
 
 # --- Valuták (currency.<id>.name, konvenció szerint feloldva; id = a fájlnév kisbetűsítve) ---
 currency.bounty_token.name = Bounty Token
+currency.life_essence.name = Életesszencia
 
 # --- Teljesítmények (achievement.<id>.title / .desc, konvenció szerint feloldva) ---
 achievement.bounty_board_daily_t1.title = Napi Szerződő

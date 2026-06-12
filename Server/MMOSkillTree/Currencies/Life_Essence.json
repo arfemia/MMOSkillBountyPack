@@ -1,0 +1,16 @@
+{
+  "Name": "Life_Essence",
+  "Payload": {
+    "hytaleItemId": "Ingredient_Life_Essence",
+    "icon": "Icons/ItemsGenerated/Ingredient_Life_Essence.png",
+    "color": "#a7e0a7",
+    "cap": 0,
+    "lossOnDeathPercent": 0,
+    "decayPerDayPercent": 0,
+    "showOnSidebar": true,
+    "showOnMasteryPage": true,
+    "sources": {
+      "xpConversionPercent": 0
+    }
+  }
+}

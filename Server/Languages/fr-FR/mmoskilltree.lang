@@ -57,7 +57,7 @@ quest.bounty_deliver_iron.flavor = L'intendant paie bien le fer, sans poser de q
 quest.bounty_deliver_hides.title = Cargaison de peaux
 quest.bounty_deliver_hides.flavor = Les tanneurs ont besoin de peaux légères par pleines charrettes. Déposez-les ici.
 quest.bounty_deliver_essence.title = Consignation d'essence
-quest.bounty_deliver_essence.flavor = L'essence de vie en flacon vaut une fortune. Cédez votre stock.
+quest.bounty_deliver_essence.flavor = La vitalité en flacon vaut une fortune. Cédez votre stock.
 quest.bounty_deliver_adamantite.title = Consignation d'adamantite
 quest.bounty_deliver_adamantite.flavor = Des mains expertes veulent de l'adamantite, et seul le meilleur minerai fera l'affaire.
 
@@ -167,6 +167,7 @@ shop.shop_xp_combat_any.desc = La récompense d'un vétéran du combat : une bou
 
 # --- Monnaies (currency.<id>.name, résolu par convention ; id = nom de fichier en minuscules) ---
 currency.bounty_token.name = Token de prime
+currency.life_essence.name = Essence de vie
 
 # --- Succès (achievement.<id>.title / .desc, résolus par convention) ---
 achievement.bounty_board_daily_t1.title = Contractant quotidien

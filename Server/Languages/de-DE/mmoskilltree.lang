@@ -57,7 +57,7 @@ quest.bounty_deliver_iron.flavor = Der Quartiermeister zahlt gut für Eisen, ohn
 quest.bounty_deliver_hides.title = Häute-Fuhre
 quest.bounty_deliver_hides.flavor = Die Gerber brauchen leichte Häute zu Karrenladungen. Liefere sie hier ab.
 quest.bounty_deliver_essence.title = Essenz-Konsignation
-quest.bounty_deliver_essence.flavor = Abgefüllte Lebensessenz bringt ein Vermögen. Gib deinen Vorrat ab.
+quest.bounty_deliver_essence.flavor = Abgefüllte Lebenskraft bringt ein Vermögen. Gib deinen Vorrat ab.
 quest.bounty_deliver_adamantite.title = Adamantit-Konsignation
 quest.bounty_deliver_adamantite.flavor = Erlesene Hände wollen Adamantit, und nur das beste Erz reicht aus.
 
@@ -167,6 +167,7 @@ shop.shop_xp_combat_any.desc = Die Belohnung eines Kampfveteranen: ein Schub XP 
 
 # --- Währungen (currency.<id>.name, per Konvention aufgelöst; id = Dateiname in Kleinbuchstaben) ---
 currency.bounty_token.name = Kopfgeld-Token
+currency.life_essence.name = Lebensessenz
 
 # --- Erfolge (achievement.<id>.title / .desc, per Konvention aufgelöst) ---
 achievement.bounty_board_daily_t1.title = Täglicher Auftragnehmer
