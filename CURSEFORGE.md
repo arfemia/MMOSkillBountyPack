@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A free content pack for [MMO Skill Tree](https://www.curseforge.com/hytale/mmoskilltree). It adds a rotating **Bounty Board**: daily and weekly contracts you pick up in the world, complete anywhere, and cash in for Bounty Tokens plus skill XP.
+A free content pack for [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree). It adds a rotating **Bounty Board**: daily and weekly contracts you pick up in the world, complete anywhere, and cash in for Bounty Tokens plus skill XP.
 
 Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies the board engine, so install both.
 
