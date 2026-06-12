@@ -188,3 +188,53 @@ achievement.bounty_board_weekly_t3.title = Weekly Legend
 # Shared streak description templates: {0} = the tier's completion count, injected from @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Complete {0} daily bounties.
 achievement.bounty_streak.weekly.desc = Complete {0} weekly bounties.
+
+# === 1.0.0 content pass: new mob hunts, gather-and-deliver, boss contracts ===
+
+# --- Daily: new kill ---
+quest.bounty_scorpion_sweep.title = Scorpion Sweep
+quest.bounty_scorpion_sweep.flavor = Scorpions have nested under the dunes and the caravans want them gone. Stamp out the swarm.
+quest.bounty_cull_cactee.title = Prickly Problem
+quest.bounty_cull_cactee.flavor = The cactee have pulled up their roots and started wandering the flats. Cut them down before they reach the road.
+quest.bounty_toad_rumble.title = Toad Rumble
+quest.bounty_toad_rumble.flavor = Rhino toads are shoving everything off the waterhole. Knock the big ones flat.
+quest.bounty_hunt_crocodile.title = Crocodile Hunt
+quest.bounty_hunt_crocodile.flavor = Crocs have crept into the shallows where folk cross. Clear the banks before someone loses a leg.
+quest.bounty_sabertooth_hunt.title = Sabertooth Hunt
+quest.bounty_sabertooth_hunt.flavor = A sabertooth pride is stalking the high trail. Pick them off from range before they pick off travelers.
+quest.bounty_raptor_cull.title = Raptor Cull
+quest.bounty_raptor_cull.flavor = Cave raptors are hunting in packs around the dig. Thin them so the miners can work.
+quest.bounty_ghoul_purge.title = Ghoul Purge
+quest.bounty_ghoul_purge.flavor = Ghouls are hollowing out the old cemetery from below. Put the feeders down for good.
+quest.bounty_emberwulf_hunt.title = Emberwulf Hunt
+quest.bounty_emberwulf_hunt.flavor = Emberwulves set the dry pines alight wherever they run. Drop them before the ridge goes up.
+
+# --- Daily: new gather (mine and deliver) ---
+quest.bounty_mine_silver.title = Silver Consignment
+quest.bounty_mine_silver.flavor = The mint is short on silver and the assayer wants a cut brought in. Work the veins, then hand a share to the board.
+
+# --- Weekly: new kill ---
+quest.bounty_weekly_fen_stalkers.title = Stalkers of the Fen
+quest.bounty_weekly_fen_stalkers.flavor = All week the fen stalkers have dragged livestock into the mire. Hunt them through the bog until the marsh falls quiet.
+quest.bounty_weekly_feran_pack.title = The Feran Pack
+quest.bounty_weekly_feran_pack.flavor = A feran hunting pack has claimed the ridgeline. It takes a week of work to break their hold.
+quest.bounty_weekly_yeti.title = Yeti of the Peaks
+quest.bounty_weekly_yeti.flavor = Yetis have come down from the white peaks and the passes are no longer safe. Drive them back into the snow.
+quest.bounty_weekly_trillodon.title = Trillodon Terror
+quest.bounty_weekly_trillodon.flavor = A trillodon is trampling everything between the river and the ridge. Bring the brute down.
+quest.bounty_weekly_spirits.title = Restless Spirits
+quest.bounty_weekly_spirits.flavor = Elemental spirits are tearing loose from the old shrines all week. Lay them to rest before the wards give.
+quest.bounty_weekly_voidspawn.title = Voidspawn Incursion
+quest.bounty_weekly_voidspawn.flavor = The void is bleeding through the rift again. Cut down what crawls out before the breach widens.
+quest.bounty_weekly_mine_gold.title = Gold Quota
+quest.bounty_weekly_mine_gold.flavor = A week-long charter for the treasury. Pull gold from the deep rock and turn the agreed portion over.
+
+# --- Boss hunts (hard, big payout) ---
+quest.bounty_aberrant_horror.title = Aberrant Horror
+quest.bounty_aberrant_horror.flavor = Something soured the dead out east, and the aberrant ones do not fall easy. Steel yourself and end them.
+quest.bounty_weekly_goblin_duke.title = The Goblin Duke
+quest.bounty_weekly_goblin_duke.flavor = The warren answers to a crowned brute now. End the Duke and the raids end with him.
+quest.bounty_weekly_shadow_knight.title = The Shadow Knight
+quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and steel barely bites it. Few who face the knight return. Be one who does.
+quest.bounty_weekly_broodmother.title = The Broodmother
+quest.bounty_weekly_broodmother.flavor = Every scarak in the dunes hatches from one swollen queen. Find her in the deep nest and end the brood at its source.

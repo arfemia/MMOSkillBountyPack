@@ -94,6 +94,23 @@ Extend `bounty_turnin_standard` and set the `{{target}}` param to a concrete ite
                  { "type": "XP", "skill": "MINING", "amount": 1500 } ] } }
 ```
 
+## Authoring a gather-and-deliver bounty
+
+Extend `bounty_gatherdeliver_standard` for a gathering contract that also hands a portion of the haul back at the board: a **two-objective** bounty (a `BREAK_BLOCK` `gather` objective plus a `TURN_IN` `deliver` objective). The board renders both objectives' live X/Y progress and surfaces the **Turn In** button for the `deliver` objective (`BountyBoardPage` binds the button to the first incomplete `TURN_IN` objective, so a multi-objective bounty works with no jar change). Set `{{target}}` to the mined BLOCK token (CONTAINS match) and `{{deliverItem}}` to the concrete ITEM id the block drops (EXACT match); for ores these are the same id (e.g. `Ore_Iron`). Override BOTH amounts via `objectiveOverrides` (`gather` + `deliver`), keep the delivered count a portion of the gathered count, and keep rewards CURRENCY + XP (the player just emptied that inventory space to turn in).
+
+```json
+{ "Name": "Bounty_Mine_Iron",
+  "Payload": {
+    "extends": "bounty_gatherdeliver_standard",
+    "id": "bounty_mine_iron",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ore_Iron", "deliverItem": "Ore_Iron" },
+    "objectiveOverrides": { "gather": { "amount": 25 }, "deliver": { "amount": 10 } },
+    "rewards": [ { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 170 },
+                 { "type": "XP", "skill": "MINING", "amount": 1400 } ] } }
+```
+
+Use it for ore runs (verify `deliverItem` exists in `hytale-resources/items-index.json`). Pure-mining contracts whose block has no clean single turn-in item (Stone/Wood) stay on `bounty_gather_standard`. Title + flavor are authored like any bounty; the objective lines ("Mine 25 Iron Ore", "Turn in 10 Iron Ore") auto-render their amounts, so the flavor stays data-free.
+
 ## Authoring a Token Shop offer
 
 One file per offer in `ShopEntries/`. The id comes from the inner `Payload.id` (fallback: the filename, lowercased). Rewards reuse the unified reward shapes (`XP`, `BOOST_TOKEN`, `COMMAND` `/give`, `CURRENCY`), so an offer can grant XP, a boost, items, or convert tokens into another currency.

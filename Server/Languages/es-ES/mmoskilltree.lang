@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Determinación del Baluarte
 shop.featured_boost_defense.desc = Cada golpe que aguantas te endurece aún más.
 shop.featured_boost_excavation.title = Fervor del Excavador
 shop.featured_boost_excavation.desc = La tierra entrega sus secretos de buena gana.
+
+# === Pase de contenido 1.0.0: nuevas cacerías, recolectar-y-entregar, contratos de jefe ===
+
+# --- Diario: nueva matanza ---
+quest.bounty_scorpion_sweep.title = Barrida de Escorpiones
+quest.bounty_scorpion_sweep.flavor = Los escorpiones han anidado bajo las dunas y las caravanas los quieren fuera. Aplasta el enjambre.
+quest.bounty_cull_cactee.title = Problema Espinoso
+quest.bounty_cull_cactee.flavor = Los cactee se han arrancado de raíz y vagan por los llanos. Córtalos antes de que lleguen al camino.
+quest.bounty_toad_rumble.title = Tunda de Sapos
+quest.bounty_toad_rumble.flavor = Los sapos rinoceronte echan a todos del abrevadero. Derriba a los grandes.
+quest.bounty_hunt_crocodile.title = Caza del Cocodrilo
+quest.bounty_hunt_crocodile.flavor = Los cocodrilos se han metido en el vado donde cruza la gente. Despeja las orillas antes de que alguien pierda una pierna.
+quest.bounty_sabertooth_hunt.title = Caza del Dientes de Sable
+quest.bounty_sabertooth_hunt.flavor = Una manada de dientes de sable acecha el sendero alto. Abátelos a distancia antes de que abatan a los viajeros.
+quest.bounty_raptor_cull.title = Sacrificio de Raptores
+quest.bounty_raptor_cull.flavor = Los raptores de cueva cazan en manada alrededor de la excavación. Méngualos para que los mineros puedan trabajar.
+quest.bounty_ghoul_purge.title = Purga de Gules
+quest.bounty_ghoul_purge.flavor = Los gules vacían el viejo cementerio desde abajo. Acaba con los carroñeros de una vez.
+quest.bounty_emberwulf_hunt.title = Caza del Lobo de Brasa
+quest.bounty_emberwulf_hunt.flavor = Los lobos de brasa prenden los pinos secos por donde corren. Abátelos antes de que arda la cresta.
+
+# --- Diario: nueva recolección (minar y entregar) ---
+quest.bounty_mine_silver.title = Consignación de Plata
+quest.bounty_mine_silver.flavor = A la ceca le falta plata y el ensayador quiere una parte entregada. Trabaja las vetas y entrega una porción al tablón.
+
+# --- Semanal: nueva matanza ---
+quest.bounty_weekly_fen_stalkers.title = Acechadores de la Ciénaga
+quest.bounty_weekly_fen_stalkers.flavor = Toda la semana los acechadores de la ciénaga han arrastrado ganado al fango. Cázalos por el pantano hasta que la marisma calle.
+quest.bounty_weekly_feran_pack.title = La Manada Feran
+quest.bounty_weekly_feran_pack.flavor = Una manada de caza feran ha reclamado la cresta. Hace falta una semana de trabajo para romper su dominio.
+quest.bounty_weekly_yeti.title = Yeti de las Cumbres
+quest.bounty_weekly_yeti.flavor = Los yetis han bajado de las cumbres blancas y los pasos ya no son seguros. Hazlos volver a la nieve.
+quest.bounty_weekly_trillodon.title = Terror Trillodon
+quest.bounty_weekly_trillodon.flavor = Un trillodón pisotea todo entre el río y la cresta. Abate a la bestia.
+quest.bounty_weekly_spirits.title = Espíritus Inquietos
+quest.bounty_weekly_spirits.flavor = Los espíritus elementales se sueltan de los viejos santuarios toda la semana. Dales descanso antes de que cedan las protecciones.
+quest.bounty_weekly_voidspawn.title = Incursión del Vacío
+quest.bounty_weekly_voidspawn.flavor = El vacío vuelve a sangrar por la grieta. Abate lo que se arrastra fuera antes de que la brecha se ensanche.
+quest.bounty_weekly_mine_gold.title = Cupo de Oro
+quest.bounty_weekly_mine_gold.flavor = Una carta de una semana para el tesoro. Saca oro de la roca profunda y entrega la porción acordada.
+
+# --- Cacerías de jefe (difícil, gran recompensa) ---
+quest.bounty_aberrant_horror.title = Horror Aberrante
+quest.bounty_aberrant_horror.flavor = Algo corrompió a los muertos del este, y los aberrantes no caen fácil. Ármate de valor y acábalos.
+quest.bounty_weekly_goblin_duke.title = El Duque Goblin
+quest.bounty_weekly_goblin_duke.flavor = La madriguera responde ahora a un bruto coronado. Acaba con el Duque y las redadas acaban con él.
+quest.bounty_weekly_shadow_knight.title = El Caballero Sombrío
+quest.bounty_weekly_shadow_knight.flavor = Una sombra acorazada recorre las ruinas, y el acero apenas la muerde. Pocos que enfrentan al caballero regresan. Sé uno de ellos.
+quest.bounty_weekly_broodmother.title = La Reina Madre
+quest.bounty_weekly_broodmother.flavor = Cada scarak de las dunas nace de una reina henchida. Encuéntrala en el nido profundo y acaba con la prole en su origen.

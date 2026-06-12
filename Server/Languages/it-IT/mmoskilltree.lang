@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Fermezza del Baluardo
 shop.featured_boost_defense.desc = Ogni colpo che incassi ti tempra ancora di piu'.
 shop.featured_boost_excavation.title = Fervore dello Scavatore
 shop.featured_boost_excavation.desc = La terra cede i suoi segreti di buon grado.
+
+# === Aggiornamento contenuti 1.0.0: nuove cacce, raccogli-e-consegna, contratti boss ===
+
+# --- Giornaliere: nuova uccisione ---
+quest.bounty_scorpion_sweep.title = Spazzata di Scorpioni
+quest.bounty_scorpion_sweep.flavor = Gli scorpioni hanno fatto il nido sotto le dune e le carovane li vogliono via. Schiaccia lo sciame.
+quest.bounty_cull_cactee.title = Problema Spinoso
+quest.bounty_cull_cactee.flavor = I cactee si sono sradicati e vagano per le piane. Abbattili prima che raggiungano la strada.
+quest.bounty_toad_rumble.title = Rissa di Rospi
+quest.bounty_toad_rumble.flavor = I rospi rinoceronte scacciano tutti dalla pozza. Stendi quelli grossi.
+quest.bounty_hunt_crocodile.title = Caccia al Coccodrillo
+quest.bounty_hunt_crocodile.flavor = I coccodrilli si sono infilati nel guado dove si attraversa. Libera le rive prima che qualcuno ci rimetta una gamba.
+quest.bounty_sabertooth_hunt.title = Caccia allo Smilodonte
+quest.bounty_sabertooth_hunt.flavor = Un branco di smilodonti si aggira sul sentiero alto. Falli fuori dalla distanza prima che facciano fuori i viandanti.
+quest.bounty_raptor_cull.title = Abbattimento di Raptor
+quest.bounty_raptor_cull.flavor = I raptor delle caverne cacciano in branco attorno allo scavo. Diradali perche' i minatori possano lavorare.
+quest.bounty_ghoul_purge.title = Purga dei Ghoul
+quest.bounty_ghoul_purge.flavor = I ghoul svuotano il vecchio cimitero dal basso. Stendi i divoratori una volta per tutte.
+quest.bounty_emberwulf_hunt.title = Caccia al Lupo di Brace
+quest.bounty_emberwulf_hunt.flavor = I lupi di brace danno fuoco ai pini secchi ovunque corrano. Abbattili prima che il crinale vada a fuoco.
+
+# --- Giornaliere: nuova raccolta (estrai e consegna) ---
+quest.bounty_mine_silver.title = Carico d'Argento
+quest.bounty_mine_silver.flavor = Alla zecca manca l'argento e il saggiatore ne vuole una parte consegnata. Lavora le vene, poi consegna una quota alla bacheca.
+
+# --- Settimanali: nuova uccisione ---
+quest.bounty_weekly_fen_stalkers.title = Predatori della Palude
+quest.bounty_weekly_fen_stalkers.flavor = Per tutta la settimana i predatori della palude hanno trascinato il bestiame nel fango. Cacciali per l'acquitrino finche' la melma non tace.
+quest.bounty_weekly_feran_pack.title = Il Branco Feran
+quest.bounty_weekly_feran_pack.flavor = Un branco da caccia feran ha reclamato il crinale. Ci vuole una settimana di lavoro per spezzarne la presa.
+quest.bounty_weekly_yeti.title = Yeti delle Vette
+quest.bounty_weekly_yeti.flavor = Gli yeti sono scesi dalle vette bianche e i valichi non sono piu' sicuri. Ricacciali nella neve.
+quest.bounty_weekly_trillodon.title = Terrore Trillodon
+quest.bounty_weekly_trillodon.flavor = Un trillodon calpesta tutto tra il fiume e il crinale. Abbatti il colosso.
+quest.bounty_weekly_spirits.title = Spiriti Inquieti
+quest.bounty_weekly_spirits.flavor = Per tutta la settimana spiriti elementali si liberano dagli antichi santuari. Mettili a riposo prima che i sigilli cedano.
+quest.bounty_weekly_voidspawn.title = Incursione del Vuoto
+quest.bounty_weekly_voidspawn.flavor = Il vuoto trasuda di nuovo dalla faglia. Abbatti cio' che ne striscia fuori prima che la breccia si allarghi.
+quest.bounty_weekly_mine_gold.title = Quota d'Oro
+quest.bounty_weekly_mine_gold.flavor = Un contratto di una settimana per il tesoro. Estrai l'oro dalla roccia profonda e consegna la quota concordata.
+
+# --- Cacce ai boss (difficile, grande ricompensa) ---
+quest.bounty_aberrant_horror.title = Orrore Aberrante
+quest.bounty_aberrant_horror.flavor = Qualcosa ha corrotto i morti a oriente, e gli aberranti non cadono facilmente. Fatti coraggio e poni loro fine.
+quest.bounty_weekly_goblin_duke.title = Il Duca Goblin
+quest.bounty_weekly_goblin_duke.flavor = La tana ora risponde a un bruto coronato. Poni fine al Duca e le razzie finiscono con lui.
+quest.bounty_weekly_shadow_knight.title = Il Cavaliere d'Ombra
+quest.bounty_weekly_shadow_knight.flavor = Un'ombra corazzata percorre le rovine, e l'acciaio la morde a malapena. Pochi che affrontano il cavaliere tornano. Sii uno di loro.
+quest.bounty_weekly_broodmother.title = La Madre della Covata
+quest.bounty_weekly_broodmother.flavor = Ogni scarak delle dune nasce da una regina gonfia. Trovala nel nido profondo e poni fine alla covata alla fonte.

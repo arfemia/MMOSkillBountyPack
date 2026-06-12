@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Решимость бастиона
 shop.featured_boost_defense.desc = Каждый выдержанный удар закаляет вас ещё сильнее.
 shop.featured_boost_excavation.title = Рвение землекопа
 shop.featured_boost_excavation.desc = Земля охотно отдаёт свои секреты.
+
+# === Контентное обновление 1.0.0: новые охоты, сбор-и-сдача, контракты на боссов ===
+
+# --- Ежедневные: новое убийство ---
+quest.bounty_scorpion_sweep.title = Зачистка скорпионов
+quest.bounty_scorpion_sweep.flavor = Скорпионы устроили гнездо под дюнами, и караваны хотят от них избавиться. Раздавите рой.
+quest.bounty_cull_cactee.title = Колючая проблема
+quest.bounty_cull_cactee.flavor = Кактеи вырвали корни и бродят по равнине. Срубите их, пока они не вышли на дорогу.
+quest.bounty_toad_rumble.title = Жабья потасовка
+quest.bounty_toad_rumble.flavor = Жабы-носороги сгоняют всех от водопоя. Уложите крупных.
+quest.bounty_hunt_crocodile.title = Охота на крокодилов
+quest.bounty_hunt_crocodile.flavor = Крокодилы пробрались к броду, где переправляются люди. Очистите берега, пока кто-нибудь не лишился ноги.
+quest.bounty_sabertooth_hunt.title = Охота на саблезубов
+quest.bounty_sabertooth_hunt.flavor = Прайд саблезубов крадётся по горной тропе. Снимите их издали, пока они не сняли путников.
+quest.bounty_raptor_cull.title = Отбраковка рапторов
+quest.bounty_raptor_cull.flavor = Пещерные рапторы охотятся стаей у раскопа. Проредите их, чтобы шахтёры могли работать.
+quest.bounty_ghoul_purge.title = Чистка упырей
+quest.bounty_ghoul_purge.flavor = Упыри выгрызают старое кладбище изнутри. Покончите с пожирателями раз и навсегда.
+quest.bounty_emberwulf_hunt.title = Охота на угольных волков
+quest.bounty_emberwulf_hunt.flavor = Угольные волки поджигают сухие сосны везде, где пробегают. Свалите их, пока хребет не вспыхнул.
+
+# --- Ежедневные: новый сбор (добудь и сдай) ---
+quest.bounty_mine_silver.title = Поставка серебра
+quest.bounty_mine_silver.flavor = Монетному двору не хватает серебра, и пробирщик хочет получить часть. Отработайте жилы и сдайте долю у доски.
+
+# --- Еженедельные: новое убийство ---
+quest.bounty_weekly_fen_stalkers.title = Болотные охотники
+quest.bounty_weekly_fen_stalkers.flavor = Всю неделю болотные охотники тащили скот в трясину. Выслеживайте их по топи, пока болото не затихнет.
+quest.bounty_weekly_feran_pack.title = Стая феранов
+quest.bounty_weekly_feran_pack.flavor = Охотничья стая феранов захватила хребет. Чтобы сломить их хватку, нужна неделя труда.
+quest.bounty_weekly_yeti.title = Йети вершин
+quest.bounty_weekly_yeti.flavor = Йети спустились с белых вершин, и перевалы больше не безопасны. Загоните их обратно в снега.
+quest.bounty_weekly_trillodon.title = Ужас-триллодон
+quest.bounty_weekly_trillodon.flavor = Триллодон топчет всё между рекой и хребтом. Свалите громадину.
+quest.bounty_weekly_spirits.title = Неупокоенные духи
+quest.bounty_weekly_spirits.flavor = Всю неделю стихийные духи вырываются из старых святилищ. Упокойте их, пока печати не сдали.
+quest.bounty_weekly_voidspawn.title = Вторжение из Пустоты
+quest.bounty_weekly_voidspawn.flavor = Пустота снова сочится сквозь разлом. Рубите тех, кто выползает, пока брешь не расширилась.
+quest.bounty_weekly_mine_gold.title = Квота на золото
+quest.bounty_weekly_mine_gold.flavor = Недельный наряд для казны. Добудьте золото из глубокой породы и сдайте оговорённую долю.
+
+# --- Охоты на боссов (сложно, крупная награда) ---
+quest.bounty_aberrant_horror.title = Аберрантный ужас
+quest.bounty_aberrant_horror.flavor = Что-то испортило мёртвых на востоке, и аберрантные нелегко падают. Соберитесь с духом и покончите с ними.
+quest.bounty_weekly_goblin_duke.title = Гоблинский герцог
+quest.bounty_weekly_goblin_duke.flavor = Теперь логово подчиняется коронованному громиле. Прикончите Герцога, и набеги закончатся вместе с ним.
+quest.bounty_weekly_shadow_knight.title = Теневой рыцарь
+quest.bounty_weekly_shadow_knight.flavor = Бронированная тень бродит по руинам, и сталь её едва берёт. Немногие, кто встал против рыцаря, возвращаются. Будьте одним из них.
+quest.bounty_weekly_broodmother.title = Матка выводка
+quest.bounty_weekly_broodmother.flavor = Каждый скарак дюн вылупляется из одной разбухшей королевы. Найдите её в глубоком гнезде и оборвите выводок у истока.

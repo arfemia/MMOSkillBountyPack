@@ -1,9 +1,9 @@
 {
-  "Name": "Bounty_Weekly_Mine_Adamantite",
+  "Name": "Bounty_Weekly_Mine_Gold",
   "Payload": {
     "extends": "bounty_gatherdeliver_standard",
-    "id": "bounty_weekly_mine_adamantite",
-    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Ore_Adamantite", "deliverItem": "Ore_Adamantite" },
+    "id": "bounty_weekly_mine_gold",
+    "params": { "boards": "weekly", "difficulty": "hard", "weight": "1", "target": "Ore_Gold", "deliverItem": "Ore_Gold" },
     "objectiveOverrides": { "gather": { "amount": 40 }, "deliver": { "amount": 15 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 770 },

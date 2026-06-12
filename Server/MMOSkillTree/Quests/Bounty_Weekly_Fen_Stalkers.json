@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Fen_Stalkers",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_weekly_fen_stalkers",
+    "params": { "boards": "weekly", "difficulty": "normal", "weight": "2", "target": "Fen_Stalker" },
+    "objectiveOverrides": { "main": { "amount": 24 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 450 },
+      { "type": "XP", "skill": "DAGGERS", "amount": 5000 }
+    ]
+  }
+}

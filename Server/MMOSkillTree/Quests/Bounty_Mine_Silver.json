@@ -1,9 +1,9 @@
 {
-  "Name": "Bounty_Mine_Iron",
+  "Name": "Bounty_Mine_Silver",
   "Payload": {
     "extends": "bounty_gatherdeliver_standard",
-    "id": "bounty_mine_iron",
-    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ore_Iron", "deliverItem": "Ore_Iron" },
+    "id": "bounty_mine_silver",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ore_Silver", "deliverItem": "Ore_Silver" },
     "objectiveOverrides": { "gather": { "amount": 25 }, "deliver": { "amount": 10 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 170 },

@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Bástya Elszántsága
 shop.featured_boost_defense.desc = Minden ütés, amit kiállsz, tovább edz.
 shop.featured_boost_excavation.title = Ásó Buzgalma
 shop.featured_boost_excavation.desc = A föld készségesen kiadja a titkait.
+
+# === 1.0.0 tartalombővítés: új mob-vadászatok, gyűjtés-és-leadás, boss szerződések ===
+
+# --- Napi: új ölés ---
+quest.bounty_scorpion_sweep.title = Skorpiósöprés
+quest.bounty_scorpion_sweep.flavor = A skorpiók befészkelték magukat a dűnék alá, és a karavánok meg akarnak szabadulni tőlük. Tipord el a rajt.
+quest.bounty_cull_cactee.title = Tüskés Probléma
+quest.bounty_cull_cactee.flavor = A kakteák kihúzták a gyökerüket, és a síkságon kóborolnak. Vágd ki őket, mielőtt elérik az utat.
+quest.bounty_toad_rumble.title = Varangyháború
+quest.bounty_toad_rumble.flavor = Az orrszarvú varangyok mindenkit elűznek az itatótól. Verd le a nagyokat.
+quest.bounty_hunt_crocodile.title = Krokodilvadászat
+quest.bounty_hunt_crocodile.flavor = A krokodilok beosontak a gázlóba, ahol az emberek átkelnek. Tisztítsd meg a partot, mielőtt valaki lábát veszti.
+quest.bounty_sabertooth_hunt.title = Kardfogúvadászat
+quest.bounty_sabertooth_hunt.flavor = Egy kardfogú falka cserkészi a hegyi ösvényt. Szedd le őket távolról, mielőtt ők szedik le az utazókat.
+quest.bounty_raptor_cull.title = Raptorritkítás
+quest.bounty_raptor_cull.flavor = A barlangi raptorok falkában vadásznak az ásatás körül. Ritkítsd meg őket, hogy a bányászok dolgozhassanak.
+quest.bounty_ghoul_purge.title = Ghúltisztogatás
+quest.bounty_ghoul_purge.flavor = A ghúlok alulról vájják ki a régi temetőt. Tedd el a dögevőket egyszer s mindenkorra.
+quest.bounty_emberwulf_hunt.title = Parázsfarkas-vadászat
+quest.bounty_emberwulf_hunt.flavor = A parázsfarkasok lángra lobbantják a száraz fenyveseket, amerre csak járnak. Terítsd le őket, mielőtt a gerinc lángba borul.
+
+# --- Napi: új gyűjtés (bányászd és add le) ---
+quest.bounty_mine_silver.title = Ezüstszállítmány
+quest.bounty_mine_silver.flavor = A pénzverdének kevés az ezüstje, és a vizsgáló egy részt kér belőle. Dolgozd le a teléreket, majd adj le egy részt a táblánál.
+
+# --- Heti: új ölés ---
+quest.bounty_weekly_fen_stalkers.title = A Láp Cserkészei
+quest.bounty_weekly_fen_stalkers.flavor = Egész héten a lápi cserkészek a mocsárba vonszolták a jószágot. Vadászd őket a lápon át, míg a mocsár el nem csendesedik.
+quest.bounty_weekly_feran_pack.title = A Feran Falka
+quest.bounty_weekly_feran_pack.flavor = Egy feran vadászfalka elfoglalta a gerincet. Egy hét munkája kell, hogy megtörd a hatalmukat.
+quest.bounty_weekly_yeti.title = A Csúcsok Jetije
+quest.bounty_weekly_yeti.flavor = A jetik lejöttek a fehér csúcsokról, és a hágók már nem biztonságosak. Űzd vissza őket a hóba.
+quest.bounty_weekly_trillodon.title = Trillodon Rémség
+quest.bounty_weekly_trillodon.flavor = Egy trillodon mindent eltapos a folyó és a gerinc között. Terítsd le a behemótot.
+quest.bounty_weekly_spirits.title = Nyughatatlan Szellemek
+quest.bounty_weekly_spirits.flavor = Egész héten elemi szellemek szabadulnak el a régi szentélyekből. Békítsd meg őket, mielőtt a pecsétek engednek.
+quest.bounty_weekly_voidspawn.title = Űrszülött Betörés
+quest.bounty_weekly_voidspawn.flavor = Az űr ismét átszivárog a hasadékon. Vágd le, ami kimászik, mielőtt a rés kiszélesedik.
+quest.bounty_weekly_mine_gold.title = Aranykvóta
+quest.bounty_weekly_mine_gold.flavor = Egyhetes megbízás a kincstárnak. Húzd ki az aranyat a mély kőzetből, és add át a megegyezett részt.
+
+# --- Boss vadászatok (nehéz, nagy jutalom) ---
+quest.bounty_aberrant_horror.title = Aberráns Rémség
+quest.bounty_aberrant_horror.flavor = Valami megrontotta a holtakat keleten, és az aberránsak nem esnek el könnyen. Szedd össze magad, és vess véget nekik.
+quest.bounty_weekly_goblin_duke.title = A Goblin Herceg
+quest.bounty_weekly_goblin_duke.flavor = Az odú most egy koronás szörnyetegnek engedelmeskedik. Végezz a Herceggel, és a rajtaütések is vele érnek véget.
+quest.bounty_weekly_shadow_knight.title = Az Árnylovag
+quest.bounty_weekly_shadow_knight.flavor = Egy páncélos árny járja a romokat, és az acél alig fogja. Kevesen térnek vissza, akik szembeszállnak a lovaggal. Légy egy közülük.
+quest.bounty_weekly_broodmother.title = A Költőanya
+quest.bounty_weekly_broodmother.flavor = A dűnék minden scarakja egyetlen duzzadt királynőből kel ki. Találd meg a mély fészekben, és vess véget a fészekaljnak a forrásánál.

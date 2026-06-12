@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Siperin Azmi
 shop.featured_boost_defense.desc = Göğüslediğin her darbe seni biraz daha sertleştirir.
 shop.featured_boost_excavation.title = Kazıcının Şevki
 shop.featured_boost_excavation.desc = Toprak sırlarını gönüllüce teslim eder.
+
+# === 1.0.0 içerik güncellemesi: yeni av sözleşmeleri, topla-ve-teslim-et, boss sözleşmeleri ===
+
+# --- Günlük: yeni öldürme ---
+quest.bounty_scorpion_sweep.title = Akrep Süpürmesi
+quest.bounty_scorpion_sweep.flavor = Akrepler kumulların altına yuvalandı ve kervanlar onların gitmesini istiyor. Sürüyü ez.
+quest.bounty_cull_cactee.title = Dikenli Sorun
+quest.bounty_cull_cactee.flavor = Kakteeler köklerini söküp ovada dolaşmaya başladı. Yola varmadan önce onları kes.
+quest.bounty_toad_rumble.title = Kurbağa Kavgası
+quest.bounty_toad_rumble.flavor = Gergedan kurbağalar herkesi su birikintisinden kovuyor. Büyük olanları yere ser.
+quest.bounty_hunt_crocodile.title = Timsah Avı
+quest.bounty_hunt_crocodile.flavor = Timsahlar insanların geçtiği sığ geçide süzüldü. Biri bacağını kaybetmeden kıyıları temizle.
+quest.bounty_sabertooth_hunt.title = Kılıç Dişli Avı
+quest.bounty_sabertooth_hunt.flavor = Bir kılıç dişli sürüsü yüksek patikada sinsice dolaşıyor. Onlar yolcuları indirmeden sen onları uzaktan indir.
+quest.bounty_raptor_cull.title = Raptor İtlafı
+quest.bounty_raptor_cull.flavor = Mağara raptorları kazı alanının çevresinde sürü hâlinde avlanıyor. Madenciler çalışabilsin diye onları seyrelt.
+quest.bounty_ghoul_purge.title = Hortlak Tasfiyesi
+quest.bounty_ghoul_purge.flavor = Hortlaklar eski mezarlığı alttan oyuyor. Leş yiyicileri temelli yere ser.
+quest.bounty_emberwulf_hunt.title = Köz Kurdu Avı
+quest.bounty_emberwulf_hunt.flavor = Köz kurtları koştukları her yerde kuru çamları tutuşturuyor. Sırt alev almadan onları indir.
+
+# --- Günlük: yeni toplama (kaz ve teslim et) ---
+quest.bounty_mine_silver.title = Gümüş Sevkiyatı
+quest.bounty_mine_silver.flavor = Darphanenin gümüşü az ve ayarcı bir payın teslim edilmesini istiyor. Damarları işle, sonra tahtaya bir pay teslim et.
+
+# --- Haftalık: yeni öldürme ---
+quest.bounty_weekly_fen_stalkers.title = Bataklık Sinsileri
+quest.bounty_weekly_fen_stalkers.flavor = Bütün hafta bataklık sinsileri hayvanları batağa sürükledi. Bataklık susana dek onları sazlıkta avla.
+quest.bounty_weekly_feran_pack.title = Feran Sürüsü
+quest.bounty_weekly_feran_pack.flavor = Bir feran av sürüsü sırtı ele geçirdi. Hakimiyetlerini kırmak bir haftalık iş ister.
+quest.bounty_weekly_yeti.title = Zirvelerin Yetisi
+quest.bounty_weekly_yeti.flavor = Yetiler beyaz zirvelerden indi ve geçitler artık güvenli değil. Onları kara geri sür.
+quest.bounty_weekly_trillodon.title = Trillodon Dehşeti
+quest.bounty_weekly_trillodon.flavor = Bir trillodon nehir ile sırt arasındaki her şeyi eziyor. Devasa yaratığı indir.
+quest.bounty_weekly_spirits.title = Huzursuz Ruhlar
+quest.bounty_weekly_spirits.flavor = Bütün hafta elementsel ruhlar eski tapınaklardan kopuyor. Mühürler boşa çıkmadan onları huzura kavuştur.
+quest.bounty_weekly_voidspawn.title = Boşluk İstilası
+quest.bounty_weekly_voidspawn.flavor = Boşluk yine yarıktan sızıyor. Gedik genişlemeden dışarı sürünen ne varsa indir.
+quest.bounty_weekly_mine_gold.title = Altın Kotası
+quest.bounty_weekly_mine_gold.flavor = Hazine için bir haftalık ferman. Derin kayadan altın çıkar ve kararlaştırılan payı teslim et.
+
+# --- Boss avları (zor, büyük ödül) ---
+quest.bounty_aberrant_horror.title = Sapkın Dehşet
+quest.bounty_aberrant_horror.flavor = Doğuda ölüleri bir şey bozdu ve sapkın olanlar kolay düşmüyor. Yüreğini topla ve onları bitir.
+quest.bounty_weekly_goblin_duke.title = Goblin Dükü
+quest.bounty_weekly_goblin_duke.flavor = İn artık taçlı bir zorbaya boyun eğiyor. Dük'ü bitir, akınlar da onunla biter.
+quest.bounty_weekly_shadow_knight.title = Gölge Şövalye
+quest.bounty_weekly_shadow_knight.flavor = Zırhlı bir gölge harabelerde dolaşıyor ve çelik onu zar zor ısırıyor. Şövalyeyle yüzleşip dönen azdır. Onlardan biri ol.
+quest.bounty_weekly_broodmother.title = Kuluçka Anası
+quest.bounty_weekly_broodmother.flavor = Kumullardaki her scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve dölü kaynağında bitir.

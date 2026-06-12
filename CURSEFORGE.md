@@ -6,9 +6,9 @@ Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies
 
 ## What it adds
 
-- **Daily Bounty Board** - a handful of kill, gather, and train-a-skill contracts that refresh every day.
-- **Weekly Bounty Board** - tougher, higher-paying contracts that refresh every week.
-- **Delivery contracts** - some contracts ask you to hand in gathered materials (like Life Essence or ore) at the board instead of killing or mining.
+- **Daily Bounty Board** - a rotating mix of kill, gather, mine-and-deliver, and train-a-skill contracts that refresh every day, sending you after creatures from desert scorpions and cave raptors to swamp crocodiles, sabertooths, and ghouls.
+- **Weekly Bounty Board** - tougher, higher-paying contracts that refresh every week, including marquee boss hunts (the Goblin Duke, the Shadow Knight, the Scarak Broodmother, and an aberrant horror) that pay out bigger than a regular hard contract.
+- **Delivery and mine-and-deliver contracts** - some contracts ask you to hand in gathered materials (like Life Essence or ore) at the board, and many mining contracts now end by delivering a share of what you dug, not just breaking blocks.
 - **Bounty Tokens** - the reward currency, earned from contracts, spent at the shops, and used to reroll contracts and featured offers.
 - **Shops** - a placeable Token Trader block (or NPC) opens the shop: spend Bounty Tokens across two storefronts, the general **Token Shop** (XP boosts, item caches, currency conversions, and a rotating Featured shelf you can reroll) and a per-skill **XP Exchange**.
 - **Placeable blocks** - craft a Daily Bounty Board, a Weekly Bounty Board, and a Token Trader, mount them on a wall anywhere, and each opens its own menu.
@@ -49,4 +49,4 @@ Bounties and boards are plain pack files: add a contract by dropping in one smal
 
 | Pack  | Plugin | Notes |
 | ----- | ------ | ----- |
-| 1.0.0 | 1.3.0+ | First release. Daily and Weekly Bounty Boards, Bounty Tokens, delivery (turn-in) contracts, per-contract rerolls with a daily cap, two shop storefronts (the Token Shop and a per-skill XP Exchange) behind a Token Trader block/NPC, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), full 9-language translations, and spawn integration with the mod's Adventurer's Guide NPC (opt out in `spawn-hub.json` or remove it once in-game). |
+| 1.0.0 | 1.3.0+ | First release. Daily and Weekly Bounty Boards with a wide bestiary and marquee boss hunts, Bounty Tokens, mine-and-deliver and turn-in contracts, per-contract rerolls with a daily cap, two shop storefronts (the Token Shop and a per-skill XP Exchange) behind a Token Trader block/NPC, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), full 9-language translations, and spawn integration with the mod's Adventurer's Guide NPC (opt out in `spawn-hub.json` or remove it once in-game). |

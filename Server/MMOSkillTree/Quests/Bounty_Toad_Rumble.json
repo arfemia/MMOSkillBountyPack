@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Toad_Rumble",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_toad_rumble",
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "2", "target": "Toad_Rhino" },
+    "objectiveOverrides": { "main": { "amount": 8 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 80 },
+      { "type": "XP", "skill": "BLUNT", "amount": 650 }
+    ]
+  }
+}

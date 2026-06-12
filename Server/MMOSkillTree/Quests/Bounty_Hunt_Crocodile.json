@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Hunt_Crocodile",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_hunt_crocodile",
+    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Crocodile" },
+    "objectiveOverrides": { "main": { "amount": 10 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 150 },
+      { "type": "XP", "skill": "POLEARMS", "amount": 1200 }
+    ]
+  }
+}

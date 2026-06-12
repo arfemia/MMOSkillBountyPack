@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Résolution du rempart
 shop.featured_boost_defense.desc = Chaque coup que vous encaissez vous endurcit davantage.
 shop.featured_boost_excavation.title = Ferveur du terrassier
 shop.featured_boost_excavation.desc = La terre livre ses secrets de bon gré.
+
+# === Passe de contenu 1.0.0 : nouvelles chasses, récolter-et-livrer, contrats de boss ===
+
+# --- Quotidiennes : nouveau combat ---
+quest.bounty_scorpion_sweep.title = Battue de scorpions
+quest.bounty_scorpion_sweep.flavor = Les scorpions ont niché sous les dunes et les caravanes veulent les voir partir. Écrasez l'essaim.
+quest.bounty_cull_cactee.title = Problème épineux
+quest.bounty_cull_cactee.flavor = Les cactees ont arraché leurs racines et errent dans les plaines. Abattez-les avant qu'ils n'atteignent la route.
+quest.bounty_toad_rumble.title = Raclée de crapauds
+quest.bounty_toad_rumble.flavor = Les crapauds rhinocéros chassent tout le monde du point d'eau. Mettez les gros à terre.
+quest.bounty_hunt_crocodile.title = Chasse au crocodile
+quest.bounty_hunt_crocodile.flavor = Les crocodiles se sont glissés dans le gué où l'on traverse. Dégagez les berges avant que quelqu'un n'y laisse une jambe.
+quest.bounty_sabertooth_hunt.title = Chasse au smilodon
+quest.bounty_sabertooth_hunt.flavor = Une harde de smilodons rôde sur le sentier d'altitude. Abattez-les à distance avant qu'ils n'abattent les voyageurs.
+quest.bounty_raptor_cull.title = Abattage de raptors
+quest.bounty_raptor_cull.flavor = Les raptors des cavernes chassent en meute autour du chantier. Réduisez-les pour que les mineurs puissent travailler.
+quest.bounty_ghoul_purge.title = Purge des goules
+quest.bounty_ghoul_purge.flavor = Les goules creusent l'ancien cimetière par en dessous. Achevez les charognards pour de bon.
+quest.bounty_emberwulf_hunt.title = Chasse au loup de braise
+quest.bounty_emberwulf_hunt.flavor = Les loups de braise embrasent les pins secs partout où ils passent. Abattez-les avant que la crête ne s'enflamme.
+
+# --- Quotidiennes : nouvelle récolte (miner et livrer) ---
+quest.bounty_mine_silver.title = Consignation d'argent
+quest.bounty_mine_silver.flavor = La monnaie manque d'argent et l'essayeur en veut une part livrée. Exploitez les filons, puis remettez une part au tableau.
+
+# --- Hebdomadaires : nouveau combat ---
+quest.bounty_weekly_fen_stalkers.title = Rôdeurs du marais
+quest.bounty_weekly_fen_stalkers.flavor = Toute la semaine, les rôdeurs du marais ont traîné le bétail dans la fange. Traquez-les à travers la tourbière jusqu'à ce que le marais se taise.
+quest.bounty_weekly_feran_pack.title = La meute feran
+quest.bounty_weekly_feran_pack.flavor = Une meute de chasse feran s'est emparée de la crête. Il faut une semaine de travail pour briser son emprise.
+quest.bounty_weekly_yeti.title = Yéti des cimes
+quest.bounty_weekly_yeti.flavor = Les yétis sont descendus des cimes blanches et les cols ne sont plus sûrs. Renvoyez-les dans la neige.
+quest.bounty_weekly_trillodon.title = Terreur trillodon
+quest.bounty_weekly_trillodon.flavor = Un trillodon piétine tout entre la rivière et la crête. Abattez le colosse.
+quest.bounty_weekly_spirits.title = Esprits agités
+quest.bounty_weekly_spirits.flavor = Les esprits élémentaires se libèrent des anciens sanctuaires toute la semaine. Apaisez-les avant que les sceaux ne cèdent.
+quest.bounty_weekly_voidspawn.title = Incursion du néant
+quest.bounty_weekly_voidspawn.flavor = Le néant suinte de nouveau par la faille. Abattez ce qui en rampe avant que la brèche ne s'élargisse.
+quest.bounty_weekly_mine_gold.title = Quota d'or
+quest.bounty_weekly_mine_gold.flavor = Une charte d'une semaine pour le trésor. Tirez l'or de la roche profonde et remettez la part convenue.
+
+# --- Chasses aux boss (difficile, grosse récompense) ---
+quest.bounty_aberrant_horror.title = Horreur aberrante
+quest.bounty_aberrant_horror.flavor = Quelque chose a corrompu les morts à l'est, et les aberrants ne tombent pas facilement. Armez-vous de courage et achevez-les.
+quest.bounty_weekly_goblin_duke.title = Le Duc gobelin
+quest.bounty_weekly_goblin_duke.flavor = La tanière obéit désormais à une brute couronnée. Achevez le Duc et les raids s'achèvent avec lui.
+quest.bounty_weekly_shadow_knight.title = Le Chevalier d'ombre
+quest.bounty_weekly_shadow_knight.flavor = Une ombre cuirassée arpente les ruines, et l'acier l'entame à peine. Rares sont ceux qui affrontent le chevalier et reviennent. Soyez de ceux-là.
+quest.bounty_weekly_broodmother.title = La Mère de couvée
+quest.bounty_weekly_broodmother.flavor = Chaque scarak des dunes éclôt d'une reine gonflée. Trouvez-la dans le nid profond et tarissez la couvée à sa source.

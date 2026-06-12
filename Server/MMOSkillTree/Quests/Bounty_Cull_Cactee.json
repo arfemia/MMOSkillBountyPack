@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Cull_Cactee",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_cull_cactee",
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "2", "target": "Cactee" },
+    "objectiveOverrides": { "main": { "amount": 12 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 75 },
+      { "type": "XP", "skill": "AXES", "amount": 600 }
+    ]
+  }
+}

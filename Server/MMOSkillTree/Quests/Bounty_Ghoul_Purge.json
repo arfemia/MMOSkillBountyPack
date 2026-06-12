@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Ghoul_Purge",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_ghoul_purge",
+    "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "Ghoul" },
+    "objectiveOverrides": { "main": { "amount": 8 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 300 },
+      { "type": "XP", "skill": "STAVES", "amount": 2500 }
+    ]
+  }
+}

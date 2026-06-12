@@ -190,3 +190,53 @@ shop.featured_boost_defense.title = Bollwerks Entschlossenheit
 shop.featured_boost_defense.desc = Jeder Schlag, den du überstehst, härtet dich weiter ab.
 shop.featured_boost_excavation.title = Buddler-Eifer
 shop.featured_boost_excavation.desc = Die Erde gibt ihre Geheimnisse bereitwillig preis.
+
+# === 1.0.0 Content-Pass: neue Mob-Jagden, Sammeln-und-Liefern, Bosskontrakte ===
+
+# --- Täglich: neues Töten ---
+quest.bounty_scorpion_sweep.title = Skorpion-Säuberung
+quest.bounty_scorpion_sweep.flavor = Skorpione haben sich unter den Dünen eingenistet und die Karawanen wollen sie los. Zertritt den Schwarm.
+quest.bounty_cull_cactee.title = Stacheliges Problem
+quest.bounty_cull_cactee.flavor = Die Kaktee haben ihre Wurzeln gezogen und streifen über die Ebene. Fäll sie, bevor sie die Straße erreichen.
+quest.bounty_toad_rumble.title = Krötenkrawall
+quest.bounty_toad_rumble.flavor = Nashornkröten drängen alles vom Wasserloch weg. Schlag die großen nieder.
+quest.bounty_hunt_crocodile.title = Krokodiljagd
+quest.bounty_hunt_crocodile.flavor = Krokodile haben sich in die Furt geschlichen, wo Leute queren. Räum die Ufer, bevor jemand ein Bein verliert.
+quest.bounty_sabertooth_hunt.title = Säbelzahnjagd
+quest.bounty_sabertooth_hunt.flavor = Ein Säbelzahn-Rudel pirscht über den Höhenpfad. Hol sie aus der Distanz, bevor sie Reisende holen.
+quest.bounty_raptor_cull.title = Raptor-Dezimierung
+quest.bounty_raptor_cull.flavor = Höhlenraptoren jagen im Rudel rund um die Grabung. Dünn sie aus, damit die Bergleute arbeiten können.
+quest.bounty_ghoul_purge.title = Ghul-Säuberung
+quest.bounty_ghoul_purge.flavor = Ghule höhlen den alten Friedhof von unten aus. Leg die Fresser endgültig um.
+quest.bounty_emberwulf_hunt.title = Glutwolf-Jagd
+quest.bounty_emberwulf_hunt.flavor = Glutwölfe setzen die trockenen Kiefern in Brand, wo sie auch laufen. Streck sie nieder, bevor der Grat in Flammen aufgeht.
+
+# --- Täglich: neues Sammeln (abbauen und liefern) ---
+quest.bounty_mine_silver.title = Silberlieferung
+quest.bounty_mine_silver.flavor = Der Münze fehlt Silber und der Prüfer will einen Teil geliefert. Arbeite die Adern ab und gib einen Anteil am Brett ab.
+
+# --- Wöchentlich: neues Töten ---
+quest.bounty_weekly_fen_stalkers.title = Pirscher des Moors
+quest.bounty_weekly_fen_stalkers.flavor = Die ganze Woche zogen die Moorpirscher Vieh in den Sumpf. Jag sie durch das Moor, bis der Morast still wird.
+quest.bounty_weekly_feran_pack.title = Das Feran-Rudel
+quest.bounty_weekly_feran_pack.flavor = Ein Feran-Jagdrudel hat den Grat beansprucht. Es braucht eine Woche, um ihren Griff zu brechen.
+quest.bounty_weekly_yeti.title = Yeti der Gipfel
+quest.bounty_weekly_yeti.flavor = Yetis sind von den weißen Gipfeln herabgestiegen und die Pässe sind nicht mehr sicher. Treib sie zurück in den Schnee.
+quest.bounty_weekly_trillodon.title = Trillodon-Schrecken
+quest.bounty_weekly_trillodon.flavor = Ein Trillodon zertrampelt alles zwischen Fluss und Grat. Streck den Koloss nieder.
+quest.bounty_weekly_spirits.title = Ruhelose Geister
+quest.bounty_weekly_spirits.flavor = Elementargeister reißen sich die ganze Woche von den alten Schreinen los. Bring sie zur Ruhe, bevor die Banne nachgeben.
+quest.bounty_weekly_voidspawn.title = Leerenbrut-Einfall
+quest.bounty_weekly_voidspawn.flavor = Die Leere blutet wieder durch den Riss. Schlag nieder, was herauskriecht, bevor der Spalt sich weitet.
+quest.bounty_weekly_mine_gold.title = Goldquote
+quest.bounty_weekly_mine_gold.flavor = Ein Wochenauftrag für die Schatzkammer. Hol Gold aus dem tiefen Fels und gib den vereinbarten Teil ab.
+
+# --- Bossjagden (schwer, große Auszahlung) ---
+quest.bounty_aberrant_horror.title = Aberranter Schrecken
+quest.bounty_aberrant_horror.flavor = Etwas hat die Toten im Osten verdorben, und die aberranten fallen nicht leicht. Wappne dich und mach ihnen ein Ende.
+quest.bounty_weekly_goblin_duke.title = Der Goblin-Herzog
+quest.bounty_weekly_goblin_duke.flavor = Der Bau gehorcht nun einem gekrönten Unhold. Beende den Herzog und die Überfälle enden mit ihm.
+quest.bounty_weekly_shadow_knight.title = Der Schattenritter
+quest.bounty_weekly_shadow_knight.flavor = Ein gepanzerter Schemen wandelt durch die Ruinen, und Stahl beißt ihn kaum. Wenige, die dem Ritter begegnen, kehren zurück. Sei einer davon.
+quest.bounty_weekly_broodmother.title = Die Brutmutter
+quest.bounty_weekly_broodmother.flavor = Jeder Scarak der Dünen schlüpft aus einer geschwollenen Königin. Find sie im tiefen Nest und beende die Brut an der Quelle.

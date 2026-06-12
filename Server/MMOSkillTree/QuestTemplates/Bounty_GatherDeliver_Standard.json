@@ -1,0 +1,19 @@
+{
+  "Name": "Bounty_GatherDeliver_Standard",
+  "Payload": {
+    "category": "bounty",
+    "repeatable": true,
+    "cooldownSeconds": 79200,
+    "autoClaimRewards": true,
+    "npcViewId": "bounty_board",
+    "visibility": { "hidden": true },
+    "tags": ["bounty", "board:{{boards}}", "diff:{{difficulty}}", "weight:{{weight}}"],
+    "objectives": [
+      { "id": "gather", "type": "BREAK_BLOCK", "target": "{{target}}", "amount": 1, "matchMode": "CONTAINS" },
+      { "id": "deliver", "type": "TURN_IN", "target": "{{deliverItem}}", "amount": 1, "matchMode": "EXACT" }
+    ],
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 1 }
+    ]
+  }
+}
