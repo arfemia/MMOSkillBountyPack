@@ -120,8 +120,6 @@ shop.boost_mining.title = Fiebre Minera
 shop.boost_mining.desc = Una ráfaga de instinto minero concentrado; la roca prácticamente cede sola.
 shop.boost_all_skills.title = Oleada de Todas las Habilidades
 shop.boost_all_skills.desc = Una oleada de lucidez que agudiza todas tus habilidades.
-shop.boost_polearms.title = Alcance del Cazador
-shop.boost_polearms.desc = Tus estocadas aciertan con una precisión asombrosa mientras dura.
 shop.cache_iron_ore.title = Cajón de Hierro
 shop.cache_iron_ore.desc = Un cajón robusto de hierro, entregado directamente a tu inventario.
 shop.cache_adamantite_ore.title = Cajón de Adamantita
@@ -167,7 +165,6 @@ shop.shop_xp_combat_any.desc = La recompensa de un veterano del combate: una rá
 
 # --- Monedas (currency.<id>.name, resuelto por convención; id = nombre de archivo en minúsculas) ---
 currency.bounty_token.name = Token de Contrato
-currency.life_essence.name = Esencia de Vida
 
 # --- Logros (achievement.<id>.title / .desc, resueltos por convención) ---
 achievement.bounty_board_daily_t1.title = Contratista Diario

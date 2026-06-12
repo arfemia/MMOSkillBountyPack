@@ -120,8 +120,6 @@ shop.boost_mining.title = Bányász Roham
 shop.boost_mining.desc = Egy adag összpontosított bányászösztön; a kőzet szinte magától enged.
 shop.boost_all_skills.title = Összes Képesség Lendület
 shop.boost_all_skills.desc = A belátás hulláma, amely minden képességedet élesíti.
-shop.boost_polearms.title = Vadász Hatótáv
-shop.boost_polearms.desc = A döféseid hátborzongató pontossággal találnak, amíg tart.
 shop.cache_iron_ore.title = Vasláda
 shop.cache_iron_ore.desc = Egy strapabíró láda vas, egyenesen a leltáradba szállítva.
 shop.cache_adamantite_ore.title = Adamantitláda
@@ -167,7 +165,6 @@ shop.shop_xp_combat_any.desc = Egy harci veterán jutalma: egy adag XP minden k�
 
 # --- Valuták (currency.<id>.name, konvenció szerint feloldva; id = a fájlnév kisbetűsítve) ---
 currency.bounty_token.name = Bounty Token
-currency.life_essence.name = Életesszencia
 
 # --- Teljesítmények (achievement.<id>.title / .desc, konvenció szerint feloldva) ---
 achievement.bounty_board_daily_t1.title = Napi Szerződő

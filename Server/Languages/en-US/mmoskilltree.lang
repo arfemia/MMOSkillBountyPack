@@ -120,8 +120,6 @@ shop.boost_mining.title = Mining Rush
 shop.boost_mining.desc = A burst of focused mining instinct; the rock practically gives way.
 shop.boost_all_skills.title = All-Skills Surge
 shop.boost_all_skills.desc = A surge of insight that sharpens every skill you have.
-shop.boost_polearms.title = Hunter's Reach
-shop.boost_polearms.desc = Your thrusts land with uncanny precision while it lasts.
 shop.cache_copper_ore.title = Copper Crate
 shop.cache_copper_ore.desc = A starter crate of raw copper. No questions asked.
 shop.cache_iron_ore.title = Iron Crate
@@ -179,7 +177,6 @@ shop.shop_xp_combat_any.desc = A combat veteran's reward: a burst of XP across e
 
 # --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
 currency.bounty_token.name = Bounty Token
-currency.life_essence.name = Life Essence
 
 # --- Achievements (achievement.<id>.title / .desc, resolved by convention) ---
 achievement.bounty_board_daily_t1.title = Daily Contractor

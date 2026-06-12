@@ -120,8 +120,6 @@ shop.boost_mining.title = Ruée minière
 shop.boost_mining.desc = Une bouffée d'instinct minier concentré ; la roche cède presque d'elle-même.
 shop.boost_all_skills.title = Déferlante toutes compétences
 shop.boost_all_skills.desc = Une vague de lucidité qui aiguise chacune de vos compétences.
-shop.boost_polearms.title = Allonge du chasseur
-shop.boost_polearms.desc = Vos coups d'estoc portent avec une précision troublante tant que cela dure.
 shop.cache_iron_ore.title = Caisse de fer
 shop.cache_iron_ore.desc = Une caisse solide de fer, livrée directement dans votre inventaire.
 shop.cache_adamantite_ore.title = Caisse d'adamantite
@@ -167,7 +165,6 @@ shop.shop_xp_combat_any.desc = La récompense d'un vétéran du combat : une bou
 
 # --- Monnaies (currency.<id>.name, résolu par convention ; id = nom de fichier en minuscules) ---
 currency.bounty_token.name = Token de prime
-currency.life_essence.name = Essence de vie
 
 # --- Succès (achievement.<id>.title / .desc, résolus par convention) ---
 achievement.bounty_board_daily_t1.title = Contractant quotidien

@@ -120,8 +120,6 @@ shop.boost_mining.title = Bergbau-Rausch
 shop.boost_mining.desc = Ein Schub konzentrierten Bergmannsinstinkts; das Gestein gibt praktisch von selbst nach.
 shop.boost_all_skills.title = Allskill-Schub
 shop.boost_all_skills.desc = Eine Welle der Eingebung, die jede deiner Fähigkeiten schärft.
-shop.boost_polearms.title = Jägerreichweite
-shop.boost_polearms.desc = Deine Stöße treffen mit unheimlicher Präzision, solange es anhält.
 shop.cache_iron_ore.title = Eisenkiste
 shop.cache_iron_ore.desc = Eine stabile Kiste Eisen, direkt in dein Inventar geliefert.
 shop.cache_adamantite_ore.title = Adamantitkiste
@@ -167,7 +165,6 @@ shop.shop_xp_combat_any.desc = Die Belohnung eines Kampfveteranen: ein Schub XP 
 
 # --- Währungen (currency.<id>.name, per Konvention aufgelöst; id = Dateiname in Kleinbuchstaben) ---
 currency.bounty_token.name = Kopfgeld-Token
-currency.life_essence.name = Lebensessenz
 
 # --- Erfolge (achievement.<id>.title / .desc, per Konvention aufgelöst) ---
 achievement.bounty_board_daily_t1.title = Täglicher Auftragnehmer
