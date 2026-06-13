@@ -7,3 +7,6 @@ MMO_Shop_General.name = Jeton Mağazası
 MMO_Shop_Xpexchange.name = XP Takası
 MMO_Board.hint = Ödülleri görüntülemek için [{key}] tuşuna bas
 MMO_Shop.hint = Jeton takası için [{key}] tuşuna bas
+
+MMO_Bounty_Dailies.name = Günlük Sözleşmeler
+MMO_Bounty_Bihourly.name = Hızlı Sözleşmeler

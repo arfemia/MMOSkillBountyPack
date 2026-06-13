@@ -240,3 +240,45 @@ quest.bounty_weekly_shadow_knight.title = Der Schattenritter
 quest.bounty_weekly_shadow_knight.flavor = Ein gepanzerter Schemen wandelt durch die Ruinen, und Stahl beißt ihn kaum. Wenige, die dem Ritter begegnen, kehren zurück. Sei einer davon.
 quest.bounty_weekly_broodmother.title = Die Brutmutter
 quest.bounty_weekly_broodmother.flavor = Jeder Scarak der Dünen schlüpft aus einer geschwollenen Königin. Find sie im tiefen Nest und beende die Brut an der Quelle.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Tagesaufträge
+ui.bounty.board.dailies.desc = Die komplette Tafel der Tagesaufträge, jeder davon bis zum nächsten Tag aktiv.
+ui.bounty.board.bihourly = Schnellaufträge
+ui.bounty.board.bihourly.desc = Ein kurzer Auftrag, der mehrmals am Tag wechselt.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Tagesholz
+quest.bounty_daily_woodcutting.flavor = Die Sägewerke brauchen immer mehr Holz. Bring der Tafel einen stetigen Nachschub.
+quest.bounty_daily_harvest.title = Tagesernte
+quest.bounty_daily_harvest.flavor = Frische Erzeugnisse halten die Lager satt. Sammle, was die Felder heute hergeben.
+quest.bounty_daily_fishing.title = Tagesfang
+quest.bounty_daily_fishing.flavor = Die Köche wollen heute Abend Fisch auf dem Tisch. Arbeite an den Gewässern.
+quest.bounty_daily_monster_cull.title = Tagesjagd
+quest.bounty_daily_monster_cull.flavor = Irgendetwas muss immer ausgedünnt werden. Befrei die Wildnis von allem, was dir begegnet.
+quest.bounty_daily_zombie_patrol.title = Zombie-Patrouille
+quest.bounty_daily_zombie_patrol.flavor = Die Untoten streifen wieder zu nah an den Mauern umher. Leg sie wieder um.
+quest.bounty_daily_bear_hunt.title = Bärenjagd
+quest.bounty_daily_bear_hunt.flavor = Bären haben die Vorräte geplündert. Die Tafel will die dreistesten von ihnen erlegt sehen.
+quest.bounty_daily_essence.title = Essenz-Lieferung
+quest.bounty_daily_essence.flavor = Den Alchemisten fehlt es an abgefülltem Leben. Gib eine Ladung an der Tafel ab.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Schnellbau
+quest.bounty_quick_build.flavor = Vor der nächsten Schicht müssen ein paar Mauern hoch. Pack mit an.
+quest.bounty_quick_bones.title = Schnelle Knochen
+quest.bounty_quick_bones.flavor = Am Waldrand kriechen ständig Skelette herauf. Hau ein paar davon um.
+quest.bounty_quick_ore.title = Schnellgrabung
+quest.bounty_quick_ore.flavor = Die Schmiede wollen Kupfer, und zwar sofort. Bau eine Ader ab.
+quest.bounty_quick_logs.title = Schnellhieb
+quest.bounty_quick_logs.flavor = Ein kleiner Stapel Holz, so schnell du fällen kannst.
+quest.bounty_quick_catch.title = Schnellwurf
+quest.bounty_quick_catch.flavor = Gerade genug Fisch, um den Topf voll zu kriegen. Wirf die Angel aus.
+quest.bounty_quick_cull.title = Schnelljagd
+quest.bounty_quick_cull.flavor = Schon wieder Ärger an der Strasse. Räum aus, was dort lauert.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = Stammkunde des Marktes
+quest.bounty_market_patron.flavor = Der Handelsplatz belohnt einen treuen Kunden. Handle am Tresen, und die Tafel wird es dir lohnen.

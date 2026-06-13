@@ -7,3 +7,6 @@ MMO_Shop_General.name = Boutique de tokens
 MMO_Shop_Xpexchange.name = Échange d'XP
 MMO_Board.hint = Appuyez sur [{key}] pour voir les primes
 MMO_Shop.hint = Appuyez sur [{key}] pour échanger des tokens
+
+MMO_Bounty_Dailies.name = Contrats quotidiens
+MMO_Bounty_Bihourly.name = Contrats express

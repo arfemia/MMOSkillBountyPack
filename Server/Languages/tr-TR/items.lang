@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Haftalık ödül tahtasını açmak için [{key}]
 MMO_Token_Trader.name = Jeton Tüccarı
 MMO_Token_Trader.description = Bir duvara monte et ve Ödül Jetonlarını Jeton Mağazasında harcamak için etkileşime geç.
 MMO_Token_Trader.hint = Jeton mağazasını açmak için [{key}] tuşuna bas
+
+MMO_Bounty_Board_Dailies.name = Günlük Sözleşmeler Panosu
+MMO_Bounty_Board_Dailies.description = Bir duvara monte et ve tüm günlük sözleşme listesini görüntülemek için etkileşime geç.
+MMO_Bounty_Board_Dailies.hint = Günlük sözleşmeleri açmak için [{key}] tuşuna bas
+MMO_Bounty_Board_Bihourly.name = Hızlı Sözleşmeler Panosu
+MMO_Bounty_Board_Bihourly.description = Bir duvara monte et ve sık değişen hızlı bir sözleşme almak için etkileşime geç.
+MMO_Bounty_Board_Bihourly.hint = Hızlı sözleşmeleri açmak için [{key}] tuşuna bas

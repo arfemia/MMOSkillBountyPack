@@ -240,3 +240,45 @@ quest.bounty_weekly_shadow_knight.title = Gölge Şövalye
 quest.bounty_weekly_shadow_knight.flavor = Zırhlı bir gölge harabelerde dolaşıyor ve çelik onu zar zor ısırıyor. Şövalyeyle yüzleşip dönen azdır. Onlardan biri ol.
 quest.bounty_weekly_broodmother.title = Kuluçka Anası
 quest.bounty_weekly_broodmother.flavor = Kumullardaki her scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve dölü kaynağında bitir.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Günlük Sözleşmeler
+ui.bounty.board.dailies.desc = Tüm günlük sözleşmeler panosu, her biri ertesi güne kadar etkin.
+ui.bounty.board.bihourly = Hızlı Sözleşmeler
+ui.bounty.board.bihourly.desc = Gün içinde birkaç kez değişen kısa bir sözleşme.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Günlük Kereste
+quest.bounty_daily_woodcutting.flavor = Kereste atölyelerinin her zaman daha fazla tomruğa ihtiyacı var. Panoya düzenli bir yük getir.
+quest.bounty_daily_harvest.title = Günlük Hasat
+quest.bounty_daily_harvest.flavor = Taze ürünler kampların karnını doyuruyor. Tarlaların bugün sunduğunu topla.
+quest.bounty_daily_fishing.title = Günlük Av
+quest.bounty_daily_fishing.flavor = Aşçılar bu gece sofrada balık istiyor. Suların başına geç.
+quest.bounty_daily_monster_cull.title = Günlük Temizlik
+quest.bounty_daily_monster_cull.flavor = Daima seyreltilmesi gereken bir şeyler vardır. Yoluna çıkan her şeyi yabanlardan temizle.
+quest.bounty_daily_zombie_patrol.title = Zombi Devriyesi
+quest.bounty_daily_zombie_patrol.flavor = Ölüler yine surlara fazla yaklaşıyor. Onları yeniden yere ser.
+quest.bounty_daily_bear_hunt.title = Ayı Avı
+quest.bounty_daily_bear_hunt.flavor = Ayılar erzak depolarını basıyor. Pano, en gözü pek olanların avlanmasını istiyor.
+quest.bounty_daily_essence.title = Öz Teslimatı
+quest.bounty_daily_essence.flavor = Simyacıların şişelenmiş can özü tükenmek üzere. Panoya bir parti teslim et.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Hızlı İnşa
+quest.bounty_quick_build.flavor = Bir sonraki vardiyadan önce birkaç duvarın yükseltilmesi gerek. Yardım et.
+quest.bounty_quick_bones.title = Hızlı Kemikler
+quest.bounty_quick_bones.flavor = İskeletler ağaç sınırının oralarda sürünmeye devam ediyor. Birkaçını yere ser.
+quest.bounty_quick_ore.title = Hızlı Kazı
+quest.bounty_quick_ore.flavor = Demirciler bakır istiyor, üstelik hemen istiyor. Bir damar işle.
+quest.bounty_quick_logs.title = Hızlı Kesim
+quest.bounty_quick_logs.flavor = Kısa bir tomruk yığını, devirebildiğin kadar hızlı.
+quest.bounty_quick_catch.title = Hızlı Atış
+quest.bounty_quick_catch.flavor = Tencereyi tamamlamaya yetecek kadar balık. Oltayı at.
+quest.bounty_quick_cull.title = Hızlı Temizlik
+quest.bounty_quick_cull.flavor = Yol kenarında yine bela var. Pusuda ne varsa temizle.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = Pazar Müdavimi
+quest.bounty_market_patron.flavor = Borsa sadık bir müşteriyi ödüllendirir. Tezgahta alışveriş yap, pano bunun karşılığını verecektir.

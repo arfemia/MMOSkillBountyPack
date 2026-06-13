@@ -7,3 +7,6 @@ MMO_Shop_General.name = Negozio Gettoni
 MMO_Shop_Xpexchange.name = Scambio XP
 MMO_Board.hint = Premi [{key}] per vedere le taglie
 MMO_Shop.hint = Premi [{key}] per scambiare gettoni
+
+MMO_Bounty_Dailies.name = Contratti Giornalieri
+MMO_Bounty_Bihourly.name = Contratti Rapidi

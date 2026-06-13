@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Pulsa [{key}] para abrir el tablón de contratos 
 MMO_Token_Trader.name = Mercader de Tokens
 MMO_Token_Trader.description = Móntalo en una pared e interactúa para gastar Tokens de Contrato en la Tienda de Tokens.
 MMO_Token_Trader.hint = Pulsa [{key}] para abrir la tienda de tokens
+
+MMO_Bounty_Board_Dailies.name = Tablón de Contratos Diarios
+MMO_Bounty_Board_Dailies.description = Móntalo en una pared e interactúa para ver el listado completo de contratos diarios.
+MMO_Bounty_Board_Dailies.hint = Pulsa [{key}] para abrir los contratos diarios
+MMO_Bounty_Board_Bihourly.name = Tablón de Contratos Rápidos
+MMO_Bounty_Board_Bihourly.description = Móntalo en una pared e interactúa para recoger un contrato rápido y de rotación frecuente.
+MMO_Bounty_Board_Bihourly.hint = Pulsa [{key}] para abrir los contratos rápidos

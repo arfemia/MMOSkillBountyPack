@@ -240,3 +240,45 @@ quest.bounty_weekly_shadow_knight.title = Az Árnylovag
 quest.bounty_weekly_shadow_knight.flavor = Egy páncélos árny járja a romokat, és az acél alig fogja. Kevesen térnek vissza, akik szembeszállnak a lovaggal. Légy egy közülük.
 quest.bounty_weekly_broodmother.title = A Költőanya
 quest.bounty_weekly_broodmother.flavor = A dűnék minden scarakja egyetlen duzzadt királynőből kel ki. Találd meg a mély fészekben, és vess véget a fészekaljnak a forrásánál.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Napi szerződések
+ui.bounty.board.dailies.desc = A napi szerződések teljes táblája, mindegyik a következő napig érvényes.
+ui.bounty.board.bihourly = Gyors szerződések
+ui.bounty.board.bihourly.desc = Rövid szerződés, amely naponta többször is cserélődik.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Napi fakitermelés
+quest.bounty_daily_woodcutting.flavor = A fűrésztelepeknek mindig több rönkre van szükségük. Hozz a táblának kiadós szállítmányt.
+quest.bounty_daily_harvest.title = Napi betakarítás
+quest.bounty_daily_harvest.flavor = A friss termés tartja jól a táborokat. Gyűjtsd be, amit a földek ma kínálnak.
+quest.bounty_daily_fishing.title = Napi fogás
+quest.bounty_daily_fishing.flavor = A szakácsok halat akarnak az asztalra ma estére. Dolgozd meg a vizeket.
+quest.bounty_daily_monster_cull.title = Napi gyérítés
+quest.bounty_daily_monster_cull.flavor = Mindig akad valami, amit ritkítani kell. Tisztítsd meg a vadont mindentől, ami az utadba kerül.
+quest.bounty_daily_zombie_patrol.title = Zombijárőr
+quest.bounty_daily_zombie_patrol.flavor = A holtak megint túl közel kóborolnak a falakhoz. Fektesd vissza őket.
+quest.bounty_daily_bear_hunt.title = Medvevadászat
+quest.bounty_daily_bear_hunt.flavor = A medvék fosztogatják a raktárakat. A tábla a legmerészebbek leterítését kéri.
+quest.bounty_daily_essence.title = Eszencia-szállítmány
+quest.bounty_daily_essence.flavor = Az alkimistáknak fogytán az üvegezett életerő. Adj le egy adagot a táblánál.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Gyors építés
+quest.bounty_quick_build.flavor = Pár falat fel kell húzni a következő műszak előtt. Segíts be.
+quest.bounty_quick_bones.title = Gyors csontozás
+quest.bounty_quick_bones.flavor = A csontvázak folyton felmásznak a fák szélénél. Verj le párat.
+quest.bounty_quick_ore.title = Gyors ásás
+quest.bounty_quick_ore.flavor = A kovácsok rezet akarnak, méghozzá most. Fejts ki egy eret.
+quest.bounty_quick_logs.title = Gyors favágás
+quest.bounty_quick_logs.flavor = Egy rövid rakás rönk, olyan gyorsan, ahogy csak ki tudod dönteni őket.
+quest.bounty_quick_catch.title = Gyors horgászás
+quest.bounty_quick_catch.flavor = Épp annyi hal, hogy teljen az üst. Dobd be a zsineget.
+quest.bounty_quick_cull.title = Gyors gyérítés
+quest.bounty_quick_cull.flavor = Megint baj van az út mellett. Takaríts el mindent, ami ott ólálkodik.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = A piac törzsvendége
+quest.bounty_market_patron.flavor = A tőzsde megjutalmazza a hűséges vevőt. Kereskedj a pultnál, és a tábla gondoskodik róla, hogy megérje.

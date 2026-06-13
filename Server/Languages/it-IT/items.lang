@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Premi [{key}] per aprire la bacheca delle taglie 
 MMO_Token_Trader.name = Mercante di Gettoni
 MMO_Token_Trader.description = Montalo su un muro e interagisci per spendere i Gettoni Taglia al Negozio Gettoni.
 MMO_Token_Trader.hint = Premi [{key}] per aprire il negozio gettoni
+
+MMO_Bounty_Board_Dailies.name = Bacheca dei Contratti Giornalieri
+MMO_Bounty_Board_Dailies.description = Montala su un muro e interagisci per vedere l'elenco completo dei contratti giornalieri.
+MMO_Bounty_Board_Dailies.hint = Premi [{key}] per aprire i contratti giornalieri
+MMO_Bounty_Board_Bihourly.name = Bacheca dei Contratti Rapidi
+MMO_Bounty_Board_Bihourly.description = Montala su un muro e interagisci per accettare un contratto rapido e a rotazione frequente.
+MMO_Bounty_Board_Bihourly.hint = Premi [{key}] per aprire i contratti rapidi

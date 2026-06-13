@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Нажмите [{key}], чтобы открыть
 MMO_Token_Trader.name = Торговец токенами
 MMO_Token_Trader.description = Повесьте на стену и взаимодействуйте, чтобы тратить токены контрактов в Магазине токенов.
 MMO_Token_Trader.hint = Нажмите [{key}], чтобы открыть магазин токенов
+
+MMO_Bounty_Board_Dailies.name = Доска ежедневных контрактов
+MMO_Bounty_Board_Dailies.description = Повесьте на стену и взаимодействуйте, чтобы посмотреть полный набор ежедневных контрактов.
+MMO_Bounty_Board_Dailies.hint = Нажмите [{key}], чтобы открыть ежедневные контракты
+MMO_Bounty_Board_Bihourly.name = Доска быстрых контрактов
+MMO_Bounty_Board_Bihourly.description = Повесьте на стену и взаимодействуйте, чтобы взять быстрый, часто сменяющийся контракт.
+MMO_Bounty_Board_Bihourly.hint = Нажмите [{key}], чтобы открыть быстрые контракты

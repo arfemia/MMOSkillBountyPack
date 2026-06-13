@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Appuyez sur [{key}] pour ouvrir le tableau des pr
 MMO_Token_Trader.name = Marchand de tokens
 MMO_Token_Trader.description = Fixez-le à un mur et interagissez pour dépenser vos Tokens de prime à la Boutique de tokens.
 MMO_Token_Trader.hint = Appuyez sur [{key}] pour ouvrir la boutique de tokens
+
+MMO_Bounty_Board_Dailies.name = Tableau des contrats quotidiens
+MMO_Bounty_Board_Dailies.description = Fixez-le à un mur et interagissez pour consulter la liste complète des contrats quotidiens.
+MMO_Bounty_Board_Dailies.hint = Appuyez sur [{key}] pour ouvrir les contrats quotidiens
+MMO_Bounty_Board_Bihourly.name = Tableau des contrats express
+MMO_Bounty_Board_Bihourly.description = Fixez-le à un mur et interagissez pour prendre un contrat rapide qui change fréquemment.
+MMO_Bounty_Board_Bihourly.hint = Appuyez sur [{key}] pour ouvrir les contrats express

@@ -9,3 +9,10 @@ MMO_Bounty_Board_Weekly.hint = Nyomd meg: [{key}] a heti bounty board megnyitás
 MMO_Token_Trader.name = Token Kereskedő
 MMO_Token_Trader.description = Szereld fel egy falra, és lépj kapcsolatba vele, hogy Bounty Tokeneket költs a Token Shopban.
 MMO_Token_Trader.hint = Nyomd meg: [{key}] a token shop megnyitásához
+
+MMO_Bounty_Board_Dailies.name = Napi szerződések táblája
+MMO_Bounty_Board_Dailies.description = Szereld fel egy falra, és lépj vele kapcsolatba a napi szerződések teljes listájának megtekintéséhez.
+MMO_Bounty_Board_Dailies.hint = Nyomd meg a(z) [{key}] gombot a napi szerződések megnyitásához
+MMO_Bounty_Board_Bihourly.name = Gyors szerződések táblája
+MMO_Bounty_Board_Bihourly.description = Szereld fel egy falra, és lépj vele kapcsolatba egy gyors, gyakran cserélődő szerződés felvételéhez.
+MMO_Bounty_Board_Bihourly.hint = Nyomd meg a(z) [{key}] gombot a gyors szerződések megnyitásához

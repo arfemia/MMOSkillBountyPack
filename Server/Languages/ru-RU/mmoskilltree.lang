@@ -240,3 +240,45 @@ quest.bounty_weekly_shadow_knight.title = Теневой рыцарь
 quest.bounty_weekly_shadow_knight.flavor = Бронированная тень бродит по руинам, и сталь её едва берёт. Немногие, кто встал против рыцаря, возвращаются. Будьте одним из них.
 quest.bounty_weekly_broodmother.title = Матка выводка
 quest.bounty_weekly_broodmother.flavor = Каждый скарак дюн вылупляется из одной разбухшей королевы. Найдите её в глубоком гнезде и оборвите выводок у истока.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Ежедневные контракты
+ui.bounty.board.dailies.desc = Полная доска ежедневных контрактов, каждый из которых действует до следующего дня.
+ui.bounty.board.bihourly = Быстрые контракты
+ui.bounty.board.bihourly.desc = Короткий контракт, который сменяется несколько раз в день.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Ежедневная древесина
+quest.bounty_daily_woodcutting.flavor = Лесопилкам всегда нужно больше брёвен. Принесите на доску стабильный груз.
+quest.bounty_daily_harvest.title = Ежедневный урожай
+quest.bounty_daily_harvest.flavor = Свежие продукты держат лагеря сытыми. Соберите то, что предлагают поля сегодня.
+quest.bounty_daily_fishing.title = Ежедневный улов
+quest.bounty_daily_fishing.flavor = Повара хотят рыбу на столе сегодня вечером. Поработайте на водах.
+quest.bounty_daily_monster_cull.title = Ежедневная зачистка
+quest.bounty_daily_monster_cull.flavor = Что-то всегда нужно проредить. Очистите дикие земли от всего, что встретится на пути.
+quest.bounty_daily_zombie_patrol.title = Патруль зомби
+quest.bounty_daily_zombie_patrol.flavor = Мертвецы снова бродят слишком близко к стенам. Уложите их обратно.
+quest.bounty_daily_bear_hunt.title = Охота на медведей
+quest.bounty_daily_bear_hunt.flavor = Медведи разоряют склады. Доска хочет, чтобы самых дерзких из них извели.
+quest.bounty_daily_essence.title = Доставка эссенции
+quest.bounty_daily_essence.flavor = Алхимикам не хватает бутилированной жизни. Сдайте партию на доске.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Быстрая стройка
+quest.bounty_quick_build.flavor = Нужно поднять несколько стен до следующей смены. Подсобите.
+quest.bounty_quick_bones.title = Быстрые кости
+quest.bounty_quick_bones.flavor = Скелеты всё лезут у кромки леса. Уложите парочку.
+quest.bounty_quick_ore.title = Быстрая копка
+quest.bounty_quick_ore.flavor = Кузнецам нужна медь, и нужна прямо сейчас. Поработайте на жиле.
+quest.bounty_quick_logs.title = Быстрая рубка
+quest.bounty_quick_logs.flavor = Короткая стопка брёвен, так быстро, как сможете их свалить.
+quest.bounty_quick_catch.title = Быстрый заброс
+quest.bounty_quick_catch.flavor = Ровно столько рыбы, чтобы дополнить котёл. Закиньте удочку.
+quest.bounty_quick_cull.title = Быстрая зачистка
+quest.bounty_quick_cull.flavor = Снова неприятности у дороги. Уберите всё, что там притаилось.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = Завсегдатай рынка
+quest.bounty_market_patron.flavor = Биржа вознаграждает верного покупателя. Торгуйте за прилавком, и доска отплатит вам сполна.

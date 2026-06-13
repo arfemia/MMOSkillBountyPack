@@ -7,3 +7,6 @@ MMO_Shop_General.name = Token Shop
 MMO_Shop_Xpexchange.name = XP Csere
 MMO_Board.hint = Nyomd meg: [{key}] a bountyk megtekintéséhez
 MMO_Shop.hint = Nyomd meg: [{key}] a tokenváltáshoz
+
+MMO_Bounty_Dailies.name = Napi szerződések
+MMO_Bounty_Bihourly.name = Gyors szerződések

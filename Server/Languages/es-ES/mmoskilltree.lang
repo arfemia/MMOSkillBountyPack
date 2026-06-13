@@ -240,3 +240,45 @@ quest.bounty_weekly_shadow_knight.title = El Caballero Sombrío
 quest.bounty_weekly_shadow_knight.flavor = Una sombra acorazada recorre las ruinas, y el acero apenas la muerde. Pocos que enfrentan al caballero regresan. Sé uno de ellos.
 quest.bounty_weekly_broodmother.title = La Reina Madre
 quest.bounty_weekly_broodmother.flavor = Cada scarak de las dunas nace de una reina henchida. Encuéntrala en el nido profundo y acaba con la prole en su origen.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Contratos Diarios
+ui.bounty.board.dailies.desc = El tablón completo de contratos diarios, todos activos hasta el día siguiente.
+ui.bounty.board.bihourly = Contratos Rápidos
+ui.bounty.board.bihourly.desc = Un contrato breve que rota varias veces al día.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Madera del Día
+quest.bounty_daily_woodcutting.flavor = Los aserraderos siempre necesitan más troncos. Lleva al tablón una buena remesa.
+quest.bounty_daily_harvest.title = Cosecha del Día
+quest.bounty_daily_harvest.flavor = Los productos frescos mantienen los campamentos bien alimentados. Recoge lo que ofrezcan hoy los campos.
+quest.bounty_daily_fishing.title = Captura del Día
+quest.bounty_daily_fishing.flavor = Los cocineros quieren pescado en la mesa esta noche. Trabaja las aguas.
+quest.bounty_daily_monster_cull.title = Batida del Día
+quest.bounty_daily_monster_cull.flavor = Siempre hay algo que conviene reducir. Limpia la naturaleza de cuanto se cruce en tu camino.
+quest.bounty_daily_zombie_patrol.title = Patrulla de Zombis
+quest.bounty_daily_zombie_patrol.flavor = Los muertos vuelven a merodear demasiado cerca de las murallas. Vuelve a tumbarlos.
+quest.bounty_daily_bear_hunt.title = Caza del Oso
+quest.bounty_daily_bear_hunt.flavor = Los osos han estado asaltando los almacenes. El tablón quiere abatir a los más bravos.
+quest.bounty_daily_essence.title = Entrega de Esencia
+quest.bounty_daily_essence.flavor = A los alquimistas les falta vida embotellada. Entrega un lote en el tablón.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Construcción Rápida
+quest.bounty_quick_build.flavor = Hay que levantar unos muros antes del próximo turno. Echa una mano.
+quest.bounty_quick_bones.title = Huesos Rápidos
+quest.bounty_quick_bones.flavor = Los esqueletos no dejan de trepar junto a la linde del bosque. Derriba unos cuantos.
+quest.bounty_quick_ore.title = Excavación Rápida
+quest.bounty_quick_ore.flavor = Los herreros quieren cobre, y lo quieren ya. Trabaja una veta.
+quest.bounty_quick_logs.title = Tala Rápida
+quest.bounty_quick_logs.flavor = Una pila corta de troncos, tan rápido como puedas talarlos.
+quest.bounty_quick_catch.title = Lance Rápido
+quest.bounty_quick_catch.flavor = Justo el pescado necesario para completar el guiso. Lanza el sedal.
+quest.bounty_quick_cull.title = Batida Rápida
+quest.bounty_quick_cull.flavor = Problemas cerca del camino otra vez. Despeja lo que esté acechando.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = Cliente del Mercado
+quest.bounty_market_patron.flavor = La lonja recompensa a sus clientes fieles. Comercia en el mostrador y el tablón hará que te merezca la pena.
