@@ -12,6 +12,6 @@
   "ServerVersion": ">=0.5.0-pre.0 <0.6.0",
   "IncludesAssetPack": true,
   "Dependencies": {
-    "Ziggfreed:MMOSkillTree": "^1.3.0"
+    "Ziggfreed:MMOSkillTree": "^1.4.0"
   }
 }
