@@ -238,3 +238,45 @@ quest.bounty_weekly_shadow_knight.title = The Shadow Knight
 quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and steel barely bites it. Few who face the knight return. Be one who does.
 quest.bounty_weekly_broodmother.title = The Broodmother
 quest.bounty_weekly_broodmother.flavor = Every scarak in the dunes hatches from one swollen queen. Find her in the deep nest and end the brood at its source.
+
+# === 1.4.0: dedicated Dailies + Bihourly boards ===
+
+# --- Board names + descriptions (board titleKey/descriptionKey) ---
+ui.bounty.board.dailies = Daily Contracts
+ui.bounty.board.dailies.desc = The full board of daily contracts, every one active until the next day.
+ui.bounty.board.bihourly = Quick Contracts
+ui.bounty.board.bihourly.desc = A short contract that rotates several times a day.
+
+# --- Dailies board: the full daily slate (selection: all) ---
+quest.bounty_daily_woodcutting.title = Daily Timber
+quest.bounty_daily_woodcutting.flavor = The lumber yards always need more logs. Bring the board a steady haul.
+quest.bounty_daily_harvest.title = Daily Harvest
+quest.bounty_daily_harvest.flavor = Fresh produce keeps the camps fed. Gather what the fields are offering today.
+quest.bounty_daily_fishing.title = Daily Catch
+quest.bounty_daily_fishing.flavor = The cooks want fish on the table tonight. Work the waters.
+quest.bounty_daily_monster_cull.title = Daily Cull
+quest.bounty_daily_monster_cull.flavor = Something always needs thinning out. Clear the wilds of whatever crosses your path.
+quest.bounty_daily_zombie_patrol.title = Zombie Patrol
+quest.bounty_daily_zombie_patrol.flavor = The dead are wandering too close to the walls again. Put them back down.
+quest.bounty_daily_bear_hunt.title = Bear Hunt
+quest.bounty_daily_bear_hunt.flavor = Bears have been raiding the stores. The board wants the boldest of them culled.
+quest.bounty_daily_essence.title = Essence Delivery
+quest.bounty_daily_essence.flavor = The alchemists are short on bottled life. Hand a batch in at the board.
+
+# --- Bihourly board: short, fast-rotating contracts ---
+quest.bounty_quick_build.title = Quick Build
+quest.bounty_quick_build.flavor = A few walls need raising before the next shift. Lend a hand.
+quest.bounty_quick_bones.title = Quick Bones
+quest.bounty_quick_bones.flavor = Skeletons keep crawling up near the treeline. Knock a few down.
+quest.bounty_quick_ore.title = Quick Dig
+quest.bounty_quick_ore.flavor = The smiths want copper, and they want it now. Work a vein.
+quest.bounty_quick_logs.title = Quick Chop
+quest.bounty_quick_logs.flavor = A short stack of logs, fast as you can fell them.
+quest.bounty_quick_catch.title = Quick Cast
+quest.bounty_quick_catch.flavor = Just enough fish to round out the pot. Cast a line.
+quest.bounty_quick_cull.title = Quick Cull
+quest.bounty_quick_cull.flavor = Trouble near the road again. Clear out whatever is lurking.
+
+# --- Daily board: SPEND_CURRENCY showcase ---
+quest.bounty_market_patron.title = Market Patron
+quest.bounty_market_patron.flavor = The exchange rewards a loyal customer. Trade at the counter and the board will make it worth your while.

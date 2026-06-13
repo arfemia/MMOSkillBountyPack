@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Quick_Bones",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_quick_bones",
+    "cooldownSeconds": 5400,
+    "params": { "boards": "bihourly", "difficulty": "easy", "weight": "1", "target": "Skeleton" },
+    "objectiveOverrides": { "main": { "amount": 8 } },
+    "rewards": [
+      { "type": "XP", "skill": "ARCHERY", "amount": 400 }
+    ]
+  }
+}

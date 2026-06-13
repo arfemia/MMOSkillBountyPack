@@ -1,0 +1,10 @@
+{
+  "Cooldown": {
+    "Id": "BlockInteraction",
+    "Cooldown": 0.278,
+    "ClickBypass": true
+  },
+  "Interactions": [
+    { "Type": "mmo_bounty_board_open", "Board": "dailies" }
+  ]
+}

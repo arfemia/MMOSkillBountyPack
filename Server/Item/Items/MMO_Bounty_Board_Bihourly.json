@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "items.MMO_Bounty_Board_Bihourly.name",
+    "Description": "items.MMO_Bounty_Board_Bihourly.description"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": ["Furniture.Signs"],
+  "Icon": "Icons/ItemsGenerated/Lobby_Wall_Poster01.png",
+  "MaxStack": 25,
+  "IconProperties": {
+    "Rotation": [22.5, 45, 22.5],
+    "Scale": 1.1,
+    "Translation": [11.0, -19.0]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+
+  "BlockType": {
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Cloth",
+    "PhysicalMaterialId": "Wool",
+    "CustomModel": "Blocks/Hypixel/Lobby/Poster_Wall.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Hypixel/Lobby/Poster_Wall_01.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {
+      "IsUsable": true
+    },
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "HitboxType": "Sign_Wall",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#4c7ab5",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "InteractionHint": "items.MMO_Bounty_Board_Bihourly.hint",
+    "Interactions": {
+      "Use": "MMO_BountyBoard_Bihourly_Open"
+    },
+    "TextureComputedColor": "#4c7ab5"
+  },
+  "Tags": {
+    "Type": ["Furniture"],
+    "Family": ["MMOSkillTree"]
+  },
+  "ItemSoundSetId": "ISS_Items_Paper"
+}

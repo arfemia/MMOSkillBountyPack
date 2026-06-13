@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Daily_Fishing",
+  "Payload": {
+    "extends": "bounty_fish_standard",
+    "id": "bounty_daily_fishing",
+    "params": { "boards": "dailies", "difficulty": "easy", "weight": "1", "target": "" },
+    "objectiveOverrides": { "main": { "amount": 10 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 10 },
+      { "type": "XP", "skill": "FISHING", "amount": 900 }
+    ]
+  }
+}

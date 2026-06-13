@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Daily_Bear_Hunt",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_daily_bear_hunt",
+    "params": { "boards": "dailies", "difficulty": "normal", "weight": "1", "target": "Bear" },
+    "objectiveOverrides": { "main": { "amount": 12 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 15 },
+      { "type": "XP", "skill": "AXES", "amount": 1500 }
+    ]
+  }
+}

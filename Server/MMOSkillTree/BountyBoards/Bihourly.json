@@ -1,0 +1,14 @@
+{
+  "Name": "Bihourly",
+  "Payload": {
+    "titleKey": "ui.bounty.board.bihourly",
+    "descriptionKey": "ui.bounty.board.bihourly.desc",
+    "order": 3,
+    "rotation": { "type": "interval", "period": "7200s", "anchor": "utc", "offsetMinutes": 0 },
+    "selection": { "type": "weighted_random", "seed": "period" },
+    "slots": [
+      { "filter": { "difficulty": "easy" } }
+    ],
+    "rerollCost": { "currency": "bounty_token", "amount": 10, "maxPerPeriod": 3 }
+  }
+}

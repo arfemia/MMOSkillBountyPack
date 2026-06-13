@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Daily_Harvest",
+  "Payload": {
+    "extends": "bounty_pickup_standard",
+    "id": "bounty_daily_harvest",
+    "params": { "boards": "dailies", "difficulty": "easy", "weight": "1", "target": "Plant_Crop_" },
+    "objectiveOverrides": { "main": { "amount": 40 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 10 },
+      { "type": "XP", "skill": "HARVESTING", "amount": 900 }
+    ]
+  }
+}

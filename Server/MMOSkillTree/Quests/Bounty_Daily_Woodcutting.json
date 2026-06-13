@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Daily_Woodcutting",
+  "Payload": {
+    "extends": "bounty_gather_standard",
+    "id": "bounty_daily_woodcutting",
+    "params": { "boards": "dailies", "difficulty": "easy", "weight": "1", "target": "Wood" },
+    "objectiveOverrides": { "main": { "amount": 30 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 10 },
+      { "type": "XP", "skill": "WOODCUTTING", "amount": 900 }
+    ]
+  }
+}

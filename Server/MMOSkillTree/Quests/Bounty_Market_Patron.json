@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Market_Patron",
+  "Payload": {
+    "extends": "bounty_spend_standard",
+    "id": "bounty_market_patron",
+    "params": { "boards": "daily", "difficulty": "easy", "weight": "1", "target": "life_essence" },
+    "objectiveOverrides": { "main": { "amount": 30 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 100 },
+      { "type": "XP", "skill": "MINING", "amount": 1000 }
+    ]
+  }
+}
