@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.3.0+). It ships the entire **Bounty Board** and **Token Shop** content: a daily and a weekly board, the bounty pool (with localized titles + flavor), reusable templates, the Bounty Token currency, a token-shop catalog plus a rotating **Featured** pool, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.4.0+). It ships the entire **Bounty Board** and **Token Shop** content: four boards (Daily, Weekly, an all-at-once Daily Contracts board, and a fast Quick Contracts board), the bounty pool (with localized titles + flavor), reusable templates, the Bounty Token currency, a token-shop catalog plus a rotating **Featured** pool, and the in-world blocks (all wall posters).
 
 The mod jar ships only the *engine* (services, configs, page UIs, and the registered interaction types). It ships no content, so this pack is what makes bounties and the shop appear. It is a **hard dependency** on the mod, declared in `manifest.json`.
 
@@ -47,4 +47,4 @@ See [CLAUDE.md](CLAUDE.md) for the full authoring guide and JSON examples.
 
 ## Requires
 
-MMO Skill Tree 1.3.0 or newer.
+MMO Skill Tree 1.4.0 or newer.

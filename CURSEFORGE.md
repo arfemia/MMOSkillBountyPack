@@ -46,7 +46,7 @@ Either way, the placeable Bounty Board and Token Trader blocks keep working exac
 ## Install
 
 1. Install the MMO Skill Tree mod.
-2. Drop `MMOSkillBountyPack-1.0.0.zip` into your server's `Mods/` folder, alongside the mod.
+2. Drop `MMOSkillBountyPack-1.1.0.zip` into your server's `Mods/` folder, alongside the mod.
 3. Start the server. Bounties are on by default; a server owner can turn the whole feature on or off from the in-game admin menu.
 
 ## Make your own contracts and boards
@@ -57,6 +57,7 @@ Bounties and boards are plain pack files: add a contract by dropping in one smal
 
 | Pack  | Plugin | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.1.0 | 1.4.0+ | Adds an all-at-once **Daily Contracts** board and a fast-rotating **Quick Contracts** board carrying the everyday contracts that moved out of the mod, plus place / fish / harvest / spend contract types and a Market Patron "spend at the shop" contract. These boards are XP-focused (minimal to no Bounty Tokens), so the Daily and Weekly boards stay the token source. Requires MMO Skill Tree 1.4.0. |
 | 1.0.0 | 1.3.0+ | First release. Daily and Weekly Bounty Boards with a wide bestiary and marquee boss hunts, Bounty Tokens, mine-and-deliver and turn-in contracts, per-contract rerolls with a daily cap, two shop storefronts (the Token Shop and a per-skill XP Exchange) behind a Token Trader block/NPC, per-difficulty combat-level gating on harder contracts, bounty achievement chains (including per-board Daily and Weekly ladders), full 9-language translations, and spawn integration with the mod's Adventurer's Guide NPC (opt out in `spawn-hub.json` or remove it once in-game). |
 
 ---
