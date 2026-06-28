@@ -241,15 +241,13 @@ quest.bounty_weekly_shadow_knight.flavor = Zırhlı bir gölge harabelerde dola�
 quest.bounty_weekly_broodmother.title = Kuluçka Anası
 quest.bounty_weekly_broodmother.flavor = Kumullardaki her scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve dölü kaynağında bitir.
 
-# === 1.4.0: dedicated Dailies + Bihourly boards ===
+# === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
-ui.bounty.board.dailies = Günlük Sözleşmeler
-ui.bounty.board.dailies.desc = Tüm günlük sözleşmeler panosu, her biri ertesi güne kadar etkin.
 ui.bounty.board.bihourly = Hızlı Sözleşmeler
 ui.bounty.board.bihourly.desc = Gün içinde birkaç kez değişen kısa bir sözleşme.
 
-# --- Dailies board: the full daily slate (selection: all) ---
+# --- Daily board: training (XP-grind) contracts ---
 quest.bounty_daily_woodcutting.title = Günlük Kereste
 quest.bounty_daily_woodcutting.flavor = Kereste atölyelerinin her zaman daha fazla tomruğa ihtiyacı var. Panoya düzenli bir yük getir.
 quest.bounty_daily_harvest.title = Günlük Hasat

@@ -241,15 +241,13 @@ quest.bounty_weekly_shadow_knight.flavor = Un'ombra corazzata percorre le rovine
 quest.bounty_weekly_broodmother.title = La Madre della Covata
 quest.bounty_weekly_broodmother.flavor = Ogni scarak delle dune nasce da una regina gonfia. Trovala nel nido profondo e poni fine alla covata alla fonte.
 
-# === 1.4.0: dedicated Dailies + Bihourly boards ===
+# === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
-ui.bounty.board.dailies = Contratti Giornalieri
-ui.bounty.board.dailies.desc = La bacheca completa dei contratti giornalieri, ognuno attivo fino al giorno seguente.
 ui.bounty.board.bihourly = Contratti Rapidi
 ui.bounty.board.bihourly.desc = Un breve contratto che ruota più volte al giorno.
 
-# --- Dailies board: the full daily slate (selection: all) ---
+# --- Daily board: training (XP-grind) contracts ---
 quest.bounty_daily_woodcutting.title = Legname Giornaliero
 quest.bounty_daily_woodcutting.flavor = Le segherie hanno sempre bisogno di altri tronchi. Porta alla bacheca un carico costante.
 quest.bounty_daily_harvest.title = Raccolto Giornaliero

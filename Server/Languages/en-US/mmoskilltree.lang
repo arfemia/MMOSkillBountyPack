@@ -239,15 +239,13 @@ quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and
 quest.bounty_weekly_broodmother.title = The Broodmother
 quest.bounty_weekly_broodmother.flavor = Every scarak in the dunes hatches from one swollen queen. Find her in the deep nest and end the brood at its source.
 
-# === 1.4.0: dedicated Dailies + Bihourly boards ===
+# === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
-ui.bounty.board.dailies = Daily Contracts
-ui.bounty.board.dailies.desc = The full board of daily contracts, every one active until the next day.
 ui.bounty.board.bihourly = Quick Contracts
 ui.bounty.board.bihourly.desc = A short contract that rotates several times a day.
 
-# --- Dailies board: the full daily slate (selection: all) ---
+# --- Daily board: training (XP-grind) contracts ---
 quest.bounty_daily_woodcutting.title = Daily Timber
 quest.bounty_daily_woodcutting.flavor = The lumber yards always need more logs. Bring the board a steady haul.
 quest.bounty_daily_harvest.title = Daily Harvest

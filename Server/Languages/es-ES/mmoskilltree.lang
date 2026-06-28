@@ -241,15 +241,13 @@ quest.bounty_weekly_shadow_knight.flavor = Una sombra acorazada recorre las ruin
 quest.bounty_weekly_broodmother.title = La Reina Madre
 quest.bounty_weekly_broodmother.flavor = Cada scarak de las dunas nace de una reina henchida. Encuéntrala en el nido profundo y acaba con la prole en su origen.
 
-# === 1.4.0: dedicated Dailies + Bihourly boards ===
+# === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
-ui.bounty.board.dailies = Contratos Diarios
-ui.bounty.board.dailies.desc = El tablón completo de contratos diarios, todos activos hasta el día siguiente.
 ui.bounty.board.bihourly = Contratos Rápidos
 ui.bounty.board.bihourly.desc = Un contrato breve que rota varias veces al día.
 
-# --- Dailies board: the full daily slate (selection: all) ---
+# --- Daily board: training (XP-grind) contracts ---
 quest.bounty_daily_woodcutting.title = Madera del Día
 quest.bounty_daily_woodcutting.flavor = Los aserraderos siempre necesitan más troncos. Lleva al tablón una buena remesa.
 quest.bounty_daily_harvest.title = Cosecha del Día

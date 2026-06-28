@@ -11,7 +11,9 @@
       { "filter": { "difficulty": "easy" } },
       { "filter": { "difficulty": "normal" } },
       { "filter": { "difficulty": "normal" } },
-      { "filter": { "difficulty": "hard" }, "optional": true }
+      { "filter": { "difficulty": "hard" }, "optional": true },
+      { "filter": { "difficulty": "training" } },
+      { "filter": { "difficulty": "training" } }
     ],
     "rerollCost": { "currency": "bounty_token", "amount": 25, "maxPerPeriod": 3 }
 

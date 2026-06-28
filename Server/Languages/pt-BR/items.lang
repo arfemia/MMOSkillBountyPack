@@ -10,9 +10,6 @@ MMO_Token_Trader.name = Comerciante de Fichas
 MMO_Token_Trader.description = Monte em uma parede e interaja para gastar Fichas de Recompensa na Loja de Fichas.
 MMO_Token_Trader.hint = Pressione [{key}] para abrir a loja de fichas
 
-MMO_Bounty_Board_Dailies.name = Quadro de Contratos Diários
-MMO_Bounty_Board_Dailies.description = Monte em uma parede e interaja para ver a lista completa de contratos diários.
-MMO_Bounty_Board_Dailies.hint = Pressione [{key}] para abrir os contratos diários
 MMO_Bounty_Board_Bihourly.name = Quadro de Contratos Rápidos
 MMO_Bounty_Board_Bihourly.description = Monte em uma parede e interaja para pegar um contrato rápido e de rotação frequente.
 MMO_Bounty_Board_Bihourly.hint = Pressione [{key}] para abrir os contratos rápidos

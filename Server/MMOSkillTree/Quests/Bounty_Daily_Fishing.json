@@ -3,7 +3,7 @@
   "Payload": {
     "extends": "bounty_fish_standard",
     "id": "bounty_daily_fishing",
-    "params": { "boards": "dailies", "difficulty": "easy", "weight": "1", "target": "" },
+    "params": { "boards": "daily", "difficulty": "training", "weight": "1", "target": "" },
     "objectiveOverrides": { "main": { "amount": 10 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 10 },

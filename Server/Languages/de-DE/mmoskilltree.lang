@@ -241,15 +241,13 @@ quest.bounty_weekly_shadow_knight.flavor = Ein gepanzerter Schemen wandelt durch
 quest.bounty_weekly_broodmother.title = Die Brutmutter
 quest.bounty_weekly_broodmother.flavor = Jeder Scarak der Dünen schlüpft aus einer geschwollenen Königin. Find sie im tiefen Nest und beende die Brut an der Quelle.
 
-# === 1.4.0: dedicated Dailies + Bihourly boards ===
+# === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
-ui.bounty.board.dailies = Tagesaufträge
-ui.bounty.board.dailies.desc = Die komplette Tafel der Tagesaufträge, jeder davon bis zum nächsten Tag aktiv.
 ui.bounty.board.bihourly = Schnellaufträge
 ui.bounty.board.bihourly.desc = Ein kurzer Auftrag, der mehrmals am Tag wechselt.
 
-# --- Dailies board: the full daily slate (selection: all) ---
+# --- Daily board: training (XP-grind) contracts ---
 quest.bounty_daily_woodcutting.title = Tagesholz
 quest.bounty_daily_woodcutting.flavor = Die Sägewerke brauchen immer mehr Holz. Bring der Tafel einen stetigen Nachschub.
 quest.bounty_daily_harvest.title = Tagesernte

@@ -10,9 +10,6 @@ MMO_Token_Trader.name = Token-Händler
 MMO_Token_Trader.description = An einer Wand anbringen und interagieren, um Kopfgeld-Token im Token-Shop auszugeben.
 MMO_Token_Trader.hint = Drücke [{key}], um den Token-Shop zu öffnen
 
-MMO_Bounty_Board_Dailies.name = Tafel der Tagesaufträge
-MMO_Bounty_Board_Dailies.description = An einer Wand montieren und benutzen, um die komplette Auswahl der Tagesaufträge anzusehen.
-MMO_Bounty_Board_Dailies.hint = Drücke [{key}], um die Tagesaufträge zu öffnen
 MMO_Bounty_Board_Bihourly.name = Tafel der Schnellaufträge
 MMO_Bounty_Board_Bihourly.description = An einer Wand montieren und benutzen, um einen schnellen, häufig wechselnden Auftrag aufzunehmen.
 MMO_Bounty_Board_Bihourly.hint = Drücke [{key}], um die Schnellaufträge zu öffnen

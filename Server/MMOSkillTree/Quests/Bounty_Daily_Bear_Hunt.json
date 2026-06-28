@@ -3,7 +3,7 @@
   "Payload": {
     "extends": "bounty_kill_standard",
     "id": "bounty_daily_bear_hunt",
-    "params": { "boards": "dailies", "difficulty": "normal", "weight": "1", "target": "Bear" },
+    "params": { "boards": "daily", "difficulty": "training", "weight": "1", "target": "Bear" },
     "objectiveOverrides": { "main": { "amount": 12 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 15 },

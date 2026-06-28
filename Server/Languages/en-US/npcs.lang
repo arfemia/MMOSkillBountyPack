@@ -6,7 +6,6 @@
 # The hub NPC (MMO_Hub) + its keys now ship in the mod jar, not this pack.
 
 MMO_Bounty_Daily.name = Daily Bounties
-MMO_Bounty_Dailies.name = Daily Contracts
 MMO_Bounty_Bihourly.name = Quick Contracts
 MMO_Bounty_Weekly.name = Weekly Bounties
 MMO_Token_Trader.name = Token Trader

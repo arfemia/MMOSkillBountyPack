@@ -3,7 +3,7 @@
   "Payload": {
     "extends": "bounty_turnin_standard",
     "id": "bounty_daily_essence",
-    "params": { "boards": "dailies", "difficulty": "normal", "weight": "1", "target": "Ingredient_Life_Essence" },
+    "params": { "boards": "daily", "difficulty": "training", "weight": "1", "target": "Ingredient_Life_Essence" },
     "objectiveOverrides": { "main": { "amount": 100 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 20 },

@@ -3,7 +3,7 @@
   "Payload": {
     "extends": "bounty_kill_standard",
     "id": "bounty_daily_monster_cull",
-    "params": { "boards": "dailies", "difficulty": "normal", "weight": "1", "target": "" },
+    "params": { "boards": "daily", "difficulty": "training", "weight": "1", "target": "" },
     "objectiveOverrides": { "main": { "amount": 30 } },
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 15 },
