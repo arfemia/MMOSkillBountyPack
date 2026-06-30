@@ -4,7 +4,7 @@
     "category": "bounty",
     "repeatable": true,
     "cooldownSeconds": 79200,
-    "autoClaimRewards": true,
+    "autoClaimRewards": false,
     "npcViewId": "bounty_board",
     "visibility": { "hidden": true },
     "tags": ["bounty", "board:{{boards}}", "diff:{{difficulty}}", "weight:{{weight}}"],

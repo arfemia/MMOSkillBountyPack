@@ -1,7 +1,7 @@
 {
   "Group": "Ziggfreed",
   "Name": "MMOSkillBountyPack",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "Description": "MMO Skill Tree - rotating Bounty Boards (Daily, Weekly, all-at-once Daily Contracts, and fast Quick Contracts): kill, gather, deliver, train, place, fish, and spend contracts paid out in Bounty Tokens plus skill XP. Adds the bounty pool, templates, currency, the board schedules, and the Token Shop.",
   "Authors": [
     {
@@ -12,6 +12,6 @@
   "ServerVersion": ">=0.5.0-pre.0 <0.6.0",
   "IncludesAssetPack": true,
   "Dependencies": {
-    "Ziggfreed:MMOSkillTree": "^1.4.0"
+    "Ziggfreed:MMOSkillTree": "^1.4.3"
   }
 }
