@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Caccia all'Orso
 quest.bounty_bear_hunt.flavor = Grandi orsi hanno reclamato il sentiero del nord. Questa e' solo per una mano ferma.
 quest.bounty_smash_ogres.title = Sfracella gli Ogre
 quest.bounty_smash_ogres.flavor = Gli ogre stanno sfondando le palizzate. Abbattili prima che le mura crollino con loro.
-quest.bounty_hunt_risen.title = Riposa i Risorti
-quest.bounty_hunt_risen.flavor = I morti non vogliono restare sepolti. Rimetti i Risorti sotto terra.
+quest.bounty_snapdragon_hunt.title = Caccia alla Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Una lucertola velenosa si aggira tra i cespugli profondi, e nulla osa condividere il suo territorio di caccia. Traccia la Snapdragon prima che si avvicini agli insediamenti.
+quest.bounty_burnt_skeletons.title = Cenere e Ossa
+quest.bounty_burnt_skeletons.flavor = Scheletri carbonizzati vagano tra le rovine bruciate, ancora fumanti. Rimetti i morti bruciati a riposo.
+quest.bounty_boar_hunt.title = Caccia ai Cinghiali
+quest.bounty_boar_hunt.flavor = I cinghiali selvaggi calpestano i campi coltivati e feriscono chiunque si avvicini troppo. Diradi lo sciame prima della raccolta.
 
 # --- Giornaliere: raccogli ---
 quest.bounty_mine_stone.title = Lavoro in Cava
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Acque Insanguinate
 quest.bounty_weekly_sharks.flavor = Gli squali martello hanno trasformato le rotte commerciali in un terreno di caccia. Riduci il branco prima che scompaia il prossimo equipaggio.
 quest.bounty_weekly_leviathan.title = Il Leviatano
 quest.bounty_weekly_leviathan.flavor = Qualcosa di immenso si muove sotto i flutti. Abbatti le grandi bestie prima che trascinino la flotta negli abissi.
+quest.bounty_weekly_sand_skeletons.title = Ossa delle Dune
+quest.bounty_weekly_sand_skeletons.flavor = Scheletri sospinti dalla sabbia risalgono dovunque il deserto inghiotte i morti. Passa la settimana a ripulire i sepolti dalle dune.
+quest.bounty_weekly_frost_skeletons.title = L'Armata Gelata
+quest.bounty_weekly_frost_skeletons.flavor = Un'armata legata dal gelo marcia giù dai ghiacciai, il respiro ricoperto di ghiaccio. Spezza le loro fila prima che il freddo si diffonda ancora.
 
 # --- Hub / accoglienza (spedito qui cosi' i proprietari del server possono riscrivere ---
 # --- l'accoglienza senza toccare il jar; il jar conserva questi valori inglesi come fallback per chiave). ---
@@ -173,9 +181,17 @@ achievement.bounty_board_daily_t3.title = Centurione delle Giornaliere
 achievement.bounty_board_weekly_t1.title = Mandato Settimanale
 achievement.bounty_board_weekly_t2.title = Esecutore Settimanale
 achievement.bounty_board_weekly_t3.title = Leggenda Settimanale
+achievement.bounty_board_bihourly_t1.title = Appaltatore Rapido
+achievement.bounty_board_bihourly_t2.title = Rapido Risponditore
+achievement.bounty_board_bihourly_t3.title = Leggenda Rapida
 # Modelli condivisi di descrizione delle serie: {0} = il conteggio di completamenti del grado, iniettato da @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Completa {0} taglie giornaliere.
 achievement.bounty_streak.weekly.desc = Completa {0} taglie settimanali.
+achievement.bounty_streak.bihourly.desc = Completa {0} contratti rapidi.
+
+achievement.snapdragon_bounty.desc = Completa il contratto Snapdragon {0} volte.
+achievement.snapdragon_bounty_t1.title = Sterminatore di Snapdragon
+achievement.snapdragon_bounty_t2.title = Flagello degli Snapdragon
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Cassa di Rame
@@ -276,6 +292,8 @@ quest.bounty_quick_catch.title = Lancio Rapido
 quest.bounty_quick_catch.flavor = Giusto il pesce necessario per completare la pentola. Lancia la lenza.
 quest.bounty_quick_cull.title = Abbattimento Rapido
 quest.bounty_quick_cull.flavor = Di nuovo guai vicino alla strada. Elimina tutto ciò che si nasconde in agguato.
+quest.bounty_quick_rot.title = Marciume Rapido
+quest.bounty_quick_rot.flavor = I morti barcollanti sono di nuovo spessi vicino alla strada. Abbattine qualcuno prima che la prossima pattuglia arrivi.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercato

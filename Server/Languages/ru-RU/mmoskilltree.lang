@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Охота на медведей
 quest.bounty_bear_hunt.flavor = Огромные медведи захватили северную тропу. Это дело только для твёрдой руки.
 quest.bounty_smash_ogres.title = Сокрушить огров
 quest.bounty_smash_ogres.flavor = Огры ломают частоколы. Свалите их, пока стены не рухнули вместе с ними.
-quest.bounty_hunt_risen.title = Упокоить восставших
-quest.bounty_hunt_risen.flavor = Мёртвые не желают лежать в могилах. Верните Восставших в землю.
+quest.bounty_snapdragon_hunt.title = Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Ядовитая рептилия охотится в глубоких зарослях, и ничто другое не смеет вторгаться на её охотничьи угодья. Выследите Snapdragon, пока она не повернула к поселениям.
+quest.bounty_burnt_skeletons.title = Пепел и кости
+quest.bounty_burnt_skeletons.flavor = Обугленные скелеты выходят из пепельных руин, всё ещё тлея. Уложите обугленных мертвецов.
+quest.bounty_boar_hunt.title = Охота на кабана
+quest.bounty_boar_hunt.flavor = Дикие кабаны вытаптывают посевы и калечат всех, кто подойдет слишком близко. Проредите их перед урожаем.
 
 # --- Ежедневные: сбор ---
 quest.bounty_mine_stone.title = Работа в каменоломне
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Окровавленные воды
 quest.bounty_weekly_sharks.flavor = Акулы-молоты превратили судоходные пути в кормовые угодья. Проредите стаю, пока не пропала очередная команда.
 quest.bounty_weekly_leviathan.title = Левиафан
 quest.bounty_weekly_leviathan.flavor = Нечто огромное движется под волнами. Свалите великих тварей, пока они не утащили флот под воду.
+quest.bounty_weekly_sand_skeletons.title = Кости дюн
+quest.bounty_weekly_sand_skeletons.flavor = Покрытые песком скелеты выбираются везде, где пустыня поглотила мертвецов. Потратьте неделю на очистку захороненного воинства.
+quest.bounty_weekly_frost_skeletons.title = Ледяное воинство
+quest.bounty_weekly_frost_skeletons.flavor = Скованное морозом воинство спускается с ледников, дыхание в инее. Разбейте их ряды, пока стужа не распространилась дальше.
 
 # --- Хаб / введение (поставляется здесь, чтобы владельцы серверов могли переформулировать введение, ---
 # --- не трогая jar; в jar эти английские значения остаются откатом по каждому ключу). ---
@@ -173,9 +181,17 @@ achievement.bounty_board_daily_t3.title = Ежедневный центурио�
 achievement.bounty_board_weekly_t1.title = Недельный ордер
 achievement.bounty_board_weekly_t2.title = Недельный исполнитель
 achievement.bounty_board_weekly_t3.title = Недельная легенда
+achievement.bounty_board_bihourly_t1.title = Быстрый подрядчик
+achievement.bounty_board_bihourly_t2.title = Быстрый исполнитель
+achievement.bounty_board_bihourly_t3.title = Легенда скорости
 # Общие шаблоны описания серий: {0} = число выполнений для уровня, подставляется из @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Выполните {0} ежедневных контрактов.
 achievement.bounty_streak.weekly.desc = Выполните {0} еженедельных контрактов.
+achievement.bounty_streak.bihourly.desc = Выполните {0} быстрых контрактов.
+
+achievement.snapdragon_bounty.desc = Выполните контракт Snapdragon {0} раз.
+achievement.snapdragon_bounty_t1.title = Истребитель Snapdragon
+achievement.snapdragon_bounty_t2.title = Бич Snapdragon
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Ящик меди
@@ -276,6 +292,8 @@ quest.bounty_quick_catch.title = Быстрый заброс
 quest.bounty_quick_catch.flavor = Ровно столько рыбы, чтобы дополнить котёл. Закиньте удочку.
 quest.bounty_quick_cull.title = Быстрая зачистка
 quest.bounty_quick_cull.flavor = Снова неприятности у дороги. Уберите всё, что там притаилось.
+quest.bounty_quick_rot.title = Быстрая гниль
+quest.bounty_quick_rot.flavor = Ходячие мертвецы снова облепили дорогу. Уложите парочку, пока не подошел патруль.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Завсегдатай рынка

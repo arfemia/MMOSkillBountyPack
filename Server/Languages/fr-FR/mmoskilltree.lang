@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Chasse à l'ours
 quest.bounty_bear_hunt.flavor = De grands ours ont pris le sentier du nord. Celle-ci n'est que pour une main sûre.
 quest.bounty_smash_ogres.title = Écraser les ogres
 quest.bounty_smash_ogres.flavor = Les ogres défoncent les palissades. Abattez-les avant que les murs ne tombent avec eux.
-quest.bounty_hunt_risen.title = Coucher les Relevés
-quest.bounty_hunt_risen.flavor = Les morts refusent de rester enterrés. Remettez les Relevés en terre.
+quest.bounty_snapdragon_hunt.title = Le Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Un reptile venimeux rôde dans les fourrés profonds, et rien d'autre n'ose partager son territoire de chasse. Retrouvez le Snapdragon avant qu'il ne s'approche des colonies.
+quest.bounty_burnt_skeletons.title = Cendres et os
+quest.bounty_burnt_skeletons.flavor = Des squelettes calcinés errent hors des ruines brûlées, encore fumants. Remettez les morts brûlés au repos.
+quest.bounty_boar_hunt.title = Chasse au sanglier
+quest.bounty_boar_hunt.flavor = Les sangliers sauvages piétinent les champs et éventrent quiconque s'approche trop. Réduisez la compagnie avant la moisson.
 
 # --- Quotidiennes : récolter ---
 quest.bounty_mine_stone.title = Travail de carrière
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Eaux ensanglantées
 quest.bounty_weekly_sharks.flavor = Les requins-marteaux ont transformé les routes maritimes en garde-manger. Réduisez la meute avant que le prochain équipage ne disparaisse.
 quest.bounty_weekly_leviathan.title = Le Léviathan
 quest.bounty_weekly_leviathan.flavor = Quelque chose d'immense se meut sous la houle. Abattez les grandes bêtes avant qu'elles n'entraînent la flotte par le fond.
+quest.bounty_weekly_sand_skeletons.title = Os des dunes
+quest.bounty_weekly_sand_skeletons.flavor = Des squelettes emportés par le sable sortent des griffes partout où le désert engloutit les morts. Passez la semaine à dégager l'armée enterrée des dunes.
+quest.bounty_weekly_frost_skeletons.title = La légion gelée
+quest.bounty_weekly_frost_skeletons.flavor = Une armée gelée descend des glaciers, le souffle rimé de glaçons. Brisez ses rangs avant que le froid ne s'étende davantage.
 
 # --- Hub / accueil (livré ici pour que les administrateurs reformulent l'accueil sans ---
 # --- toucher au jar ; le jar conserve ces valeurs anglaises comme repli clé par clé). ---
@@ -173,9 +181,17 @@ achievement.bounty_board_daily_t3.title = Centurion quotidien
 achievement.bounty_board_weekly_t1.title = Mandat hebdomadaire
 achievement.bounty_board_weekly_t2.title = Exécuteur hebdomadaire
 achievement.bounty_board_weekly_t3.title = Légende hebdomadaire
+achievement.bounty_board_bihourly_t1.title = Contractant rapide
+achievement.bounty_board_bihourly_t2.title = Intervenant rapide
+achievement.bounty_board_bihourly_t3.title = Légende rapide
 # Modèles de description de série partagés : {0} = le nombre de complétions du palier, injecté depuis @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Terminez {0} primes quotidiennes.
 achievement.bounty_streak.weekly.desc = Terminez {0} primes hebdomadaires.
+achievement.bounty_streak.bihourly.desc = Terminez {0} contrats express.
+
+achievement.snapdragon_bounty.desc = Terminez le contrat Snapdragon {0} fois.
+achievement.snapdragon_bounty_t1.title = Tueur de Snapdragons
+achievement.snapdragon_bounty_t2.title = Fléau des Snapdragons
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Caisse de cuivre
@@ -276,6 +292,8 @@ quest.bounty_quick_catch.title = Lancer rapide
 quest.bounty_quick_catch.flavor = Juste assez de poisson pour compléter la marmite. Lancez votre ligne.
 quest.bounty_quick_cull.title = Battue rapide
 quest.bounty_quick_cull.flavor = Encore des ennuis près de la route. Débarrassez-vous de ce qui s'y cache.
+quest.bounty_quick_rot.title = Pourriture rapide
+quest.bounty_quick_rot.flavor = Les morts titubants sont nombreux près de la route à nouveau. Abattez-en quelques-uns avant le passage de la prochaine patrouille.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Habitué du marché

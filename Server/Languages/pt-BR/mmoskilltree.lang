@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Caça ao Urso
 quest.bounty_bear_hunt.flavor = Grandes ursos tomaram a trilha do norte. Esta é só para mãos firmes.
 quest.bounty_smash_ogres.title = Esmague os Ogros
 quest.bounty_smash_ogres.flavor = Os ogros estão rasgando as paliçadas. Derrube-os antes que as muralhas venham junto.
-quest.bounty_hunt_risen.title = Sepulte os Ressurgidos
-quest.bounty_hunt_risen.flavor = Os mortos não querem ficar enterrados. Coloque os Ressurgidos de volta no chão.
+quest.bounty_snapdragon_hunt.title = O Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Um réptil venenoso espreita os arbustos profundos, e nada mais ousa compartilhar seu território de caça. Rastreie o Snapdragon antes que ele se aproxime dos assentamentos.
+quest.bounty_burnt_skeletons.title = Cinzas e Ossos
+quest.bounty_burnt_skeletons.flavor = Esqueletos carbonizados saem das ruínas calcinadas, ainda fumegando. Coloque os mortos queimados de volta ao chão.
+quest.bounty_boar_hunt.title = Caça ao Javali
+quest.bounty_boar_hunt.flavor = Javalis selvagens estão pisoteando as terras cultivadas e ferindo qualquer um que se aproxime demais. Reduza a vara antes da colheita.
 
 # --- Diária: coletar ---
 quest.bounty_mine_stone.title = Trabalho de Pedreira
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Águas Ensanguentadas
 quest.bounty_weekly_sharks.flavor = Tubarões-martelo transformaram as rotas marítimas em zona de caça. Reduza a alcateia antes que a próxima tripulação suma.
 quest.bounty_weekly_leviathan.title = O Leviatã
 quest.bounty_weekly_leviathan.flavor = Algo imenso se move sob as ondas. Derrube as grandes feras antes que arrastem a frota para o fundo.
+quest.bounty_weekly_sand_skeletons.title = Ossos das Dunas
+quest.bounty_weekly_sand_skeletons.flavor = Esqueletos varridos pela areia saem de onde o deserto engole os mortos. Passe a semana limpando a multidão enterrada das dunas.
+quest.bounty_weekly_frost_skeletons.title = A Legião Congelada
+quest.bounty_weekly_frost_skeletons.flavor = Uma legião envolta em gelo desce dos glaciares, hálito rimado de gelo. Quebre suas fileiras antes que o frio avance ainda mais.
 
 # --- Hub / integração (enviado aqui para que donos de servidor possam reescrever a integração sem ---
 # --- mexer no jar; o jar mantém estes valores em inglês como fallback por chave). ---
@@ -173,9 +181,17 @@ achievement.bounty_board_daily_t3.title = Centurião Diário
 achievement.bounty_board_weekly_t1.title = Mandado Semanal
 achievement.bounty_board_weekly_t2.title = Executor Semanal
 achievement.bounty_board_weekly_t3.title = Lenda Semanal
+achievement.bounty_board_bihourly_t1.title = Contratado Rápido
+achievement.bounty_board_bihourly_t2.title = Respondedor Rápido
+achievement.bounty_board_bihourly_t3.title = Lenda Rápida
 # Modelos de descrição de sequência compartilhados: {0} = a contagem de conclusões do nível, injetada de @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Conclua {0} recompensas diárias.
 achievement.bounty_streak.weekly.desc = Conclua {0} recompensas semanais.
+achievement.bounty_streak.bihourly.desc = Conclua {0} contratos rápidos.
+
+achievement.snapdragon_bounty.desc = Conclua o contrato Snapdragon {0} vezes.
+achievement.snapdragon_bounty_t1.title = Matador de Snapdragons
+achievement.snapdragon_bounty_t2.title = Flagelo dos Snapdragons
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Caixa de Cobre
@@ -276,6 +292,8 @@ quest.bounty_quick_catch.title = Lance Rápido
 quest.bounty_quick_catch.flavor = Peixe só o suficiente para completar a panela. Lance a linha.
 quest.bounty_quick_cull.title = Abate Rápido
 quest.bounty_quick_cull.flavor = Encrenca perto da estrada de novo. Limpe o que estiver à espreita.
+quest.bounty_quick_rot.title = Putrefação Rápida
+quest.bounty_quick_rot.flavor = Os mortos cambaleantes estão de novo perto da estrada. Abata alguns antes que a próxima patrulha chegue.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente do Mercado

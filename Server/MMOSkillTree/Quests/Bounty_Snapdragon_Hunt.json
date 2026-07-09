@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Snapdragon_Hunt",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_snapdragon_hunt",
+    "params": { "boards": "daily", "difficulty": "hard", "weight": "1", "target": "Snapdragon" },
+    "objectiveOverrides": { "main": { "amount": 4 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 340 },
+      { "type": "XP", "skill": "SWORDS", "amount": 2800 }
+    ]
+  }
+}

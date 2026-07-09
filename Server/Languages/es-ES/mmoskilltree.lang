@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Caza del Oso
 quest.bounty_bear_hunt.flavor = Grandes osos se han adueñado del sendero del norte. Esta solo es para un pulso firme.
 quest.bounty_smash_ogres.title = Aplasta Ogros
 quest.bounty_smash_ogres.flavor = Los ogros están destrozando las empalizadas. Abátelos antes de que los muros caigan con ellos.
-quest.bounty_hunt_risen.title = Tumba a los Resucitados
-quest.bounty_hunt_risen.flavor = Los muertos no se quedan enterrados. Devuelve a los Resucitados a la tierra.
+quest.bounty_snapdragon_hunt.title = El Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Un reptil venenoso acecha en los matorrales profundos, y nada más se atreve a compartir su territorio de caza. Localiza al Snapdragon antes de que se desvíe hacia los asentamientos.
+quest.bounty_burnt_skeletons.title = Ceniza y Hueso
+quest.bounty_burnt_skeletons.flavor = Esqueletos carbonizados vagan por las ruinas chamuscadas, aún humeantes. Devuelve a los muertos quemados al descanso.
+quest.bounty_boar_hunt.title = Caza del Jabalí
+quest.bounty_boar_hunt.flavor = Los jabalíes salvajes pisotean los campos de cultivo e hieren a quien se acerca demasiado. Mengua la piara antes de la cosecha.
 
 # --- Diario: recolectar ---
 quest.bounty_mine_stone.title = Trabajo de Cantera
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Aguas Ensangrentadas
 quest.bounty_weekly_sharks.flavor = Los tiburones martillo han convertido las rutas comerciales en un coto de caza. Mengua la manada antes de que desaparezca la próxima tripulación.
 quest.bounty_weekly_leviathan.title = El Leviatán
 quest.bounty_weekly_leviathan.flavor = Algo enorme se mueve bajo el oleaje. Abate a las grandes bestias antes de que arrastren a la flota al fondo.
+quest.bounty_weekly_sand_skeletons.title = Huesos de las Dunas
+quest.bounty_weekly_sand_skeletons.flavor = Esqueletos barridos por la arena trepan donde el desierto traga a los muertos. Pasa la semana despejando la hueste enterrada de las dunas.
+quest.bounty_weekly_frost_skeletons.title = La Hueste Congelada
+quest.bounty_weekly_frost_skeletons.flavor = Una hueste encadenada por el hielo desciende de los glaciares, aliento cubierto de escarcha. Rompe sus filas antes de que el frío se expanda.
 
 # --- Eje / iniciación (se incluye aquí para que los dueños del servidor puedan reformular la iniciación sin ---
 # --- tocar el jar; el jar conserva estos valores en inglés como recurso por clave). ---
@@ -176,6 +184,13 @@ achievement.bounty_board_weekly_t3.title = Leyenda Semanal
 # Plantillas de descripción de racha compartidas: {0} = el número de finalizaciones del nivel, inyectado desde @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Completa {0} contratos diarios.
 achievement.bounty_streak.weekly.desc = Completa {0} contratos semanales.
+achievement.bounty_board_bihourly_t1.title = Contratista Rápido
+achievement.bounty_board_bihourly_t2.title = Respondedor Rápido
+achievement.bounty_board_bihourly_t3.title = Leyenda Rápida
+achievement.bounty_streak.bihourly.desc = Completa {0} contratos rápidos.
+achievement.snapdragon_bounty.desc = Completa el contrato de Snapdragon {0} veces.
+achievement.snapdragon_bounty_t1.title = Cazador de Snapdragons
+achievement.snapdragon_bounty_t2.title = Azote de Snapdragons
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Cajón de Cobre
@@ -276,6 +291,8 @@ quest.bounty_quick_catch.title = Lance Rápido
 quest.bounty_quick_catch.flavor = Justo el pescado necesario para completar el guiso. Lanza el sedal.
 quest.bounty_quick_cull.title = Batida Rápida
 quest.bounty_quick_cull.flavor = Problemas cerca del camino otra vez. Despeja lo que esté acechando.
+quest.bounty_quick_rot.title = Podredumbre Rápida
+quest.bounty_quick_rot.flavor = Los muertos tambaleantes vuelven a ser numerosos cerca del camino. Derriba a unos cuantos antes de que pase la próxima patrulla.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercado

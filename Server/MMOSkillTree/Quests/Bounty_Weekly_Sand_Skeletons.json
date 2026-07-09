@@ -1,0 +1,13 @@
+{
+  "Name": "Bounty_Weekly_Sand_Skeletons",
+  "Payload": {
+    "extends": "bounty_kill_standard",
+    "id": "bounty_weekly_sand_skeletons",
+    "params": { "boards": "weekly", "difficulty": "normal", "weight": "2", "target": "Skeleton_Sand" },
+    "objectiveOverrides": { "main": { "amount": 20 } },
+    "rewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 450 },
+      { "type": "XP", "skill": "ARCHERY", "amount": 5000 }
+    ]
+  }
+}

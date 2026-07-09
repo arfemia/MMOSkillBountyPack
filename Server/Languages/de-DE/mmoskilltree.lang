@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Bärenjagd
 quest.bounty_bear_hunt.flavor = Große Bären haben den Nordpfad in Besitz genommen. Diese hier ist nur etwas für eine ruhige Hand.
 quest.bounty_smash_ogres.title = Oger zerschmettern
 quest.bounty_smash_ogres.flavor = Oger reißen die Palisaden nieder. Bring sie zu Fall, bevor die Mauern mit ihnen einstürzen.
-quest.bounty_hunt_risen.title = Die Auferstandenen niederlegen
-quest.bounty_hunt_risen.flavor = Die Toten bleiben nicht begraben. Bring die Auferstandenen zurück in die Erde.
+quest.bounty_snapdragon_hunt.title = Der Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Eine giftige Reptilie schleicht durch tiefe Dickichte, und nichts anderes wagt sich in ihr Jagdgebiet. Jage den Snapdragon, bevor er sich den Siedlungen nähert.
+quest.bounty_burnt_skeletons.title = Asche und Knochen
+quest.bounty_burnt_skeletons.flavor = Verkohlte Skelette wandern aus verbrannten Ruinen, immer noch glimmend. Leg die verbrannten Toten zurück zur Ruhe.
+quest.bounty_boar_hunt.title = Wildschweinjagd
+quest.bounty_boar_hunt.flavor = Wildschweine zertreten die Äcker und spießen jeden auf, der zu nah kommt. Dünne die Rotte aus, bevor die Ernte kommt.
 
 # --- Täglich: Sammeln ---
 quest.bounty_mine_stone.title = Steinbrucharbeit
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Blutige Gewässer
 quest.bounty_weekly_sharks.flavor = Hammerhaie haben die Schifffahrtsrouten in ein Jagdrevier verwandelt. Dünne das Rudel aus, bevor die nächste Crew verschwindet.
 quest.bounty_weekly_leviathan.title = Der Leviathan
 quest.bounty_weekly_leviathan.flavor = Etwas Gewaltiges bewegt sich unter den Wellen. Strecke die großen Bestien nieder, bevor sie die Flotte in die Tiefe ziehen.
+quest.bounty_weekly_sand_skeletons.title = Knochen der Dünen
+quest.bounty_weekly_sand_skeletons.flavor = Vom Sand überwaschene Skelette kratzen überall empor, wo die Wüste die Toten verschlingt. Verbringe die Woche damit, die begrabene Horde aus den Dünen zu räumen.
+quest.bounty_weekly_frost_skeletons.title = Die gefrorene Heerschar
+quest.bounty_weekly_frost_skeletons.flavor = Eine frostgebundene Heerschar marschiert von den Gletschern herab, ihr Atem mit Reif bedeckt. Durchbrich ihre Reihen, bevor die Kälte noch weiter kriecht.
 
 # --- Hub / Einführung (hier ausgeliefert, damit Serverbetreiber die Einführung umformulieren können, ---
 # --- ohne das Jar anzufassen; das Jar behält diese englischen Werte als Rückfall pro Schlüssel). ---
@@ -173,9 +181,17 @@ achievement.bounty_board_daily_t3.title = Täglicher Zenturio
 achievement.bounty_board_weekly_t1.title = Wöchentlicher Haftbefehl
 achievement.bounty_board_weekly_t2.title = Wöchentlicher Vollstrecker
 achievement.bounty_board_weekly_t3.title = Wöchentliche Legende
+achievement.bounty_board_bihourly_t1.title = Schneller Auftragnehmer
+achievement.bounty_board_bihourly_t2.title = Schneller Antworter
+achievement.bounty_board_bihourly_t3.title = Schnelle Legende
 # Gemeinsame Serien-Beschreibungsvorlagen: {0} = die Abschlusszahl der Stufe, eingefügt aus @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Schließe {0} tägliche Kopfgelder ab.
 achievement.bounty_streak.weekly.desc = Schließe {0} wöchentliche Kopfgelder ab.
+achievement.bounty_streak.bihourly.desc = Schließe {0} Schnellaufträge ab.
+
+achievement.snapdragon_bounty.desc = Schließe den Snapdragon-Auftrag {0}-mal ab.
+achievement.snapdragon_bounty_t1.title = Snapdragon-Bezwinger
+achievement.snapdragon_bounty_t2.title = Snapdragon-Geißel
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Kupferkiste
@@ -276,6 +292,8 @@ quest.bounty_quick_catch.title = Schnellwurf
 quest.bounty_quick_catch.flavor = Gerade genug Fisch, um den Topf voll zu kriegen. Wirf die Angel aus.
 quest.bounty_quick_cull.title = Schnelljagd
 quest.bounty_quick_cull.flavor = Schon wieder Ärger an der Strasse. Räum aus, was dort lauert.
+quest.bounty_quick_rot.title = Schnelle Verwesung
+quest.bounty_quick_rot.flavor = Die Untoten sind wieder überall an der Straße. Leg ein paar um, bevor die nächste Patrouille vorbeikommt.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Stammkunde des Marktes

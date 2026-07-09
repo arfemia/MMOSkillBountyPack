@@ -1,0 +1,21 @@
+{
+  "Name": "Snapdragon_Bounty_T2",
+  "Payload": {
+    "id": "snapdragon_bounty_t2",
+    "triggerType": "COMPLETE_QUEST",
+    "target": "bounty_snapdragon_hunt",
+    "matchMode": "EXACT",
+    "requiredAmount": 10,
+    "category": "quests",
+    "subcategory": "bounties",
+    "sortOrder": 71,
+    "points": 45,
+    "chainId": "snapdragon_bounty",
+    "tier": 2,
+    "descriptionKey": "achievement.snapdragon_bounty.desc",
+    "descriptionArgs": ["@amount"],
+    "manualClaimRewards": [
+      { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 900 }
+    ]
+  }
+}

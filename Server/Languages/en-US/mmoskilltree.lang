@@ -26,8 +26,12 @@ quest.bounty_bear_hunt.title = Bear Hunt
 quest.bounty_bear_hunt.flavor = Great bears have claimed the north trail. This one is for a steady hand only.
 quest.bounty_smash_ogres.title = Ogre Smash
 quest.bounty_smash_ogres.flavor = Ogres are tearing through the palisades. Bring them down before the walls come with them.
-quest.bounty_hunt_risen.title = Lay the Risen
-quest.bounty_hunt_risen.flavor = The dead will not stay buried. Put the Risen back in the ground.
+quest.bounty_snapdragon_hunt.title = The Snapdragon
+quest.bounty_snapdragon_hunt.flavor = A venomous reptile stalks the deep thickets, and nothing else dares share its hunting ground. Track the Snapdragon down before it drifts toward the settlements.
+quest.bounty_burnt_skeletons.title = Ash and Bone
+quest.bounty_burnt_skeletons.flavor = Charred skeletons wander out of the scorched ruins, still smoldering. Put the burnt dead back to rest.
+quest.bounty_boar_hunt.title = Boar Hunt
+quest.bounty_boar_hunt.flavor = Wild boars are trampling the croplands and goring anyone who strays too close. Thin the sounder before harvest.
 
 # --- Daily: gather ---
 quest.bounty_mine_stone.title = Quarry Work
@@ -88,6 +92,10 @@ quest.bounty_weekly_sharks.title = Bloodied Waters
 quest.bounty_weekly_sharks.flavor = Hammerheads have turned the shipping lanes into a feeding ground. Thin the pack before the next crew goes missing.
 quest.bounty_weekly_leviathan.title = The Leviathan
 quest.bounty_weekly_leviathan.flavor = Something vast moves beneath the swells. Bring down the great beasts before they drag the fleet under.
+quest.bounty_weekly_sand_skeletons.title = Bones of the Dunes
+quest.bounty_weekly_sand_skeletons.flavor = Sandswept skeletons claw up wherever the desert swallows the dead. Spend the week clearing the buried host from the dunes.
+quest.bounty_weekly_frost_skeletons.title = The Frozen Host
+quest.bounty_weekly_frost_skeletons.flavor = A frost-bound host marches down from the glaciers, breath rimed with ice. Break their ranks before the cold creeps any farther.
 
 # --- Hub / onboarding (shipped here so server owners can reword onboarding without ---
 # --- touching the jar; the jar keeps these English values as a per-key fallback). ---
@@ -185,9 +193,17 @@ achievement.bounty_board_daily_t3.title = Daily Centurion
 achievement.bounty_board_weekly_t1.title = Weekly Warrant
 achievement.bounty_board_weekly_t2.title = Weekly Enforcer
 achievement.bounty_board_weekly_t3.title = Weekly Legend
+achievement.bounty_board_bihourly_t1.title = Quick Contractor
+achievement.bounty_board_bihourly_t2.title = Rapid Responder
+achievement.bounty_board_bihourly_t3.title = Quick Legend
 # Shared streak description templates: {0} = the tier's completion count, injected from @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Complete {0} daily bounties.
 achievement.bounty_streak.weekly.desc = Complete {0} weekly bounties.
+achievement.bounty_streak.bihourly.desc = Complete {0} quick contracts.
+
+achievement.snapdragon_bounty.desc = Complete the Snapdragon contract {0} times.
+achievement.snapdragon_bounty_t1.title = Snapdragon Slayer
+achievement.snapdragon_bounty_t2.title = Snapdragon Bane
 
 # === 1.0.0 content pass: new mob hunts, gather-and-deliver, boss contracts ===
 
@@ -274,6 +290,8 @@ quest.bounty_quick_catch.title = Quick Cast
 quest.bounty_quick_catch.flavor = Just enough fish to round out the pot. Cast a line.
 quest.bounty_quick_cull.title = Quick Cull
 quest.bounty_quick_cull.flavor = Trouble near the road again. Clear out whatever is lurking.
+quest.bounty_quick_rot.title = Quick Rot
+quest.bounty_quick_rot.flavor = The shambling dead are thick near the road again. Drop a few before the next patrol comes through.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Market Patron
