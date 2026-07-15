@@ -4,7 +4,10 @@
     "id": "shop_featured_cache_lobster",
     "titleKey": "shop.featured_cache_lobster.title",
     "descriptionKey": "shop.featured_cache_lobster.desc",
-    "cost": { "currencies": { "bounty_token": 160 } },
+    "cost": {
+      "currencies": { "bounty_token": 160 },
+      "items": [{ "id": "Ingredient_Fire_Essence", "count": 24 }]
+    },
     "icon": "Fish_Lobster_Item",
     "category": "featured",
     "pool": "featured",
@@ -12,7 +15,10 @@
     "weight": 1,
     "limitPerDay": 3,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Fish_Lobster_Item --quantity=24" }
+      {
+        "type": "COMMAND",
+        "command": "/give {player} Fish_Lobster_Item --quantity=24"
+      }
     ]
   }
 }
