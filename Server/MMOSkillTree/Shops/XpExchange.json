@@ -1,10 +1,12 @@
 {
   "Name": "XpExchange",
+  "$Comment": "The skill XP storefront. 'currencies' is the balance strip in the page header: the XP packets here are priced in bounty tokens and life essence together, so both wallets are listed and both balances stay visible while browsing. Drop an id from the list to hide that wallet, or omit the field entirely to show bounty tokens alone.",
   "Payload": {
     "titleKey": "shop.xpexchange.title",
     "descriptionKey": "shop.xpexchange.desc",
     "icon": "Tool_Pickaxe_Crude",
     "order": 1,
-    "enabled": true
+    "enabled": true,
+    "currencies": ["bounty_token", "life_essence"]
   }
 }

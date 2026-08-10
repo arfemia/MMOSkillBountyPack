@@ -1,5 +1,6 @@
 {
   "Name": "Weekly",
+  "$Comment": "The weekly warrant board: three heavier contracts that rotate every Monday. 'currencies' is the balance strip in the page header; the weekly contracts pay bounty tokens, so that is the only wallet worth showing here. Add another currency id to the list if you author contracts that pay or spend one.",
   "Payload": {
     "titleKey": "ui.bounty.board.weekly",
     "descriptionKey": "ui.bounty.board.weekly.desc",
@@ -12,7 +13,7 @@
       { "filter": { "difficulty": "hard" } },
       { "filter": { "difficulty": "hard" }, "optional": true }
     ],
+    "currencies": ["bounty_token"],
     "rerollCost": { "currency": "bounty_token", "amount": 100, "maxPerPeriod": 2 }
-
   }
 }

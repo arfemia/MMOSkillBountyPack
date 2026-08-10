@@ -1,5 +1,6 @@
 {
   "Name": "Daily",
+  "$Comment": "The main daily board: two ungated training contracts plus the weighted easy/normal/hard token faucet, rotating at UTC midnight. 'currencies' is the balance strip in the page header. Life essence is listed beside bounty tokens because a daily contract asks the player to spend essence, so both balances need to be visible while they pick a contract. List only what a player earns or spends at this board; an unlisted wallet simply does not appear.",
   "Payload": {
     "titleKey": "ui.bounty.board.daily",
     "descriptionKey": "ui.bounty.board.daily.desc",
@@ -20,6 +21,7 @@
       { "filter": { "difficulty": "normal" } },
       { "filter": { "difficulty": "hard" }, "optional": true }
     ],
+    "currencies": ["bounty_token", "life_essence"],
     "rerollCost": {
       "currency": "bounty_token",
       "amount": 25,
