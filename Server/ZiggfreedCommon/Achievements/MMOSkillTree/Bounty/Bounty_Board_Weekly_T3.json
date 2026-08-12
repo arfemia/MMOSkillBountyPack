@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "achievement.bounty_board_weekly_t3.title",
+    "FlavorKey": "achievement.bounty_streak.weekly.desc",
+    "TextArgs": {
+      "Flavor": [
+        "@amount"
+      ]
+    }
+  },
+  "Listing": {
+    "Category": "quests",
+    "Subcategory": "bounties",
+    "SortOrder": 62,
+    "Chains": [
+      {
+        "Id": "bounty_board_weekly",
+        "Tier": 3
+      }
+    ]
+  },
+  "Scoring": {
+    "Points": 175
+  },
+  "Criteria": [
+    {
+      "Kind": "COMPLETE_BOUNTY",
+      "Target": "weekly",
+      "MatchMode": "EXACT",
+      "Amount": 60
+    }
+  ],
+  "ClaimRewards": [
+    {
+      "Kind": "currency",
+      "Params": {
+        "CurrencyId": "bounty_token",
+        "Amount": "4000"
+      }
+    }
+  ]
+}

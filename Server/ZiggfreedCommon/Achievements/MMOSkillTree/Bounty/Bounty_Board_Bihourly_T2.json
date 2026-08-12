@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "achievement.bounty_board_bihourly_t2.title",
+    "FlavorKey": "achievement.bounty_streak.bihourly.desc",
+    "TextArgs": {
+      "Flavor": [
+        "@amount"
+      ]
+    }
+  },
+  "Listing": {
+    "Category": "quests",
+    "Subcategory": "bounties",
+    "SortOrder": 73,
+    "Chains": [
+      {
+        "Id": "bounty_board_bihourly",
+        "Tier": 2
+      }
+    ]
+  },
+  "Scoring": {
+    "Points": 30
+  },
+  "Criteria": [
+    {
+      "Kind": "COMPLETE_BOUNTY",
+      "Target": "bihourly",
+      "MatchMode": "EXACT",
+      "Amount": 50
+    }
+  ],
+  "ClaimRewards": [
+    {
+      "Kind": "currency",
+      "Params": {
+        "CurrencyId": "bounty_token",
+        "Amount": "350"
+      }
+    }
+  ]
+}

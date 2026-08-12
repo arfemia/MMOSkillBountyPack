@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "achievement.snapdragon_bounty_t2.title",
+    "FlavorKey": "achievement.snapdragon_bounty.desc",
+    "TextArgs": {
+      "Flavor": [
+        "@amount"
+      ]
+    }
+  },
+  "Listing": {
+    "Category": "quests",
+    "Subcategory": "bounties",
+    "SortOrder": 71,
+    "Chains": [
+      {
+        "Id": "snapdragon_bounty",
+        "Tier": 2
+      }
+    ]
+  },
+  "Scoring": {
+    "Points": 45
+  },
+  "Criteria": [
+    {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "bounty_snapdragon_hunt",
+      "MatchMode": "EXACT",
+      "Amount": 10
+    }
+  ],
+  "ClaimRewards": [
+    {
+      "Kind": "currency",
+      "Params": {
+        "CurrencyId": "bounty_token",
+        "Amount": "900"
+      }
+    }
+  ]
+}

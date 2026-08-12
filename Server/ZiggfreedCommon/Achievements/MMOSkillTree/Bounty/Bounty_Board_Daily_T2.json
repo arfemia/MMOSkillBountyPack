@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "achievement.bounty_board_daily_t2.title",
+    "FlavorKey": "achievement.bounty_streak.daily.desc",
+    "TextArgs": {
+      "Flavor": [
+        "@amount"
+      ]
+    }
+  },
+  "Listing": {
+    "Category": "quests",
+    "Subcategory": "bounties",
+    "SortOrder": 51,
+    "Chains": [
+      {
+        "Id": "bounty_board_daily",
+        "Tier": 2
+      }
+    ]
+  },
+  "Scoring": {
+    "Points": 40
+  },
+  "Criteria": [
+    {
+      "Kind": "COMPLETE_BOUNTY",
+      "Target": "daily",
+      "MatchMode": "EXACT",
+      "Amount": 25
+    }
+  ],
+  "ClaimRewards": [
+    {
+      "Kind": "currency",
+      "Params": {
+        "CurrencyId": "bounty_token",
+        "Amount": "400"
+      }
+    }
+  ]
+}
