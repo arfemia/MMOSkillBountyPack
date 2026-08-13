@@ -11,7 +11,7 @@
     "shop": "general",
     "limitPerDay": 5,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Iron --quantity=32" }
+      { "type": "ITEM", "item": "Ore_Iron", "count": 32 }
     ]
   }
 }

@@ -12,8 +12,8 @@
     "weight": 1,
     "limitPerDay": 2,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Crystal_Purple --quantity=4" },
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Crystal_Blue --quantity=4" }
+      { "type": "ITEM", "item": "Ingredient_Crystal_Purple", "count": 4 },
+      { "type": "ITEM", "item": "Ingredient_Crystal_Blue", "count": 4 }
     ]
   }
 }

@@ -12,7 +12,7 @@
     "weight": 1,
     "limitPerDay": 2,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Bar_Copper --quantity=12" }
+      { "type": "ITEM", "item": "Ingredient_Bar_Copper", "count": 12 }
     ]
   }
 }

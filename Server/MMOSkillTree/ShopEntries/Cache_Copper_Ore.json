@@ -11,7 +11,7 @@
     "shop": "general",
     "limitPerDay": 3,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ore_Copper --quantity=24" }
+      { "type": "ITEM", "item": "Ore_Copper", "count": 24 }
     ]
   }
 }

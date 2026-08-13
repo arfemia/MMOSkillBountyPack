@@ -32,7 +32,7 @@
   ],
   "ClaimRewards": [
     {
-      "Kind": "currency",
+      "Kind": "Mmo_Currency",
       "Params": {
         "CurrencyId": "bounty_token",
         "Amount": "350"

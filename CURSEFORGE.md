@@ -31,22 +31,21 @@ Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies
 - Running a bigger world? Stand up several boards: put the daily board in the town square and the weekly board at the guild hall. Each block opens the board it belongs to.
 - Don't like a contract? Reroll just that one - it swaps for a fresh contract while the rest of the board stays - up to a daily cap (rerolls cost Bounty Tokens).
 - Tougher contracts ask for a minimum combat level before you can accept them, so hard work stays aspirational; contracts above your level show as locked until you train up.
-- The mod's **Adventurer's Guide** is placed at your world spawn the first time someone joins, so bounties just work with no setup. It appears once per world and never duplicates on restart. Prefer to place things yourself? You can also stand up dedicated NPCs anywhere with `/mmonpc spawn` (a hub, a single board, or the Token Trader).
+- The mod's **Adventurer's Guide** is placed at your world spawn the first time someone joins, so bounties just work with no setup. It appears once per world and never duplicates on restart.
 
 ## Don't want the spawn NPC?
 
 It's easy to opt out, and you only have to do it once:
 
-- **Before anyone joins:** set `"enabled": false` in `mods/mmoskilltree/spawn-hub.json` and it will never spawn.
-- **Already in your world?** Remove it once and it won't come back: run `/mmonpc list` to find its id, then `/mmonpc remove <id>`. (Changed your mind later? `/mmonpc reset` lets it spawn again on the next join.)
-- **Or use the in-game editor:** with creative/builder access, the native `EditorTool_Entity` tool deletes the NPC in the world like any other entity. It won't respawn (it only spawns once per world).
+- **Before anyone joins:** set `"enabled": false` for `mmo_hub` in `mods/ziggfreedcommon/npc-placements.json` and it will never spawn.
+- **Already in your world?** Run `/mmonpc list` to confirm its id, then `/mmonpc disable --arg1=mmo_hub` - it despawns right away and stays gone. Changed your mind? `/mmonpc enable --arg1=mmo_hub` brings it back.
 
 Either way, the placeable Bounty Board and Token Trader blocks keep working exactly the same, so you lose nothing by removing the NPC.
 
 ## Install
 
 1. Install the MMO Skill Tree mod.
-2. Drop `MMOSkillBountyPack-1.1.2.zip` into your server's `Mods/` folder, alongside the mod.
+2. Drop `MMOSkillBountyPack-1.2.0.zip` into your server's `Mods/` folder, alongside the mod.
 3. Start the server. Bounties are on by default; a server owner can turn the whole feature on or off from the in-game admin menu.
 
 ## Make your own contracts and boards
@@ -57,6 +56,7 @@ Bounties and boards are plain pack files: add a contract by dropping in one smal
 
 | Pack  | Plugin | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.2.0 | 1.6.0+ | **Unreleased, part of the 1.6.0 train.** Internal rewrite: the board and creature achievement ladders (Daily / Weekly / Bihourly chains, the Snapdragon chain) move onto the shared quest/achievement engine, alongside ZiggfreedCommon 1.4.0+. The 79 contracts themselves are untouched. No player-facing change. |
 | 1.1.3 | 1.4.3+ | **Unreleased, part of the 1.6.0 train.** The Featured: Fisher's Haul cache now also costs 24 Fire Essence alongside its 160 Bounty Tokens. On MMO Skill Tree 1.6.0+, the shops and the daily board show every wallet they deal in (Bounty Tokens beside Life Essence) instead of tokens alone, and the Token Shop lists its categories in a deliberate order rather than alphabetically; on an older version the pack loads exactly as before. |
 | 1.1.2 | 1.4.3+ | Adds five new contracts and replaces the Risen daily contract with a marquee **Snapdragon** hunt: Burnt Skeletons and a wild Boar hunt on the Daily board, Sandswept Skeletons and a frost-bound skeleton host on the Weekly board, and a fast zombie cull on the Quick board. Adds two achievement chains: **Snapdragon Slayer / Bane** for completing the Snapdragon contract, and a **Quick Contractor** ladder for the Quick board. Fully translated in all 9 languages. Requires MMO Skill Tree 1.4.3.                                                                                                                                                                                     |
 | 1.1.1 | 1.4.3+ | Contracts are always claimed at the Bounty Board now, never granted out in the field, so a finished contract's reward can no longer be lost to a full inventory or to the contract rotating off the board. Requires MMO Skill Tree 1.4.3.                                                                                                                                                                                                                                                                                                                              |

@@ -16,8 +16,9 @@
     "limitPerDay": 3,
     "rewards": [
       {
-        "type": "COMMAND",
-        "command": "/give {player} Fish_Lobster_Item --quantity=24"
+        "type": "ITEM",
+        "item": "Fish_Lobster_Item",
+        "count": 24
       }
     ]
   }

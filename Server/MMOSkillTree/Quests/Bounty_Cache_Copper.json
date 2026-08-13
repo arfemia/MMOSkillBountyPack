@@ -8,7 +8,7 @@
     "rewards": [
       { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 160 },
       { "type": "XP", "skill": "MINING", "amount": 1400 },
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Bar_Copper --quantity=8" }
+      { "type": "ITEM", "item": "Ingredient_Bar_Copper", "count": 8 }
     ]
   }
 }

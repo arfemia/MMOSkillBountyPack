@@ -11,7 +11,7 @@
     "shop": "general",
     "limitPerDay": 5,
     "rewards": [
-      { "type": "COMMAND", "command": "/give {player} Ingredient_Hide_Scaled --quantity=16" }
+      { "type": "ITEM", "item": "Ingredient_Hide_Scaled", "count": 16 }
     ]
   }
 }
