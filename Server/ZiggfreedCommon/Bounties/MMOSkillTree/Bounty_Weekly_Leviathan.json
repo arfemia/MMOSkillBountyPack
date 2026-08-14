@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_leviathan.title",
+    "FlavorKey": "quest.bounty_weekly_leviathan.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Whale",
+      "Amount": 3
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "900"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "POLEARMS",
+        "Amount": "9000"
+      }
+    }
+  ]
+}

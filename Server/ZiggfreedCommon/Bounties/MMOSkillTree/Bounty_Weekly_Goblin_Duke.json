@@ -1,0 +1,37 @@
+{
+  "$Comment": "A marquee weekly warrant: one named target, and a payout to match. A count of 1 is how a boss hunt is written, and the weight keeps it drawn no more often than its rivals for the same hard slot.",
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_goblin_duke.title",
+    "FlavorKey": "quest.bounty_weekly_goblin_duke.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Goblin_Duke",
+      "Amount": 1
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1000"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "SWORDS",
+        "Amount": "10000"
+      }
+    }
+  ]
+}

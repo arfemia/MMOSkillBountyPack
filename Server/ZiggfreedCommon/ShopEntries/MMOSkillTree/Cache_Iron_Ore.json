@@ -1,0 +1,29 @@
+{
+  "Text": {
+    "TitleKey": "shop.cache_iron_ore.title",
+    "FlavorKey": "shop.cache_iron_ore.desc"
+  },
+  "Icon": "Ore_Iron",
+  "Shop": "General",
+  "Listing": {
+    "Category": "items",
+    "SortOrder": 10
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 120
+    }
+  },
+  "Limits": {
+    "Daily": 5
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ore_Iron",
+        "Count": "32"
+      }
+    }
+  ]
+}

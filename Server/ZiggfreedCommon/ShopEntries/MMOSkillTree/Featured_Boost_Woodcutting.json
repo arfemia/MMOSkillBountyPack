@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_boost_woodcutting.title",
+    "FlavorKey": "shop.featured_boost_woodcutting.desc"
+  },
+  "Icon": "Tool_Hatchet_Crude",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 130
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 2
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_WOODCUTTING",
+        "Min": 1
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Boost_Token",
+      "Params": {
+        "Skill": "WOODCUTTING",
+        "Multiplier": "3.0",
+        "DurationMinutes": "20"
+      }
+    }
+  ]
+}

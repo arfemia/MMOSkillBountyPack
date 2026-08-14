@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_sabertooth_hunt.title",
+    "FlavorKey": "quest.bounty_sabertooth_hunt.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Tiger_Sabertooth",
+      "Amount": 8
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "160"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "ARCHERY",
+        "Amount": "1300"
+      }
+    }
+  ]
+}

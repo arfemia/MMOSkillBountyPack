@@ -1,0 +1,29 @@
+{
+  "Text": {
+    "TitleKey": "shop.cache_copper_ore.title",
+    "FlavorKey": "shop.cache_copper_ore.desc"
+  },
+  "Icon": "Ore_Copper",
+  "Shop": "General",
+  "Listing": {
+    "Category": "items",
+    "SortOrder": 8
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 60
+    }
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ore_Copper",
+        "Count": "24"
+      }
+    }
+  ]
+}

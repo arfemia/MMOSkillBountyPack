@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for 'bring back a pile of this' contracts, counted as the player breaks it out of the world. A child names the material and how much of it. CONTAINS matching is deliberate: 'Wood' counts every timber, 'Ore_Copper' every copper seam, so one contract covers a family of blocks rather than one exact id.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "BREAK_BLOCK",
+      "Amount": 1,
+      "MatchMode": "CONTAINS"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 A free content pack for [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree). It adds a rotating **Bounty Board**: daily and weekly contracts you pick up in the world, complete anywhere, and cash in for Bounty Tokens plus skill XP.
 
-Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies the board engine, so install both.
+Requires the MMO Skill Tree mod and its ZiggfreedCommon library. The pack supplies the content; the mod supplies the board and shop engines, so install all three.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -14,23 +14,25 @@ Requires the MMO Skill Tree mod. The pack supplies the content; the mod supplies
 
 ## What it adds
 
-- **Daily Bounty Board** - a rotating mix of kill, gather, mine-and-deliver, and train-a-skill contracts that refresh every day, sending you after creatures from desert scorpions and cave raptors to swamp crocodiles, sabertooths, and ghouls.
-- **Weekly Bounty Board** - tougher, higher-paying contracts that refresh every week, including marquee boss hunts (the Goblin Duke, the Shadow Knight, the Scarak Broodmother, and an aberrant horror) that pay out bigger than a regular hard contract.
-- **Delivery and mine-and-deliver contracts** - some contracts ask you to hand in gathered materials (like Life Essence or ore) at the board, and many mining contracts now end by delivering a share of what you dug, not just breaking blocks.
-- **Bounty Tokens** - the reward currency, earned from contracts, spent at the shops, and used to reroll contracts and featured offers.
-- **Shops** - a placeable Token Trader block (or NPC) opens the shop: spend Bounty Tokens across two storefronts, the general **Token Shop** (XP boosts, item caches, currency conversions, and a rotating Featured shelf you can reroll) and a per-skill **XP Exchange**.
-- **Placeable blocks** - spawn a Daily Bounty Board, a Weekly Bounty Board, and a Token Trader, mount them on a wall anywhere, and each opens its own menu.
-- **Works from spawn with no setup** - the mod places its **Adventurer's Guide** NPC at your world spawn automatically; with this pack installed its hub lists every board and the shops, so players can reach bounties out of the box without anyone placing a block. Walk up, press the interact key, and pick a board or a shop.
-- **Bounty achievements** - completing contracts unlocks achievement chains, including per-board Daily and Weekly ladders.
-- **Fully translated** - every contract name, board and shop description, offer, block, and NPC name ships in 9 languages (English, German, Spanish, French, Hungarian, Italian, Brazilian Portuguese, Russian, Turkish); anything a translation misses falls back to English.
+- **76 contracts across three boards.** The Daily board posts a fresh mix every day: kill, gather, mine-and-deliver, hand-in and train-a-skill work, sending you after desert scorpions, cave raptors, swamp crocodiles, sabertooths and ghouls.
+- The Weekly board is the heavy end. Tougher targets, much bigger payouts, and marquee boss hunts: the Goblin Duke, the Shadow Knight, the Scarak Broodmother, an aberrant horror.
+- A third board turns over every two hours with one quick contract on it. Small, fast jobs that pay skill XP.
+- Some contracts want the goods back. You hand in ore or Life Essence at the board; mining contracts usually end with you delivering a share of what you dug.
+- **Bounty Tokens** are the reward currency. Contracts pay them, the shops take them, and rerolls cost them.
+- Two storefronts behind a placeable Token Trader block or an NPC: the Token Shop (XP boosts, item crates, a rotating Featured shelf you can reroll) and a per-skill XP Exchange that puts one packet of each size on sale a day.
+- Placeable blocks for all three boards and the trader. Mount them on a wall anywhere and each opens its own menu.
+- Nothing to set up. The mod puts its Adventurer's Guide at world spawn, and with this pack installed its hub lists every board and both shops, so players reach bounties without anyone placing a block.
+- Achievement chains for completing contracts, including per-board Daily, Weekly and Quick ladders and a Snapdragon hunter chain.
+- Every contract name, board and shop description, offer, block and NPC name ships in 9 languages (English, German, Spanish, French, Hungarian, Italian, Brazilian Portuguese, Russian, Turkish). Anything a translation misses falls back to English.
 
 ## How it works
 
 - Every player sees the same board each rotation, so the day's (and week's) contracts are shared across the server.
-- Spawn and place a Bounty Board block (or have an admin give you one), interact with it, and a clean menu lists each contract's task, difficulty, and reward. Accept the ones you want; they auto-claim the moment you finish.
+- Place a Bounty Board block (or have an admin give you one) and interact with it. A clean menu lists each contract's task, difficulty and reward. Accept the ones you want.
+- Finished contracts wait for you at the board. They never pay out in the field, so a full inventory or the board rotating can't cost you a reward: walk back, make room if you need to, press Claim.
 - Running a bigger world? Stand up several boards: put the daily board in the town square and the weekly board at the guild hall. Each block opens the board it belongs to.
 - Don't like a contract? Reroll just that one - it swaps for a fresh contract while the rest of the board stays - up to a daily cap (rerolls cost Bounty Tokens).
-- Tougher contracts ask for a minimum combat level before you can accept them, so hard work stays aspirational; contracts above your level show as locked until you train up.
+- Tougher contracts ask for a minimum combat level before you can accept them. You still see them, marked locked, so you know what to train towards.
 - The mod's **Adventurer's Guide** is placed at your world spawn the first time someone joins, so bounties just work with no setup. It appears once per world and never duplicates on restart.
 
 ## Don't want the spawn NPC?
@@ -44,19 +46,19 @@ Either way, the placeable Bounty Board and Token Trader blocks keep working exac
 
 ## Install
 
-1. Install the MMO Skill Tree mod.
-2. Drop `MMOSkillBountyPack-1.2.0.zip` into your server's `Mods/` folder, alongside the mod.
+1. Install the MMO Skill Tree mod and the ZiggfreedCommon library it loads first.
+2. Drop `MMOSkillBountyPack-1.2.0.zip` into your server's `Mods/` folder, alongside them.
 3. Start the server. Bounties are on by default; a server owner can turn the whole feature on or off from the in-game admin menu.
 
 ## Make your own contracts and boards
 
-Bounties and boards are plain pack files: add a contract by dropping in one small file, add a whole new board by dropping in another. No coding required. The pack's repository has a short authoring guide, including how to give a new board its own placeable block.
+Contracts, boards, shops and offers are plain pack files: add a contract by dropping in one small file, add a whole new board by dropping in another. No coding required. Retuning what ships here is the same move: drop in a file with the same name and change the one number you care about, and everything you left out stays as it was. The pack's repository has a short authoring guide, including how to give a new board its own placeable block.
 
 ## Versions
 
 | Pack  | Plugin | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.2.0 | 1.6.0+ | **Unreleased, part of the 1.6.0 train.** Internal rewrite: the board and creature achievement ladders (Daily / Weekly / Bihourly chains, the Snapdragon chain) move onto the shared quest/achievement engine, alongside ZiggfreedCommon 1.4.0+. The 79 contracts themselves are untouched. No player-facing change. |
+| 1.2.0 | 1.6.0+ | **Unreleased, part of the 1.6.0 train.** Internal rewrite, no player-facing change: the whole catalogue (76 contracts, three boards, both shops, their shelves and offers, both wallets, and the achievement ladders) moves onto the shared engine that ships with ZiggfreedCommon 1.4.0+. Server owners get a simpler authoring story out of it: one file per thing, the file name is its id, and overriding anything shipped here means dropping in a file with the same name. |
 | 1.1.3 | 1.4.3+ | **Unreleased, part of the 1.6.0 train.** The Featured: Fisher's Haul cache now also costs 24 Fire Essence alongside its 160 Bounty Tokens. On MMO Skill Tree 1.6.0+, the shops and the daily board show every wallet they deal in (Bounty Tokens beside Life Essence) instead of tokens alone, and the Token Shop lists its categories in a deliberate order rather than alphabetically; on an older version the pack loads exactly as before. |
 | 1.1.2 | 1.4.3+ | Adds five new contracts and replaces the Risen daily contract with a marquee **Snapdragon** hunt: Burnt Skeletons and a wild Boar hunt on the Daily board, Sandswept Skeletons and a frost-bound skeleton host on the Weekly board, and a fast zombie cull on the Quick board. Adds two achievement chains: **Snapdragon Slayer / Bane** for completing the Snapdragon contract, and a **Quick Contractor** ladder for the Quick board. Fully translated in all 9 languages. Requires MMO Skill Tree 1.4.3.                                                                                                                                                                                     |
 | 1.1.1 | 1.4.3+ | Contracts are always claimed at the Bounty Board now, never granted out in the field, so a finished contract's reward can no longer be lost to a full inventory or to the contract rotating off the board. Requires MMO Skill Tree 1.4.3.                                                                                                                                                                                                                                                                                                                              |

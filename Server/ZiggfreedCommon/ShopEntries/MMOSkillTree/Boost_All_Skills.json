@@ -1,0 +1,30 @@
+{
+  "Text": {
+    "TitleKey": "shop.boost_all_skills.title",
+    "FlavorKey": "shop.boost_all_skills.desc"
+  },
+  "Icon": "Ingredient_Crystal_Purple",
+  "Shop": "General",
+  "Listing": {
+    "Category": "boosts",
+    "SortOrder": 10
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 400
+    }
+  },
+  "Limits": {
+    "Daily": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Boost_Token",
+      "Params": {
+        "Skill": "ALL",
+        "Multiplier": "2.0",
+        "DurationMinutes": "45"
+      }
+    }
+  ]
+}

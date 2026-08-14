@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Lonca rezervinden eritilmiş külçeler, bedelinin b
 shop.featured_cache_enchanter.title = Öne Çıkan: Büyücünün Paketi
 shop.featured_cache_enchanter.desc = Yükle uğuldayan ışıltılı kristallerden öne çıkan bir paket.
 
-# --- Dağıtılmış/yetenek bazlı XP paketleri kurala göre shop.<id>.title anahtarını korur (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Madencilik XP Paketi
-shop.shop_xp_mining.desc = Kazancını bir patlama Madencilik XP'sine çevir.
-shop.shop_xp_woodcutting.title = Odunculuk XP Paketi
-shop.shop_xp_woodcutting.desc = Kazancını bir patlama Odunculuk XP'sine çevir.
-shop.shop_xp_excavation.title = Kazı XP Paketi
-shop.shop_xp_excavation.desc = Kazancını bir patlama Kazı XP'sine çevir.
-shop.shop_xp_swords.title = Kılıçlar XP Paketi
-shop.shop_xp_swords.desc = Kazancını bir patlama Kılıçlar XP'sine çevir.
-shop.shop_xp_defense.title = Blok XP Paketi
-shop.shop_xp_defense.desc = Kazancını bir patlama Blok XP'sine çevir.
-shop.shop_xp_combat_any.title = Gazinin Tüm Yetenek XP'si
-shop.shop_xp_combat_any.desc = Bir savaş gazisinin ödülü: her yetenekte bir patlama XP.
+# --- Üretilen XP paketleri: her boy için tek satır, yetenek {0} yerine geçer ---
+shop.xp_packet.lesser.title = {0}: Ders
+shop.xp_packet.greater.title = {0}: Eğitim
+shop.xp_packet.master.title = {0}: Ustalık
 
 # --- Para birimleri (currency.<id>.name, kurala göre çözülür; id = küçük harfli dosya adı) ---
 currency.bounty_token.name = Ödül Jetonu
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Ödül Jetonu
 
 # --- Başarımlar (achievement.<id>.title / .desc, kurala göre çözülür) ---

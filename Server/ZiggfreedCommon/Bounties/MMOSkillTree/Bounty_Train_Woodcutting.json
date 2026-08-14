@@ -1,0 +1,45 @@
+{
+  "Parent": "Bounty_Xp",
+  "Text": {
+    "TitleKey": "quest.bounty_train_woodcutting.title",
+    "FlavorKey": "quest.bounty_train_woodcutting.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_WOODCUTTING",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "WOODCUTTING",
+      "Amount": 2500
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "70"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "WOODCUTTING",
+        "Amount": "800"
+      }
+    }
+  ]
+}

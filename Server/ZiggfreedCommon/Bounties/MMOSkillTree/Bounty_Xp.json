@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for training contracts: the step counts experience earned in one skill while the contract is held, so the Target is a skill id and the Amount is raw experience rather than a number of things. Pair it with a Requires bound on that same skill, so it is only offered to somebody who can actually work on it.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "GAIN_XP",
+      "Amount": 1,
+      "MatchMode": "EXACT"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

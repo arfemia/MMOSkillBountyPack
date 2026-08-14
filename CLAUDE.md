@@ -1,6 +1,6 @@
 # CLAUDE.md - MMOSkillBountyPack
 
-A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (1.4.0+; the manifest hard-deps `^1.4.0` since the Bihourly board + the Daily board's `training` XP slots use 1.4.0 engine features). Ships the entire **Bounty Board** feature's content: the bounty pool, reusable templates, the Bounty Token currency, the board schedules, AND the in-world board blocks (item + interaction + textures-via-vanilla + item names). The mod jar ships only the Bounty Board *engine* (`BountyService`, `BountyBoardConfig`, `BountyBoardPage` + its `.ui`, the registered `mmo_bounty_board_open` interaction type, `/mmobounty*` commands) and no content, so this pack is what makes bounties appear. It is a **hard dependency** on the mod (the board block's interaction needs the jar-registered Java type), declared in `manifest.json`.
+A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (`^1.6.0`) and ZiggfreedCommon (`>=1.4.0`). It ships the entire **bounty board + shop** CONTENT: the contract pool, the reusable contract skeletons, the Bounty Token currency, the board schedules, the two storefronts with their shelves and offers, AND the in-world blocks (item + interaction + textures-via-vanilla + item names). The engines live in ZiggfreedCommon's `zc-commerce` module and the MMO jar registers what only it knows (its reward kinds, its stat channels, the `/mmobounty*` + `/mmoshop*` commands), so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
 ## Release notes (patch-notes paradigm)
 
@@ -10,190 +10,243 @@ Per-version public release notes live in `patch-notes/<version>.md`, same paradi
 
 ```
 bounty-contracts-pack/
-├── manifest.json                                  Hytale plugin manifest (hard-deps Ziggfreed:MMOSkillTree)
+├── manifest.json                                  Hytale plugin manifest (hard-deps MMOSkillTree + ZiggfreedCommon)
 ├── build.ps1                                       zips with forward-slash + directory entries, copies to Mods
 └── Server/
     ├── Item/
     │   ├── Items/MMO_Bounty_Board.json             daily board block (wall poster; Use -> MMO_BountyBoard_Open)
-    │   ├── Items/MMO_Bounty_Board_Weekly.json      weekly board block (wall poster; Use -> MMO_BountyBoard_Weekly_Open)
-    │   ├── Items/MMO_Token_Trader.json             token-shop block (wall poster; Use -> MMO_TokenTrader_Open)
-    │   └── RootInteractions/
-    │       ├── MMO_BountyBoard_Open.json           object form: {"Type":"mmo_bounty_board_open","Board":"daily"}
-    │       ├── MMO_BountyBoard_Weekly_Open.json    object form: {"Type":"mmo_bounty_board_open","Board":"weekly"}
-    │       └── MMO_TokenTrader_Open.json           {"Type":"mmo_token_shop_open"} (Pool optional; default pool in v1)
-    ├── Languages/en-US/
+    │   ├── Items/MMO_Bounty_Board_Weekly.json      weekly board block
+    │   ├── Items/MMO_Bounty_Board_Bihourly.json    fast board block
+    │   ├── Items/MMO_Token_Trader.json             shop block (wall poster; Use -> MMO_TokenTrader_Open)
+    │   └── RootInteractions/                       object form: {"Type":"mmo_bounty_board_open","Board":"daily"}
+    ├── Languages/<bcp47>/
     │   ├── items.lang                              block item names + descriptions + interaction hints
-    │   ├── mmoskilltree.lang                       bounty titles + flavor (quest.<id>.title / .flavor)
-    │   └── npcs.lang                               spawn-NPC display names + F-hints (npcs.<key>)
-    ├── NPC/Roles/Passive/                          (the hub role MMO_Hub now ships in the mod jar, not here)
-    │   ├── MMO_Bounty_Daily.json                   manual per-board NPC (OpenMmoUi Target=daily)
-    │   ├── MMO_Bounty_Weekly.json                  manual per-board NPC (OpenMmoUi Target=weekly)
-    │   └── MMO_Token_Trader_NPC.json               manual shop NPC (OpenMmoUi Target=shop)
-    └── MMOSkillTree/
-        ├── Control/MMOSkillBountyPack.json         add-mode per MMOSkillTree content type (incl. ShopPools)
-        ├── QuestTemplates/Bounty_*_Standard.json   reusable bounty skeletons (Kill / Gather / GatherDeliver / Xp / TurnIn / Place / Fish / Pickup / Spend)
-        ├── Quests/Bounty_*.json                        the bounty pool (daily [incl. training XP contracts] + weekly + bihourly; kill / gather / train-skill / deliver / place / fish / harvest / spend)
-        ├── Currencies/Bounty_Token.json, Life_Essence.json   counter-backed reward currency + the item-backed essence (self-contained: XP exchange + dual-cost offers price in life_essence, so the pack must not depend on the mastery pack defining it)
-        ├── BountyBoards/Daily.json, Weekly.json, Bihourly.json   board schedules (rotation/selection/slots/combat gate)
-        ├── ShopEntries/*.json                          token-shop offers (static + Featured_* pooled)
-        ├── ShopTemplates/Xp_Packet_Base.json           reusable shop-offer skeleton (extends + params)
-        ├── ShopPools/Featured.json, XpExchange.json    rotating token-shop pools (rotation/selection/slots/reroll)
-        ├── AchievementTemplates/Bounty_Board_Counter.json  reusable per-board "complete N bounties" achievement skeleton
-        └── Achievements/Bounty_Daily_T*.json, Bounty_Weekly_T*.json  per-board achievement chains (Daily Contractor / Weekly Warrant)
+    │   ├── mmoskilltree.lang                       contract + offer + currency text (9 locales)
+    │   └── npcs.lang                               NPC display names + F-hints
+    ├── NPC/Roles/Passive/                          per-board / per-shop NPC roles (OpenMmoUi Target=<id>)
+    ├── MMOSkillTree/
+    │   └── Control/MMOSkillBountyPack.json         names only the stores the MOD itself owns (currently none)
+    └── ZiggfreedCommon/                            the framework stores, all merged by id
+        ├── Boards/MMOSkillTree/Daily.json, Weekly.json, Bihourly.json      board schedules
+        ├── Bounties/MMOSkillTree/Bounty_*.json                             9 Abstract skeletons + 76 contracts
+        ├── Currencies/MMOSkillTree/Bounty_Token.json, Life_Essence.json    the two wallets
+        ├── Shops/MMOSkillTree/General.json, XpExchange.json                the two storefronts
+        ├── ShopPools/MMOSkillTree/Featured.json, XpExchange.json           the rotating shelves
+        ├── ShopEntries/MMOSkillTree/*.json                                 21 offers + 1 Abstract base + the all-skills premium
+        ├── ShopEntryGenerators/MMOSkillTree/Xp_Packets.json                writes the whole per-skill packet family
+        └── Achievements/MMOSkillTree/Bounty/*.json                         per-board + creature achievement chains
 ```
 
-`Server/Item/**` and `Server/Languages/**` load via Hytale's native asset pack mechanism (gated by `"IncludesAssetPack": true`), independent of the MMOSkillTree `Control` map (which only governs `Server/MMOSkillTree/**`). So adding the block + lang needs no Control-file change.
+`Server/Item/**`, `Server/NPC/**` and `Server/Languages/**` load via Hytale's native asset pack mechanism (gated by `"IncludesAssetPack": true`). `Server/ZiggfreedCommon/**` are the shared framework stores: they merge **by id** on their own, with no `Control` entry. **The FILE NAME is the id** in every one of them, and the folder under a type root (`MMOSkillTree/`) is plain organization. The `Control` file governs only `Server/MMOSkillTree/**`, the stores the mod itself owns, and this pack ships none of those.
+
+Override anything shipped by anybody, including this pack, by dropping in a file of the SAME id: leaf by leaf, what you write wins and what you leave out is inherited. Take one out entirely with `"Enabled": false`.
 
 ## How it fits together
 
-- **A bounty is a repeatable quest** tagged into a board pool: `["bounty", "board:<id>", "diff:<x>", "weight:<n>"]`. `npcViewId: "bounty_board"` keeps bounties out of the normal quest log until accepted; `visibility.hidden` completes the shape. **Bounties NEVER auto-claim** - completing the objectives parks the bounty in `COMPLETED_UNCLAIMED` and the reward is collected at the Bounty Board (a Claim / Turn In button). The mod's `QuestService` forces this regardless of the template's `autoClaimRewards` flag (the templates ship `false` to match), so a bounty's reward survives the contract rotating off the board instead of being granted out in the field. All of this lives in the two `QuestTemplates`, so each bounty file is ~10 lines (extends + params + amount override + rewards). The `{{boards}}` param becomes the single `board:<id>` tag, so a bounty belongs to exactly one board; author separate files for separate boards.
-- **A board** (`BountyBoards/<Id>.json`) declares rotation cadence, selection algorithm, and slots; `BountyService` deterministically picks one bounty per slot per period (seeded by the epoch-period), so every player sees the same board with zero persisted state. Optional fields: `titleKey`, `descriptionKey` (page subtitle), `order` (sort + default-board pick), `enabled` (per-board on/off), `rerollCost`, `currencies` (the balance strip in the page header: a list of currency ids whose balances show while browsing the board, e.g. `["bounty_token", "life_essence"]`; omit it and the header shows the board's single reward currency, which is the pre-existing behavior), a unified `requirements` block (`features` / `skills` / `minCombatLevel`; gates who can use the board at all), and **`combatLevelRequirements`** (difficulty -> min combat level, e.g. `{ "normal": 25, "hard": 60 }`; opt-in, a difficulty you omit is ungated). The combat gate uses the highest level across the whole COMBAT skill category and is checked at ACCEPT only (selection is untouched, so everyone still sees the same board); below-threshold contracts render Locked.
-- **The shipped boards (1.4.0).** Three boards ship: the rotating `Daily` + `Weekly` token faucets (weighted_random, combat-gated, full token payouts) and the fast-rotating `Bihourly` XP board (id `bihourly`, a generic **`"period": "7200s"`** with a single easy slot and a token-cost reroll). The `Daily` board ALSO carries two ungated **`training`** slots (`{ "filter": { "difficulty": "training" } }`) that draw the migrated daily XP-grind contracts (tagged `diff:training`), so the old standalone `Dailies` board folded into `Daily` in 1.4.0 (one daily board instead of two). **Deliberate economy rule: the `training` (daily XP) + Bihourly *quests* award minimal-to-no bounty tokens** (training a small nominal token + flat XP, Bihourly **pure flat XP, no token**) - they are XP-grind content, not a token source. The token faucet is the `Daily`/`Weekly` weighted easy/normal/hard slots alone; do NOT "fix" the training/bihourly contracts back to full token rewards (it would inflate the economy, since `bihourly` rotates several times a day and the Daily board surfaces two training contracts daily). The `training` difficulty is ungated (omitted from the Daily board's `combatLevelRequirements`) and renders a distinct teal chip; the `bihourly` reroll still costs tokens, so it stays a small sink on free-XP contracts.
-- **Several boards per world, one block each.** Each board has its own placeable block (a **wall poster** based on the vanilla `Lobby_Wall_Poster01` model/texture/icon, tinted per block via `TextureComputedColor`, `Support: North`). The block's `BlockType.Interactions.Use` names a `RootInteraction` whose single entry is the **object form** `{ "Type": "mmo_bounty_board_open", "Board": "<id>" }`. The mod's `BountyBoardOpenInteraction` reads that `Board` field and opens that board; the bare-string form `["mmo_bounty_board_open"]` falls back to the default board. This is why N boards in a world is N blocks + N RootInteractions, but still one Java interaction type.
-- **Bounty titles + flavor are localized.** A bounty shows a localized title + a short markdown flavor blurb on the board, resolved **by convention** from `quest.<id>.title` / `quest.<id>.flavor` in `Server/Languages/en-US/mmoskilltree.lang` (no per-bounty JSON edit; the mod's `BountyBoardPage` looks them up automatically, falling back to the inferred objective sentence). Translate by shipping `Server/Languages/<bcp47>/mmoskilltree.lang` with the same keys (missing keys fall back to English per key). Objective text also pluralizes the count automatically ("Defeat 12 Zombies"), and every reward (including the flat XP) renders with its amount, so **every bounty should award `bounty_token` + an `XP` reward**.
-- **Reward currency** is `bounty_token` (counter-backed). Reroll is **per-contract** (the player swaps one contract from the board's detail panel, keeping the rest), costing tokens (per board, e.g. 25 daily / 100 weekly) with a `rerollCost.maxPerPeriod` total-per-period cap (the pack ships 3/day on `daily`, 2/week on `weekly`). Tokens are spent at the **Token Shop** (below).
-- **`/give` item rewards on bounties are safe.** Because a bounty always parks in `COMPLETED_UNCLAIMED` and is claimed at the board, its reward set can include a `/give` COMMAND: the board's detail panel shows a **Claim** button (the player frees space first if needed, then claims), so an item reward is never silently lost. (`Bounty_Cache_Copper` / `Bounty_Cache_Repairs` are the worked examples.) Still give every bounty `bounty_token` + an `XP` reward too, so the board's reward list always shows the token/XP payout. ALWAYS use the named `/give {player} <item> --quantity=N` form: Hytale's give command does not accept a positional quantity (the item would arrive as a single unit); the content audit flags the positional form as `POSITIONAL_GIVE_QUANTITY`.
-- **Turn-in (deliver) bounties** use the `bounty_turnin_standard` template (objective type `TURN_IN`, `matchMode: EXACT`, item-id `{{target}}`); the player delivers the items via a **Turn In** button on the board. Keep their rewards CURRENCY + XP (a `/give` item is awkward right after the player just emptied that inventory space to turn in). Targets must be concrete item ids (e.g. `Ingredient_Life_Essence`), not the CONTAINS tokens the gather template uses.
-- **The Token Shop** (`ShopEntries/*.json`) is the token sink: each file is one offer the player buys with `bounty_token`. Offers are **static** (always listed) by default; tag one into a **rotating pool** with `"pool": "<id>"` (+ optional `tier` / `weight`) and it surfaces only when that pool's rotation draws it. Pools (`ShopPools/<Id>.json`) declare the same `rotation` / `selection` / `slots` / `rerollCost` shape as a bounty board. The shop opens from the `MMO_Token_Trader` block (its `RootInteraction` runs `mmo_token_shop_open`, optional `"Pool":"<id>"` to focus one pool) or `/mmoshopui <player>`. The engine is in the mod jar; this pack ships the catalog, the `Featured` pool, and the trader block. A **storefront** (`Shops/<Id>.json`) carries the page's own name + icon (`titleKey` / `icon`) plus two display fields: `currencies` (the balance strip in the header, e.g. `["bounty_token", "life_essence"]`; omit it to show bounty tokens alone) and `categoryOrder` (see the offer `category` note below).
-- **Spawn NPCs (press F → MMO UI).** This pack ships the **per-board / shop** NPC roles only (`Server/NPC/Roles/Passive/*.json`); the **hub** role `MMO_Hub` now ships in the **mod jar**, since the hub auto-spawns by default even without this pack. Each role is a **native Hytale NPC role** (auto-loaded under `IncludesAssetPack: true` - no `Control`-map entry, like the blocks/lang): a stationary `Generic` role modeled on the vanilla `Kweebec_Merchant` (only ever issues `BodyMotion: Nothing`, so it stays put) with an `InteractionInstruction` whose `HasInteracted` branch runs `{ "Type": "OpenMmoUi", "Target": "<shop|boardId>" }` - the mod's custom NPC action (registered in the jar's `setup()`; the role JSON can reference it because the pack hard-deps the jar). `OpenMmoUi` hands the `Target` verbatim to the mod's `MmoUiRouter`, which opens the hub / a specific board / the shop / any core feature page. The jar's hub NPC (`Target: hub`) is a **feature-aware launcher** listing every accessible board + the Token Shop + core feature links (skills/quests/abilities/...); a player's first talk shows a one-time feature-aware overview. The mod **auto-spawns the hub (`MMO_Hub`) at world spawn** once per world (gated by `spawn-hub.json` only - it spawns by default as the general guide, no bounty/shop content required); `MMO_Bounty_Daily`/`Weekly`/`MMO_Token_Trader_NPC` are placed by hand via `/mmonpc spawn`. To add a board NPC for a new board id `<x>`, copy `MMO_Bounty_Daily.json` → `MMO_Bounty_<X>.json`, change `Target` to `<x>` + the name key, and add the name to `npcs.lang` (`/mmonpc spawn board <x>` resolves role `MMO_Bounty_<X>` by convention). `Appearance` reuses a builtin model id (`Kweebec_Rootling` / `Kweebec_Sapling_Orange`) so no model files ship; **`OpenMmoUi`'s `Target` is baked per-role** (an NPC's `Use` is engine-locked to `*UseNPC`, so the per-NPC param lives in the role asset, not a `RootInteraction`).
+- **A contract IS a quest.** `Bounties/` files carry the quest schema's own groups (`Text`, `Listing`, `Objectives`, `Rewards`, `Requires`, `Meta`) plus the one group only a contract has: `Boards`, a LIST of memberships. Everything you know about writing a quest applies here.
+- **The TYPE stamps the policy, so it cannot be mis-authored.** Four behaviours are not authorable and no file may set them: a contract never auto-claims (it parks until collected, so a reward survives the board turning over), it stays out of the open quest log until taken, its repeat is governed by whatever posted it and clocked from FINISHING, and it is handed in at the board that posted it. This is why a contract file is four to six lines with no lifecycle block.
+- **A board is a rotating VIEW over the contract pool.** `Boards/<Id>.json` declares its cadence, its selection strategy and its slots; the engine draws one contract per slot per period from a seed made of the wall clock, so every player sees the same board with zero persisted state and a restart changes nothing.
+- **Membership is typed, not packed into a string.** A contract names `{"Board": "Daily", "Difficulty": "Hard", "Weight": 1}` and can name several boards at once. `Difficulty` is a free word the content invents; it is matched against a board slot's own `Difficulty` and is also the band key the board gates through `AcceptRequires`.
+- **Every requirement is a factor bound.** `Requires` is the same shared block a quest carries: `Factors` (numeric bounds on the shared factor vocabulary), `Permission`, `Quests`, `Custom`, and `AllOf`/`AnyOf` for combinations. The MMO answers `hytale:stat` for its own channels, so `MMO_Level_MINING` and `MMO_CombatLevel` are just parameters, and a pack can mint its own requirement word with a `Server/ZiggfreedCommon/Factors/<Id>.json` file and no code at all.
+- **One price vocabulary.** A `Cost` is `{"Currencies": {...}, "Items": [...], "Combine": "All|Any"}`, and it is the same object whether it prices an offer or a reroll. `All` (the default) charges every part; `Any` charges the first the player can afford.
+- **Two wallets ship here.** `Bounty_Token` is counter-backed (a number the server keeps). `Life_Essence` authors `Backing.Item`, so its balance IS how many `Ingredient_Life_Essence` the player carries, and its name and icon come from that item. Nothing that spends a wallet branches on which kind it is. The pack ships both so it works standalone, even without the mastery pack.
+- **Several boards per world, one block each.** Each board has its own placeable block (a wall poster based on the vanilla `Lobby_Wall_Poster01` model/texture/icon, tinted per block via `TextureComputedColor`, `Support: North`). The block's `BlockType.Interactions.Use` names a `RootInteraction` whose single entry is the object form `{"Type": "mmo_bounty_board_open", "Board": "<id>"}`; the bare-string form falls back to the default board. N boards in a world is N blocks and N RootInteractions, still one interaction type.
+- **Deliberate economy rule: the `Training` band and the whole Bihourly board pay minimal to no tokens.** Training contracts pay a small nominal token plus flat experience; Bihourly contracts pay pure experience and no token at all. They are experience-grind content, not a token source. The token faucet is the Daily and Weekly easy/normal/hard ladder alone. Do NOT "fix" them back to full token payouts: the Bihourly board turns over several times a day and the Daily board posts two training contracts daily, so it would flood the economy. The Bihourly reroll still costs tokens, which keeps a small sink on free-experience contracts.
 
-## Authoring a new bounty
+## Authoring a contract
 
-```json
-{ "Name": "Bounty_Slay_Zombies",
-  "Payload": {
-    "extends": "bounty_kill_standard",
-    "id": "bounty_slay_zombies",
-    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Zombie" },
-    "objectiveOverrides": { "main": { "amount": 12 } },
-    "rewards": [ { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 150 },
-                 { "type": "XP", "skill": "SWORDS", "amount": 1200 } ] } }
-```
-
-No `displayText` on the objective: the mod's `ObjectiveTextRenderer` infers a localized, **pluralized** "Defeat 12 Zombies" in every supported language. `params` substitute the string tags + target; the numeric `amount` is set via `objectiveOverrides` (the template DSL substitutes string values only); `rewards` overlays the template wholesale. **Always give every bounty a `CURRENCY` (`bounty_token`) reward AND an `XP` reward** - both now show on the board, and bounties are meant to pay tokens + flat XP. Drop the file in `Quests/`, rebuild, and the bounty self-enrolls in its board pool by tag, no schedule edit.
-
-**Title + flavor:** add `quest.<id>.title = ...` and `quest.<id>.flavor = ...` to `Server/Languages/en-US/mmoskilltree.lang` (the `<id>` is the bounty's `Payload.id`). The board shows the title in the list + detail header and renders the flavor as markdown; both fall back to the inferred objective sentence if absent. Translate by adding the same keys under `Server/Languages/<bcp47>/mmoskilltree.lang`.
-
-## Authoring a new board (and its block)
-
-1. **Board schedule:** drop `BountyBoards/<Id>.json` (the filename, lowercased, is the board id and the `board:<id>` tag bounties target). Give it slots whose `difficulty` filters match the difficulties of the bounties you tagged onto it, or required slots will read as unfillable in the content audit.
-2. **In-world block (optional but recommended):** add `Server/Item/Items/MMO_Bounty_Board_<Name>.json` (copy an existing block; point `BlockType.Interactions.Use` at your RootInteraction) + `Server/Item/RootInteractions/MMO_BountyBoard_<Name>_Open.json` = `{ "Cooldown": {...}, "Interactions": [ { "Type": "mmo_bounty_board_open", "Board": "<id>" } ] }` + item-name keys in `Server/Languages/en-US/items.lang`. Without a block, the board is still reachable through `/mmobountyui <player> <id>` (NPC-wired).
-3. **Validate:** after `/mmobounty validate` (console/admin), confirm no `EMPTY_POOL` / `UNFILLABLE_SLOT` / `MISSING_REROLL_CURRENCY` findings for the new board.
-
-## Authoring a turn-in (deliver) bounty
-
-Extend `bounty_turnin_standard` and set the `{{target}}` param to a concrete item id. Set an explicit `displayText` for polish (the inferred text would read the raw asset id). Rewards: `bounty_token` + XP only.
+One file in `Bounties/MMOSkillTree/`. The file name is the id.
 
 ```json
-{ "Name": "Bounty_Deliver_Essence",
-  "Payload": {
-    "extends": "bounty_turnin_standard",
-    "id": "bounty_deliver_essence",
-    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ingredient_Life_Essence" },
-    "objectiveOverrides": { "main": { "amount": 250, "displayText": "Turn in 250 Life Essence" } },
-    "rewards": [ { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 200 },
-                 { "type": "XP", "skill": "MINING", "amount": 1500 } ] } }
+{ "Parent": "Bounty_Kill",
+  "Text": { "TitleKey": "quest.bounty_slay_zombies.title",
+            "FlavorKey": "quest.bounty_slay_zombies.flavor" },
+  "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2 } ],
+  "Objectives": { "main": { "Target": "Zombie", "Amount": 12 } },
+  "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "150" } },
+               { "Kind": "Mmo_Xp", "Params": { "Skill": "SWORDS", "Amount": "1200" } } ] }
 ```
 
-## Authoring a gather-and-deliver bounty
+- **`Parent`** names one of the nine Abstract skeletons, which supply the step kind, the match mode and the shape of the pay. The `Objectives` map merges per key, so naming `main` retunes that one step and keeps the rest.
+- **`Rewards` is a single leaf**: writing it REPLACES the skeleton's list rather than adding to it. Give every contract a `Currency` reward and an `Mmo_Xp` reward, except on the Bihourly board and the `Training` band (see the economy rule above).
+- **No step wording is needed.** The renderer builds a localized, pluralized "Defeat 12 Zombies" from the step itself, in every language. Author `TextKey` on a step only when the generated line would read badly.
+- **`Weight`** biases the draw against rivals for the same slot; unauthored means 1, and 2 is twice as likely as a 1.
+- **Item payouts are safe on a contract**, because it always parks until collected: the player can clear inventory space before pressing Claim. `Bounty_Cache_Copper` and `Bounty_Cache_Repairs` are the worked examples. A `Command` reward always uses the named form `/give {player} <item> --quantity=N`; Hytale's give command ignores a positional quantity and the audit flags it as `POSITIONAL_GIVE_QUANTITY`.
+- **Title and flavor** are localization keys the player's own client resolves. Add `quest.<id>.title` and `quest.<id>.flavor` to `Server/Languages/en-US/mmoskilltree.lang` and the same keys to the other eight locales.
 
-Extend `bounty_gatherdeliver_standard` for a gathering contract that also hands a portion of the haul back at the board: a **two-objective** bounty (a `BREAK_BLOCK` `gather` objective plus a `TURN_IN` `deliver` objective). The board renders both objectives' live X/Y progress and surfaces the **Turn In** button for the `deliver` objective (`BountyBoardPage` binds the button to the first incomplete `TURN_IN` objective, so a multi-objective bounty works with no jar change). Set `{{target}}` to the mined BLOCK token (CONTAINS match) and `{{deliverItem}}` to the concrete ITEM id the block drops (EXACT match); for ores these are the same id (e.g. `Ore_Iron`). Override BOTH amounts via `objectiveOverrides` (`gather` + `deliver`), keep the delivered count a portion of the gathered count, and keep rewards CURRENCY + XP (the player just emptied that inventory space to turn in).
+### The nine skeletons
+
+Each is an ordinary `Abstract` contract; a child of one is a real contract, because `Abstract` is the one field that never inherits.
+
+| Skeleton | Step | Match | A child names |
+|---|---|---|---|
+| `Bounty_Kill` | `KILL_ENTITY` | CONTAINS | the creature id, the count |
+| `Bounty_Gather` | `BREAK_BLOCK` | CONTAINS | the block family, the count |
+| `Bounty_GatherDeliver` | `BREAK_BLOCK` + `TURN_IN` | CONTAINS / EXACT | the mined block, the returned item, both counts |
+| `Bounty_TurnIn` | `TURN_IN` | EXACT | the exact item id, the count |
+| `Bounty_Fish` | `CATCH_FISH` | CONTAINS | a species, or nothing for "any catch" |
+| `Bounty_Pickup` | `PICKUP_ITEM` | CONTAINS | what to collect (a stem works), the count |
+| `Bounty_Place` | `PLACE_BLOCK` | CONTAINS | a material, or nothing for "anything placed" |
+| `Bounty_Spend` | `SPEND_CURRENCY` | EXACT | a WALLET id, the amount |
+| `Bounty_Xp` | `GAIN_XP` | EXACT | a skill id, an experience total |
+
+An unauthored `Target` means "any", so `Bounty_Daily_Monster_Cull` counts every kill and `Bounty_Quick_Catch` counts every fish.
+
+A gather-and-deliver contract retunes both steps by name and keeps the delivered count well under the gathered one, so the player keeps most of the haul:
 
 ```json
-{ "Name": "Bounty_Mine_Iron",
-  "Payload": {
-    "extends": "bounty_gatherdeliver_standard",
-    "id": "bounty_mine_iron",
-    "params": { "boards": "daily", "difficulty": "normal", "weight": "2", "target": "Ore_Iron", "deliverItem": "Ore_Iron" },
-    "objectiveOverrides": { "gather": { "amount": 25 }, "deliver": { "amount": 10 } },
-    "rewards": [ { "type": "CURRENCY", "currencyId": "bounty_token", "amount": 170 },
-                 { "type": "XP", "skill": "MINING", "amount": 1400 } ] } }
+{ "Parent": "Bounty_GatherDeliver",
+  "Text": { "TitleKey": "quest.bounty_mine_iron.title", "FlavorKey": "quest.bounty_mine_iron.flavor" },
+  "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2 } ],
+  "Objectives": { "gather": { "Target": "Ore_Iron", "Amount": 25 },
+                  "deliver": { "Target": "Ore_Iron", "Amount": 10 } },
+  "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "170" } },
+               { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1400" } } ] }
 ```
 
-Use it for ore runs (verify `deliverItem` exists in `hytale-resources/items-index.json`). Pure-mining contracts whose block has no clean single turn-in item (Stone/Wood) stay on `bounty_gather_standard`. Title + flavor are authored like any bounty; the objective lines ("Mine 25 Iron Ore", "Turn in 10 Iron Ore") auto-render their amounts, so the flavor stays data-free.
+For an ore the mined block and the returned item share an id; verify any `Target` against `hytale-resources/items-index.json`. A mining contract whose block has no clean single turn-in item (Stone, Wood) stays on `Bounty_Gather`.
 
-## Authoring a Token Shop offer
-
-One file per offer in `ShopEntries/`. The id comes from the inner `Payload.id` (fallback: the filename, lowercased). Rewards reuse the unified reward shapes (`XP`, `BOOST_TOKEN`, `COMMAND` `/give`, `CURRENCY`), so an offer can grant XP, a boost, items, or convert tokens into another currency.
+A training contract pairs its step with a bound on the same skill, so it is never posted to somebody who cannot work on it:
 
 ```json
-{ "Name": "Boost_Mining",
-  "Payload": {
-    "id": "shop_boost_mining",
-    "titleKey": "shop.boost_mining.title",
-    "descriptionKey": "shop.boost_mining.desc",
-    "cost": { "currencies": { "bounty_token": 150 } },
-    "category": "boosts", "order": 20, "limitPerDay": 3,
-    "requirements": { "skills": { "MINING": 1 } },
-    "rewards": [ { "type": "BOOST_TOKEN", "skill": "MINING", "multiplier": 3.0, "durationMinutes": 20 } ] } }
+{ "Parent": "Bounty_Xp",
+  "Text": { "TitleKey": "quest.bounty_train_mining.title", "FlavorKey": "quest.bounty_train_mining.flavor" },
+  "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 1 } ],
+  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
+  "Objectives": { "main": { "Target": "MINING", "Amount": 3000 } },
+  "Rewards": [ ... ] }
 ```
 
-- **`titleKey`** / **`descriptionKey`**: localization keys for the offer name + blurb (parity with `ShopBoard`/`ShopPool` and the bounty pattern), resolved per-player from `Server/Languages/<locale>/mmoskilltree.lang`. Add `shop.<name>.title = ...` and `shop.<name>.desc = ...` there (e.g. `shop.boost_mining.title = Mining Rush`). The mod's `LocalizedText` resolver tries the explicit key, then the by-convention `shop.<id>.title` / `.desc`, then a legacy raw `displayName`/`description` (deprecated, kept only as a fallback). The fanned per-skill XP packets keep a templated `displayName` (`{{SKILL_NAME}} {{TIER_NAME}}` in the base template) since one static key can't cover every skill.
-- **Lang values are data-free flavor (HARD RULE).** Never bake amounts, durations, multipliers, quantities, or a currency's name into a `.lang` value - a balance pass must never require a localization edit (the all-skills boost once shipped titled "(2x, 30m)" in 8 languages after the JSON moved to 45m). The UI auto-renders localized reward/cost lines with their numbers, so titles/descs describe flavor only ("Mining Rush", not "Mining Rush (3x, 20m)"; "a featured batch of bottled life", not "64 Life Essence"). Only `currency.<id>.name` may carry the currency name. The mod repo's check-localization hook scans every locale on each lang edit and flags violations.
-- **`category`**: `boosts` | `items` | `conversion` | `featured` (groups + sorts the catalog; unknown categories warn in the audit). Categories sort **alphabetically** unless the storefront names an order: set `categoryOrder` on `Shops/<id>.json` (e.g. `["items", "boosts", "conversion", "featured"]`) to fix the sequence, or set the same list in the server owner's `mods/mmoskilltree/token-shop.json` to apply it to every storefront. A category left off the list follows the named ones, alphabetically. An offer's own `order` always sorts offers **within** one category, never across categories.
-- **`cost`** is a cost OBJECT: `{ "currencies": { "<id>": N, ... }, "items": [ ... ], "combine": "all|any" }` (`all` is the default for multi-currency). There is no scalar form.
-- **`requirements`** is the unified gate block: `features` (hides the offer unless every feature is on; use `["mastery"]` for a mastery-point conversion, which needs the mastery pack's `mastery_point` currency), per-skill `skills` map, and `minCombatLevel` (any one COMBAT skill at/above the level). The flat `requiresFeatures`/`requiresSkills` spellings parse as aliases.
-- **`limitPerDay`** / **`limitTotal`**: 0 = unlimited. Per-player counts persist server-side.
-- **`pool`** / **`tier`** / **`weight`** (optional): omit `pool` for a **static** offer (always listed). Set `"pool": "<id>"` to enroll it in a rotating pool (`tier` matches a pool slot's tier; `weight` biases selection, default 1).
-- **Items via `/give`** are inventory-space-checked before tokens are spent, so they can't be lost. Always the named `--quantity=N` form (Hytale's give command ignores a positional quantity; the audit flags it). XP / boost / currency / parseable `/give` rewards auto-render localized lines with their amount, so they need NO display fields; only an opaque (non-`/give`) COMMAND reward must carry a `nameKey` (a raw `displayName` is a deprecated fallback that overrides localization - avoid it).
-- **Validate:** `/mmoshop validate` reports a missing/disabled cost currency, a non-positive cost, an unknown reward currency, an empty rewards list, a malformed icon id, and (for pools) empty pools / unfillable slots / orphaned pooled entries.
-- **In-world block:** the `MMO_Token_Trader` block + `MMO_TokenTrader_Open` RootInteraction ship here already. The RootInteraction is the bare `{ "Type": "mmo_token_shop_open" }` (opens the default pool + static catalog); add `"Pool": "<id>"` in object form to focus a specific pool. Without the block, the shop is still reachable via `/mmoshopui <player>` (NPC-wired).
+## Authoring a board (and its block)
 
-## Authoring a Token Shop pool
-
-A rotating pool surfaces a changing subset of the offers tagged into it (`"pool": "<id>"`), with an optional paid reroll, on top of the always-available static catalog. Drop `ShopPools/<Id>.json` (the filename, lowercased, is the pool id):
+1. **Schedule:** drop `Boards/MMOSkillTree/<Id>.json`. The file name is the board id and the word contracts name in `Boards[].Board`.
 
 ```json
-{ "Name": "Featured",
-  "Payload": {
-    "titleKey": "ui.shop.category.featured",
-    "order": 0,
-    "rotation": { "type": "interval", "period": "daily", "anchor": "utc", "offsetMinutes": 0 },
-    "selection": { "type": "weighted_random", "seed": "period" },
-    "rerollCost": { "currency": "bounty_token", "amount": 40, "maxPerPeriod": 2 } } }
+{ "Text": { "TitleKey": "ui.bounty.board.daily", "FlavorKey": "ui.bounty.board.daily.desc" },
+  "Order": 0,
+  "Rotation": { "Period": "Daily" },
+  "Selection": { "Type": "Weighted_Random" },
+  "Slots": [ { "Difficulty": "Training", "Count": 2 },
+             { "Difficulty": "Easy" },
+             { "Difficulty": "Normal", "Count": 2 },
+             { "Difficulty": "Hard", "Optional": true } ],
+  "Currencies": [ "Bounty_Token", "Life_Essence" ],
+  "Reroll": { "Cost": { "Currencies": { "Bounty_Token": 25 } }, "MaxPerPeriod": 3 },
+  "AcceptRequires": {
+    "Normal": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 25 } ] },
+    "Hard":   { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 60 } ] } } }
 ```
 
-- Same `rotation` / `selection` / `slots` / `rerollCost` shape as a `BountyBoards/<Id>.json` board (shared engine). With no `slots`, the pool draws a default of 4 offers per period; add `slots` (each `{ "filter": { "tier": "<x>" }, "count": N, "optional": true|false }`) to control the tier mix.
-- `rerollCost.maxPerPeriod` caps paid rerolls per period (0/omit = unlimited).
-- Enroll offers by adding `"pool": "<id>"` to their `ShopEntries/*.json` (give the pool **more** offers than it draws so rotation + reroll are meaningful). The pack's `Featured.json` + the twelve `Featured_*` offers are the worked example. A pool may also carry its own `requirements` block to gate the whole pool.
-- Needs the `ShopPools` entry in `Control/MMOSkillBountyPack.json` (already present).
+- **`Rotation` is `Period` OR `Every`, never both** (authoring both is a validator error, not a silent precedence rule). `Period` is a calendar cadence, `Daily` or `Weekly`, counted from a fixed UTC boundary so everybody's board turns over at the same instant; `Weekly` starts on Monday unless a `Weekday` says otherwise. `Every` is a plain repeating span in whole units that add up: `{"Hours": 2}` is the Bihourly board. `OffsetMinutes` moves the rollover past the boundary; 240 puts a daily at 04:00 UTC.
+- **`Selection.Type`** names a registered strategy: `Weighted_Random` draws seeded picks honouring each contract's weight, `All` posts everything eligible. A word nothing registered is reported rather than quietly replaced.
+- **`Slots`** shape the posting: each is a `Difficulty` plus an optional `Count` (how many of that band) and `Optional` (a slot that may come up empty rather than reading as broken). A required slot with nothing eligible is an `UNFILLABLE_SLOT` finding.
+- **`Currencies`** is the balance strip in the page header: list every wallet a player earns or spends at this board. An unlisted wallet simply does not appear.
+- **`Reroll.Cost` is a full `Cost`**, so a reroll can be priced in several wallets or in items. `MaxPerPeriod` caps paid rerolls per period.
+- **`AcceptRequires` is a map of ordinary `Requires` blocks keyed by BAND.** It is checked at ACCEPT only: a contract a player is not ready for is still posted and still shown, locked, so they can see what to work towards. Omit a band and it is ungated (which is what `Training` is). It merges per band under `Parent`, so a child board can raise one band and keep the rest.
+- Optional: `Requires` gates the whole board, `Where` limits it to some worlds (absent means everywhere), `Enabled` turns it off, `Icon` and `Order` decide how it presents in a list.
 
-## Per-skill XP exchange (auto-generated, `forEachSkill`)
+2. **In-world block (optional but recommended):** add `Server/Item/Items/MMO_Bounty_Board_<Name>.json` (copy an existing block, point `BlockType.Interactions.Use` at your RootInteraction) plus `Server/Item/RootInteractions/MMO_BountyBoard_<Name>_Open.json` = `{"Cooldown": {...}, "Interactions": [ {"Type": "mmo_bounty_board_open", "Board": "<id>"} ]}` and item-name keys in `items.lang`. Without a block the board is still reachable through `/mmobountyui <player> <id>` and through an NPC.
 
-The pack ships **a few** XP-exchange tier definitions that the mod fans out to **every active skill** at load, instead of one file per skill per tier (the Token Shop analogue of CommandRewards' `{{ALL_SKILLS}}` sentinel). The shared shape lives once in `ShopTemplates/Xp_Packet_Base.json` (`"forEachSkill": true`, the `{{SKILL}}` / `{{SKILL_NAME}}` fan-out tokens, the dual-currency cost and XP reward as `{{TOKENS}}`/`{{ESSENCE}}`/`{{XP}}` params); each tier file is a thin `extends` + `params` + per-tier fields (`id` pattern, `order`, `requireSelfLevel`, `limitPerDay`). Template resolution runs FIRST, then `TokenShopConfig` clones the resolved JSON once per `SkillRegistry.isSkillAvailable(...)` skill, substituting the skill id (`{{SKILL}}`, e.g. `MINING`) and its display name (`{{SKILL_NAME}}`, e.g. `Mining`) - the two passes compose because unknown `{{...}}` tokens survive pass 1, which is also why `params` must never define `SKILL`/`SKILL_NAME`. The generated id comes from the consumer's `id` **pattern**, so distinct tiers don't collide. Templates need the `ShopTemplates` entry in `Control/MMOSkillBountyPack.json` (present).
+3. **Validate:** `/mmobounty validate` (console/admin). Confirm no `EMPTY_POOL`, `UNFILLABLE_SLOT`, `UNKNOWN_BOARD`, `ORPHANED_BOUNTY` or `MISSING_REROLL_CURRENCY` findings for the new board.
 
-**Three rotating tiers** in the `xpexchange` pool (`ShopPools/XpExchange.json`, 3 slots: one `lesser`, one `greater`, one `master` per day), gated by the fanned skill's own level and tuned to the shipped XP curve so a packet stays a sensible nudge at any level (the top caps at 40k XP, ~10% of a level at L90):
+## Authoring a storefront, a shelf, and an offer
 
-| File | id pattern | tier | `requireSelfLevel` | XP | cost (token + essence) | `limitPerDay` |
-|---|---|---|---:|---:|---|---:|
-| `XP_Packet_Lesser.json`  | `shop_xp_{{SKILL}}`         | `lesser`  | none | 1,500  | 75 + 30   | 3 |
-| `XP_Packet_Greater.json` | `shop_xp_greater_{{SKILL}}` | `greater` | 30   | 7,500  | 165 + 65  | 3 |
-| `XP_Packet_Master.json`  | `shop_xp_master_{{SKILL}}`  | `master`  | 60   | 40,000 | 330 + 100 | 2 |
+A **storefront** (`Shops/MMOSkillTree/<Id>.json`) is the page: its name, its icon, the wallets in its header strip, and the order its shelves appear in.
 
 ```json
-{ "Name": "XP_Packet_Greater",
-  "Payload": {
-    "extends": "xp_packet_base",
-    "params": { "TIER_NAME": "Training", "TOKENS": "165", "ESSENCE": "65", "XP": "7500" },
-    "id": "shop_xp_greater_{{SKILL}}",
-    "tier": "greater",
-    "order": 42,
-    "requireSelfLevel": 30,
-    "limitPerDay": 3 } }
+{ "Text": { "TitleKey": "shop.general.title", "FlavorKey": "shop.general.desc" },
+  "Icon": "Ore_Iron", "Order": 0,
+  "Currencies": [ "Bounty_Token", "Life_Essence" ],
+  "CategoryOrder": [ "items", "boosts", "conversion", "featured" ] }
 ```
 
-- **Rotating, one skill per tier per day.** The base template carries `"pool": "xpexchange"` (shared by all tiers); each tier file sets its `tier` so the pool's slot filters draw exactly one skill's Lesser, one Greater, and one Master per daily period (every fanned per-skill entry is a pool candidate, ~25 per tier). The deal is the reward and scarcity is the balance lever: prices sit ~18% under the old always-on values and limits are looser, because a given skill+tier surfaces only every ~25 days (reroll: 30 tokens, 2/day, deliberately not viable for chasing a specific skill). The board (`Shops/XpExchange.json`) uses the default flat layout - the skill-grouped layout renders static entries only and would hide the pool. The **all-skills bundle** (`XP_Packet_AllSkills.json`) stays a separate STATIC premium (`skill: "ALL"`, every skill at once, 1/day) under Catalog, so there is always a reliable daily sink no matter what rotates in. The pool's `titleKey` (`shop.xpexchange.featured`, "Today's XP Deals") labels the rotating section on the page.
-- **`requireSelfLevel`** (scalar) gates the offer behind the *fanned* skill's own level: the fan-out injects `requirements.requiresSkills[<skill>] = N` in Java (you can't template a `requiresSkills` *key*, only string values). Omit it for an ungated tier.
-- **Unique per-skill icons** come free: an `XP` reward for a concrete skill resolves to that skill's registry icon (`ShopEntryIconResolver` → `SkillDisplayUtils.resolveSkillIconItemId`), so the tiers ship **no** `icon`. Only the all-skills bundle (`skill: "ALL"`) sets an explicit `icon`.
-- **Dual currency.** Every XP exchange costs `bounty_token` AND `life_essence` (`combine: ALL` is the default for a multi-currency `cost`). **`life_essence` is item-backed** (it lives in the inventory as `Ingredient_Life_Essence`), so the player must physically hold that many essence items to afford an exchange; `CostService` removes the items on purchase. The pack ships its own `Currencies/Life_Essence.json` (identical to the mastery pack's; same-id pack definitions merge harmlessly) so the exchange works standalone. **Item-backed currencies need NO `currency.<id>.name` key**: with no authored name, `CostRenderer.currencyName` derives the display name from the backing item's native, already-translated lang key (`server.items.<Id>.name`, "Essence of Life"), exactly like the icon derives from the item - zero hand-maintained translations, and the chip, reward line, objective, and inventory tooltip can never disagree.
-- **Override one skill's tier.** Author an explicit `ShopEntries/*.json` with the generated `id` (e.g. `id: "shop_xp_mining"` for the Lesser tier, `shop_xp_master_mining` for Master) (or an owner override of that id) and the fan-out skips that skill+tier (explicit wins, mirroring `{{ALL_SKILLS}}`).
-- `{{paramName}}` substitution replaces string **values** only (not object keys) - that's exactly why `requireSelfLevel` exists rather than a templated `requiresSkills` key.
+`CategoryOrder` fixes the shelf order; leave it out and shelves sort alphabetically, which puts "rare" ahead of "uncommon". A category not named there follows the listed ones alphabetically, and an offer's own `Listing.SortOrder` still arranges offers WITHIN one shelf. `Requires` and `Where` gate the storefront itself.
+
+A **shelf** (`ShopPools/MMOSkillTree/<Id>.json`) is a rotating subset of the offers that name it, on top of the always-available static catalogue. It uses the SAME `Rotation` / `Selection` / `Slots` / `Reroll` groups a board does, so the two can never disagree about what "daily" means. Its slots filter on `Tier` rather than `Difficulty`. With no `Slots` the draw is unshaped and any member can fill any place. Give a shelf MORE members than it draws, or rotation and reroll mean nothing.
+
+An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
+
+```json
+{ "Text": { "TitleKey": "shop.boost_mining.title", "FlavorKey": "shop.boost_mining.desc" },
+  "Icon": "Tool_Pickaxe_Crude",
+  "Shop": "General",
+  "Listing": { "Category": "boosts", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Bounty_Token": 150 } },
+  "Limits": { "Daily": 3 },
+  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
+  "Rewards": [ { "Kind": "Mmo_Boost_Token",
+                 "Params": { "Skill": "MINING", "Multiplier": "3.0", "DurationMinutes": "20" } } ] }
+```
+
+- **`Shop`** names the storefront; **`Listing.Category`** names the shelf inside it (`items` / `boosts` / `conversion` / `featured` here; an unknown one warns in the audit).
+- **`Pool`** is the rotating-shelf membership, `{"Id": "Featured", "Tier": "<x>", "Weight": 2}`. Omit it and the offer is static, always listed. An offer with no `Tier` fits an unslotted draw but no filtered slot, so an offer on a fully slotted shelf needs one.
+- **`Limits`** is `{"Daily": N, "Total": N}`, two independent knobs; omit one for no such cap. Counts are per player and persist server-side, filed under the offer's ID, so renaming an offer starts its counts over.
+- **`Cost`** can name items as well as wallets: `Featured_Cache_Lobster` charges tokens plus a stack of fire essence out of the pack. Because `Life_Essence` is item-backed, a price in it means the player must physically be carrying that many.
+- **Rewards** use the shared kinds: `Item`, `Command`, `Currency`, `Mmo_Xp`, `Mmo_Boost_Token`. Item payouts are inventory-space-checked before anything is charged, so they cannot be lost.
+- **Icons come free where the payout implies one**: an `Mmo_Xp` reward for a concrete skill resolves to that skill's registry icon, so the generated packets ship no `Icon` of their own.
+- **Validate:** `/mmoshop validate` reports a missing or disabled cost currency, a non-positive cost, an unknown reward currency, an empty rewards list, a malformed icon id, an unknown `Pool.Id`, and (for shelves) empty pools, unfillable slots and oversubscribed pools.
+
+### Lang values are data-free flavor (HARD RULE)
+
+Never bake an amount, a duration, a multiplier, a quantity or a currency's name into a `.lang` value. A balance pass must never require a localization edit (the all-skills boost once shipped titled "(2x, 30m)" in eight languages after the JSON moved to 45m). The UI renders localized reward and cost lines with their own numbers, so a title or blurb describes flavor only: "Mining Rush", not "Mining Rush (3x, 20m)"; "a featured batch of bottled life", not "64 Life Essence". Only `currency.<id>.name` may carry a currency's name, and an item-backed wallet needs none at all because its name comes from the backing item's own translated key.
+
+## The per-skill experience packets, written by one generator
+
+`ShopEntryGenerators/MMOSkillTree/Xp_Packets.json` writes one packet per skill at each of three sizes from a single file, on the same machinery a quest generator uses.
+
+```json
+{ "Base": "Xp_Packet",
+  "IdPattern": "shop_xp_{tier}_{skill}",
+  "ForEach": [
+    { "Token": "skill", "Source": "mmoskilltree:skills" },
+    { "Token": "tier", "Values": [
+      { "tier": "lesser",  "tokens": 75,  "essence": 30,  "xp": 1500,  "minLevel": 1,  "order": 40, "daily": 3 },
+      { "tier": "greater", "tokens": 165, "essence": 65,  "xp": 7500,  "minLevel": 30, "order": 42, "daily": 3 },
+      { "tier": "master",  "tokens": 330, "essence": 100, "xp": 40000, "minLevel": 60, "order": 44, "daily": 2 } ] } ],
+  "Child": {
+    "Text": { "TitleKey": "shop.xp_packet.{tier}.title", "TextArgs": { "Title": [ "{skill}" ] } },
+    "Cost": { "Currencies": { "bounty_token": "{tokens}", "life_essence": "{essence}" } },
+    "Limits": { "Daily": "{daily}" },
+    "Pool": { "Id": "XpExchange", "Tier": "{tier}" },
+    "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_{skill}", "Min": "{minLevel}" } ] },
+    "Rewards": [ { "Kind": "Mmo_Xp", "Params": { "Skill": "{skill}", "Amount": "{xp}" } } ] } }
+```
+
+- **`Base`** is an ordinary `Abstract` offer (`Xp_Packet`) carrying what every packet shares: the storefront, the shelf, the icon. It ships no numbers, because every number differs per skill and per size.
+- **`ForEach`** is a list of axes. `Source` reads a list some mod enumerates (`mmoskilltree:skills` is every active skill), so a skill added later gets its packets with no edit here. `Values` binds several tokens on ONE row, which keeps "the greater packet costs 165 and wants level 30" stated once instead of reconstructed from parallel lists.
+- **Substitution covers every string value, every object KEY, and `IdPattern`.** Substituting a key is load-bearing rather than a nicety: it is how each packet's requirement names its own level channel, `MMO_Level_{skill}`. A value that is exactly one token keeps that token's type, so `"Min": "{minLevel}"` lands as a number.
+- **A token nothing binds is an error** and that one offer is skipped, naming the file.
+- **`Text.TextArgs`** is how one written line serves the whole family: `shop.xp_packet.{tier}.title` is translated once per size and the skill fills `{0}`.
+- **Override one generated packet** by authoring an explicit `ShopEntries` file with that generated id, or by overriding the id in the owner layer.
+
+The three sizes are drawn one each per day by the `XpExchange` shelf's three tier slots, so a given skill and size surfaces roughly every few weeks. The deal is the reward and scarcity is the balance lever: the reroll is deliberately not cheap enough to chase one specific skill. Beside them, `Xp_Packet_All_Skills` stays a STATIC premium (every skill at once, once a day), so the page always has a reliable sink no matter what rotates in.
+
+## Wallets
+
+`Currencies/MMOSkillTree/<Id>.json`. The file name is the wallet id.
+
+```json
+{ "Icon": "Ingredient_Bar_Gold", "Color": "#ffcc44", "Cap": 0,
+  "Meta": { "mmoskilltree": { "ShowOnSidebar": true, "ShowOnMasteryPage": false,
+                              "XpConversionPercent": 0 } } }
+```
+
+- **`Backing.Item`** is the one real choice: author it and the balance IS an inventory count, carried and tradable; leave it out and the balance is a number the server keeps. Every other leaf reads the same either way, and an item-backed wallet needs no `Icon` and no name key because both come from the backing item.
+- **`Cap`, `OnDeath` and `Decay` are three independent knobs**, each unauthored meaning "no such rule". A share leaf is a FRACTION from 0 to 1: `OnDeath.LossPercent: 0.1` takes a tenth.
+- **`Meta` carries knobs only one mod understands**, under that mod's namespace. Nothing in the framework interprets them, which is what lets one wallet file load on a server running only one of the two mods that authored it.
+- Owner overrides live in `mods/ziggfreedcommon/currencies.json`, with `shops.json` and `boards.json` beside it for the other two.
 
 ## Bounty achievements
 
-The mod ships **board-agnostic** bounty achievements in its own jar (a Bounty Hunter count ladder, hard/elite-difficulty chains, a server-first, and a daily streak), driven by the `COMPLETE_BOUNTY` / `BOUNTY_STREAK` objective types the jar fires on every bounty completion - these work with any board, including server-defined ones. This pack adds **per-board** chains (`Daily Contractor`, `Weekly Warrant`) that key on the board id, since `daily` / `weekly` only exist when this pack is installed. They are Pattern A assets at `Server/ZiggfreedCommon/Achievements/MMOSkillTree/Bounty/<Name>.json`, where the FILE NAME is the achievement id: `Criteria: [{"Kind": "COMPLETE_BOUNTY", "Target": "<board>", "MatchMode": "EXACT", "Amount": N}]`, the ladder on `Listing.Chains: [{"Id": "bounty_board_daily", "Tier": 2}]`, and the shared description line's number from `Text.TextArgs.Flavor: ["@amount"]` so all three rungs translate once. A new board's chain is a copy with the board id and the amounts changed. The `COMPLETE_BOUNTY` event carries `target = board id` and `qualifier = difficulty`, so achievements can match by board, by difficulty, or both. These files need no `Control` entry: the shared stores merge by id, and a later pack retires one by shipping a same-named file with `"Enabled": false`.
+The mod ships **board-agnostic** bounty achievements in its own jar (a count ladder, hard and elite difficulty chains, a server-first, a daily streak), driven by the `COMPLETE_BOUNTY` / `BOUNTY_STREAK` moments fired on every completion, so they work with any board including a server's own. This pack adds **per-board** chains (`Daily Contractor`, `Weekly Warrant`, `Quick Contractor`) plus the Snapdragon creature chain, since those board ids only exist when this pack is installed. They live at `Server/ZiggfreedCommon/Achievements/MMOSkillTree/Bounty/<Name>.json`, where the FILE NAME is the achievement id: `Criteria: [{"Kind": "COMPLETE_BOUNTY", "Target": "<board>", "MatchMode": "EXACT", "Amount": N}]`, the ladder on `Listing.Chains: [{"Id": "bounty_board_daily", "Tier": 2}]`, and the shared description line's number from `Text.TextArgs.Flavor: ["@amount"]` so all three rungs translate once. The completion moment carries `target = board id` and `qualifier = difficulty`, so an achievement can match by board, by difficulty, or both. A new board's chain is a copy with the board id and the amounts changed.
 
-## Build & deploy
+## Spawn NPCs (press F to open a page)
+
+`Server/NPC/Roles/Passive/*.json` are native Hytale NPC roles, auto-loaded under `IncludesAssetPack: true` with no `Control` entry. Each is a stationary `Generic` role modeled on the vanilla `Kweebec_Merchant` (it only ever issues `BodyMotion: Nothing`, so it stays put) whose `InteractionInstruction` runs `{"Type": "OpenMmoUi", "Target": "<shop|boardId>"}` on its `HasInteracted` branch. `Target` is handed verbatim to the mod's router, which opens the hub, a board, a storefront, or any core feature page. An NPC's `Use` is engine-locked to `*UseNPC`, which is why the target is baked per role rather than passed by a `RootInteraction`.
+
+The **hub** role `MMO_Hub` ships in the mod jar and is placed at world spawn automatically (it is an ordinary entry in ZiggfreedCommon's NPC placement store, managed live with `/mmonpc list|enable|disable`). The per-board and per-shop NPCs here are hand-placed with `/mmonpc spawn`. To add one for a new board id `<x>`, copy `MMO_Bounty_Daily.json` to `MMO_Bounty_<X>.json`, change `Target` and the name key, and add the name to `npcs.lang`; `/mmonpc spawn board <x>` resolves role `MMO_Bounty_<X>` by convention. `Appearance` reuses a builtin model id (`Kweebec_Rootling` / `Kweebec_Sapling_Orange`) so no model files ship.
+
+## Build and deploy
 
 ```powershell
 .\build.ps1                  # build the zip, and install it if a Mods folder is known
@@ -201,10 +254,10 @@ The mod ships **board-agnostic** bounty achievements in its own jar (a Bounty Hu
 .\build.ps1 -ModsDir <path>  # build + install into an explicit folder
 ```
 
-`build.ps1` is self-locating (`$PSScriptRoot`) and cross-platform (Windows PowerShell, or `pwsh ./build.ps1` on macOS/Linux). It zips with forward-slash entries AND an explicit directory entry for every ancestor path (Java's `ZipFileSystem.isDirectory()` returns false without them, so Hytale's `I18nModule.loadMessagesFromPack` would skip `items.lang`). Never use `Compress-Archive` (it writes backslash separators Hytale drops). To auto-install on build, set `HYTALE_MODS_DIR` once to your Hytale `UserData/Mods` folder (or pass `-ModsDir`); without it the script just builds the zip.
+`build.ps1` is self-locating (`$PSScriptRoot`) and cross-platform (Windows PowerShell, or `pwsh ./build.ps1` on macOS/Linux). It zips with forward-slash entries AND an explicit directory entry for every ancestor path (Java's `ZipFileSystem.isDirectory()` returns false without them, so Hytale's `I18nModule.loadMessagesFromPack` would skip `items.lang`). Never use `Compress-Archive`; it writes backslash separators Hytale drops. To auto-install on build, set `HYTALE_MODS_DIR` once to your Hytale `UserData/Mods` folder.
 
-Start the server with both the mod jar and this zip in `Mods/`. Confirm in the log: `[AssetPacks] Bounty-board pack layer applied (2 entries, mode=add)` plus the Quests/QuestTemplates/Currencies layers and the `Bounty validation: ...` summary, and no `Asset validation FAILED`. In-game: craft + place a board block and interact, or `/mmobountyui <you> daily`.
+Start the server with the mod jar, the ZiggfreedCommon jar and this zip in `Mods/`. Confirm in the log that the Bounties, Boards, Currencies, Shops, ShopPools, ShopEntries and ShopEntryGenerators layers loaded, plus the validation summaries, and no `Asset validation FAILED`. In-game: craft and place a board block and interact, or `/mmobountyui <you> daily`.
 
-## Conventions (shared with the mastery pack)
+## Conventions
 
-Filenames PascalCase (the asset key). `Name` is a human echo consumed by a no-op setter. `Payload` is a nested JSON object (not an escaped string). Quest/board ids come from the inner `Payload.id` / the filename respectively. Item + RootInteraction JSON keys start upper-case (Hytale codec requirement). See `skill-mastery-pack/CLAUDE.md` for the full template-DSL reference.
+File names are PascalCase and ARE the id, matched case-insensitively (so `Bounty_Hunt_Trork.json` is the contract `bounty_hunt_trork` a saved quest, an achievement criterion or a conversation already refers to). Codec keys start upper-case, which Hytale's asset codecs require. A `$Comment` in any shipped file is a TIP for the server owner or pack author reading it: what the file does, what each number means in game, how to tune it. There is no template DSL and no `Payload` wrapper anywhere: inheritance is native `Parent`, and a family of near-identical files is a generator.

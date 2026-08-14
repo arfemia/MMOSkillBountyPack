@@ -1,0 +1,39 @@
+{
+  "$Comment": "A price can name ITEMS as well as wallets, and this one does: tokens plus a stack of fire essence taken straight out of the pack. Use it when you want a purchase to cost something the player had to go and find rather than only something they banked.",
+  "Text": {
+    "TitleKey": "shop.featured_cache_lobster.title",
+    "FlavorKey": "shop.featured_cache_lobster.desc"
+  },
+  "Icon": "Fish_Lobster_Item",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 160
+    },
+    "Items": [
+      {
+        "Item": "Ingredient_Fire_Essence",
+        "Count": 24
+      }
+    ]
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Fish_Lobster_Item",
+        "Count": "24"
+      }
+    }
+  ]
+}

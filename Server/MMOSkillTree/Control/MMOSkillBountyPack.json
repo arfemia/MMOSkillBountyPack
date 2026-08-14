@@ -1,13 +1,16 @@
 {
-  "Name": "MMOSkillBountyPack",
-  "Quests": "add",
-  "QuestTemplates": "add",
-  "Achievements": "add",
-  "AchievementTemplates": "add",
-  "Currencies": "add",
-  "BountyBoards": "add",
-  "ShopEntries": "add",
-  "ShopTemplates": "add",
-  "ShopPools": "add",
-  "Shops": "add"
+  "$Comment": [
+    "Tells the mod what this pack does to each of ITS OWN content stores. 'add' merges what is here",
+    "alongside everything already loaded; 'replace' would throw the existing content away first.",
+    "",
+    "List every MMOSkillTree store the pack ships files into. A store that is shipped but not listed",
+    "is a store whose files quietly do nothing.",
+    "",
+    "Contracts, boards, wallets, storefronts, shelves and offers are NOT listed: those stores belong",
+    "to the shared framework rather than to the mod, and they merge by id on their own. To retune one",
+    "somebody else shipped, drop in a file of the same id, or ship a file naming theirs as its Parent;",
+    "to take one out, ship a file of that id with \"Enabled\": false. This pack currently ships no",
+    "content into a store the mod itself owns, so this file names none."
+  ],
+  "Name": "MMOSkillBountyPack"
 }

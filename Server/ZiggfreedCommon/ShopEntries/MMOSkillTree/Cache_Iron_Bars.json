@@ -1,0 +1,30 @@
+{
+  "Text": {
+    "TitleKey": "shop.cache_iron_bars.title",
+    "FlavorKey": "shop.cache_iron_bars.desc"
+  },
+  "Icon": "Ingredient_Bar_Iron",
+  "Shop": "General",
+  "Listing": {
+    "Category": "items",
+    "SortOrder": 12
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 130,
+      "Life_Essence": 60
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Bar_Iron",
+        "Count": "16"
+      }
+    }
+  ]
+}

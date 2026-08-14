@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for 'collect this off the ground' contracts, counted as the item enters the player's hands rather than as a block breaks. A child names what to collect and how much. CONTAINS matching lets a stem like 'Plant_Crop_' stand for a whole harvest.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "PICKUP_ITEM",
+      "Amount": 1,
+      "MatchMode": "CONTAINS"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

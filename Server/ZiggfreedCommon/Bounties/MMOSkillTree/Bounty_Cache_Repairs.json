@@ -1,0 +1,43 @@
+{
+  "Parent": "Bounty_Gather",
+  "Text": {
+    "TitleKey": "quest.bounty_cache_repairs.title",
+    "FlavorKey": "quest.bounty_cache_repairs.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Stone",
+      "Amount": 110
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "110"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "900"
+      }
+    },
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Tool_Repair_Kit_Crude",
+        "Count": "3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$Comment": "The standing premium beside the rotating packets: every skill at once, once a day. It names no shelf, so it is always on sale - which is what keeps a reliable sink on the page no matter which single-skill packets the shelf happens to draw today.",
+  "Parent": "Xp_Packet",
+  "Text": {
+    "TitleKey": "shop.xp_all_skills.title",
+    "FlavorKey": "shop.xp_all_skills.desc"
+  },
+  "Listing": {
+    "SortOrder": 46
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 500,
+      "Life_Essence": 300
+    }
+  },
+  "Limits": {
+    "Daily": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "ALL",
+        "Amount": "2500"
+      }
+    }
+  ]
+}

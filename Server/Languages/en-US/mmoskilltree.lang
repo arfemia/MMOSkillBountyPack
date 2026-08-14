@@ -169,24 +169,15 @@ shop.cache_iron_bars.desc = Smelted bars from the guild reserve, part-paid in es
 shop.featured_cache_enchanter.title = Featured: Enchanter's Parcel
 shop.featured_cache_enchanter.desc = A featured parcel of radiant crystals humming with charge.
 
-# --- Fanned/per-skill XP packets keep the by-convention shop.<id>.title key (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Mining XP Packet
-shop.shop_xp_mining.desc = Convert your earnings into a burst of Mining XP.
-shop.shop_xp_woodcutting.title = Woodcutting XP Packet
-shop.shop_xp_woodcutting.desc = Convert your earnings into a burst of Woodcutting XP.
-shop.shop_xp_excavation.title = Excavation XP Packet
-shop.shop_xp_excavation.desc = Convert your earnings into a burst of Excavation XP.
-shop.shop_xp_swords.title = Swords XP Packet
-shop.shop_xp_swords.desc = Convert your earnings into a burst of Swords XP.
-shop.shop_xp_defense.title = Defense XP Packet
-shop.shop_xp_defense.desc = Convert your earnings into a burst of Defense XP.
-shop.shop_xp_combat_any.title = Veteran's All-Skills XP
-shop.shop_xp_combat_any.desc = A combat veteran's reward: a burst of XP across every skill.
+# --- Generated XP packets: one line per size, the skill fills {0} ---
+shop.xp_packet.lesser.title = {0}: Lesson
+shop.xp_packet.greater.title = {0}: Training
+shop.xp_packet.master.title = {0}: Mastery
 
 # --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
 currency.bounty_token.name = Bounty Token
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Bounty Tokens
 
 # --- Achievements (achievement.<id>.title / .desc, resolved by convention) ---

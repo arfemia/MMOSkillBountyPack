@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for 'land a catch' contracts. Its step names no Target at all, which is how 'any fish will do' is written; a child that wants one species names it. CONTAINS matching pairs with that: leaving the quarry unstated counts every catch, and naming one counts every id carrying that word, so a child does not have to spell out each variant.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "CATCH_FISH",
+      "Amount": 1,
+      "MatchMode": "CONTAINS"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

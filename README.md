@@ -1,26 +1,30 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.4.0+). It ships the entire **Bounty Board** and **Token Shop** content: four boards (Daily, Weekly, an all-at-once Daily Contracts board, and a fast Quick Contracts board), the bounty pool (with localized titles + flavor), reusable templates, the Bounty Token currency, a token-shop catalog plus a rotating **Featured** pool, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.0+) and ZiggfreedCommon (1.4.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
-The mod jar ships only the *engine* (services, configs, page UIs, and the registered interaction types). It ships no content, so this pack is what makes bounties and the shop appear. It is a **hard dependency** on the mod, declared in `manifest.json`.
+The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
 ## What is inside
 
 | Path | What it is |
 |------|------------|
 | `Server/Item/Items/MMO_Bounty_Board*.json`, `MMO_Token_Trader.json` | The placeable board + trader blocks (wall posters) |
-| `Server/Item/RootInteractions/*.json` | Each block's interaction, carrying the board / pool id it opens |
-| `Server/Languages/en-US/items.lang` | Block names, descriptions, and interaction hints |
-| `Server/Languages/en-US/mmoskilltree.lang` | Bounty titles + flavor (`quest.<id>.title` / `.flavor`) |
-| `Server/MMOSkillTree/BountyBoards/*.json` | The board schedules (rotation, selection, slots) |
-| `Server/MMOSkillTree/Quests/Bounty_*.json` | The bounty pool (daily + weekly; kill / gather / train / deliver) |
-| `Server/MMOSkillTree/QuestTemplates/*.json` | Reusable contract skeletons so each bounty is a few lines |
-| `Server/MMOSkillTree/Currencies/Bounty_Token.json` | The reward currency |
-| `Server/MMOSkillTree/ShopEntries/*.json` | Token-shop offers (static catalog + `Featured_*` pooled) |
-| `Server/MMOSkillTree/ShopTemplates/*.json` | Reusable shop-offer skeletons (`extends` + `params`) |
-| `Server/MMOSkillTree/ShopPools/Featured.json` | The rotating "Featured" token-shop pool (schedule + reroll) |
-| `Server/NPC/Roles/Passive/MMO_Bounty_Master.json` (+ `MMO_Bounty_Daily`/`Weekly`, `MMO_Token_Trader_NPC`) | The press-F "open MMO UI" NPC roles: a hub auto-spawned at world spawn, plus per-board + shop NPCs you hand-place |
-| `Server/Languages/en-US/npcs.lang` | NPC display names + interact hints |
+| `Server/Item/RootInteractions/*.json` | Each block's interaction, carrying the board id it opens |
+| `Server/Languages/<bcp47>/items.lang` | Block names, descriptions, and interaction hints |
+| `Server/Languages/<bcp47>/mmoskilltree.lang` | Contract, offer and wallet text, in 9 locales |
+| `Server/Languages/<bcp47>/npcs.lang` | NPC display names + interact hints |
+| `Server/NPC/Roles/Passive/*.json` | The press-F "open a page" NPC roles, per board and per shop |
+| `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
+| `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
+| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/*.json` | Nine Abstract contract skeletons plus the 76 contracts |
+| `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
+| `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
+| `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |
+| `Server/ZiggfreedCommon/ShopEntries/MMOSkillTree/*.json` | The offers, static and pooled, plus one Abstract skeleton |
+| `Server/ZiggfreedCommon/ShopEntryGenerators/MMOSkillTree/*.json` | One file that writes the whole per-skill experience-packet family |
+| `Server/ZiggfreedCommon/Achievements/MMOSkillTree/Bounty/*.json` | The per-board and creature achievement chains |
+
+Everything under `Server/ZiggfreedCommon/` merges **by id**, and the FILE NAME is the id. Override anything shipped by anybody by dropping in a file of the same id; take one out with `"Enabled": false`.
 
 ## Build
 
@@ -29,22 +33,22 @@ The mod jar ships only the *engine* (services, configs, page UIs, and the regist
 .\build.ps1 -Install:$false  # build only, no copy
 ```
 
-Produces `MMOSkillBountyPack.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` file needs). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`); without it the script just builds the zip. Start a server with both the mod jar and this zip in `Mods/`, then craft and place a board block in the world, or use `/mmobountyui <player> daily` (console/admin).
+Produces `MMOSkillBountyPack.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` files need). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`). Start a server with the mod jar, the ZiggfreedCommon jar and this zip in `Mods/`, then craft and place a board block, or use `/mmobountyui <player> daily` (console/admin).
 
 ## Multiple boards in one world
 
-Each board has its own placeable block. The block's interaction reads the board id from its `RootInteraction` (object form `{ "Type": "mmo_bounty_board_open", "Board": "<id>" }`), so a single interaction type backs any number of boards with no extra code. Ship one block plus one board per location.
+Each board has its own placeable block. The block's interaction reads the board id from its `RootInteraction` (object form `{ "Type": "mmo_bounty_board_open", "Board": "<id>" }`), so one interaction type backs any number of boards with no extra code. Ship one block plus one board per location.
 
 ## Author your own
 
-- **A bounty** is a repeatable quest that extends one of the templates and self-enrolls in a board pool by tag (`board:<id>`, `diff:<x>`, `weight:<n>`). Give it a `quest.<id>.title` + `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both `bounty_token` + `XP`.
-- **A board** is a schedule file under `BountyBoards/`; its filename (lowercased) is the board id.
-- **A shop offer** is a file under `ShopEntries/` (static by default; add `"pool": "<id>"` to rotate it). **A shop pool** is a schedule file under `ShopPools/` with the same rotation/selection/reroll shape as a board.
-- **A spawn NPC** is a native Hytale role under `Server/NPC/Roles/Passive/` whose `InteractionInstruction` runs the mod's `{ "Type": "OpenMmoUi", "Target": "<hub|shop|boardId>" }` action on press-F. The hub (`MMO_Bounty_Master`) auto-spawns at world spawn (toggle in `mods/mmoskilltree/spawn-hub.json`; an owner can remove it once via `/mmonpc remove <id>`, the native `EditorTool_Entity` creative tool, or by disabling it before first join). Add a board NPC by copying `MMO_Bounty_Daily.json` → `MMO_Bounty_<X>.json`, setting `Target` to the board id, and adding the name to `npcs.lang` (`/mmonpc spawn board <x>` resolves role `MMO_Bounty_<X>` by convention).
-- Run `/mmobounty validate` and `/mmoshop validate` (console/admin) to catch empty pools, unfillable slots, orphaned offers, malformed icons, or missing currencies before you ship.
+- **A contract** is a file under `Bounties/MMOSkillTree/` naming one of the nine skeletons as its `Parent`, its board memberships as `Boards`, and its steps and pay. Give it a `quest.<id>.title` and `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both a `Currency` and an `Mmo_Xp` payout.
+- **A board** is a schedule file under `Boards/MMOSkillTree/`; its file name is the board id contracts name.
+- **An offer** is a file under `ShopEntries/MMOSkillTree/` (static by default; add a `Pool` group to rotate it). **A shelf** is a schedule file under `ShopPools/MMOSkillTree/` with the same cadence, selection and reroll shape a board uses. **A family of near-identical offers** is one file under `ShopEntryGenerators/MMOSkillTree/`.
+- **A spawn NPC** is a native Hytale role under `Server/NPC/Roles/Passive/` whose `InteractionInstruction` runs `{ "Type": "OpenMmoUi", "Target": "<hub|shop|boardId>" }` on press-F. The hub NPC ships in the mod jar and is placed at world spawn automatically; manage it live with `/mmonpc list|enable|disable`. Add a board NPC by copying `MMO_Bounty_Daily.json` to `MMO_Bounty_<X>.json`, setting `Target` to the board id, and adding the name to `npcs.lang`.
+- Run `/mmobounty validate` and `/mmoshop validate` (console/admin) to catch empty pools, unfillable slots, orphaned contracts or offers, malformed icons, and missing currencies before you ship.
 
 See [CLAUDE.md](CLAUDE.md) for the full authoring guide and JSON examples.
 
 ## Requires
 
-MMO Skill Tree 1.4.0 or newer.
+MMO Skill Tree 1.6.0 or newer, and ZiggfreedCommon 1.4.0 or newer.

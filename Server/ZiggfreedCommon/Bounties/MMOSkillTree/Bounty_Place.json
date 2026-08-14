@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for building contracts, counted as blocks go down. Its step names no Target, so anything a player places counts; a child that wants one material names it.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "PLACE_BLOCK",
+      "Amount": 1,
+      "MatchMode": "CONTAINS"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

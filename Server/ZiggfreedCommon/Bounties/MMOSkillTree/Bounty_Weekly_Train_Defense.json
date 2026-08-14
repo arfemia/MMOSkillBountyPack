@@ -1,0 +1,45 @@
+{
+  "Parent": "Bounty_Xp",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_train_defense.title",
+    "FlavorKey": "quest.bounty_weekly_train_defense.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Normal",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_DEFENSE",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "DEFENSE",
+      "Amount": 18000
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "450"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "DEFENSE",
+        "Amount": "5000"
+      }
+    }
+  ]
+}

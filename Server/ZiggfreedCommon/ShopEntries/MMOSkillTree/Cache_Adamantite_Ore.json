@@ -1,0 +1,39 @@
+{
+  "$Comment": "The deep-vein crate, kept behind a combat-level bound so it reads as an end-game purchase rather than a shortcut past one. The gate is an ordinary factor bound, so it can be swapped for any other measure this server can answer.",
+  "Text": {
+    "TitleKey": "shop.cache_adamantite_ore.title",
+    "FlavorKey": "shop.cache_adamantite_ore.desc"
+  },
+  "Icon": "Ore_Adamantite",
+  "Shop": "General",
+  "Listing": {
+    "Category": "items",
+    "SortOrder": 20
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 300
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_CombatLevel",
+        "Min": 60
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ore_Adamantite",
+        "Count": "12"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_quick_cull.title",
+    "FlavorKey": "quest.bounty_quick_cull.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Bihourly",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Amount": 8
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "DEFENSE",
+        "Amount": "400"
+      }
+    }
+  ]
+}

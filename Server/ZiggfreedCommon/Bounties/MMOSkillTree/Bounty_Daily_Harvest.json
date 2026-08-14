@@ -1,0 +1,37 @@
+{
+  "$Comment": "A collection contract keyed to a STEM rather than one crop: the inherited CONTAINS match means every id starting Plant_Crop_ counts, so one contract covers the whole harvest.",
+  "Parent": "Bounty_Pickup",
+  "Text": {
+    "TitleKey": "quest.bounty_daily_harvest.title",
+    "FlavorKey": "quest.bounty_daily_harvest.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Training",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Plant_Crop_",
+      "Amount": 40
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "10"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "HARVESTING",
+        "Amount": "900"
+      }
+    }
+  ]
+}

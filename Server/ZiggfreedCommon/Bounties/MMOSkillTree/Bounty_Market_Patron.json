@@ -1,0 +1,37 @@
+{
+  "$Comment": "A contract for spending rather than fighting: the step's Target is a WALLET id, not an item, and it ticks over as the player buys things priced in that wallet. Point it at whichever currency you would rather see circulating.",
+  "Parent": "Bounty_Spend",
+  "Text": {
+    "TitleKey": "quest.bounty_market_patron.title",
+    "FlavorKey": "quest.bounty_market_patron.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "life_essence",
+      "Amount": 30
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "100"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1000"
+      }
+    }
+  ]
+}

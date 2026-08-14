@@ -1,0 +1,46 @@
+{
+  "$Comment": "A training contract: the step counts raw experience earned in one skill, so the Amount is an experience total rather than a number of blocks. Requires keeps it off the board for anybody who has not started that skill, which is why the gate names the same skill the step does.",
+  "Parent": "Bounty_Xp",
+  "Text": {
+    "TitleKey": "quest.bounty_train_mining.title",
+    "FlavorKey": "quest.bounty_train_mining.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_MINING",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "MINING",
+      "Amount": 3000
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "140"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1000"
+      }
+    }
+  ]
+}

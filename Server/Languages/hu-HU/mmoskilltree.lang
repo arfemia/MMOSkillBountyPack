@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Olvasztott rudak a céh tartalékából, részben es
 shop.featured_cache_enchanter.title = Kiemelt: Bűvölő Csomagja
 shop.featured_cache_enchanter.desc = Egy kiemelt csomag ragyogó kristály, töltéstől zümmögve.
 
-# --- A szétbontott / képességenkénti XP csomagok a konvenciós shop.<id>.title kulcsot tartják (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Bányászat XP Csomag
-shop.shop_xp_mining.desc = Alakítsd a keresetedet egy adag Bányászat XP-vé.
-shop.shop_xp_woodcutting.title = Favágás XP Csomag
-shop.shop_xp_woodcutting.desc = Alakítsd a keresetedet egy adag Favágás XP-vé.
-shop.shop_xp_excavation.title = Ásás XP Csomag
-shop.shop_xp_excavation.desc = Alakítsd a keresetedet egy adag Ásás XP-vé.
-shop.shop_xp_swords.title = Kardok XP Csomag
-shop.shop_xp_swords.desc = Alakítsd a keresetedet egy adag Kardok XP-vé.
-shop.shop_xp_defense.title = Blokkolás XP Csomag
-shop.shop_xp_defense.desc = Alakítsd a keresetedet egy adag Blokkolás XP-vé.
-shop.shop_xp_combat_any.title = Veterán Összes Képesség XP
-shop.shop_xp_combat_any.desc = Egy harci veterán jutalma: egy adag XP minden képességben.
+# --- Generált XP-csomagok: méretenként egy sor, a képesség tölti ki a {0} helyet ---
+shop.xp_packet.lesser.title = {0}: Lecke
+shop.xp_packet.greater.title = {0}: Edzés
+shop.xp_packet.master.title = {0}: Mesterfok
 
 # --- Valuták (currency.<id>.name, konvenció szerint feloldva; id = a fájlnév kisbetűsítve) ---
 currency.bounty_token.name = Bounty Token
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Bounty Token
 
 # --- Teljesítmények (achievement.<id>.title / .desc, konvenció szerint feloldva) ---

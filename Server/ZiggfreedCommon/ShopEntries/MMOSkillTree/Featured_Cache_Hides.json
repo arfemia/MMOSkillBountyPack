@@ -1,0 +1,32 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_hides.title",
+    "FlavorKey": "shop.featured_cache_hides.desc"
+  },
+  "Icon": "Ingredient_Hide_Light",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 160
+    }
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Hide_Light",
+        "Count": "48"
+      }
+    }
+  ]
+}

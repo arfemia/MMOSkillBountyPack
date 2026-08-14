@@ -1,0 +1,32 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_repair_kits.title",
+    "FlavorKey": "shop.featured_cache_repair_kits.desc"
+  },
+  "Icon": "Tool_Repair_Kit_Crude",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 90
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Tool_Repair_Kit_Crude",
+        "Count": "5"
+      }
+    }
+  ]
+}

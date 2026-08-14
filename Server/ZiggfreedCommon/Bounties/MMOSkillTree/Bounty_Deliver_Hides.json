@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_TurnIn",
+  "Text": {
+    "TitleKey": "quest.bounty_deliver_hides.title",
+    "FlavorKey": "quest.bounty_deliver_hides.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Ingredient_Hide_Light",
+      "Amount": 32
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "150"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "UNARMED",
+        "Amount": "1200"
+      }
+    }
+  ]
+}

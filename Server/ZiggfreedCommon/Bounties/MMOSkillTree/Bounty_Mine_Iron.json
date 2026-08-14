@@ -1,0 +1,41 @@
+{
+  "$Comment": "The worked example of a two-step haul: mine a seam's worth, then hand a share of it back at the board. Both steps are retuned by name, and the delivered count stays well under the gathered one so the player keeps most of the ore. For an ore the mined block and the returned item share an id, which is why both steps name the same thing.",
+  "Parent": "Bounty_GatherDeliver",
+  "Text": {
+    "TitleKey": "quest.bounty_mine_iron.title",
+    "FlavorKey": "quest.bounty_mine_iron.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "gather": {
+      "Target": "Ore_Iron",
+      "Amount": 25
+    },
+    "deliver": {
+      "Target": "Ore_Iron",
+      "Amount": 10
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "170"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1400"
+      }
+    }
+  ]
+}

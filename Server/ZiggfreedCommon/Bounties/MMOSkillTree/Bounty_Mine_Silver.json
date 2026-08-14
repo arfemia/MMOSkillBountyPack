@@ -1,0 +1,40 @@
+{
+  "Parent": "Bounty_GatherDeliver",
+  "Text": {
+    "TitleKey": "quest.bounty_mine_silver.title",
+    "FlavorKey": "quest.bounty_mine_silver.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "gather": {
+      "Target": "Ore_Silver",
+      "Amount": 25
+    },
+    "deliver": {
+      "Target": "Ore_Silver",
+      "Amount": 10
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "170"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1400"
+      }
+    }
+  ]
+}

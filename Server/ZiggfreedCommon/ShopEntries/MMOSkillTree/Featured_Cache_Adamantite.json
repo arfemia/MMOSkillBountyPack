@@ -1,0 +1,41 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_adamantite.title",
+    "FlavorKey": "shop.featured_cache_adamantite.desc"
+  },
+  "Icon": "Ore_Adamantite",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 480
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_CombatLevel",
+        "Min": 60
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ore_Adamantite",
+        "Count": "12"
+      }
+    }
+  ]
+}

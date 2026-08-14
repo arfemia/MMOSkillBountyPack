@@ -1,0 +1,32 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_iron.title",
+    "FlavorKey": "shop.featured_cache_iron.desc"
+  },
+  "Icon": "Ore_Iron",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 150
+    }
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 2
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ore_Iron",
+        "Count": "48"
+      }
+    }
+  ]
+}

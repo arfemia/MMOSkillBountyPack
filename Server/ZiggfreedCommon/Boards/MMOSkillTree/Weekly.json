@@ -1,0 +1,57 @@
+{
+  "$Comment": "The weekly warrant board: three heavier contracts that turn over every Monday. A Weekly cadence starts on Monday unless a Weekday says otherwise. The third slot is Optional, so a week short of eligible hard contracts posts two rather than reading as broken. Currencies is the balance strip in the header; these contracts pay bounty tokens, so that is the only wallet worth showing. Add an id to the list if you author contracts that pay or spend another.",
+  "Text": {
+    "TitleKey": "ui.bounty.board.weekly",
+    "FlavorKey": "ui.bounty.board.weekly.desc"
+  },
+  "Order": 1,
+  "Rotation": {
+    "Period": "Weekly"
+  },
+  "Selection": {
+    "Type": "Weighted_Random"
+  },
+  "Slots": [
+    {
+      "Difficulty": "Normal"
+    },
+    {
+      "Difficulty": "Hard"
+    },
+    {
+      "Difficulty": "Hard",
+      "Optional": true
+    }
+  ],
+  "Currencies": [
+    "Bounty_Token"
+  ],
+  "Reroll": {
+    "Cost": {
+      "Currencies": {
+        "Bounty_Token": 100
+      }
+    },
+    "MaxPerPeriod": 2
+  },
+  "AcceptRequires": {
+    "Normal": {
+      "Factors": [
+        {
+          "Factor": "hytale:stat",
+          "Param": "MMO_CombatLevel",
+          "Min": 25
+        }
+      ]
+    },
+    "Hard": {
+      "Factors": [
+        {
+          "Factor": "hytale:stat",
+          "Param": "MMO_CombatLevel",
+          "Min": 60
+        }
+      ]
+    }
+  }
+}

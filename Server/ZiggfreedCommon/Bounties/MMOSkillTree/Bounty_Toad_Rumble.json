@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_toad_rumble.title",
+    "FlavorKey": "quest.bounty_toad_rumble.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Easy",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Toad_Rhino",
+      "Amount": 8
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "80"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "BLUNT",
+        "Amount": "650"
+      }
+    }
+  ]
+}

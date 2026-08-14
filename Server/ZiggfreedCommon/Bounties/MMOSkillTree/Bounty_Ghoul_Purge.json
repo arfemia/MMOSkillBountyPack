@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_ghoul_purge.title",
+    "FlavorKey": "quest.bounty_ghoul_purge.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Ghoul",
+      "Amount": 8
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "300"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "STAVES",
+        "Amount": "2500"
+      }
+    }
+  ]
+}

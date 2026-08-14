@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_boost_excavation.title",
+    "FlavorKey": "shop.featured_boost_excavation.desc"
+  },
+  "Icon": "Tool_Shovel_Crude",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 130
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_EXCAVATION",
+        "Min": 1
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Boost_Token",
+      "Params": {
+        "Skill": "EXCAVATION",
+        "Multiplier": "3.0",
+        "DurationMinutes": "20"
+      }
+    }
+  ]
+}

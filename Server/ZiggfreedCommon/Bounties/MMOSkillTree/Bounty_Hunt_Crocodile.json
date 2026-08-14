@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_hunt_crocodile.title",
+    "FlavorKey": "quest.bounty_hunt_crocodile.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Crocodile",
+      "Amount": 10
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "150"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "POLEARMS",
+        "Amount": "1200"
+      }
+    }
+  ]
+}

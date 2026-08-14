@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shared skeleton for 'be a customer' contracts: the step counts what a player spends out of one wallet, so the Target is a currency id rather than an item. EXACT matching, because a wallet id is one exact word.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "SPEND_CURRENCY",
+      "Amount": 1,
+      "MatchMode": "EXACT"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

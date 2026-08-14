@@ -1,0 +1,42 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_boost_combat.title",
+    "FlavorKey": "shop.featured_boost_combat.desc"
+  },
+  "Icon": "Ingredient_Crystal_Purple",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 110
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 2
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_CombatLevel",
+        "Min": 1
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Boost_Token",
+      "Params": {
+        "Skill": "SWORDS",
+        "Multiplier": "2.0",
+        "DurationMinutes": "30"
+      }
+    }
+  ]
+}

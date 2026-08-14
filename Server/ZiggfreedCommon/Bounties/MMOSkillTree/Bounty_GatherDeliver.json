@@ -1,0 +1,28 @@
+{
+  "$Comment": "The shared skeleton for a two-step haul: dig it up in the field, then hand a share of it back. A child names the block it mines and the item it returns, and retunes both counts. Keep the delivered count well under the gathered one, so the player keeps most of what they worked for. The gather step matches loosely and the delivery step exactly, because a block family is what is mined while one precise item is what is handed over.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "gather": {
+      "Kind": "BREAK_BLOCK",
+      "Amount": 1,
+      "MatchMode": "CONTAINS"
+    },
+    "deliver": {
+      "Kind": "TURN_IN",
+      "Amount": 1,
+      "MatchMode": "EXACT"
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "Parent": "Bounty_Xp",
+  "Text": {
+    "TitleKey": "quest.bounty_train_excavation.title",
+    "FlavorKey": "quest.bounty_train_excavation.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_EXCAVATION",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "EXCAVATION",
+      "Amount": 8000
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "220"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "EXCAVATION",
+        "Amount": "2000"
+      }
+    }
+  ]
+}

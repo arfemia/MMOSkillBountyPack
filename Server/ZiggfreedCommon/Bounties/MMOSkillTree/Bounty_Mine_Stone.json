@@ -1,0 +1,36 @@
+{
+  "Parent": "Bounty_Gather",
+  "Text": {
+    "TitleKey": "quest.bounty_mine_stone.title",
+    "FlavorKey": "quest.bounty_mine_stone.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Easy",
+      "Weight": 3
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Stone",
+      "Amount": 100
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "75"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "800"
+      }
+    }
+  ]
+}

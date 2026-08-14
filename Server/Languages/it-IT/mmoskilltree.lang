@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Lingotti fusi dalla riserva della gilda, pagati in p
 shop.featured_cache_enchanter.title = In Evidenza: Pacco dell'Incantatore
 shop.featured_cache_enchanter.desc = Un pacco in evidenza di cristalli radiosi che ronzano di energia.
 
-# --- I pacchetti XP per singola abilita' (a ventaglio) mantengono la chiave per convenzione shop.<id>.title (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Pacchetto XP Estrazione
-shop.shop_xp_mining.desc = Converti i tuoi guadagni in un'ondata di XP di Estrazione.
-shop.shop_xp_woodcutting.title = Pacchetto XP Taglialegna
-shop.shop_xp_woodcutting.desc = Converti i tuoi guadagni in un'ondata di XP di Taglialegna.
-shop.shop_xp_excavation.title = Pacchetto XP Scavo
-shop.shop_xp_excavation.desc = Converti i tuoi guadagni in un'ondata di XP di Scavo.
-shop.shop_xp_swords.title = Pacchetto XP Spade
-shop.shop_xp_swords.desc = Converti i tuoi guadagni in un'ondata di XP di Spade.
-shop.shop_xp_defense.title = Pacchetto XP Difesa
-shop.shop_xp_defense.desc = Converti i tuoi guadagni in un'ondata di XP di Difesa.
-shop.shop_xp_combat_any.title = XP Tutte le Abilita' del Veterano
-shop.shop_xp_combat_any.desc = La ricompensa di un veterano del combattimento: un'ondata di XP in ogni abilita'.
+# --- Pacchetti XP generati: una riga per taglia, l'abilità riempie {0} ---
+shop.xp_packet.lesser.title = {0}: Lezione
+shop.xp_packet.greater.title = {0}: Addestramento
+shop.xp_packet.master.title = {0}: Maestria
 
 # --- Valute (currency.<id>.name, risolte per convenzione; id = nome del file in minuscolo) ---
 currency.bounty_token.name = Gettone Taglia
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Gettoni Taglia
 
 # --- Obiettivi (achievement.<id>.title / .desc, risolti per convenzione) ---

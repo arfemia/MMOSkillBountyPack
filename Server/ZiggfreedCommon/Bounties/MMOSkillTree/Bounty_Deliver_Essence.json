@@ -1,0 +1,43 @@
+{
+  "Parent": "Bounty_TurnIn",
+  "Text": {
+    "TitleKey": "quest.bounty_deliver_essence.title",
+    "FlavorKey": "quest.bounty_deliver_essence.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Ingredient_Life_Essence",
+      "Amount": 250
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "200"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1500"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "WOODCUTTING",
+        "Amount": "1500"
+      }
+    }
+  ]
+}

@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Des lingots fondus de la réserve de la guilde, pay�
 shop.featured_cache_enchanter.title = À la une : colis de l'enchanteur
 shop.featured_cache_enchanter.desc = Un colis à la une de cristaux rayonnants qui bourdonnent d'énergie.
 
-# --- Les paquets d'XP par compétence conservent la clé par convention shop.<id>.title (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Paquet d'XP de minage
-shop.shop_xp_mining.desc = Convertissez vos gains en une bouffée d'XP de minage.
-shop.shop_xp_woodcutting.title = Paquet d'XP de bûcheronnage
-shop.shop_xp_woodcutting.desc = Convertissez vos gains en une bouffée d'XP de bûcheronnage.
-shop.shop_xp_excavation.title = Paquet d'XP d'excavation
-shop.shop_xp_excavation.desc = Convertissez vos gains en une bouffée d'XP d'excavation.
-shop.shop_xp_swords.title = Paquet d'XP d'épées
-shop.shop_xp_swords.desc = Convertissez vos gains en une bouffée d'XP d'épées.
-shop.shop_xp_defense.title = Paquet d'XP de blocage
-shop.shop_xp_defense.desc = Convertissez vos gains en une bouffée d'XP de blocage.
-shop.shop_xp_combat_any.title = XP toutes compétences du vétéran
-shop.shop_xp_combat_any.desc = La récompense d'un vétéran du combat : une bouffée d'XP pour chaque compétence.
+# --- Paquets d'XP générés : une ligne par taille, la compétence remplit {0} ---
+shop.xp_packet.lesser.title = {0} : leçon
+shop.xp_packet.greater.title = {0} : entraînement
+shop.xp_packet.master.title = {0} : maîtrise
 
 # --- Monnaies (currency.<id>.name, résolu par convention ; id = nom de fichier en minuscules) ---
 currency.bounty_token.name = Token de prime
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Tokens de prime
 
 # --- Succès (achievement.<id>.title / .desc, résolus par convention) ---

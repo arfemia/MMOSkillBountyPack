@@ -1,0 +1,32 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_essence.title",
+    "FlavorKey": "shop.featured_cache_essence.desc"
+  },
+  "Icon": "Ingredient_Life_Essence",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 180
+    }
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Life_Essence",
+        "Count": "64"
+      }
+    }
+  ]
+}

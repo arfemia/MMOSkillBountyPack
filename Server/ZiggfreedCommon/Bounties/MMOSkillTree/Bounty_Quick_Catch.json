@@ -1,0 +1,28 @@
+{
+  "Parent": "Bounty_Fish",
+  "Text": {
+    "TitleKey": "quest.bounty_quick_catch.title",
+    "FlavorKey": "quest.bounty_quick_catch.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Bihourly",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Amount": 5
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "FISHING",
+        "Amount": "350"
+      }
+    }
+  ]
+}

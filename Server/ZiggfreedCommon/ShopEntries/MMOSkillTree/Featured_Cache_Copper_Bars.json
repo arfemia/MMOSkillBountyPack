@@ -1,0 +1,32 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_copper_bars.title",
+    "FlavorKey": "shop.featured_cache_copper_bars.desc"
+  },
+  "Icon": "Ingredient_Bar_Copper",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 130
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Bar_Copper",
+        "Count": "12"
+      }
+    }
+  ]
+}

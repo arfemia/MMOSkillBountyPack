@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Выплавленные слитки из запа�
 shop.featured_cache_enchanter.title = Избранное: посылка зачарователя
 shop.featured_cache_enchanter.desc = Избранная посылка сияющих кристаллов, гудящих от заряда.
 
-# --- Развёрнутые понавыковые пакеты опыта сохраняют ключ по соглашению shop.<id>.title (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Пакет опыта добычи
-shop.shop_xp_mining.desc = Обменяйте заработанное на всплеск опыта добычи.
-shop.shop_xp_woodcutting.title = Пакет опыта лесорубства
-shop.shop_xp_woodcutting.desc = Обменяйте заработанное на всплеск опыта лесорубства.
-shop.shop_xp_excavation.title = Пакет опыта раскопок
-shop.shop_xp_excavation.desc = Обменяйте заработанное на всплеск опыта раскопок.
-shop.shop_xp_swords.title = Пакет опыта мечей
-shop.shop_xp_swords.desc = Обменяйте заработанное на всплеск опыта мечей.
-shop.shop_xp_defense.title = Пакет опыта защиты
-shop.shop_xp_defense.desc = Обменяйте заработанное на всплеск опыта защиты.
-shop.shop_xp_combat_any.title = Опыт всех навыков ветерана
-shop.shop_xp_combat_any.desc = Награда боевого ветерана: всплеск опыта по каждому навыку.
+# --- Генерируемые пакеты опыта: по одной строке на размер, навык подставляется в {0} ---
+shop.xp_packet.lesser.title = {0}: урок
+shop.xp_packet.greater.title = {0}: тренировка
+shop.xp_packet.master.title = {0}: мастерство
 
 # --- Валюты (currency.<id>.name, разрешается по соглашению; id = имя файла в нижнем регистре) ---
 currency.bounty_token.name = Токен контракта
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Токенов контракта
 
 # --- Достижения (achievement.<id>.title / .desc, разрешаются по соглашению) ---

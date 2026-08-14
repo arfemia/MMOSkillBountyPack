@@ -1,0 +1,40 @@
+{
+  "Text": {
+    "TitleKey": "shop.featured_cache_enchanter.title",
+    "FlavorKey": "shop.featured_cache_enchanter.desc"
+  },
+  "Icon": "Ingredient_Crystal_Purple",
+  "Shop": "General",
+  "Listing": {
+    "Category": "featured"
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 150,
+      "Life_Essence": 80
+    }
+  },
+  "Limits": {
+    "Daily": 2
+  },
+  "Pool": {
+    "Id": "Featured",
+    "Weight": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Crystal_Purple",
+        "Count": "4"
+      }
+    },
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Crystal_Blue",
+        "Count": "4"
+      }
+    }
+  ]
+}

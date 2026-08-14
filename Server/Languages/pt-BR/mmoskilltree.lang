@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Barras fundidas da reserva da guilda, pagas em parte
 shop.featured_cache_enchanter.title = Destaque: Pacote do Encantador
 shop.featured_cache_enchanter.desc = Um pacote em destaque de cristais radiantes zumbindo de energia.
 
-# --- Pacotes de XP distribuídos por habilidade mantêm a chave por convenção shop.<id>.title (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Pacote de XP de Mineração
-shop.shop_xp_mining.desc = Converta seus ganhos em um surto de XP de Mineração.
-shop.shop_xp_woodcutting.title = Pacote de XP de Lenhador
-shop.shop_xp_woodcutting.desc = Converta seus ganhos em um surto de XP de Lenhador.
-shop.shop_xp_excavation.title = Pacote de XP de Escavação
-shop.shop_xp_excavation.desc = Converta seus ganhos em um surto de XP de Escavação.
-shop.shop_xp_swords.title = Pacote de XP de Espadas
-shop.shop_xp_swords.desc = Converta seus ganhos em um surto de XP de Espadas.
-shop.shop_xp_defense.title = Pacote de XP de Bloqueio
-shop.shop_xp_defense.desc = Converta seus ganhos em um surto de XP de Bloqueio.
-shop.shop_xp_combat_any.title = XP de Todas as Habilidades do Veterano
-shop.shop_xp_combat_any.desc = Recompensa de um veterano de combate: um surto de XP em todas as habilidades.
+# --- Pacotes de XP gerados: uma linha por tamanho, a habilidade preenche {0} ---
+shop.xp_packet.lesser.title = {0}: Lição
+shop.xp_packet.greater.title = {0}: Treinamento
+shop.xp_packet.master.title = {0}: Maestria
 
 # --- Moedas (currency.<id>.name, resolvido por convenção; id = nome do arquivo em minúsculas) ---
 currency.bounty_token.name = Ficha de Recompensa
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Fichas de Recompensa
 
 # --- Conquistas (achievement.<id>.title / .desc, resolvidas por convenção) ---

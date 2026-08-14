@@ -157,24 +157,15 @@ shop.cache_iron_bars.desc = Geschmolzene Barren aus der Gildenreserve, zum Teil 
 shop.featured_cache_enchanter.title = Vorgestellt: Verzauberer-Paket
 shop.featured_cache_enchanter.desc = Ein vorgestelltes Paket strahlender Kristalle, die vor Ladung summen.
 
-# --- Aufgefächerte XP-Pakete pro Fähigkeit behalten den Konventions-Schlüssel shop.<id>.title (id = shop_xp_<skill>) ---
-shop.shop_xp_mining.title = Bergbau-XP-Päckchen
-shop.shop_xp_mining.desc = Wandle deinen Verdienst in einen Schub Bergbau-XP um.
-shop.shop_xp_woodcutting.title = Holzfällen-XP-Päckchen
-shop.shop_xp_woodcutting.desc = Wandle deinen Verdienst in einen Schub Holzfällen-XP um.
-shop.shop_xp_excavation.title = Ausgrabungs-XP-Päckchen
-shop.shop_xp_excavation.desc = Wandle deinen Verdienst in einen Schub Ausgrabungs-XP um.
-shop.shop_xp_swords.title = Schwerter-XP-Päckchen
-shop.shop_xp_swords.desc = Wandle deinen Verdienst in einen Schub Schwerter-XP um.
-shop.shop_xp_defense.title = Blocken-XP-Päckchen
-shop.shop_xp_defense.desc = Wandle deinen Verdienst in einen Schub Blocken-XP um.
-shop.shop_xp_combat_any.title = Veteranen-Allskill-XP
-shop.shop_xp_combat_any.desc = Die Belohnung eines Kampfveteranen: ein Schub XP in jeder Fähigkeit.
+# --- Generierte XP-Pakete: eine Zeile je Größe, die Fähigkeit füllt {0} ---
+shop.xp_packet.lesser.title = {0}: Lektion
+shop.xp_packet.greater.title = {0}: Training
+shop.xp_packet.master.title = {0}: Meisterschaft
 
 # --- Währungen (currency.<id>.name, per Konvention aufgelöst; id = Dateiname in Kleinbuchstaben) ---
 currency.bounty_token.name = Kopfgeld-Token
 
-# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+# --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Kopfgeld-Token
 
 # --- Erfolge (achievement.<id>.title / .desc, per Konvention aufgelöst) ---

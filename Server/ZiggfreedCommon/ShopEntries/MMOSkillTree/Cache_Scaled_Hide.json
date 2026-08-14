@@ -1,0 +1,29 @@
+{
+  "Text": {
+    "TitleKey": "shop.cache_scaled_hide.title",
+    "FlavorKey": "shop.cache_scaled_hide.desc"
+  },
+  "Icon": "Ingredient_Hide_Scaled",
+  "Shop": "General",
+  "Listing": {
+    "Category": "items",
+    "SortOrder": 14
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 140
+    }
+  },
+  "Limits": {
+    "Daily": 5
+  },
+  "Rewards": [
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Hide_Scaled",
+        "Count": "16"
+      }
+    }
+  ]
+}

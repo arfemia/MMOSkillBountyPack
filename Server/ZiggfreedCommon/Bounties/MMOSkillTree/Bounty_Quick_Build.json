@@ -1,0 +1,28 @@
+{
+  "Parent": "Bounty_Place",
+  "Text": {
+    "TitleKey": "quest.bounty_quick_build.title",
+    "FlavorKey": "quest.bounty_quick_build.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Bihourly",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Amount": 50
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "BUILDING",
+        "Amount": "400"
+      }
+    }
+  ]
+}

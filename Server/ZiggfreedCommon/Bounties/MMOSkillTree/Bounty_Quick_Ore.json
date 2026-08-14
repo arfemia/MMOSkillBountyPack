@@ -1,0 +1,29 @@
+{
+  "Parent": "Bounty_Gather",
+  "Text": {
+    "TitleKey": "quest.bounty_quick_ore.title",
+    "FlavorKey": "quest.bounty_quick_ore.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Bihourly",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Ore_Copper",
+      "Amount": 15
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "400"
+      }
+    }
+  ]
+}

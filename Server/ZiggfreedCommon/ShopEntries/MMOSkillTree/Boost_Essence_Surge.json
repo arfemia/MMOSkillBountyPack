@@ -1,0 +1,32 @@
+{
+  "$Comment": "Priced in two wallets at once. A multi-wallet price is paid in FULL, every part of it, so this one asks for tokens AND essence rather than either. Because essence is item-backed, the player has to be carrying that many of them to buy it.",
+  "Text": {
+    "TitleKey": "shop.boost_essence_surge.title",
+    "FlavorKey": "shop.boost_essence_surge.desc"
+  },
+  "Icon": "Ingredient_Life_Essence_Concentrated",
+  "Shop": "General",
+  "Listing": {
+    "Category": "boosts",
+    "SortOrder": 11
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 200,
+      "Life_Essence": 300
+    }
+  },
+  "Limits": {
+    "Daily": 1
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Boost_Token",
+      "Params": {
+        "Skill": "ALL",
+        "Multiplier": "2.0",
+        "DurationMinutes": "30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$Comment": "A contract that pays an ITEM as well as tokens and experience. That is safe here because a contract always parks until it is collected at the board: the player can clear inventory space first, so a crate can never be dropped on the floor of a full pack.",
+  "Parent": "Bounty_Gather",
+  "Text": {
+    "TitleKey": "quest.bounty_cache_copper.title",
+    "FlavorKey": "quest.bounty_cache_copper.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 2
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Ore_Copper",
+      "Amount": 30
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "160"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "MINING",
+        "Amount": "1400"
+      }
+    },
+    {
+      "Kind": "Item",
+      "Params": {
+        "Item": "Ingredient_Bar_Copper",
+        "Count": "8"
+      }
+    }
+  ]
+}

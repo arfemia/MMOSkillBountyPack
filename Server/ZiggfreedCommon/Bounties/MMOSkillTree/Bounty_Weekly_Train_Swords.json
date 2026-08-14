@@ -1,0 +1,45 @@
+{
+  "Parent": "Bounty_Xp",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_train_swords.title",
+    "FlavorKey": "quest.bounty_weekly_train_swords.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:stat",
+        "Param": "MMO_Level_SWORDS",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "SWORDS",
+      "Amount": 25000
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Currency",
+      "Params": {
+        "Currency": "bounty_token",
+        "Amount": "650"
+      }
+    },
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "SWORDS",
+        "Amount": "6000"
+      }
+    }
+  ]
+}

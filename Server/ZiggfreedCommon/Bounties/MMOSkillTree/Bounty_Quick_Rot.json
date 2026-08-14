@@ -1,0 +1,30 @@
+{
+  "$Comment": "A fast-board contract, and the reason the fast board exists: it pays experience only, no tokens. The fast board turns over several times a day, so paying it in tokens would flood the economy. Keep the token faucet on the daily and weekly boards.",
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_quick_rot.title",
+    "FlavorKey": "quest.bounty_quick_rot.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Bihourly",
+      "Difficulty": "Easy",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Target": "Zombie",
+      "Amount": 8
+    }
+  },
+  "Rewards": [
+    {
+      "Kind": "Mmo_Xp",
+      "Params": {
+        "Skill": "SWORDS",
+        "Amount": "400"
+      }
+    }
+  ]
+}
