@@ -186,6 +186,9 @@ shop.shop_xp_combat_any.desc = A combat veteran's reward: a burst of XP across e
 # --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
 currency.bounty_token.name = Bounty Token
 
+# --- Counted reward-chip label (Mmo_Currency's Presentation.NameKey; {0} = Amount) ---
+reward.currency.bounty_token = +{0} Bounty Tokens
+
 # --- Achievements (achievement.<id>.title / .desc, resolved by convention) ---
 achievement.bounty_board_daily_t1.title = Daily Contractor
 achievement.bounty_board_daily_t2.title = Seasoned Contractor
