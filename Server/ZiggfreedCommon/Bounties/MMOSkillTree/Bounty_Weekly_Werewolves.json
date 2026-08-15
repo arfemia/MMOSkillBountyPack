@@ -22,14 +22,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "800"
+        "Amount": 800
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "UNARMED",
-        "Amount": "8500"
+        "Amount": 8500
       }
     }
   ]

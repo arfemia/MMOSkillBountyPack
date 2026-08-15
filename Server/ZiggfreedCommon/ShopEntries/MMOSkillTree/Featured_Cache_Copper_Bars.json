@@ -25,7 +25,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Ingredient_Bar_Copper",
-        "Count": "12"
+        "Count": 12
       }
     }
   ]

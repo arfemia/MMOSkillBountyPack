@@ -21,7 +21,7 @@
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "BUILDING",
-        "Amount": "400"
+        "Amount": 400
       }
     }
   ]

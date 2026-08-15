@@ -22,21 +22,21 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "15"
+        "Amount": 15
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "ACROBATICS",
-        "Amount": "750"
+        "Amount": 750
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "DEFENSE",
-        "Amount": "750"
+        "Amount": 750
       }
     }
   ]

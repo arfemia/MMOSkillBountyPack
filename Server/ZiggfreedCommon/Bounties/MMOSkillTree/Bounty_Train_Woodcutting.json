@@ -31,14 +31,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "70"
+        "Amount": 70
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "WOODCUTTING",
-        "Amount": "800"
+        "Amount": 800
       }
     }
   ]

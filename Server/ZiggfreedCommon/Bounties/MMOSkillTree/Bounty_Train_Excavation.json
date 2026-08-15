@@ -31,14 +31,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "220"
+        "Amount": 220
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "EXCAVATION",
-        "Amount": "2000"
+        "Amount": 2000
       }
     }
   ]

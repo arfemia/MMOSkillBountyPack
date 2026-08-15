@@ -16,7 +16,7 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "1"
+        "Amount": 1
       }
     }
   ]

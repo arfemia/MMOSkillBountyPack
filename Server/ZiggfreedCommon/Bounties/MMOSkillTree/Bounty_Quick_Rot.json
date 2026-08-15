@@ -23,7 +23,7 @@
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "SWORDS",
-        "Amount": "400"
+        "Amount": 400
       }
     }
   ]

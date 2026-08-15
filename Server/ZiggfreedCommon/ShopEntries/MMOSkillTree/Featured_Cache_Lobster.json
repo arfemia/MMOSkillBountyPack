@@ -32,7 +32,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Fish_Lobster_Item",
-        "Count": "24"
+        "Count": 24
       }
     }
   ]

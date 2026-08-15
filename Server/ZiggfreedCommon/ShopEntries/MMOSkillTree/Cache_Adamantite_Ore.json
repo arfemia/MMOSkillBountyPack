@@ -32,7 +32,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Ore_Adamantite",
-        "Count": "12"
+        "Count": 12
       }
     }
   ]

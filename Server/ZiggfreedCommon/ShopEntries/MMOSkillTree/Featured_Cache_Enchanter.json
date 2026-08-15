@@ -26,14 +26,14 @@
       "Kind": "Item",
       "Params": {
         "Item": "Ingredient_Crystal_Purple",
-        "Count": "4"
+        "Count": 4
       }
     },
     {
       "Kind": "Item",
       "Params": {
         "Item": "Ingredient_Crystal_Blue",
-        "Count": "4"
+        "Count": 4
       }
     }
   ]

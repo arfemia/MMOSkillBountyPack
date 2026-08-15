@@ -25,7 +25,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Tool_Repair_Kit_Crude",
-        "Count": "5"
+        "Count": 5
       }
     }
   ]

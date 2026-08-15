@@ -22,7 +22,7 @@
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "WOODCUTTING",
-        "Amount": "400"
+        "Amount": 400
       }
     }
   ]

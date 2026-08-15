@@ -22,14 +22,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "150"
+        "Amount": 150
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "DAGGERS",
-        "Amount": "1200"
+        "Amount": 1200
       }
     }
   ]

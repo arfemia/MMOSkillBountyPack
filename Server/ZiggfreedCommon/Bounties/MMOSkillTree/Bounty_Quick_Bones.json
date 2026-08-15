@@ -22,7 +22,7 @@
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "ARCHERY",
-        "Amount": "400"
+        "Amount": 400
       }
     }
   ]

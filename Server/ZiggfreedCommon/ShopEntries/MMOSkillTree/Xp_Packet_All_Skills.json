@@ -22,7 +22,7 @@
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "ALL",
-        "Amount": "2500"
+        "Amount": 2500
       }
     }
   ]

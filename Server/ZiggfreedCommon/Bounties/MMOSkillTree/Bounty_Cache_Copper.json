@@ -23,21 +23,21 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "160"
+        "Amount": 160
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "MINING",
-        "Amount": "1400"
+        "Amount": 1400
       }
     },
     {
       "Kind": "Item",
       "Params": {
         "Item": "Ingredient_Bar_Copper",
-        "Count": "8"
+        "Count": 8
       }
     }
   ]

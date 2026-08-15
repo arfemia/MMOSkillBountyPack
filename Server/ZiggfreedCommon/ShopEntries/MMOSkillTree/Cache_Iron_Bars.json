@@ -23,7 +23,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Ingredient_Bar_Iron",
-        "Count": "16"
+        "Count": 16
       }
     }
   ]

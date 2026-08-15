@@ -22,14 +22,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "10"
+        "Amount": 10
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "FISHING",
-        "Amount": "900"
+        "Amount": 900
       }
     }
   ]

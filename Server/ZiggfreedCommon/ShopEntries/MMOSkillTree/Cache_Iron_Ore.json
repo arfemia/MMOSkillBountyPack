@@ -22,7 +22,7 @@
       "Kind": "Item",
       "Params": {
         "Item": "Ore_Iron",
-        "Count": "32"
+        "Count": 32
       }
     }
   ]

@@ -32,14 +32,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "140"
+        "Amount": 140
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "MINING",
-        "Amount": "1000"
+        "Amount": 1000
       }
     }
   ]

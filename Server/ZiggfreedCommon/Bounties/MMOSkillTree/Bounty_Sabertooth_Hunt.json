@@ -22,14 +22,14 @@
       "Kind": "Currency",
       "Params": {
         "Currency": "bounty_token",
-        "Amount": "160"
+        "Amount": 160
       }
     },
     {
       "Kind": "Mmo_Xp",
       "Params": {
         "Skill": "ARCHERY",
-        "Amount": "1300"
+        "Amount": 1300
       }
     }
   ]
