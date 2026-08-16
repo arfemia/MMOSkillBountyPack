@@ -23,7 +23,7 @@ bounty-contracts-pack/
     │   ├── items.lang                              block item names + descriptions + interaction hints
     │   ├── mmoskilltree.lang                       contract + offer + currency text (9 locales)
     │   └── npcs.lang                               NPC display names + F-hints
-    ├── NPC/Roles/Passive/                          per-board / per-shop NPC roles (OpenMmoUi Target=<id>)
+    ├── NPC/Roles/Passive/                          per-board / per-shop NPC roles (look + name only; ship no placements)
     ├── MMOSkillTree/
     │   └── Control/MMOSkillBountyPack.json         names only the stores the MOD itself owns (currently none)
     └── ZiggfreedCommon/                            the framework stores, all merged by id
@@ -140,6 +140,7 @@ A training contract pairs its step with a bound on the same skill, so it is neve
 - **`Rotation` is `Period` OR `Every`, never both** (authoring both is a validator error, not a silent precedence rule). `Period` is a calendar cadence, `Daily` or `Weekly`, counted from a fixed UTC boundary so everybody's board turns over at the same instant; `Weekly` starts on Monday unless a `Weekday` says otherwise. `Every` is a plain repeating span in whole units that add up: `{"Hours": 2}` is the Bihourly board. `OffsetMinutes` moves the rollover past the boundary; 240 puts a daily at 04:00 UTC.
 - **`Selection.Type`** names a registered strategy: `Weighted_Random` draws seeded picks honouring each contract's weight, `All` posts everything eligible. A word nothing registered is reported rather than quietly replaced.
 - **`Slots`** shape the posting: each is a `Difficulty` plus an optional `Count` (how many of that band) and `Optional` (a slot that may come up empty rather than reading as broken). A required slot with nothing eligible is an `UNFILLABLE_SLOT` finding.
+- **A slot's optional `Text` is what that band READS as** on a contract's badge and in its detail panel: `{ "Difficulty": "Skirmish", "Text": { "TitleKey": "board.grade.skirmish" } }`. The five bands this pack uses (`training` / `easy` / `normal` / `hard` / `elite`) already read in all nine languages with nothing authored, so leave it out for those; author it for a band you invent, and point `TitleKey` at a line in your own `.lang` file. A band with nothing naming it reads as its own word, never as a key.
 - **`Currencies`** is the balance strip in the page header: list every wallet a player earns or spends at this board. An unlisted wallet simply does not appear.
 - **`Reroll.Cost` is a full `Cost`**, so a reroll can be priced in several wallets or in items. `MaxPerPeriod` caps paid rerolls per period.
 - **`AcceptRequires` is a map of ordinary `Requires` blocks keyed by BAND.** It is checked at ACCEPT only: a contract a player is not ready for is still posted and still shown, locked, so they can see what to work towards. Omit a band and it is ungated (which is what `Training` is). It merges per band under `Parent`, so a child board can raise one band and keep the rest.
@@ -161,6 +162,8 @@ A **storefront** (`Shops/MMOSkillTree/<Id>.json`) is the page: its name, its ico
 ```
 
 `CategoryOrder` fixes the shelf order; leave it out and shelves sort alphabetically, which puts "rare" ahead of "uncommon". A category not named there follows the listed ones alphabetically, and an offer's own `Listing.SortOrder` still arranges offers WITHIN one shelf. `Requires` and `Where` gate the storefront itself.
+
+`Categories` is what each shelf is CALLED, keyed by the category's own word: `"Categories": { "relics": { "TitleKey": "shop.category.relics" } }`. It is separate from `CategoryOrder` on purpose - one decides what a shelf says, the other where it sits. The four shelves this pack uses (`items` / `boosts` / `conversion` / `featured`) already read in all nine languages with nothing authored; author an entry for a category you invent and point `TitleKey` at a line in your own `.lang` file. It lives on the storefront rather than on each offer, so a dozen offers in one category cannot name that shelf a dozen ways.
 
 A **shelf** (`ShopPools/MMOSkillTree/<Id>.json`) is a rotating subset of the offers that name it, on top of the always-available static catalogue. It uses the SAME `Rotation` / `Selection` / `Slots` / `Reroll` groups a board does, so the two can never disagree about what "daily" means. Its slots filter on `Tier` rather than `Difficulty`. With no `Slots` the draw is unshaped and any member can fill any place. Give a shelf MORE members than it draws, or rotation and reroll mean nothing.
 
@@ -242,9 +245,22 @@ The mod ships **board-agnostic** bounty achievements in its own jar (a count lad
 
 ## Spawn NPCs (press F to open a page)
 
-`Server/NPC/Roles/Passive/*.json` are native Hytale NPC roles, auto-loaded under `IncludesAssetPack: true` with no `Control` entry. Each is a stationary `Generic` role modeled on the vanilla `Kweebec_Merchant` (it only ever issues `BodyMotion: Nothing`, so it stays put) whose `InteractionInstruction` runs `{"Type": "OpenMmoUi", "Target": "<shop|boardId>"}` on its `HasInteracted` branch. `Target` is handed verbatim to the mod's router, which opens the hub, a board, a storefront, or any core feature page. An NPC's `Use` is engine-locked to `*UseNPC`, which is why the target is baked per role rather than passed by a `RootInteraction`.
+`Server/NPC/Roles/Passive/*.json` are native Hytale NPC roles, auto-loaded under `IncludesAssetPack: true` with no `Control` entry. Each is a stationary `Generic` role modeled on the vanilla `Kweebec_Merchant` (it only ever issues `BodyMotion: Nothing`, so it stays put) whose `InteractionInstruction` runs `{"Type": "ZigPlacementInteract"}` on its `HasInteracted` branch. **A role decides the look, the nameplate and the press-F prompt, and nothing else.** `ZigPlacementInteract` reads the PLACEMENT the NPC was spawned from and opens whatever that placement authored, which is what lets one role stand in as many spots as you like, each opening a different board or storefront.
 
-The **hub** role `MMO_Hub` ships in the mod jar and is placed at world spawn automatically (it is an ordinary entry in ZiggfreedCommon's NPC placement store, managed live with `/mmonpc list|enable|disable`). The per-board and per-shop NPCs here are hand-placed with `/mmonpc spawn`. To add one for a new board id `<x>`, copy `MMO_Bounty_Daily.json` to `MMO_Bounty_<X>.json`, change `Target` and the name key, and add the name to `npcs.lang`; `/mmonpc spawn board <x>` resolves role `MMO_Bounty_<X>` by convention. `Appearance` reuses a builtin model id (`Kweebec_Rootling` / `Kweebec_Sapling_Orange`) so no model files ship.
+**This pack ships no placements, so none of these characters stands anywhere until a server owner puts one there.** That is deliberate: where a broker belongs is a property of your world, not of the contract pool. A placement is a file of your own at `Server/ZiggfreedCommon/NpcPlacements/<YourId>.json` naming a role and a destination:
+
+```json
+{ "Name": "My_Daily_Broker", "Enabled": true,
+  "Identity": { "Role": "MMO_Bounty_Daily" },
+  "Where": { "Match": [ "default" ] },
+  "Anchor": { "WorldSpawn": { "Offset": { "X": 4.0 }, "Yaw": 180.0 } },
+  "Lifecycle": { "KeepAlive": true, "Respawn": true, "Fortify": true },
+  "Interact": { "Open": { "Type": "Mmo_Board", "Board": "Daily" } } }
+```
+
+`Interact.Open` takes `{"Type": "Mmo_Board", "Board": "<id>"}` for a board and `{"Type": "Mmo_Shop", "Shop": "<id>"}` for a storefront (bare `"Mmo_Shop"` opens the default one), and the same vocabulary reaches every other MMO screen. Each role file's own `$Comment` carries this recipe with its own id already filled in. `/mmonpc list` shows what targets each world and what each one opens; `/mmonpc enable|disable <id>` switches one without editing files. Owner overrides live in `mods/ziggfreedcommon/npc-placements.json`.
+
+The **hub** role `MMO_Hub` ships in the mod jar with a placement beside it, which is why the guide appears at world spawn on a fresh server and these six do not. To add a broker for a new board id `<x>`, copy `MMO_Bounty_Daily.json` to `MMO_Bounty_<X>.json`, change the name key and the `$Comment`'s example `Board`, and add the name to `npcs.lang`. `Appearance` reuses a builtin model id (`Kweebec_Rootling` / `Kweebec_Sapling_Orange`) so no model files ship.
 
 ## Build and deploy
 
