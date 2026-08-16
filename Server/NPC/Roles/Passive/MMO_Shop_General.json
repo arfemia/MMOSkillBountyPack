@@ -1,5 +1,22 @@
 {
-  "$Comment": "MMOSkillBountyPack - manual 'Token Shop' NPC for the General storefront. Press F to open it (OpenMmoUi Target=shop:general). Place with /mmonpc spawn shop general. Stationary + invulnerable; mirrors MMO_Token_Trader_NPC.",
+  "$Comment": [
+    "The \"Token Shop\" keeper for the General storefront: a stationary, invulnerable shopkeeper who waves as you approach and opens that shop when you press F.",
+    "",
+    "This role supplies the look, the nameplate and the press-F prompt, and nothing else. WHICH screen opens is decided by the placement that stands this character up, so one role can serve any number of placements pointing at different boards or shops.",
+    "",
+    "Nobody stands here until you place them. Author a placement of your own at Server/ZiggfreedCommon/NpcPlacements/<YourId>.json:",
+    "",
+    "  {\"Name\": \"<YourId>\", \"Enabled\": true,",
+    "   \"Identity\": {\"Role\": \"MMO_Shop_General\"},",
+    "   \"Where\": {\"Match\": [\"default\"]},",
+    "   \"Anchor\": {\"WorldSpawn\": {\"Offset\": {\"X\": 4.0}, \"Yaw\": 180.0}},",
+    "   \"Lifecycle\": {\"KeepAlive\": true, \"Respawn\": true, \"Fortify\": true},",
+    "   \"Interact\": {\"Open\": {\"Type\": \"Mmo_Shop\", \"Shop\": \"General\"}}}",
+    "",
+    "Where.Match names the worlds it applies to, and Anchor decides the spot: WorldSpawn offsets from that world's spawn point, and there are absolute-coordinate and structure-relative forms too. Lifecycle keeps them loaded, replaces them if something removes them, and raises their health past anything that can be dealt, which matters because a service NPC that can be killed takes every player's access to it along. Shop names any storefront in Server/ZiggfreedCommon/Shops/, matched case-insensitively.",
+    "",
+    "Once placed, /mmonpc list shows what targets each world and what each one opens, and /mmonpc enable|disable <id> switches one on or off without editing the file. The display name comes from npcs.lang through NameTranslationKey; Appearance names a builtin model, so no model files ship here."
+  ],
   "Type": "Generic",
   "Parameters": {
     "NameTranslationKey": {
@@ -91,7 +108,7 @@
             "Sensor": { "Type": "Not", "Sensor": { "Type": "State", "State": "$Interaction" } },
             "Actions": [
               { "Type": "LockOnInteractionTarget" },
-              { "Type": "OpenMmoUi", "Target": "shop:general" },
+              { "Type": "ZigPlacementInteract" },
               { "Type": "State", "State": "$Interaction" }
             ]
           }
