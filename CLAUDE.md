@@ -127,11 +127,12 @@ A training contract pairs its step with a bound on the same skill, so it is neve
   "Rotation": { "Period": "Daily" },
   "Selection": { "Type": "Weighted_Random" },
   "Slots": [ { "Difficulty": "Training", "Count": 2 },
-             { "Difficulty": "Easy" },
+             { "Difficulty": "Skirmish" },
              { "Difficulty": "Normal", "Count": 2 },
              { "Difficulty": "Hard", "Optional": true } ],
   "Currencies": [ "Bounty_Token", "Life_Essence" ],
   "Reroll": { "Cost": { "Currencies": { "Bounty_Token": 25 } }, "MaxPerPeriod": 3 },
+  "Grades": { "Skirmish": { "TitleKey": "board.grade.skirmish" } },
   "AcceptRequires": {
     "Normal": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 25 } ] },
     "Hard":   { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 60 } ] } } }
@@ -140,7 +141,7 @@ A training contract pairs its step with a bound on the same skill, so it is neve
 - **`Rotation` is `Period` OR `Every`, never both** (authoring both is a validator error, not a silent precedence rule). `Period` is a calendar cadence, `Daily` or `Weekly`, counted from a fixed UTC boundary so everybody's board turns over at the same instant; `Weekly` starts on Monday unless a `Weekday` says otherwise. `Every` is a plain repeating span in whole units that add up: `{"Hours": 2}` is the Bihourly board. `OffsetMinutes` moves the rollover past the boundary; 240 puts a daily at 04:00 UTC.
 - **`Selection.Type`** names a registered strategy: `Weighted_Random` draws seeded picks honouring each contract's weight, `All` posts everything eligible. A word nothing registered is reported rather than quietly replaced.
 - **`Slots`** shape the posting: each is a `Difficulty` plus an optional `Count` (how many of that band) and `Optional` (a slot that may come up empty rather than reading as broken). A required slot with nothing eligible is an `UNFILLABLE_SLOT` finding.
-- **A slot's optional `Text` is what that band READS as** on a contract's badge and in its detail panel: `{ "Difficulty": "Skirmish", "Text": { "TitleKey": "board.grade.skirmish" } }`. The five bands this pack uses (`training` / `easy` / `normal` / `hard` / `elite`) already read in all nine languages with nothing authored, so leave it out for those; author it for a band you invent, and point `TitleKey` at a line in your own `.lang` file. A band with nothing naming it reads as its own word, never as a key.
+- **The board's own optional `Grades` map is what a band READS as** on a contract's badge and in its detail panel, keyed by the band's own word: `"Grades": { "Skirmish": { "TitleKey": "board.grade.skirmish" } }`. The five bands this pack uses (`training` / `easy` / `normal` / `hard` / `elite`) already read in all nine languages with nothing authored, so leave it out for those; author a `Grades` entry for a band you invent, and point `TitleKey` at a line in your own `.lang` file. A band named nowhere reads as its own word, never as a key. Declaring a band (a `Slots[]` entry naming its `Difficulty`) and naming it (a `Grades` entry) are two separate authored facts, so an unslotted board can name bands too. On a board that DOES carry slots, a `Grades` entry for a band none of them posts is a `NAME_FOR_UNPOSTED_BAND` finding, which is how a misspelled band turns up at boot instead of shipping as a word nothing reads.
 - **`Currencies`** is the balance strip in the page header: list every wallet a player earns or spends at this board. An unlisted wallet simply does not appear.
 - **`Reroll.Cost` is a full `Cost`**, so a reroll can be priced in several wallets or in items. `MaxPerPeriod` caps paid rerolls per period.
 - **`AcceptRequires` is a map of ordinary `Requires` blocks keyed by BAND.** It is checked at ACCEPT only: a contract a player is not ready for is still posted and still shown, locked, so they can see what to work towards. Omit a band and it is ungated (which is what `Training` is). It merges per band under `Parent`, so a child board can raise one band and keep the rest.
