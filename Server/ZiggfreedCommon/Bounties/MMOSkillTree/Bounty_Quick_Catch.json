@@ -16,13 +16,15 @@
       "Amount": 5
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "FISHING",
-        "Amount": 350
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "FISHING",
+          "Amount": 350
+        }
       }
-    }
-  ]
+    ]
+  }
 }

@@ -17,20 +17,22 @@
       "Amount": 3
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 900
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 900
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "POLEARMS",
+          "Amount": 9000
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "POLEARMS",
-        "Amount": 9000
-      }
-    }
-  ]
+    ]
+  }
 }

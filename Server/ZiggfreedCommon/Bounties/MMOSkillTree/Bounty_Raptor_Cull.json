@@ -17,20 +17,22 @@
       "Amount": 12
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 150
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 150
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "DAGGERS",
+          "Amount": 1200
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "DAGGERS",
-        "Amount": 1200
-      }
-    }
-  ]
+    ]
+  }
 }

@@ -18,27 +18,29 @@
       "Amount": 30
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 160
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 160
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "MINING",
+          "Amount": 1400
+        }
+      },
+      {
+        "Kind": "Item",
+        "Params": {
+          "Item": "Ingredient_Bar_Copper",
+          "Count": 8
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "MINING",
-        "Amount": 1400
-      }
-    },
-    {
-      "Kind": "Item",
-      "Params": {
-        "Item": "Ingredient_Bar_Copper",
-        "Count": 8
-      }
-    }
-  ]
+    ]
+  }
 }

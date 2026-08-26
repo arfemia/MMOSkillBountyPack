@@ -17,20 +17,22 @@
       "Amount": 6
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 320
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 320
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "ARCHERY",
+          "Amount": 2700
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "ARCHERY",
-        "Amount": 2700
-      }
-    }
-  ]
+    ]
+  }
 }

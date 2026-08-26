@@ -17,27 +17,29 @@
       "Amount": 110
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 110
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 110
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "MINING",
+          "Amount": 900
+        }
+      },
+      {
+        "Kind": "Item",
+        "Params": {
+          "Item": "Tool_Repair_Kit_Crude",
+          "Count": 3
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "MINING",
-        "Amount": 900
-      }
-    },
-    {
-      "Kind": "Item",
-      "Params": {
-        "Item": "Tool_Repair_Kit_Crude",
-        "Count": 3
-      }
-    }
-  ]
+    ]
+  }
 }

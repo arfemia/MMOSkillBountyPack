@@ -63,12 +63,12 @@ One file in `Bounties/MMOSkillTree/`. The file name is the id.
             "FlavorKey": "quest.bounty_slay_zombies.flavor" },
   "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2 } ],
   "Objectives": { "main": { "Target": "Zombie", "Amount": 12 } },
-  "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "150" } },
-               { "Kind": "Mmo_Xp", "Params": { "Skill": "SWORDS", "Amount": "1200" } } ] }
+  "Rewards": { "Claim": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "150" } },
+                          { "Kind": "Mmo_Xp", "Params": { "Skill": "SWORDS", "Amount": "1200" } } ] } }
 ```
 
 - **`Parent`** names one of the nine Abstract skeletons, which supply the step kind, the match mode and the shape of the pay. The `Objectives` map merges per key, so naming `main` retunes that one step and keeps the rest.
-- **`Rewards` is a single leaf**: writing it REPLACES the skeleton's list rather than adding to it. Give every contract a `Currency` reward and an `Mmo_Xp` reward, except on the Bihourly board and the `Training` band (see the economy rule above).
+- **`Rewards` is the same shared group a quest or achievement carries**: `{"Auto": [...], "Claim": [...]}`. A contract always parks its pay at the board rather than granting it in the field, so author every contract reward under `Claim`; `Rewards.Claim` is a single leaf, and writing it REPLACES the skeleton's list rather than adding to it. Give every contract a `Currency` reward and an `Mmo_Xp` reward, except on the Bihourly board and the `Training` band (see the economy rule above).
 - **No step wording is needed.** The renderer builds a localized, pluralized "Defeat 12 Zombies" from the step itself, in every language. Author `TextKey` on a step only when the generated line would read badly.
 - **`Weight`** biases the draw against rivals for the same slot; unauthored means 1, and 2 is twice as likely as a 1.
 - **Item payouts are safe on a contract**, because it always parks until collected: the player can clear inventory space before pressing Claim. `Bounty_Cache_Copper` and `Bounty_Cache_Repairs` are the worked examples. A `Command` reward always uses the named form `/give {player} <item> --quantity=N`; Hytale's give command ignores a positional quantity and the audit flags it as `POSITIONAL_GIVE_QUANTITY`.
@@ -100,8 +100,8 @@ A gather-and-deliver contract retunes both steps by name and keeps the delivered
   "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2 } ],
   "Objectives": { "gather": { "Target": "Ore_Iron", "Amount": 25 },
                   "deliver": { "Target": "Ore_Iron", "Amount": 10 } },
-  "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "170" } },
-               { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1400" } } ] }
+  "Rewards": { "Claim": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": "170" } },
+                          { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1400" } } ] } }
 ```
 
 For an ore the mined block and the returned item share an id; verify any `Target` against `hytale-resources/items-index.json`. A mining contract whose block has no clean single turn-in item (Stone, Wood) stays on `Bounty_Gather`.
@@ -114,7 +114,7 @@ A training contract pairs its step with a bound on the same skill, so it is neve
   "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 1 } ],
   "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
   "Objectives": { "main": { "Target": "MINING", "Amount": 3000 } },
-  "Rewards": [ ... ] }
+  "Rewards": { "Claim": [ ... ] } }
 ```
 
 ## Authoring a board (and its block)

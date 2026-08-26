@@ -17,13 +17,15 @@
       "Amount": 15
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "MINING",
-        "Amount": 400
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "MINING",
+          "Amount": 400
+        }
       }
-    }
-  ]
+    ]
+  }
 }

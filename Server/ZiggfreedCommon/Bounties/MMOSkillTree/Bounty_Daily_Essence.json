@@ -17,27 +17,29 @@
       "Amount": 100
     }
   },
-  "Rewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 20
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 20
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "MINING",
+          "Amount": 1250
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "WOODCUTTING",
+          "Amount": 1250
+        }
       }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "MINING",
-        "Amount": 1250
-      }
-    },
-    {
-      "Kind": "Mmo_Xp",
-      "Params": {
-        "Skill": "WOODCUTTING",
-        "Amount": 1250
-      }
-    }
-  ]
+    ]
+  }
 }
