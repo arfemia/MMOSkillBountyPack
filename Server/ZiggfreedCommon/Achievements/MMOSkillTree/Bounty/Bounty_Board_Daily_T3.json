@@ -22,21 +22,23 @@
   "Scoring": {
     "Points": 100
   },
-  "Criteria": [
-    {
+  "Criteria": {
+    "complete-bounty-daily": {
       "Kind": "COMPLETE_BOUNTY",
       "Target": "daily",
       "MatchMode": "EXACT",
       "Amount": 100
     }
-  ],
-  "ClaimRewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 1500
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 1500
+        }
       }
-    }
-  ]
+    ]
+  }
 }

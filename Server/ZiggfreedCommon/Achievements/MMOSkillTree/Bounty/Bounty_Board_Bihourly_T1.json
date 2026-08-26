@@ -22,21 +22,23 @@
   "Scoring": {
     "Points": 10
   },
-  "Criteria": [
-    {
+  "Criteria": {
+    "complete-bounty-bihourly": {
       "Kind": "COMPLETE_BOUNTY",
       "Target": "bihourly",
       "MatchMode": "EXACT",
       "Amount": 10
     }
-  ],
-  "ClaimRewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 100
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 100
+        }
       }
-    }
-  ]
+    ]
+  }
 }

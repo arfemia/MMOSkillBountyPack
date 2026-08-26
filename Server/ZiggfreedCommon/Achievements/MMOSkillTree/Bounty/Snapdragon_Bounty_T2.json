@@ -22,21 +22,23 @@
   "Scoring": {
     "Points": 45
   },
-  "Criteria": [
-    {
+  "Criteria": {
+    "complete-quest-bounty-snapdragon-hunt": {
       "Kind": "COMPLETE_QUEST",
       "Target": "bounty_snapdragon_hunt",
       "MatchMode": "EXACT",
       "Amount": 10
     }
-  ],
-  "ClaimRewards": [
-    {
-      "Kind": "Currency",
-      "Params": {
-        "Currency": "bounty_token",
-        "Amount": 900
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 900
+        }
       }
-    }
-  ]
+    ]
+  }
 }

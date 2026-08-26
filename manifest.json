@@ -13,6 +13,6 @@
   "IncludesAssetPack": true,
   "Dependencies": {
     "Ziggfreed:MMOSkillTree": "^1.6.0",
-    "Ziggfreed:ZiggfreedCommon": ">=1.4.0"
+    "Ziggfreed:ZiggfreedCommon": ">=2.0.0"
   }
 }
