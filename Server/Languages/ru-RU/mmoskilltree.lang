@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Скованное морозом �
 
 # --- Хаб / введение (поставляется здесь, чтобы владельцы серверов могли переформулировать введение, ---
 # --- не трогая jar; в jar эти английские значения остаются откатом по каждому ключу). ---
-ui.hub.title = Мастер контрактов и торговец
 ui.hub.subtitle = Чем могу помочь, искатель приключений?
 ui.hub.bounties_button = Посмотреть контракты
 ui.hub.bounties_hint = Берите сменяемые контракты ради наград.
 ui.hub.shop_button = Магазин токенов
-ui.hub.shop_hint = Тратьте свои честно заработанные токены.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Далее
 ui.hub.tutorial.back = Назад

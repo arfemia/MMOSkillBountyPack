@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Une armée gelée descend des glaci
 
 # --- Hub / accueil (livré ici pour que les administrateurs reformulent l'accueil sans ---
 # --- toucher au jar ; le jar conserve ces valeurs anglaises comme repli clé par clé). ---
-ui.hub.title = Maître des primes et marchand
 ui.hub.subtitle = Que puis-je faire pour vous, aventurier ?
 ui.hub.bounties_button = Voir les primes
 ui.hub.bounties_hint = Relevez des contrats rotatifs pour des récompenses.
 ui.hub.shop_button = Boutique de tokens
-ui.hub.shop_hint = Dépensez vos tokens durement gagnés.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Suivant
 ui.hub.tutorial.back = Retour

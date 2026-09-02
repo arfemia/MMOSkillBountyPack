@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Uma legião envolta em gelo desce d
 
 # --- Hub / integração (enviado aqui para que donos de servidor possam reescrever a integração sem ---
 # --- mexer no jar; o jar mantém estes valores em inglês como fallback por chave). ---
-ui.hub.title = Mestre de Recompensas & Comerciante
 ui.hub.subtitle = O que posso fazer por você, aventureiro?
 ui.hub.bounties_button = Ver Recompensas
 ui.hub.bounties_hint = Aceite contratos rotativos por prêmios.
 ui.hub.shop_button = Loja de Fichas
-ui.hub.shop_hint = Gaste as fichas que você suou para ganhar.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Avançar
 ui.hub.tutorial.back = Voltar

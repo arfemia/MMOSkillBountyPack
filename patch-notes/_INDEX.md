@@ -2,6 +2,7 @@
 
 Per-version public release notes (newest first). Same paradigm as the main mod repo: YAML frontmatter (`version`/`type: patch-note`/`status`), user-facing voice, no em-dashes. `CURSEFORGE.md` is the public listing; keep its Versions table in sync.
 
+- [[1.2.1]] - held (requires plugin 1.6.0 + CommonLib 2.0.0, Update 6 server): the hub title and Token Shop hint leave the pack, so the plugin's Adventurer's Guide wording shows without a doubly-defined-key warning.
 - [[1.2.0]] - held (requires plugin 1.6.0 + CommonLib 2.0.0, Update 6 server): the catalog moves onto CommonLib's shared economy, the broker NPCs load again, Update 6 block updates.
 - [[1.1.3]] - held (requires plugin 1.4.3): the Featured: Fisher's Haul cache also costs Fire Essence.
 - [[1.1.2]] - released (requires plugin 1.4.3): six new contracts across every board (Snapdragon replaces Risen) plus a Snapdragon kill achievement.

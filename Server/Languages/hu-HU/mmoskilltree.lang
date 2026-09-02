@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = A jégkötött sereg vonul le a gle
 
 # --- Hub / bevezetés (itt szállítjuk, hogy a szervergazdák átfogalmazhassák a bevezetőt anélkül, ---
 # --- hogy a jar-hoz nyúlnának; a jar megtartja ezeket az angol értékeket kulcsonkénti tartalékként). ---
-ui.hub.title = Bounty Mester és Kereskedő
 ui.hub.subtitle = Mit tehetek érted, kalandor?
 ui.hub.bounties_button = Bountyk Megtekintése
 ui.hub.bounties_hint = Vállalj forgó szerződéseket jutalmakért.
 ui.hub.shop_button = Token Shop
-ui.hub.shop_hint = Költsd el a keményen megkeresett tokenjeidet.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Tovább
 ui.hub.tutorial.back = Vissza

@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = A frost-bound host marches down fro
 
 # --- Hub / onboarding (shipped here so server owners can reword onboarding without ---
 # --- touching the jar; the jar keeps these English values as a per-key fallback). ---
-ui.hub.title = Bounty Master & Trader
 ui.hub.subtitle = What can I do for you, adventurer?
 ui.hub.bounties_button = View Bounties
 ui.hub.bounties_hint = Take rotating contracts for rewards.
 ui.hub.shop_button = Token Shop
-ui.hub.shop_hint = Spend your hard-earned tokens.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Next
 ui.hub.tutorial.back = Back

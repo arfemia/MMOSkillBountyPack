@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Una hueste encadenada por el hielo 
 
 # --- Eje / iniciación (se incluye aquí para que los dueños del servidor puedan reformular la iniciación sin ---
 # --- tocar el jar; el jar conserva estos valores en inglés como recurso por clave). ---
-ui.hub.title = Maestro de Contratos y Mercader
 ui.hub.subtitle = ¿Qué puedo hacer por ti, aventurero?
 ui.hub.bounties_button = Ver Contratos
 ui.hub.bounties_hint = Acepta contratos rotativos a cambio de recompensas.
 ui.hub.shop_button = Tienda de Tokens
-ui.hub.shop_hint = Gasta los tokens que tanto te ha costado ganar.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Siguiente
 ui.hub.tutorial.back = Atrás

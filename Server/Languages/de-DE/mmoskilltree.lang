@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Eine frostgebundene Heerschar marsc
 
 # --- Hub / Einführung (hier ausgeliefert, damit Serverbetreiber die Einführung umformulieren können, ---
 # --- ohne das Jar anzufassen; das Jar behält diese englischen Werte als Rückfall pro Schlüssel). ---
-ui.hub.title = Kopfgeldmeister & Händler
 ui.hub.subtitle = Was kann ich für dich tun, Abenteurer?
 ui.hub.bounties_button = Kopfgelder ansehen
 ui.hub.bounties_hint = Nimm rotierende Aufträge für Belohnungen an.
 ui.hub.shop_button = Token-Shop
-ui.hub.shop_hint = Gib deine hart verdienten Token aus.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Weiter
 ui.hub.tutorial.back = Zurück

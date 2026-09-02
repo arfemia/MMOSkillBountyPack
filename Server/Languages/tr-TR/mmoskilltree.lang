@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Donmuş bir ordu buzullardan inerke
 
 # --- Karşılama / başlangıç (sunucu sahipleri jar'a dokunmadan başlangıç metnini yeniden yazabilsin diye ---
 # --- burada gönderilir; jar bu İngilizce değerleri anahtar bazında geri dönüş olarak tutar). ---
-ui.hub.title = Ödül Ustası & Tüccar
 ui.hub.subtitle = Senin için ne yapabilirim, maceracı?
 ui.hub.bounties_button = Ödülleri Görüntüle
 ui.hub.bounties_hint = Ödüller için rotasyonlu sözleşmeler üstlen.
 ui.hub.shop_button = Jeton Mağazası
-ui.hub.shop_hint = Alın teriyle kazandığın jetonları harca.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = İleri
 ui.hub.tutorial.back = Geri

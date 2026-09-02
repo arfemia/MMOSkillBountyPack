@@ -99,12 +99,10 @@ quest.bounty_weekly_frost_skeletons.flavor = Un'armata legata dal gelo marcia gi
 
 # --- Hub / accoglienza (spedito qui cosi' i proprietari del server possono riscrivere ---
 # --- l'accoglienza senza toccare il jar; il jar conserva questi valori inglesi come fallback per chiave). ---
-ui.hub.title = Maestro delle Taglie e Mercante
 ui.hub.subtitle = Cosa posso fare per te, avventuriero?
 ui.hub.bounties_button = Vedi le Taglie
 ui.hub.bounties_hint = Accetta contratti a rotazione per ottenere ricompense.
 ui.hub.shop_button = Negozio Gettoni
-ui.hub.shop_hint = Spendi i gettoni che ti sei sudato.
 ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Avanti
 ui.hub.tutorial.back = Indietro
