@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Zırhlı bir gölge harabelerde dola�
 quest.bounty_weekly_broodmother.title = Kuluçka Anası
 quest.bounty_weekly_broodmother.flavor = Kumullardaki her scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve dölü kaynağında bitir.
 
+# --- Patron dövüşleri (Bounty_Encounter sözleşmeleri: betikli her patron sayılır) ---
+quest.bounty_weekly_open_warrant.title = Açık Ferman
+quest.bounty_weekly_open_warrant.flavor = Bunun üzerinde isim yok. Bir ekip gerektirecek kadar büyük olan her şey olur, yeter ki düştüğünde hâlâ dövüşün içinde ayakta ol.
+quest.bounty_muster_roll.title = Yoklama
+quest.bounty_muster_roll.flavor = Kimse senden kazanmanı istemiyor. Bir patron dövüşünde iş bitene kadar dur, nasıl biterse bitsin, tahta seni hazır yazar.
+objective.text.bounty.open_warrant = {0} patron indir
+objective.text.bounty.muster_roll = {0} patron dövüşünde sonuna kadar dur
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

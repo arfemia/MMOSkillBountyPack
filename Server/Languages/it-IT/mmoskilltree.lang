@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Un'ombra corazzata percorre le rovine
 quest.bounty_weekly_broodmother.title = La Madre della Covata
 quest.bounty_weekly_broodmother.flavor = Ogni scarak delle dune nasce da una regina gonfia. Trovala nel nido profondo e poni fine alla covata alla fonte.
 
+# --- Scontri con i boss (contratti Bounty_Encounter: conta qualsiasi boss con script) ---
+quest.bounty_weekly_open_warrant.title = Mandato Aperto
+quest.bounty_weekly_open_warrant.flavor = Questo non porta nome. Qualunque cosa abbastanza grossa da richiedere un gruppo va bene, purché tu sia ancora in piedi nello scontro quando cade.
+quest.bounty_muster_roll.title = L'Appello
+quest.bounty_muster_roll.flavor = Nessuno ti chiede di vincere. Resisti in uno scontro con un boss finché non è deciso, comunque vada, e la bacheca ti segna presente.
+objective.text.bounty.open_warrant = Abbatti {0} boss
+objective.text.bounty.muster_roll = Resisti in {0} scontro con un boss fino alla fine
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

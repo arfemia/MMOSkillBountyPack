@@ -1,0 +1,39 @@
+{
+  "$Comment": "The weekly open warrant: one boss fight won, any boss. Amount 1 with no Target is how 'whichever one you can find' is written; naming a script id would tie it to that one fight. The step's own line (objective.text.bounty.open_warrant) is worded for a single fight, so raise Amount and reword that key with it. On a server where no boss stands anywhere this can never be finished, so take it off the board with Enabled: false rather than leave a dead warrant up.",
+  "Parent": "Bounty_Encounter",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_open_warrant.title",
+    "FlavorKey": "quest.bounty_weekly_open_warrant.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Amount": 1,
+      "TextKey": "objective.text.bounty.open_warrant"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 1200
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "DEFENSE",
+          "Amount": 12000
+        }
+      }
+    ]
+  }
+}

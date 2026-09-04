@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Une ombre cuirassée arpente les ruin
 quest.bounty_weekly_broodmother.title = La Mère de couvée
 quest.bounty_weekly_broodmother.flavor = Chaque scarak des dunes éclôt d'une reine gonflée. Trouvez-la dans le nid profond et tarissez la couvée à sa source.
 
+# --- Combats de boss (contrats Bounty_Encounter : tout boss scripté compte) ---
+quest.bounty_weekly_open_warrant.title = Mandat ouvert
+quest.bounty_weekly_open_warrant.flavor = Celui-ci ne porte aucun nom. Tout ce qui est assez gros pour exiger un groupe fera l'affaire, tant que vous êtes encore debout dans le combat quand il tombe.
+quest.bounty_muster_roll.title = L'Appel
+quest.bounty_muster_roll.flavor = Personne ne vous demande de gagner. Tenez dans un combat de boss jusqu'à ce qu'il soit réglé, quelle qu'en soit l'issue, et le tableau vous compte présent.
+objective.text.bounty.open_warrant = Abattez {0} boss
+objective.text.bounty.muster_roll = Tenez {0} combat de boss jusqu'au bout
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

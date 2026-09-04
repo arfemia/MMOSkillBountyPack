@@ -1,6 +1,6 @@
 # CLAUDE.md - MMOSkillBountyPack
 
-A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (`^1.6.0`) and ZiggfreedCommon (`>=2.0.0`). It ships the entire **bounty board + shop** CONTENT: the contract pool, the reusable contract skeletons, the Bounty Token currency, the board schedules, the two storefronts with their shelves and offers, AND the in-world blocks (item + interaction + textures-via-vanilla + item names). The engines live in ZiggfreedCommon's `zc-commerce` module and the MMO jar registers what only it knows (its reward kinds, its stat channels, the `/mmobounty*` + `/mmoshop*` commands), so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
+A standalone Hytale content pack for the [MMOSkillTree mod](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (`^1.6.1`) and ZiggfreedCommon (`>=2.1.0`). It ships the entire **bounty board + shop** CONTENT: the contract pool, the reusable contract skeletons, the Bounty Token currency, the board schedules, the two storefronts with their shelves and offers, AND the in-world blocks (item + interaction + textures-via-vanilla + item names). The engines live in ZiggfreedCommon's `zc-commerce` module and the MMO jar registers what only it knows (its reward kinds, its stat channels, the `/mmobounty*` + `/mmoshop*` commands), so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
 ## Release notes (patch-notes paradigm)
 
@@ -28,7 +28,7 @@ bounty-contracts-pack/
     │   └── Control/MMOSkillBountyPack.json         names only the stores the MOD itself owns (currently none)
     └── ZiggfreedCommon/                            the framework stores, all merged by id
         ├── Boards/MMOSkillTree/Daily.json, Weekly.json, Bihourly.json      board schedules
-        ├── Bounties/MMOSkillTree/Bounty_*.json                             9 Abstract skeletons + 76 contracts
+        ├── Bounties/MMOSkillTree/Bounty_*.json                             10 Abstract skeletons + 78 contracts
         ├── Currencies/MMOSkillTree/Bounty_Token.json, Life_Essence.json    the two wallets
         ├── Shops/MMOSkillTree/General.json, XpExchange.json                the two storefronts
         ├── ShopPools/MMOSkillTree/Featured.json, XpExchange.json           the rotating shelves
@@ -67,14 +67,14 @@ One file in `Bounties/MMOSkillTree/`. The file name is the id.
                           { "Kind": "Mmo_Xp", "Params": { "Skill": "SWORDS", "Amount": "1200" } } ] } }
 ```
 
-- **`Parent`** names one of the nine Abstract skeletons, which supply the step kind, the match mode and the shape of the pay. The `Objectives` map merges per key, so naming `main` retunes that one step and keeps the rest.
+- **`Parent`** names one of the ten Abstract skeletons, which supply the step kind, the match mode and the shape of the pay. The `Objectives` map merges per key, so naming `main` retunes that one step and keeps the rest.
 - **`Rewards` is the same shared group a quest or achievement carries**: `{"Auto": [...], "Claim": [...]}`. A contract always parks its pay at the board rather than granting it in the field, so author every contract reward under `Claim`; `Rewards.Claim` is a single leaf, and writing it REPLACES the skeleton's list rather than adding to it. Give every contract a `Currency` reward and an `Mmo_Xp` reward, except on the Bihourly board and the `Training` band (see the economy rule above).
 - **No step wording is needed.** The renderer builds a localized, pluralized "Defeat 12 Zombies" from the step itself, in every language. Author `TextKey` on a step only when the generated line would read badly.
 - **`Weight`** biases the draw against rivals for the same slot; unauthored means 1, and 2 is twice as likely as a 1.
 - **Item payouts are safe on a contract**, because it always parks until collected: the player can clear inventory space before pressing Claim. `Bounty_Cache_Copper` and `Bounty_Cache_Repairs` are the worked examples. A `Command` reward always uses the named form `/give {player} <item> --quantity=N`; Hytale's give command ignores a positional quantity and the audit flags it as `POSITIONAL_GIVE_QUANTITY`.
 - **Title and flavor** are localization keys the player's own client resolves. Add `quest.<id>.title` and `quest.<id>.flavor` to `Server/Languages/en-US/mmoskilltree.lang` and the same keys to the other eight locales.
 
-### The nine skeletons
+### The ten skeletons
 
 Each is an ordinary `Abstract` contract; a child of one is a real contract, because `Abstract` is the one field that never inherits.
 
@@ -89,8 +89,9 @@ Each is an ordinary `Abstract` contract; a child of one is a real contract, beca
 | `Bounty_Place` | `PLACE_BLOCK` | CONTAINS | a material, or nothing for "anything placed" |
 | `Bounty_Spend` | `SPEND_CURRENCY` | EXACT | a WALLET id, the amount |
 | `Bounty_Xp` | `GAIN_XP` | EXACT | a skill id, an experience total |
+| `Bounty_Encounter` | `ENCOUNTER_DEFEATED` | EXACT | an encounter script id, or nothing for "any boss"; a child may swap the kind to `ENCOUNTER_ATTEMPT` to count fights fought to the end |
 
-An unauthored `Target` means "any", so `Bounty_Daily_Monster_Cull` counts every kill and `Bounty_Quick_Catch` counts every fish.
+An unauthored `Target` means "any", so `Bounty_Daily_Monster_Cull` counts every kill, `Bounty_Quick_Catch` counts every fish and `Bounty_Weekly_Open_Warrant` counts any boss brought down.
 
 A gather-and-deliver contract retunes both steps by name and keeps the delivered count well under the gathered one, so the player keeps most of the haul:
 
@@ -116,6 +117,18 @@ A training contract pairs its step with a bound on the same skill, so it is neve
   "Objectives": { "main": { "Target": "MINING", "Amount": 3000 } },
   "Rewards": { "Claim": [ ... ] } }
 ```
+
+A boss contract names the fight by its encounter SCRIPT id (the file under `Server/EncounterManager/`), never the creature: a fight that swaps roles between phases has no one creature id, so only the script id holds through every phase. Leave `Target` out and any boss on the server counts, which is how the shipped pair is written so it works whichever boss a server stands up, from a companion pack or from anyone else's. Every participant the fight credited completes it, whoever landed the last blow. A single fight reads badly through the shared step sentence, so both shipped contracts author a `TextKey` of their own:
+
+```json
+{ "Parent": "Bounty_Encounter",
+  "Text": { "TitleKey": "quest.bounty_weekly_open_warrant.title", "FlavorKey": "quest.bounty_weekly_open_warrant.flavor" },
+  "Boards": [ { "Board": "Weekly", "Difficulty": "Hard", "Weight": 1 } ],
+  "Objectives": { "main": { "Amount": 1, "TextKey": "objective.text.bounty.open_warrant" } },
+  "Rewards": { "Claim": [ ... ] } }
+```
+
+`Bounty_Muster_Roll` is the same skeleton with `"Kind": "ENCOUNTER_ATTEMPT"` on its step: credited when a fight settles either way, the defeat and the wipe alike, so "stand in it to the end" is a different contract from "bring it down". On a server where no boss stands anywhere both are dead warrants; take them off with `"Enabled": false`.
 
 ## Authoring a board (and its block)
 

@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Бронированная тень �
 quest.bounty_weekly_broodmother.title = Матка выводка
 quest.bounty_weekly_broodmother.flavor = Каждый скарак дюн вылупляется из одной разбухшей королевы. Найдите её в глубоком гнезде и оборвите выводок у истока.
 
+# --- Бои с боссами (контракты Bounty_Encounter: засчитывается любой скриптовый босс) ---
+quest.bounty_weekly_open_warrant.title = Открытый ордер
+quest.bounty_weekly_open_warrant.flavor = На этом имени нет. Сгодится всё, что достаточно велико, чтобы понадобился отряд, лишь бы вы ещё стояли в бою, когда оно падёт.
+quest.bounty_muster_roll.title = Перекличка
+quest.bounty_muster_roll.flavor = Никто не просит вас победить. Продержитесь в бою с боссом, пока он не решится, чем бы он ни кончился, и доска отметит вас присутствующим.
+objective.text.bounty.open_warrant = Сразите {0} босса
+objective.text.bounty.muster_roll = Продержитесь до конца в {0} бою с боссом
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

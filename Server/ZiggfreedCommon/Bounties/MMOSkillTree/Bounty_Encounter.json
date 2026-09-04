@@ -1,0 +1,25 @@
+{
+  "$Comment": "The shared skeleton for boss contracts. The step counts boss fights the game's own encounter scripts settle, and it credits every participant the fight counted, whoever landed the last hit. A child names the fight by its encounter SCRIPT id (the file name under Server/EncounterManager, never the boss creature's id, which changes when a fight swaps phases), or leaves Target out to count any boss on the server. EXACT matching is deliberate: a script id is one exact name with no variants to catch. A child may also set Kind to ENCOUNTER_ATTEMPT, which counts fights fought to the end whether they were won or lost, so 'stand in it to the finish' and 'bring it down' are two different contracts. Nothing here names a board: that belongs to the child.",
+  "Abstract": true,
+  "Listing": {
+    "Category": "bounty"
+  },
+  "Objectives": {
+    "main": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Amount": 1,
+      "MatchMode": "EXACT"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 1
+        }
+      }
+    ]
+  }
+}

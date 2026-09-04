@@ -247,6 +247,14 @@ quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and
 quest.bounty_weekly_broodmother.title = The Broodmother
 quest.bounty_weekly_broodmother.flavor = Every scarak in the dunes hatches from one swollen queen. Find her in the deep nest and end the brood at its source.
 
+# --- Boss fights (Bounty_Encounter contracts: any scripted boss counts) ---
+quest.bounty_weekly_open_warrant.title = Open Warrant
+quest.bounty_weekly_open_warrant.flavor = No name on this one. Whatever is big enough to need a party will do, as long as you are still standing in the fight when it goes down.
+quest.bounty_muster_roll.title = The Muster Roll
+quest.bounty_muster_roll.flavor = Nobody is asking you to win. Stand in a boss fight until it is settled, whichever way it goes, and the board marks you present.
+objective.text.bounty.open_warrant = Bring down {0} boss
+objective.text.bounty.muster_roll = Stand in {0} boss fight to the end
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

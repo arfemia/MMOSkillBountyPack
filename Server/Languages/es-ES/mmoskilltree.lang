@@ -248,6 +248,14 @@ quest.bounty_weekly_shadow_knight.flavor = Una sombra acorazada recorre las ruin
 quest.bounty_weekly_broodmother.title = La Reina Madre
 quest.bounty_weekly_broodmother.flavor = Cada scarak de las dunas nace de una reina henchida. Encuéntrala en el nido profundo y acaba con la prole en su origen.
 
+# --- Peleas contra jefes (contratos Bounty_Encounter: cuenta cualquier jefe con guion) ---
+quest.bounty_weekly_open_warrant.title = Orden Abierta
+quest.bounty_weekly_open_warrant.flavor = Esta no lleva nombre. Cualquier cosa lo bastante grande como para necesitar un grupo sirve, siempre que sigas en pie en la pelea cuando caiga.
+quest.bounty_muster_roll.title = Lista de Revista
+quest.bounty_muster_roll.flavor = Nadie te pide que ganes. Aguanta en una pelea contra un jefe hasta que se decida, salga como salga, y el tablón te da por presente.
+objective.text.bounty.open_warrant = Abate {0} jefe
+objective.text.bounty.muster_roll = Aguanta {0} pelea contra un jefe hasta el final
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

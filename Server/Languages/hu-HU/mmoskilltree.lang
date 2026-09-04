@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Egy páncélos árny járja a romokat
 quest.bounty_weekly_broodmother.title = A Költőanya
 quest.bounty_weekly_broodmother.flavor = A dűnék minden scarakja egyetlen duzzadt királynőből kel ki. Találd meg a mély fészekben, és vess véget a fészekaljnak a forrásánál.
 
+# --- Főellenség-harcok (Bounty_Encounter megbízások: bármelyik szkriptelt főellenség számít) ---
+quest.bounty_weekly_open_warrant.title = Nyílt Megbízás
+quest.bounty_weekly_open_warrant.flavor = Ezen nincs név. Bármi megteszi, ami elég nagy ahhoz, hogy csapat kelljen hozzá, amíg még talpon állsz a harcban, amikor elesik.
+quest.bounty_muster_roll.title = Névsorolvasás
+quest.bounty_muster_roll.flavor = Senki sem kéri, hogy nyerj. Állj helyt egy főellenség-harcban, amíg el nem dől, bárhogy is végződik, és a tábla jelenlévőnek jegyez.
+objective.text.bounty.open_warrant = Terítsd le {0} főellenséget
+objective.text.bounty.muster_roll = Állj végig {0} főellenség-harcot
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---

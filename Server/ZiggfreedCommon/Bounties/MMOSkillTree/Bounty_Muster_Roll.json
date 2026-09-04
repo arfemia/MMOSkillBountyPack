@@ -1,0 +1,47 @@
+{
+  "$Comment": "A daily contract for being counted at a boss fight. It swaps its skeleton's Kind to ENCOUNTER_ATTEMPT, which is credited to every participant when a fight settles, the defeat and the wipe alike, and even to one whose share of the work fell under the fight's own minimum, so it is a real ask without being a kill. No Target means any boss. The step's own line (objective.text.bounty.muster_roll) is worded for a single fight, so raise Amount and reword that key with it. On a server where no boss stands anywhere this can never be finished, so take it off the board with Enabled: false.",
+  "Parent": "Bounty_Encounter",
+  "Text": {
+    "TitleKey": "quest.bounty_muster_roll.title",
+    "FlavorKey": "quest.bounty_muster_roll.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Normal",
+      "Weight": 1
+    }
+  ],
+  "Objectives": {
+    "main": {
+      "Kind": "ENCOUNTER_ATTEMPT",
+      "Amount": 1,
+      "TextKey": "objective.text.bounty.muster_roll"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 200
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "ACROBATICS",
+          "Amount": 800
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "DEFENSE",
+          "Amount": 800
+        }
+      }
+    ]
+  }
+}

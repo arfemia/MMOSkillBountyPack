@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.0+) and ZiggfreedCommon (1.4.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.1.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
 The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
@@ -16,7 +16,7 @@ The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pag
 | `Server/NPC/Roles/Passive/*.json` | The press-F "open a page" NPC roles, per board and per shop |
 | `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
 | `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
-| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/*.json` | Nine Abstract contract skeletons plus the 76 contracts |
+| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/*.json` | Ten Abstract contract skeletons plus the 78 contracts |
 | `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
 | `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
 | `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |
@@ -41,7 +41,7 @@ Each board has its own placeable block. The block's interaction reads the board 
 
 ## Author your own
 
-- **A contract** is a file under `Bounties/MMOSkillTree/` naming one of the nine skeletons as its `Parent`, its board memberships as `Boards`, and its steps and pay. Give it a `quest.<id>.title` and `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both a `Currency` and an `Mmo_Xp` payout.
+- **A contract** is a file under `Bounties/MMOSkillTree/` naming one of the ten skeletons as its `Parent`, its board memberships as `Boards`, and its steps and pay. Give it a `quest.<id>.title` and `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both a `Currency` and an `Mmo_Xp` payout. A boss contract (`Bounty_Encounter`) names an encounter script id, or no target at all for any boss, and pays everyone the fight credited.
 - **A board** is a schedule file under `Boards/MMOSkillTree/`; its file name is the board id contracts name.
 - **An offer** is a file under `ShopEntries/MMOSkillTree/` (static by default; add a `Pool` group to rotate it). **A shelf** is a schedule file under `ShopPools/MMOSkillTree/` with the same cadence, selection and reroll shape a board uses. **A family of near-identical offers** is one file under `ShopEntryGenerators/MMOSkillTree/`.
 - **A broker NPC** is a native Hytale role under `Server/NPC/Roles/Passive/`, and it decides only the look, the nameplate and the press-F prompt. Which screen opens comes from the **placement** that stands the character up, so this pack ships the six roles and no placements: none of them appears until you author one at `Server/ZiggfreedCommon/NpcPlacements/<YourId>.json` naming a role plus `"Interact": {"Open": {"Type": "Mmo_Board", "Board": "Daily"}}` (or `"Mmo_Shop"` with a `Shop`). Each role file's `$Comment` carries the full recipe with its own id filled in. Manage what is standing with `/mmonpc list|enable|disable`.
@@ -51,4 +51,4 @@ See [CLAUDE.md](CLAUDE.md) for the full authoring guide and JSON examples.
 
 ## Requires
 
-MMO Skill Tree 1.6.0 or newer, and ZiggfreedCommon 1.4.0 or newer.
+MMO Skill Tree 1.6.1 or newer, and ZiggfreedCommon 2.1.0 or newer.

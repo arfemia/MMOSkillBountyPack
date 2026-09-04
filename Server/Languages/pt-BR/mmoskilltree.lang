@@ -249,6 +249,14 @@ quest.bounty_weekly_shadow_knight.flavor = Uma sombra blindada percorre as ruín
 quest.bounty_weekly_broodmother.title = A Rainha-Mãe
 quest.bounty_weekly_broodmother.flavor = Cada scarak das dunas eclode de uma rainha inchada. Encontre-a no ninho profundo e dê fim à ninhada na origem.
 
+# --- Lutas contra chefes (contratos Bounty_Encounter: qualquer chefe com script conta) ---
+quest.bounty_weekly_open_warrant.title = Mandado Aberto
+quest.bounty_weekly_open_warrant.flavor = Este não traz nome. Qualquer coisa grande o bastante para exigir um grupo serve, desde que você ainda esteja de pé na luta quando ela cair.
+quest.bounty_muster_roll.title = A Chamada
+quest.bounty_muster_roll.flavor = Ninguém está pedindo que você vença. Fique numa luta contra um chefe até ela se decidir, seja qual for o resultado, e o quadro marca a sua presença.
+objective.text.bounty.open_warrant = Derrube {0} chefe
+objective.text.bounty.muster_roll = Aguente {0} luta contra um chefe até o fim
+
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
 # --- Board names + descriptions (board titleKey/descriptionKey) ---
