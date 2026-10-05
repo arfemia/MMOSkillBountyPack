@@ -1,4 +1,5 @@
 {
+  "$Comment": "A Hard daily hunt for the Goblin Feastmaster; CONTAINS matching also counts the Coffer Feastmaster. Keep this file name: saved progress and any criterion naming the contract are filed under the id, so change the target and reword the two quest.bounty_smash_ogres keys here rather than renaming the file.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_smash_ogres.title",
@@ -13,7 +14,7 @@
   ],
   "Objectives": {
     "main": {
-      "Target": "Goblin_Ogre",
+      "Target": "Goblin_Feastmaster",
       "Amount": 6
     }
   },
