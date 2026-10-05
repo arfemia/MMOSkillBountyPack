@@ -1,0 +1,55 @@
+{
+  "$Comment": "A seasonal contract for the Hallow's Eve event, posted in the Daily board's Seasonal slot only while that event runs: the plain condition at the top of Requires (ziggfreedcommon:feature, Param Hallows_Eve_Live, Min 1) keeps it off the board the rest of the year and on any server without the Hallow's Eve pack. The target is the event's own Lost Soul role.",
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_haunt_souls.title",
+    "FlavorKey": "quest.bounty_haunt_souls.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Daily",
+      "Difficulty": "Seasonal",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "ziggfreedcommon:feature",
+        "Param": "Hallows_Eve_Live",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "Hallows_Eve_Lost_Soul",
+      "Amount": 8
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 130
+        }
+      },
+      {
+        "Kind": "Mmo_Xp",
+        "Params": {
+          "Skill": "STAVES",
+          "Amount": 1100
+        }
+      },
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "Hallows_Eve_Sweets",
+          "Amount": 8
+        }
+      }
+    ]
+  }
+}

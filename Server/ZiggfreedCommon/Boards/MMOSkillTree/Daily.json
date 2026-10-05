@@ -1,5 +1,5 @@
 {
-  "$Comment": "The main daily board: two ungated training contracts plus a weighted easy, normal and hard ladder, all turning over at midnight UTC. Currencies is the balance strip in the header - life essence is listed beside bounty tokens because a daily contract asks the player to spend essence, so both balances have to be visible while they choose. AcceptRequires gates a whole band rather than one contract, so a newcomer still SEES the hard warrant and can see what to work towards.",
+  "$Comment": "The main daily board: two ungated training contracts plus a weighted easy, normal and hard ladder, all turning over at midnight UTC. The last slot, Seasonal, is Optional: a contract in that band carries its calendar event's running switch at the top of its own Requires (the haunt contracts name Hallows_Eve_Live), so the slot posts one of them a day while that event runs and is skipped quietly the rest of the year. Keep it last: the draw fills the slots in order from one seeded roll sequence, and an empty slot takes no roll, so a trailing slot never changes which regular contracts are up. It has no AcceptRequires entry, so anyone can take it, and Grades names it in every language. Currencies is the balance strip in the header - life essence is listed beside bounty tokens because a daily contract asks the player to spend essence, so both balances have to be visible while they choose. AcceptRequires gates a whole band rather than one contract, so a newcomer still SEES the hard warrant and can see what to work towards.",
   "Text": {
     "TitleKey": "ui.bounty.board.daily",
     "FlavorKey": "ui.bounty.board.daily.desc"
@@ -26,6 +26,10 @@
     {
       "Difficulty": "Hard",
       "Optional": true
+    },
+    {
+      "Difficulty": "Seasonal",
+      "Optional": true
     }
   ],
   "Currencies": [
@@ -39,6 +43,11 @@
       }
     },
     "MaxPerPeriod": 3
+  },
+  "Grades": {
+    "Seasonal": {
+      "TitleKey": "board.grade.seasonal"
+    }
   },
   "AcceptRequires": {
     "Normal": {
