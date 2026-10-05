@@ -296,3 +296,16 @@ quest.bounty_quick_rot.flavor = The shambling dead are thick near the road again
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Market Patron
 quest.bounty_market_patron.flavor = The exchange rewards a loyal customer. Trade at the counter and the board will make it worth your while.
+
+# === 1.3.0: seasonal contracts (the Daily board's Seasonal slot, posted while a calendar event runs) ===
+
+# --- The Daily board's Seasonal band (its Grades entry) ---
+board.grade.seasonal = Seasonal
+
+# --- Daily board: Hallow's Eve haunt contracts ---
+quest.bounty_haunt_ghouls.title = Ghoul Season
+quest.bounty_haunt_ghouls.flavor = The hollow ghouls only crawl out while the pumpkins are lit, and they go straight for the roads. Put them back in the ground before the season turns.
+quest.bounty_haunt_skeletons.title = Pumpkin Heads
+quest.bounty_haunt_skeletons.flavor = Skeletons have taken to wearing carved pumpkins, and they walk the fields every night grinning at the farmhouses. Knock the heads off and send the bones back down.
+quest.bounty_haunt_souls.title = Wandering Souls
+quest.bounty_haunt_souls.flavor = Lost souls drift between the trees after nightfall, looking for a way home. Give them their rest before one of them follows somebody back to town.

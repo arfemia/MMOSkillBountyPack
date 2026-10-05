@@ -1,8 +1,8 @@
 {
   "Group": "Ziggfreed",
   "Name": "MMOSkillBountyPack",
-  "Version": "1.2.1",
-  "Description": "MMO Skill Tree - rotating Bounty Boards (Daily, Weekly, all-at-once Daily Contracts, and fast Quick Contracts): kill, gather, deliver, train, place, fish, spend and boss-fight contracts paid out in Bounty Tokens plus skill XP. Adds the bounty pool, templates, currency, the board schedules, and the Token Shop.",
+  "Version": "1.3.0",
+  "Description": "MMO Skill Tree - rotating Bounty Boards (Daily, Weekly and the fast Quick Contracts board): kill, gather, deliver, train, place, fish, spend and boss-fight contracts paid out in Bounty Tokens plus skill XP, with haunt contracts on the Daily board while Hallow's Eve runs (with the Hallow's Eve pack). Adds the bounty pool, templates, currency, the board schedules, and the Token Shop.",
   "Authors": [
     {
       "Name": "ZiggFreed"
@@ -13,6 +13,6 @@
   "IncludesAssetPack": true,
   "Dependencies": {
     "Ziggfreed:MMOSkillTree": "^1.6.1",
-    "Ziggfreed:ZiggfreedCommon": ">=2.1.0"
+    "Ziggfreed:ZiggfreedCommon": ">=2.2.0"
   }
 }
