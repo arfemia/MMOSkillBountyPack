@@ -297,3 +297,16 @@ quest.bounty_quick_rot.flavor = Los muertos tambaleantes vuelven a ser numerosos
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercado
 quest.bounty_market_patron.flavor = La lonja recompensa a sus clientes fieles. Comercia en el mostrador y el tablón hará que te merezca la pena.
+
+# === 1.3.0: contratos de temporada (la casilla de Temporada del tablón Diario, publicada mientras dura un evento del calendario) ===
+
+# --- La franja de Temporada del tablón Diario (su entrada de Grades) ---
+board.grade.seasonal = De temporada
+
+# --- Tablón diario: contratos de la Noche de Ánimas ---
+quest.bounty_haunt_ghouls.title = Temporada de Gules
+quest.bounty_haunt_ghouls.flavor = Los gules descarnados solo salen a rastras mientras las calabazas están encendidas, y van directos a los caminos. Devuélvelos bajo tierra antes de que cambie la temporada.
+quest.bounty_haunt_skeletons.title = Cabezas de Calabaza
+quest.bounty_haunt_skeletons.flavor = A los esqueletos les ha dado por llevar calabazas talladas, y recorren los campos cada noche sonriendo a las granjas. Arráncales las cabezas y manda los huesos de vuelta bajo tierra.
+quest.bounty_haunt_souls.title = Almas Errantes
+quest.bounty_haunt_souls.flavor = Las almas perdidas vagan entre los árboles al caer la noche, buscando el camino a casa. Dales descanso antes de que una de ellas siga a alguien hasta el pueblo.

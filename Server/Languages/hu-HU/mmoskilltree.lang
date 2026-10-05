@@ -298,3 +298,16 @@ quest.bounty_quick_rot.flavor = A nyughatatlan holtak ismét sűrűn járőrözn
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = A piac törzsvendége
 quest.bounty_market_patron.flavor = A tőzsde megjutalmazza a hűséges vevőt. Kereskedj a pultnál, és a tábla gondoskodik róla, hogy megérje.
+
+# === 1.3.0: szezonális szerződések (a Napi tábla Szezonális helye, amíg egy naptári esemény tart) ===
+
+# --- A Napi tábla Szezonális sávja (a Grades bejegyzése) ---
+board.grade.seasonal = Szezonális
+
+# --- Napi tábla: Mindenszentek Éje kísértetjárás-szerződések ---
+quest.bounty_haunt_ghouls.title = Ghúlszezon
+quest.bounty_haunt_ghouls.flavor = A kongó ghúlok csak akkor másznak elő, amikor égnek a tökök, és egyenesen az utaknak tartanak. Tedd vissza őket a földbe, mielőtt véget ér a szezon.
+quest.bounty_haunt_skeletons.title = Tökfejek
+quest.bounty_haunt_skeletons.flavor = A csontvázak rászoktak, hogy faragott tököt hordjanak, és minden éjjel a tanyaházakra vigyorogva járják a földeket. Üsd le a fejüket, és küldd vissza a csontokat a föld alá.
+quest.bounty_haunt_souls.title = Bolyongó lelkek
+quest.bounty_haunt_souls.flavor = Az elveszett lelkek sötétedés után a fák között sodródnak, és a hazautat keresik. Adj nekik nyugodalmat, mielőtt valamelyik utánamegy valakinek a városba.

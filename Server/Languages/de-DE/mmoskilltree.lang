@@ -298,3 +298,16 @@ quest.bounty_quick_rot.flavor = Die Untoten sind wieder überall an der Straße.
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Stammkunde des Marktes
 quest.bounty_market_patron.flavor = Der Handelsplatz belohnt einen treuen Kunden. Handle am Tresen, und die Tafel wird es dir lohnen.
+
+# === 1.3.0: Saisonaufträge (der Saisonplatz der Tagestafel, ausgehängt, solange ein Kalenderereignis läuft) ===
+
+# --- Die Saisonstufe der Tagestafel (ihr Grades-Eintrag) ---
+board.grade.seasonal = Saisonal
+
+# --- Tagestafel: Spukaufträge zum Allerheiligenabend ---
+quest.bounty_haunt_ghouls.title = Ghulsaison
+quest.bounty_haunt_ghouls.flavor = Die hohlen Ghule kriechen nur raus, solange die Kürbisse brennen, und sie gehen direkt auf die Straßen los. Schick sie zurück unter die Erde, bevor die Saison vorbei ist.
+quest.bounty_haunt_skeletons.title = Kürbisköpfe
+quest.bounty_haunt_skeletons.flavor = Skelette tragen neuerdings geschnitzte Kürbisse, und sie ziehen jede Nacht über die Felder und grinsen die Bauernhäuser an. Hau ihnen die Köpfe ab und schick die Knochen wieder runter.
+quest.bounty_haunt_souls.title = Wandernde Seelen
+quest.bounty_haunt_souls.flavor = Nach Einbruch der Nacht treiben verlorene Seelen zwischen den Bäumen umher und suchen einen Weg nach Hause. Gib ihnen ihre Ruhe, bevor eine von ihnen jemandem zurück in die Stadt folgt.

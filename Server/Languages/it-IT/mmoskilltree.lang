@@ -298,3 +298,16 @@ quest.bounty_quick_rot.flavor = I morti barcollanti sono di nuovo spessi vicino 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercato
 quest.bounty_market_patron.flavor = Lo scambio premia un cliente fedele. Commercia al banco e la bacheca saprà ricompensarti.
+
+# === 1.3.0: contratti stagionali (lo slot Stagionale della bacheca Giornaliera, pubblicato mentre è in corso un evento del calendario) ===
+
+# --- La fascia Stagionale della bacheca Giornaliera (la sua voce in Grades) ---
+board.grade.seasonal = Stagionale
+
+# --- Bacheca giornaliera: contratti infestati della Vigilia di Ognissanti ---
+quest.bounty_haunt_ghouls.title = Stagione dei Ghoul
+quest.bounty_haunt_ghouls.flavor = I ghoul vuoti strisciano fuori solo finché le zucche sono accese, e puntano dritti alle strade. Rimettili sottoterra prima che la stagione cambi.
+quest.bounty_haunt_skeletons.title = Teste di Zucca
+quest.bounty_haunt_skeletons.flavor = Gli scheletri hanno preso a indossare zucche intagliate, e ogni notte girano per i campi ghignando verso le fattorie. Fagli saltare la testa e rimanda giù le ossa.
+quest.bounty_haunt_souls.title = Anime Erranti
+quest.bounty_haunt_souls.flavor = Dopo il tramonto le anime perdute vagano tra gli alberi, in cerca della strada di casa. Concedi loro il riposo prima che una di loro segua qualcuno fino in città.

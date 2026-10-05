@@ -298,3 +298,16 @@ quest.bounty_quick_rot.flavor = Les morts titubants sont nombreux près de la ro
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Habitué du marché
 quest.bounty_market_patron.flavor = Le comptoir récompense les clients fidèles. Échangez au guichet et le tableau saura vous le rendre.
+
+# === 1.3.0 : contrats saisonniers (l'emplacement saisonnier du tableau quotidien, affiché tant qu'un événement du calendrier est en cours) ===
+
+# --- La bande Saisonnière du tableau quotidien (son entrée Grades) ---
+board.grade.seasonal = Saisonnière
+
+# --- Tableau quotidien : contrats de hantise de la Veille de la Toussaint ---
+quest.bounty_haunt_ghouls.title = Saison des goules
+quest.bounty_haunt_ghouls.flavor = Les goules creuses ne sortent de terre que lorsque les citrouilles sont allumées, et elles filent droit vers les routes. Renvoyez-les sous terre avant que la saison ne tourne.
+quest.bounty_haunt_skeletons.title = Têtes de citrouille
+quest.bounty_haunt_skeletons.flavor = Les squelettes se sont mis à porter des citrouilles sculptées, et ils arpentent les champs chaque nuit en souriant aux fermes. Faites sauter les têtes et renvoyez les os sous terre.
+quest.bounty_haunt_souls.title = Âmes errantes
+quest.bounty_haunt_souls.flavor = Des âmes perdues flottent entre les arbres à la nuit tombée, en cherchant le chemin du retour. Offrez-leur le repos avant que l'une d'elles ne suive quelqu'un jusqu'en ville.

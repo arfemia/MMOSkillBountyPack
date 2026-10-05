@@ -298,3 +298,16 @@ quest.bounty_quick_rot.flavor = Os mortos cambaleantes estão de novo perto da e
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente do Mercado
 quest.bounty_market_patron.flavor = A casa de câmbio recompensa um cliente fiel. Negocie no balcão e o quadro fará valer a pena.
+
+# === 1.3.0: contratos sazonais (o espaço Sazonal do quadro Diário, publicado enquanto um evento do calendário acontece) ===
+
+# --- A faixa Sazonal do quadro Diário (sua entrada em Grades) ---
+board.grade.seasonal = Sazonal
+
+# --- Quadro Diário: contratos de assombração da Noite das Bruxas ---
+quest.bounty_haunt_ghouls.title = Temporada de Carniçais
+quest.bounty_haunt_ghouls.flavor = Os carniçais ocos só saem rastejando enquanto as abóboras estão acesas, e vão direto para as estradas. Ponha-os de volta debaixo da terra antes que a temporada passe.
+quest.bounty_haunt_skeletons.title = Cabeças de Abóbora
+quest.bounty_haunt_skeletons.flavor = Os esqueletos deram de usar abóboras entalhadas, e andam pelos campos toda noite sorrindo para as casas de fazenda. Derrube as cabeças e mande os ossos de volta para a cova.
+quest.bounty_haunt_souls.title = Almas Errantes
+quest.bounty_haunt_souls.flavor = Almas perdidas vagam entre as árvores depois do anoitecer, procurando o caminho de casa. Dê descanso a elas antes que uma siga alguém de volta até a cidade.
