@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.1.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.2.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
 The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
@@ -16,7 +16,7 @@ The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pag
 | `Server/NPC/Roles/Passive/*.json` | The press-F "open a page" NPC roles, per board and per shop |
 | `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
 | `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
-| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/*.json` | Ten Abstract contract skeletons plus the 78 contracts |
+| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 81 contracts (the three seasonal haunt contracts in Haunt/) |
 | `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
 | `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
 | `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |
@@ -33,7 +33,7 @@ Everything under `Server/ZiggfreedCommon/` merges **by id**, and the FILE NAME i
 .\build.ps1 -Install:$false  # build only, no copy
 ```
 
-Produces `MMOSkillBountyPack.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` files need). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`). Start a server with the mod jar, the ZiggfreedCommon jar and this zip in `Mods/`, then craft and place a board block, or use `/mmobountyui <player> --board=daily` (console/admin; the board is a named option, so a bare `daily` after the player name is rejected).
+Produces `MMOSkillBountyPack-<version>.zip`, named from the manifest's `Version` (forward-slash entries plus explicit directory entries, which the bundled `.lang` files need). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`). Start a server with the mod jar, the ZiggfreedCommon jar and this zip in `Mods/`, then craft and place a board block, or use `/mmobountyui <player> --board=daily` (console/admin; the board is a named option, so a bare `daily` after the player name is rejected).
 
 ## Multiple boards in one world
 
@@ -139,6 +139,19 @@ A boss contract names the fight by its encounter script id (the file under `Serv
 
 `Bounty_Muster_Roll` is the same skeleton with `"Kind": "ENCOUNTER_ATTEMPT"` on its step. It is credited when a fight ends either way, win or wipe, so "stand in it to the end" is a different contract from "bring it down". On a server where no boss stands anywhere, both are dead warrants; take them off with `"Enabled": false`.
 
+A seasonal contract is posted only while a calendar event runs. Put the event's running switch at the top level of `Requires`, and give the contract a band that only a seasonal slot posts:
+
+```json
+{ "Parent": "Bounty_Kill",
+  "Text": { "TitleKey": "quest.bounty_haunt_ghouls.title", "FlavorKey": "quest.bounty_haunt_ghouls.flavor" },
+  "Boards": [ { "Board": "Daily", "Difficulty": "Seasonal", "Weight": 1 } ],
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 } ] },
+  "Objectives": { "main": { "Target": "Hallows_Eve_Hollow_Ghoul", "Amount": 6 } },
+  "Rewards": { "Claim": [ ... ] } }
+```
+
+ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on while the event is switched on and between its dates, off otherwise, and off on a server that does not have the event at all. While it reads off, the contract is never posted; a player who took it before the event ended still finds it on the board's Mine tab. Keep the condition at the top level: inside `AllOf`, `AnyOf` or `Not` it becomes an ordinary lock, and the contract sits on the board all year, locked. The three in `Haunt/` are this pack's own, written for the Hallow's Eve pack's creatures.
+
 **A note on pay.** The `Training` band and the whole Bihourly board pay little or no tokens on purpose. Training contracts pay a small token amount plus flat experience, and Bihourly contracts pay experience only. The Bihourly board turns over several times a day, so full token payouts there would flood the economy. The token income is the Daily and Weekly easy, normal and hard ladder. The Bihourly reroll still costs tokens, which gives free-experience contracts a small sink.
 
 ### A board
@@ -163,7 +176,7 @@ A boss contract names the fight by its encounter script id (the file under `Serv
 
 - **`Rotation` is `Period` or `Every`, never both.** Authoring both is a validator error. `Period` is a calendar cadence, `Daily` or `Weekly`, counted from a fixed UTC boundary so everybody's board turns over at the same moment. `Weekly` starts on Monday unless a `Weekday` says otherwise. `Every` is a plain repeating span in whole units that add up: `{"Hours": 2}` is the Bihourly board. `OffsetMinutes` moves the rollover past the boundary; 240 puts a daily at 04:00 UTC.
 - **`Selection.Type`** is `Weighted_Random` (a seeded draw that honours each contract's weight) or `All` (post everything eligible). Any other word is reported instead of quietly replaced.
-- **`Slots`** shape the posting. Each slot has a `Difficulty`, an optional `Count` (how many of that band) and an optional `Optional` (the slot may come up empty without the board reading as broken). A required slot with nothing eligible is an `UNFILLABLE_SLOT` finding.
+- **`Slots`** shape the posting. Each slot has a `Difficulty`, an optional `Count` (how many of that band) and an optional `Optional` (the slot may come up empty without the board reading as broken). A slot whose band no enabled contract on the board carries is an `UNFILLABLE_SLOT` finding: a required one leaves a gap, an optional one is skipped every rotation. The shipped Daily board ends with an optional Seasonal slot that only seasonal contracts fill. Keep a slot like that last: the draw fills the slots in order, so a trailing slot never changes an earlier posting.
 - **`Grades`** is an optional map that says what a band is called on a contract's badge and detail panel, keyed by the band's own word: `"Grades": { "Skirmish": { "TitleKey": "board.grade.skirmish" } }`. The five bands the framework already names (`training`, `easy`, `normal`, `hard`, `elite`) read in all nine languages with nothing authored, so skip it for those. Write a `Grades` entry for a band you invent, and point `TitleKey` at a line in your own `.lang` file. A band named nowhere reads as its own word. On a board that has slots, a `Grades` entry for a band no slot posts is a `NAME_FOR_UNPOSTED_BAND` finding, which is how a misspelled band shows up at boot.
 - **`Currencies`** is the balance strip in the page header. List every wallet a player earns or spends at this board; an unlisted wallet does not appear.
 - **`Reroll.Cost`** is a full `Cost`, so a reroll can be priced in several wallets or in items. `MaxPerPeriod` caps paid rerolls per period.
@@ -302,4 +315,4 @@ To add a broker for a new board `<x>`, copy `MMO_Bounty_Daily.json` to `MMO_Boun
 
 ## Requires
 
-MMO Skill Tree 1.6.1 or newer, and ZiggfreedCommon 2.1.0 or newer.
+MMO Skill Tree 1.6.1 or newer, and ZiggfreedCommon 2.2.0 or newer.
