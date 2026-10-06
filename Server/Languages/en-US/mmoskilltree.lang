@@ -309,3 +309,6 @@ quest.bounty_haunt_skeletons.title = Pumpkin Heads
 quest.bounty_haunt_skeletons.flavor = Skeletons have taken to wearing carved pumpkins, and they walk the fields every night grinning at the farmhouses. Knock the heads off and send the bones back down.
 quest.bounty_haunt_souls.title = Wandering Souls
 quest.bounty_haunt_souls.flavor = Lost souls drift between the trees after nightfall, looking for a way home. Give them their rest before one of them follows somebody back to town.
+
+# ---- Achievement subcategory names ----
+achievement.category.quests.bounties = Bounties
