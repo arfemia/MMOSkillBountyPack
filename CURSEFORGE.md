@@ -75,6 +75,6 @@ Contracts, boards, shops and offers are plain pack files: add a contract by drop
 
 Questions or suggestions? Join the [Discord](https://discord.gg/5NFdZsUxHZ) or leave a comment!
 
-**Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed) | [Buy Me a Coffee](https://buymeacoffee.com/wintergreensolutions)
+**Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed)
 
 _MMO Skill Tree is not affiliated with Hypixel Studios or Hytale._
