@@ -15,7 +15,7 @@ quest.bounty_slay_zombies.flavor = The restless dead are wandering too close to 
 quest.bounty_cull_skeletons.title = Rattle the Bones
 quest.bounty_cull_skeletons.flavor = Skeletons claw up from the barrows every dusk. Send them back in pieces.
 quest.bounty_hunt_wolves.title = Wolf Hunt
-quest.bounty_hunt_wolves.flavor = A pack has grown bold near the pastures. Hunt them before the herds pay the price.
+quest.bounty_hunt_wolves.flavor = Wolves have been at the sheep again. Hunt the pack down.
 quest.bounty_goblin_cleanup.title = Goblin Cleanup
 quest.bounty_goblin_cleanup.flavor = Goblins are raiding the supply carts again. Clear out the warren and they will think twice.
 quest.bounty_cull_scaraks.title = Scarak Cull
@@ -25,7 +25,7 @@ quest.bounty_hunt_trork.flavor = Trork warbands are massing in the hills. Break 
 quest.bounty_bear_hunt.title = Bear Hunt
 quest.bounty_bear_hunt.flavor = Great bears have claimed the north trail. This one is for a steady hand only.
 quest.bounty_smash_ogres.title = Ogre Smash
-quest.bounty_smash_ogres.flavor = Ogres are tearing through the palisades. Bring them down before the walls come with them.
+quest.bounty_smash_ogres.flavor = The carpenters have rebuilt the palisade twice this week. Bring down the ogres doing the knocking.
 quest.bounty_snapdragon_hunt.title = The Snapdragon
 quest.bounty_snapdragon_hunt.flavor = A venomous reptile stalks the deep thickets, and nothing else dares share its hunting ground. Track the Snapdragon down before it drifts toward the settlements.
 quest.bounty_burnt_skeletons.title = Ash and Bone
@@ -41,7 +41,7 @@ quest.bounty_chop_wood.flavor = The lumber yard is running dry. Fell what you ca
 quest.bounty_mine_iron.title = Iron for the Forge
 quest.bounty_mine_iron.flavor = The smiths are out of iron. Bring ore back from the deep seams.
 quest.bounty_mine_adamantite.title = Adamantite Run
-quest.bounty_mine_adamantite.flavor = Adamantite only sits in the deepest veins. Mine it if you dare the dark.
+quest.bounty_mine_adamantite.flavor = Adamantite only sits in the deepest veins. Take plenty of torches.
 quest.bounty_cache_copper.title = Copper Cache
 quest.bounty_cache_copper.flavor = The foundry will trade fresh-smelted bars for raw copper. Bring ore, leave with metal.
 quest.bounty_cache_repairs.title = Tools of the Trade
@@ -49,11 +49,11 @@ quest.bounty_cache_repairs.flavor = Break stone for the quarry and the smith thr
 
 # --- Daily: train ---
 quest.bounty_train_woodcutting.title = Sharpen the Axe
-quest.bounty_train_woodcutting.flavor = Practice makes a faster cut. Spend the day at the woodline.
+quest.bounty_train_woodcutting.flavor = The yard's paying for time on the axe today. Spend it at the woodline.
 quest.bounty_train_mining.title = Drill the Pick
-quest.bounty_train_mining.flavor = A miner's worth is measured in swings. Put in the hours.
+quest.bounty_train_mining.flavor = The quarry pays by the hour today. Spend the day breaking rock.
 quest.bounty_train_excavation.title = Dig Deep
-quest.bounty_train_excavation.flavor = There is no shortcut to a digger's calluses. Move some earth.
+quest.bounty_train_excavation.flavor = Somebody wants a lot of earth moved and isn't fussy where. Get digging.
 
 # --- Daily: deliver ---
 quest.bounty_deliver_iron.title = Iron Delivery
@@ -61,9 +61,9 @@ quest.bounty_deliver_iron.flavor = The quartermaster pays well for iron, no ques
 quest.bounty_deliver_hides.title = Hide Haul
 quest.bounty_deliver_hides.flavor = The tanners need light hides by the cartload. Drop them here.
 quest.bounty_deliver_essence.title = Essence Consignment
-quest.bounty_deliver_essence.flavor = Bottled vitality fetches a fortune. Hand over your stock.
+quest.bounty_deliver_essence.flavor = The alchemists are paying well for life essence. Hand in what you've got.
 quest.bounty_deliver_adamantite.title = Adamantite Consignment
-quest.bounty_deliver_adamantite.flavor = Refined hands want adamantite, and only the best ore will do.
+quest.bounty_deliver_adamantite.flavor = The deep forges want raw adamantite ore and pay well for it. Hand it in at the board.
 
 # --- Weekly ---
 quest.bounty_weekly_slay_zombies.title = The Endless Dead
@@ -71,7 +71,7 @@ quest.bounty_weekly_slay_zombies.flavor = A whole week of restless dead. Hold th
 quest.bounty_weekly_hunt_trork.title = Trork Warband
 quest.bounty_weekly_hunt_trork.flavor = A full warband has set up camp. Whittle it down over the week.
 quest.bounty_weekly_goblin_purge.title = Goblin Purge
-quest.bounty_weekly_goblin_purge.flavor = The warren keeps breeding. It takes a week's work to truly thin it.
+quest.bounty_weekly_goblin_purge.flavor = The warren keeps breeding. Thinning it takes the whole week.
 quest.bounty_weekly_mine_adamantite.title = Adamantite Quota
 quest.bounty_weekly_mine_adamantite.flavor = A week-long contract for the deep forges. Fill the quota.
 quest.bounty_weekly_outlander.title = Outlander Bounty
@@ -79,23 +79,23 @@ quest.bounty_weekly_outlander.flavor = Outlanders are pressing the borders all w
 quest.bounty_weekly_burnt_legion.title = The Burnt Legion
 quest.bounty_weekly_burnt_legion.flavor = Charred dead march out of the ashlands. Scatter the legion for good.
 quest.bounty_weekly_wraiths.title = Wraith Hunt
-quest.bounty_weekly_wraiths.flavor = Wraiths slip between this world and the next. Banish enough of them to make a difference.
+quest.bounty_weekly_wraiths.flavor = There are too many wraiths about. Put enough of them down that folk will travel again.
 quest.bounty_weekly_werewolves.title = Under the Full Moon
-quest.bounty_weekly_werewolves.flavor = The moon is full all week and the pack runs wild. End the curse.
+quest.bounty_weekly_werewolves.flavor = The moon is full all week and the pack is running wild. Hunt them down.
 quest.bounty_weekly_golems.title = Golem Breaker
-quest.bounty_weekly_golems.flavor = Ancient golems have woken in the ruins. Shatter them stone by stone.
+quest.bounty_weekly_golems.flavor = The golems in the ruins are up and walking. Knock them back down to rubble.
 quest.bounty_weekly_train_swords.title = Sword Mastery
-quest.bounty_weekly_train_swords.flavor = A week of drills separates a soldier from a swordmaster. Train hard.
+quest.bounty_weekly_train_swords.flavor = A week of sword drills, every day of it. Hit things until your arm knows the work.
 quest.bounty_weekly_train_defense.title = Hold the Line
-quest.bounty_weekly_train_defense.flavor = Toughness is earned blow by blow. Spend the week taking hits and standing firm.
+quest.bounty_weekly_train_defense.flavor = Spend the week taking hits and staying on your feet. Bring bandages.
 quest.bounty_weekly_sharks.title = Bloodied Waters
 quest.bounty_weekly_sharks.flavor = Hammerheads have turned the shipping lanes into a feeding ground. Thin the pack before the next crew goes missing.
 quest.bounty_weekly_leviathan.title = The Leviathan
-quest.bounty_weekly_leviathan.flavor = Something vast moves beneath the swells. Bring down the great beasts before they drag the fleet under.
+quest.bounty_weekly_leviathan.flavor = The whales have been ramming the fishing boats. Bring a few of the great beasts down.
 quest.bounty_weekly_sand_skeletons.title = Bones of the Dunes
 quest.bounty_weekly_sand_skeletons.flavor = Sandswept skeletons claw up wherever the desert swallows the dead. Spend the week clearing the buried host from the dunes.
 quest.bounty_weekly_frost_skeletons.title = The Frozen Host
-quest.bounty_weekly_frost_skeletons.flavor = A frost-bound host marches down from the glaciers, breath rimed with ice. Break their ranks before the cold creeps any farther.
+quest.bounty_weekly_frost_skeletons.flavor = Frozen skeletons are marching down from the glaciers. Break them up before they reach the valleys.
 
 # --- Hub / onboarding (shipped here so server owners can reword onboarding without ---
 # --- touching the jar; the jar keeps these English values as a per-key fallback). ---
@@ -107,12 +107,12 @@ ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Next
 ui.hub.tutorial.back = Back
 ui.hub.tutorial.finish = Got it!
-ui.hub.tutorial.welcome.title = Welcome, adventurer!
-ui.hub.tutorial.welcome.body = I'm the Bounty Master. Talk to me any time to take on contracts and trade. Let me show you the ropes.
+ui.hub.tutorial.welcome.title = Welcome
+ui.hub.tutorial.welcome.body = I'm the Bounty Master. Talk to me any time to take on contracts and trade. Here's how it works.
 ui.hub.tutorial.bounties.title = Bounties
-ui.hub.tutorial.bounties.body = Bounties are rotating contracts - slay, gather, or deliver for rewards. Accept one to add it to your quest log, finish the objective, and you earn tokens plus XP. The board refreshes on a schedule, and you can reroll a single contract you don't like for a few tokens.
+ui.hub.tutorial.bounties.body = Bounties are contracts posted on the board for a while, then swapped for new ones. Accept one to add it to your quest log, finish the objective, and you earn tokens plus XP. If you don't like a contract, you can reroll it for a few tokens.
 ui.hub.tutorial.shop.title = Token Shop
-ui.hub.tutorial.shop.body = Spend the tokens you earn at my Token Shop - XP boosts, items, and more. Some featured offers rotate daily, and you can reroll a featured offer to swap it for another.
+ui.hub.tutorial.shop.body = Spend the tokens you earn at my Token Shop on XP boosts and items. Some featured offers rotate daily, and you can reroll a featured offer to swap it for another.
 
 # --- Shop storefront names + descriptions (shop.<id>.title / .desc, resolved by convention) ---
 shop.general.title = Token Shop
@@ -202,7 +202,7 @@ achievement.snapdragon_bounty_t2.title = Snapdragon Bane
 # --- Daily: new kill ---
 quest.bounty_scorpion_sweep.title = Scorpion Sweep
 quest.bounty_scorpion_sweep.flavor = Scorpions have nested under the dunes and the caravans want them gone. Stamp out the swarm.
-quest.bounty_cull_cactee.title = Prickly Problem
+quest.bounty_cull_cactee.title = Walking Cactee
 quest.bounty_cull_cactee.flavor = The cactee have pulled up their roots and started wandering the flats. Cut them down before they reach the road.
 quest.bounty_toad_rumble.title = Toad Rumble
 quest.bounty_toad_rumble.flavor = Rhino toads are shoving everything off the waterhole. Knock the big ones flat.
@@ -225,10 +225,10 @@ quest.bounty_mine_silver.flavor = The mint is short on silver and the assayer wa
 quest.bounty_weekly_fen_stalkers.title = Stalkers of the Fen
 quest.bounty_weekly_fen_stalkers.flavor = All week the fen stalkers have dragged livestock into the mire. Hunt them through the bog until the marsh falls quiet.
 quest.bounty_weekly_feran_pack.title = The Feran Pack
-quest.bounty_weekly_feran_pack.flavor = A feran hunting pack has claimed the ridgeline. It takes a week of work to break their hold.
+quest.bounty_weekly_feran_pack.flavor = A Feran hunting pack has claimed the ridgeline. It takes a week of work to break their hold.
 quest.bounty_weekly_yeti.title = Yeti of the Peaks
 quest.bounty_weekly_yeti.flavor = Yetis have come down from the white peaks and the passes are no longer safe. Drive them back into the snow.
-quest.bounty_weekly_trillodon.title = Trillodon Terror
+quest.bounty_weekly_trillodon.title = The Trillodon
 quest.bounty_weekly_trillodon.flavor = A trillodon is trampling everything between the river and the ridge. Bring the brute down.
 quest.bounty_weekly_spirits.title = Restless Spirits
 quest.bounty_weekly_spirits.flavor = Elemental spirits are tearing loose from the old shrines all week. Lay them to rest before the wards give.
@@ -239,13 +239,13 @@ quest.bounty_weekly_mine_gold.flavor = A week-long charter for the treasury. Pul
 
 # --- Boss hunts (hard, big payout) ---
 quest.bounty_aberrant_horror.title = Aberrant Horror
-quest.bounty_aberrant_horror.flavor = Something soured the dead out east, and the aberrant ones do not fall easy. Steel yourself and end them.
+quest.bounty_aberrant_horror.flavor = Something soured the dead out east, and the aberrant ones do not fall easy. Keep hitting them until they do.
 quest.bounty_weekly_goblin_duke.title = The Goblin Duke
 quest.bounty_weekly_goblin_duke.flavor = The warren answers to a crowned brute now. End the Duke and the raids end with him.
 quest.bounty_weekly_shadow_knight.title = The Shadow Knight
-quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and steel barely bites it. Few who face the knight return. Be one who does.
+quest.bounty_weekly_shadow_knight.flavor = An armored shade walks the ruins, and steel barely bites it. Take friends, and something heavy.
 quest.bounty_weekly_broodmother.title = The Broodmother
-quest.bounty_weekly_broodmother.flavor = Every scarak in the dunes hatches from one swollen queen. Find her in the deep nest and end the brood at its source.
+quest.bounty_weekly_broodmother.flavor = Every Scarak in the dunes hatches from one swollen queen. Find her in the deep nest and kill her.
 
 # --- Boss fights (Bounty_Encounter contracts: any scripted boss counts) ---
 quest.bounty_weekly_open_warrant.title = Open Warrant

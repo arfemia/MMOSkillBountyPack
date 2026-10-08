@@ -15,7 +15,7 @@ quest.bounty_slay_zombies.flavor = I morti senza pace vagano troppo vicino alla 
 quest.bounty_cull_skeletons.title = Fai Tremare le Ossa
 quest.bounty_cull_skeletons.flavor = Gli scheletri risalgono dai tumuli a ogni tramonto. Rimandali giu' a pezzi.
 quest.bounty_hunt_wolves.title = Caccia ai Lupi
-quest.bounty_hunt_wolves.flavor = Un branco si e' fatto audace vicino ai pascoli. Cacciali prima che le mandrie ne paghino il prezzo.
+quest.bounty_hunt_wolves.flavor = I lupi hanno di nuovo attaccato le pecore. Dai la caccia al branco.
 quest.bounty_goblin_cleanup.title = Pulizia dei Goblin
 quest.bounty_goblin_cleanup.flavor = I goblin razziano di nuovo i carri delle provviste. Sgombera la tana e ci penseranno due volte.
 quest.bounty_cull_scaraks.title = Falciata di Scarak
@@ -25,7 +25,7 @@ quest.bounty_hunt_trork.flavor = Le bande da guerra dei Trork si stanno radunand
 quest.bounty_bear_hunt.title = Caccia all'Orso
 quest.bounty_bear_hunt.flavor = Grandi orsi hanno reclamato il sentiero del nord. Questa e' solo per una mano ferma.
 quest.bounty_smash_ogres.title = Sfracella gli Ogre
-quest.bounty_smash_ogres.flavor = Gli ogre stanno sfondando le palizzate. Abbattili prima che le mura crollino con loro.
+quest.bounty_smash_ogres.flavor = I carpentieri hanno ricostruito la palizzata due volte questa settimana. Abbatti gli ogre che la buttano giù.
 quest.bounty_snapdragon_hunt.title = Caccia alla Snapdragon
 quest.bounty_snapdragon_hunt.flavor = Una lucertola velenosa si aggira tra i cespugli profondi, e nulla osa condividere il suo territorio di caccia. Traccia la Snapdragon prima che si avvicini agli insediamenti.
 quest.bounty_burnt_skeletons.title = Cenere e Ossa
@@ -41,7 +41,7 @@ quest.bounty_chop_wood.flavor = La segheria sta finendo le scorte. Abbatti quel 
 quest.bounty_mine_iron.title = Ferro per la Fucina
 quest.bounty_mine_iron.flavor = I fabbri sono rimasti senza ferro. Riporta il minerale dalle vene profonde.
 quest.bounty_mine_adamantite.title = Spedizione d'Adamantio
-quest.bounty_mine_adamantite.flavor = L'adamantio giace solo nelle vene piu' profonde. Estrailo se osi sfidare l'oscurita'.
+quest.bounty_mine_adamantite.flavor = L'adamantio giace solo nelle vene più profonde. Porta tante torce.
 quest.bounty_cache_copper.title = Riserva di Rame
 quest.bounty_cache_copper.flavor = La fonderia scambia lingotti appena fusi per rame grezzo. Porta il minerale, esci con il metallo.
 quest.bounty_cache_repairs.title = Ferri del Mestiere
@@ -49,11 +49,11 @@ quest.bounty_cache_repairs.flavor = Spacca pietra per la cava e il fabbro ti rif
 
 # --- Giornaliere: allena ---
 quest.bounty_train_woodcutting.title = Affila l'Ascia
-quest.bounty_train_woodcutting.flavor = La pratica rende il taglio piu' veloce. Passa la giornata al margine del bosco.
+quest.bounty_train_woodcutting.flavor = Oggi il deposito di legname paga le ore passate con l'ascia. Passale al margine del bosco.
 quest.bounty_train_mining.title = Tempra il Piccone
-quest.bounty_train_mining.flavor = Il valore di un minatore si misura nei colpi. Mettici le ore.
+quest.bounty_train_mining.flavor = Oggi la cava paga a ore. Passa la giornata a spaccare pietra.
 quest.bounty_train_excavation.title = Scava in Profondita'
-quest.bounty_train_excavation.flavor = Non ci sono scorciatoie per i calli di uno scavatore. Sposta un po' di terra.
+quest.bounty_train_excavation.flavor = Qualcuno vuole spostare un sacco di terra e non è schizzinoso sul dove. Mettiti a scavare.
 
 # --- Giornaliere: consegna ---
 quest.bounty_deliver_iron.title = Consegna di Ferro
@@ -61,9 +61,9 @@ quest.bounty_deliver_iron.flavor = Il furiere paga bene il ferro, senza fare dom
 quest.bounty_deliver_hides.title = Carico di Pelli
 quest.bounty_deliver_hides.flavor = I conciatori hanno bisogno di pelli leggere a carriolate. Scaricale qui.
 quest.bounty_deliver_essence.title = Carico d'Essenza
-quest.bounty_deliver_essence.flavor = L'essenza vitale imbottigliata vale una fortuna. Consegna la tua scorta.
+quest.bounty_deliver_essence.flavor = Gli alchimisti pagano bene l'essenza vitale. Consegna quella che hai.
 quest.bounty_deliver_adamantite.title = Carico d'Adamantio
-quest.bounty_deliver_adamantite.flavor = Mani raffinate vogliono adamantio, e solo il miglior minerale andra' bene.
+quest.bounty_deliver_adamantite.flavor = Le fucine profonde vogliono minerale grezzo d'adamantio e lo pagano bene. Consegnalo alla bacheca.
 
 # --- Settimanali ---
 quest.bounty_weekly_slay_zombies.title = I Morti Senza Fine
@@ -71,7 +71,7 @@ quest.bounty_weekly_slay_zombies.flavor = Un'intera settimana di morti senza pac
 quest.bounty_weekly_hunt_trork.title = Banda da Guerra Trork
 quest.bounty_weekly_hunt_trork.flavor = Un'intera banda da guerra si e' accampata. Assottigliala nel corso della settimana.
 quest.bounty_weekly_goblin_purge.title = Purga dei Goblin
-quest.bounty_weekly_goblin_purge.flavor = La tana continua a sfornare goblin. Ci vuole una settimana di lavoro per diradarla davvero.
+quest.bounty_weekly_goblin_purge.flavor = La tana continua a sfornare goblin. Per diradarla ci vuole tutta la settimana.
 quest.bounty_weekly_mine_adamantite.title = Quota d'Adamantio
 quest.bounty_weekly_mine_adamantite.flavor = Un contratto di una settimana per le fucine profonde. Raggiungi la quota.
 quest.bounty_weekly_outlander.title = Taglia sugli Outlander
@@ -79,23 +79,23 @@ quest.bounty_weekly_outlander.flavor = Gli Outlander premono sui confini tutta l
 quest.bounty_weekly_burnt_legion.title = La Legione Bruciata
 quest.bounty_weekly_burnt_legion.flavor = Morti carbonizzati marciano fuori dalle terre di cenere. Disperdi la legione una volta per tutte.
 quest.bounty_weekly_wraiths.title = Caccia agli Spettri
-quest.bounty_weekly_wraiths.flavor = Gli spettri scivolano tra questo mondo e l'altro. Bandiscine abbastanza da fare la differenza.
+quest.bounty_weekly_wraiths.flavor = In giro ci sono troppi spettri. Abbattine abbastanza perché la gente torni a viaggiare.
 quest.bounty_weekly_werewolves.title = Sotto la Luna Piena
-quest.bounty_weekly_werewolves.flavor = La luna e' piena tutta la settimana e il branco corre selvaggio. Poni fine alla maledizione.
+quest.bounty_weekly_werewolves.flavor = La luna è piena tutta la settimana e il branco corre senza freni. Dagli la caccia.
 quest.bounty_weekly_golems.title = Frantumatore di Golem
-quest.bounty_weekly_golems.flavor = Antichi golem si sono risvegliati tra le rovine. Frantumali pietra dopo pietra.
+quest.bounty_weekly_golems.flavor = I golem tra le rovine si sono alzati e camminano. Riducili di nuovo in macerie.
 quest.bounty_weekly_train_swords.title = Maestria con la Spada
-quest.bounty_weekly_train_swords.flavor = Una settimana di esercitazioni separa un soldato da un maestro di spada. Allenati duramente.
+quest.bounty_weekly_train_swords.flavor = Una settimana di esercizi con la spada, tutti i giorni. Colpisci finché il braccio non impara il mestiere.
 quest.bounty_weekly_train_defense.title = Tieni la Posizione
-quest.bounty_weekly_train_defense.flavor = La tenacia si guadagna colpo dopo colpo. Passa la settimana a incassare e restare saldo.
+quest.bounty_weekly_train_defense.flavor = Passa la settimana a incassare colpi e a restare in piedi. Porta delle bende.
 quest.bounty_weekly_sharks.title = Acque Insanguinate
 quest.bounty_weekly_sharks.flavor = Gli squali martello hanno trasformato le rotte commerciali in un terreno di caccia. Riduci il branco prima che scompaia il prossimo equipaggio.
 quest.bounty_weekly_leviathan.title = Il Leviatano
-quest.bounty_weekly_leviathan.flavor = Qualcosa di immenso si muove sotto i flutti. Abbatti le grandi bestie prima che trascinino la flotta negli abissi.
+quest.bounty_weekly_leviathan.flavor = Le balene speronano le barche dei pescatori. Abbatti qualcuna di quelle grosse bestie.
 quest.bounty_weekly_sand_skeletons.title = Ossa delle Dune
 quest.bounty_weekly_sand_skeletons.flavor = Scheletri sospinti dalla sabbia risalgono dovunque il deserto inghiotte i morti. Passa la settimana a ripulire i sepolti dalle dune.
 quest.bounty_weekly_frost_skeletons.title = L'Armata Gelata
-quest.bounty_weekly_frost_skeletons.flavor = Un'armata legata dal gelo marcia giù dai ghiacciai, il respiro ricoperto di ghiaccio. Spezza le loro fila prima che il freddo si diffonda ancora.
+quest.bounty_weekly_frost_skeletons.flavor = Scheletri congelati marciano giù dai ghiacciai. Falli a pezzi prima che arrivino alle valli.
 
 # --- Hub / accoglienza (spedito qui cosi' i proprietari del server possono riscrivere ---
 # --- l'accoglienza senza toccare il jar; il jar conserva questi valori inglesi come fallback per chiave). ---
@@ -107,12 +107,12 @@ ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Avanti
 ui.hub.tutorial.back = Indietro
 ui.hub.tutorial.finish = Capito!
-ui.hub.tutorial.welcome.title = Benvenuto, avventuriero!
-ui.hub.tutorial.welcome.body = Sono il Maestro delle Taglie. Parlami quando vuoi per accettare contratti e commerciare. Lascia che ti mostri come funziona.
+ui.hub.tutorial.welcome.title = Benvenuto
+ui.hub.tutorial.welcome.body = Sono il Maestro delle Taglie. Parlami quando vuoi per accettare contratti e commerciare. Ecco come funziona.
 ui.hub.tutorial.bounties.title = Taglie
-ui.hub.tutorial.bounties.body = Le taglie sono contratti a rotazione: uccidi, raccogli o consegna per ottenere ricompense. Accettane una per aggiungerla al tuo diario delle missioni, completa l'obiettivo e guadagni gettoni piu' XP. La bacheca si aggiorna secondo una pianificazione, e puoi rigenerare un singolo contratto che non ti piace per qualche gettone.
+ui.hub.tutorial.bounties.body = Le taglie sono contratti che restano sulla bacheca per un po', poi vengono sostituiti da altri nuovi. Accettane una per aggiungerla al tuo diario delle missioni, completa l'obiettivo e guadagni gettoni più XP. Se un contratto non ti piace, puoi rigenerarlo per qualche gettone.
 ui.hub.tutorial.shop.title = Negozio Gettoni
-ui.hub.tutorial.shop.body = Spendi i gettoni che guadagni al mio Negozio Gettoni: boost XP, oggetti e altro ancora. Alcune offerte in evidenza ruotano ogni giorno, e puoi rigenerare un'offerta in evidenza per sostituirla con un'altra.
+ui.hub.tutorial.shop.body = Spendi i gettoni che guadagni al mio Negozio Gettoni in boost XP e oggetti. Alcune offerte in evidenza ruotano ogni giorno, e puoi rigenerare un'offerta in evidenza per sostituirla con un'altra.
 
 # --- Nomi e descrizioni del negozio (shop.<id>.title / .desc, risolti per convenzione) ---
 shop.general.title = Negozio Gettoni
@@ -204,7 +204,7 @@ shop.featured_boost_excavation.desc = La terra cede i suoi segreti di buon grado
 # --- Giornaliere: nuova uccisione ---
 quest.bounty_scorpion_sweep.title = Spazzata di Scorpioni
 quest.bounty_scorpion_sweep.flavor = Gli scorpioni hanno fatto il nido sotto le dune e le carovane li vogliono via. Schiaccia lo sciame.
-quest.bounty_cull_cactee.title = Problema Spinoso
+quest.bounty_cull_cactee.title = Cactee Ambulanti
 quest.bounty_cull_cactee.flavor = I cactee si sono sradicati e vagano per le piane. Abbattili prima che raggiungano la strada.
 quest.bounty_toad_rumble.title = Rissa di Rospi
 quest.bounty_toad_rumble.flavor = I rospi rinoceronte scacciano tutti dalla pozza. Stendi quelli grossi.
@@ -227,10 +227,10 @@ quest.bounty_mine_silver.flavor = Alla zecca manca l'argento e il saggiatore ne 
 quest.bounty_weekly_fen_stalkers.title = Predatori della Palude
 quest.bounty_weekly_fen_stalkers.flavor = Per tutta la settimana i predatori della palude hanno trascinato il bestiame nel fango. Cacciali per l'acquitrino finche' la melma non tace.
 quest.bounty_weekly_feran_pack.title = Il Branco Feran
-quest.bounty_weekly_feran_pack.flavor = Un branco da caccia feran ha reclamato il crinale. Ci vuole una settimana di lavoro per spezzarne la presa.
+quest.bounty_weekly_feran_pack.flavor = Un branco da caccia Feran ha reclamato il crinale. Ci vuole una settimana di lavoro per spezzarne la presa.
 quest.bounty_weekly_yeti.title = Yeti delle Vette
 quest.bounty_weekly_yeti.flavor = Gli yeti sono scesi dalle vette bianche e i valichi non sono piu' sicuri. Ricacciali nella neve.
-quest.bounty_weekly_trillodon.title = Terrore Trillodon
+quest.bounty_weekly_trillodon.title = Il Trillodon
 quest.bounty_weekly_trillodon.flavor = Un trillodon calpesta tutto tra il fiume e il crinale. Abbatti il colosso.
 quest.bounty_weekly_spirits.title = Spiriti Inquieti
 quest.bounty_weekly_spirits.flavor = Per tutta la settimana spiriti elementali si liberano dagli antichi santuari. Mettili a riposo prima che i sigilli cedano.
@@ -241,13 +241,13 @@ quest.bounty_weekly_mine_gold.flavor = Un contratto di una settimana per il teso
 
 # --- Cacce ai boss (difficile, grande ricompensa) ---
 quest.bounty_aberrant_horror.title = Orrore Aberrante
-quest.bounty_aberrant_horror.flavor = Qualcosa ha corrotto i morti a oriente, e gli aberranti non cadono facilmente. Fatti coraggio e poni loro fine.
+quest.bounty_aberrant_horror.flavor = Qualcosa ha corrotto i morti a oriente, e gli aberranti non cadono facilmente. Continua a colpirli finché non cadono.
 quest.bounty_weekly_goblin_duke.title = Il Duca Goblin
 quest.bounty_weekly_goblin_duke.flavor = La tana ora risponde a un bruto coronato. Poni fine al Duca e le razzie finiscono con lui.
 quest.bounty_weekly_shadow_knight.title = Il Cavaliere d'Ombra
-quest.bounty_weekly_shadow_knight.flavor = Un'ombra corazzata percorre le rovine, e l'acciaio la morde a malapena. Pochi che affrontano il cavaliere tornano. Sii uno di loro.
+quest.bounty_weekly_shadow_knight.flavor = Un'ombra corazzata percorre le rovine, e l'acciaio la morde a malapena. Porta degli amici, e qualcosa di pesante.
 quest.bounty_weekly_broodmother.title = La Madre della Covata
-quest.bounty_weekly_broodmother.flavor = Ogni scarak delle dune nasce da una regina gonfia. Trovala nel nido profondo e poni fine alla covata alla fonte.
+quest.bounty_weekly_broodmother.flavor = Ogni Scarak delle dune nasce da un'unica regina gonfia. Trovala nel nido profondo e uccidila.
 
 # --- Scontri con i boss (contratti Bounty_Encounter: conta qualsiasi boss con script) ---
 quest.bounty_weekly_open_warrant.title = Mandato Aperto

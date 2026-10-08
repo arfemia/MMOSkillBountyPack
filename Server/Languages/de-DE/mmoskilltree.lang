@@ -15,7 +15,7 @@ quest.bounty_slay_zombies.flavor = Die ruhelosen Toten wandern zu nah an die Str
 quest.bounty_cull_skeletons.title = Knochen klappern lassen
 quest.bounty_cull_skeletons.flavor = Jede Dämmerung klettern Skelette aus den Grabhügeln. Schicke sie in Stücken zurück.
 quest.bounty_hunt_wolves.title = Wolfsjagd
-quest.bounty_hunt_wolves.flavor = Ein Rudel ist nahe den Weiden dreist geworden. Jage es, bevor die Herden den Preis zahlen.
+quest.bounty_hunt_wolves.flavor = Die Wölfe waren wieder bei den Schafen. Bring das Rudel zur Strecke.
 quest.bounty_goblin_cleanup.title = Goblin-Säuberung
 quest.bounty_goblin_cleanup.flavor = Goblins überfallen wieder die Versorgungskarren. Räume den Bau aus, dann überlegen sie es sich zweimal.
 quest.bounty_cull_scaraks.title = Scarak-Keulung
@@ -25,7 +25,7 @@ quest.bounty_hunt_trork.flavor = Trork-Kriegsbanden sammeln sich in den Hügeln.
 quest.bounty_bear_hunt.title = Bärenjagd
 quest.bounty_bear_hunt.flavor = Große Bären haben den Nordpfad in Besitz genommen. Diese hier ist nur etwas für eine ruhige Hand.
 quest.bounty_smash_ogres.title = Oger zerschmettern
-quest.bounty_smash_ogres.flavor = Oger reißen die Palisaden nieder. Bring sie zu Fall, bevor die Mauern mit ihnen einstürzen.
+quest.bounty_smash_ogres.flavor = Die Zimmerleute haben die Palisade diese Woche zweimal neu gebaut. Bring die Oger zu Fall, die sie umreißen.
 quest.bounty_snapdragon_hunt.title = Der Snapdragon
 quest.bounty_snapdragon_hunt.flavor = Eine giftige Reptilie schleicht durch tiefe Dickichte, und nichts anderes wagt sich in ihr Jagdgebiet. Jage den Snapdragon, bevor er sich den Siedlungen nähert.
 quest.bounty_burnt_skeletons.title = Asche und Knochen
@@ -41,7 +41,7 @@ quest.bounty_chop_wood.flavor = Der Holzlagerplatz läuft leer. Fälle, was du k
 quest.bounty_mine_iron.title = Eisen für die Schmiede
 quest.bounty_mine_iron.flavor = Den Schmieden ist das Eisen ausgegangen. Bring Erz aus den tiefen Adern zurück.
 quest.bounty_mine_adamantite.title = Adamantit-Tour
-quest.bounty_mine_adamantite.flavor = Adamantit sitzt nur in den tiefsten Adern. Bau es ab, wenn du dich ins Dunkel wagst.
+quest.bounty_mine_adamantite.flavor = Adamantit sitzt nur in den tiefsten Adern. Nimm reichlich Fackeln mit.
 quest.bounty_cache_copper.title = Kupfer-Vorrat
 quest.bounty_cache_copper.flavor = Die Gießerei tauscht frisch geschmolzene Barren gegen rohes Kupfer. Bring Erz, geh mit Metall.
 quest.bounty_cache_repairs.title = Werkzeug des Handwerks
@@ -49,11 +49,11 @@ quest.bounty_cache_repairs.flavor = Brich Stein für den Steinbruch, und der Sch
 
 # --- Täglich: Trainieren ---
 quest.bounty_train_woodcutting.title = Die Axt schärfen
-quest.bounty_train_woodcutting.flavor = Übung macht den schnelleren Schnitt. Verbringe den Tag an der Baumlinie.
+quest.bounty_train_woodcutting.flavor = Der Holzplatz zahlt heute für Zeit an der Axt. Verbring sie am Waldrand.
 quest.bounty_train_mining.title = Die Spitzhacke schwingen
-quest.bounty_train_mining.flavor = Der Wert eines Bergmanns bemisst sich in Schwüngen. Steck die Stunden rein.
+quest.bounty_train_mining.flavor = Der Steinbruch zahlt heute nach Stunden. Verbring den Tag damit, Fels zu brechen.
 quest.bounty_train_excavation.title = Tief graben
-quest.bounty_train_excavation.flavor = Es gibt keine Abkürzung zu den Schwielen eines Buddlers. Beweg etwas Erde.
+quest.bounty_train_excavation.flavor = Jemand will eine Menge Erde bewegt haben und ist nicht wählerisch, wohin. Fang an zu graben.
 
 # --- Täglich: Liefern ---
 quest.bounty_deliver_iron.title = Eisen-Lieferung
@@ -61,9 +61,9 @@ quest.bounty_deliver_iron.flavor = Der Quartiermeister zahlt gut für Eisen, ohn
 quest.bounty_deliver_hides.title = Häute-Fuhre
 quest.bounty_deliver_hides.flavor = Die Gerber brauchen leichte Häute zu Karrenladungen. Liefere sie hier ab.
 quest.bounty_deliver_essence.title = Essenz-Konsignation
-quest.bounty_deliver_essence.flavor = Abgefüllte Lebenskraft bringt ein Vermögen. Gib deinen Vorrat ab.
+quest.bounty_deliver_essence.flavor = Die Alchemisten zahlen gut für Lebensessenz. Gib ab, was du hast.
 quest.bounty_deliver_adamantite.title = Adamantit-Konsignation
-quest.bounty_deliver_adamantite.flavor = Erlesene Hände wollen Adamantit, und nur das beste Erz reicht aus.
+quest.bounty_deliver_adamantite.flavor = Die tiefen Schmieden wollen rohes Adamantiterz und zahlen gut dafür. Gib es an der Tafel ab.
 
 # --- Wöchentlich ---
 quest.bounty_weekly_slay_zombies.title = Die endlosen Toten
@@ -71,7 +71,7 @@ quest.bounty_weekly_slay_zombies.flavor = Eine ganze Woche ruheloser Toter. Halt
 quest.bounty_weekly_hunt_trork.title = Trork-Kriegsbande
 quest.bounty_weekly_hunt_trork.flavor = Eine ganze Kriegsbande hat ihr Lager aufgeschlagen. Schmälere sie im Laufe der Woche.
 quest.bounty_weekly_goblin_purge.title = Goblin-Säuberung
-quest.bounty_weekly_goblin_purge.flavor = Der Bau brütet ständig nach. Es braucht eine Woche Arbeit, um ihn wirklich auszudünnen.
+quest.bounty_weekly_goblin_purge.flavor = Der Bau brütet ständig nach. Ihn auszudünnen dauert die ganze Woche.
 quest.bounty_weekly_mine_adamantite.title = Adamantit-Quote
 quest.bounty_weekly_mine_adamantite.flavor = Ein wochenlanger Vertrag für die tiefen Schmieden. Erfülle die Quote.
 quest.bounty_weekly_outlander.title = Outlander-Kopfgeld
@@ -79,23 +79,23 @@ quest.bounty_weekly_outlander.flavor = Outlander bedrängen die ganze Woche die 
 quest.bounty_weekly_burnt_legion.title = Die Verbrannte Legion
 quest.bounty_weekly_burnt_legion.flavor = Verkohlte Tote marschieren aus den Aschelanden. Zerstreue die Legion ein für alle Mal.
 quest.bounty_weekly_wraiths.title = Schemen-Jagd
-quest.bounty_weekly_wraiths.flavor = Schemen schlüpfen zwischen dieser Welt und der nächsten. Verbanne genug von ihnen, um etwas zu bewirken.
+quest.bounty_weekly_wraiths.flavor = Es treiben sich zu viele Schemen herum. Streck genug von ihnen nieder, damit die Leute wieder reisen.
 quest.bounty_weekly_werewolves.title = Unter dem Vollmond
-quest.bounty_weekly_werewolves.flavor = Der Mond ist die ganze Woche voll und das Rudel läuft wild. Beende den Fluch.
+quest.bounty_weekly_werewolves.flavor = Der Mond ist die ganze Woche voll, und das Rudel läuft wild. Bring sie zur Strecke.
 quest.bounty_weekly_golems.title = Golem-Brecher
-quest.bounty_weekly_golems.flavor = Uralte Golems sind in den Ruinen erwacht. Zerschmettere sie Stein für Stein.
+quest.bounty_weekly_golems.flavor = Die Golems in den Ruinen sind auf den Beinen und laufen herum. Hau sie wieder zu Schutt.
 quest.bounty_weekly_train_swords.title = Schwertmeisterschaft
-quest.bounty_weekly_train_swords.flavor = Eine Woche Drill trennt den Soldaten vom Schwertmeister. Trainiere hart.
+quest.bounty_weekly_train_swords.flavor = Eine Woche Schwertdrill, jeden einzelnen Tag. Schlag zu, bis dein Arm die Arbeit kennt.
 quest.bounty_weekly_train_defense.title = Halte die Stellung
-quest.bounty_weekly_train_defense.flavor = Zähigkeit verdient man sich Schlag um Schlag. Verbringe die Woche damit, Treffer einzustecken und standhaft zu bleiben.
+quest.bounty_weekly_train_defense.flavor = Verbring die Woche damit, Treffer einzustecken und auf den Beinen zu bleiben. Nimm Verbände mit.
 quest.bounty_weekly_sharks.title = Blutige Gewässer
 quest.bounty_weekly_sharks.flavor = Hammerhaie haben die Schifffahrtsrouten in ein Jagdrevier verwandelt. Dünne das Rudel aus, bevor die nächste Crew verschwindet.
 quest.bounty_weekly_leviathan.title = Der Leviathan
-quest.bounty_weekly_leviathan.flavor = Etwas Gewaltiges bewegt sich unter den Wellen. Strecke die großen Bestien nieder, bevor sie die Flotte in die Tiefe ziehen.
+quest.bounty_weekly_leviathan.flavor = Die Wale rammen ständig die Fischerboote. Streck ein paar der großen Bestien nieder.
 quest.bounty_weekly_sand_skeletons.title = Knochen der Dünen
 quest.bounty_weekly_sand_skeletons.flavor = Vom Sand überwaschene Skelette kratzen überall empor, wo die Wüste die Toten verschlingt. Verbringe die Woche damit, die begrabene Horde aus den Dünen zu räumen.
 quest.bounty_weekly_frost_skeletons.title = Die gefrorene Heerschar
-quest.bounty_weekly_frost_skeletons.flavor = Eine frostgebundene Heerschar marschiert von den Gletschern herab, ihr Atem mit Reif bedeckt. Durchbrich ihre Reihen, bevor die Kälte noch weiter kriecht.
+quest.bounty_weekly_frost_skeletons.flavor = Gefrorene Skelette marschieren von den Gletschern herab. Zerschlag sie, bevor sie die Täler erreichen.
 
 # --- Hub / Einführung (hier ausgeliefert, damit Serverbetreiber die Einführung umformulieren können, ---
 # --- ohne das Jar anzufassen; das Jar behält diese englischen Werte als Rückfall pro Schlüssel). ---
@@ -107,12 +107,12 @@ ui.hub.tutorial.step = {0} / {1}
 ui.hub.tutorial.next = Weiter
 ui.hub.tutorial.back = Zurück
 ui.hub.tutorial.finish = Verstanden!
-ui.hub.tutorial.welcome.title = Willkommen, Abenteurer!
-ui.hub.tutorial.welcome.body = Ich bin der Kopfgeldmeister. Sprich mich jederzeit an, um Aufträge anzunehmen und zu handeln. Lass mich dir die Grundlagen zeigen.
+ui.hub.tutorial.welcome.title = Willkommen
+ui.hub.tutorial.welcome.body = Ich bin der Kopfgeldmeister. Sprich mich jederzeit an, um Aufträge anzunehmen und zu handeln. So funktioniert's.
 ui.hub.tutorial.bounties.title = Kopfgelder
-ui.hub.tutorial.bounties.body = Kopfgelder sind rotierende Aufträge: erschlage, sammle oder liefere für Belohnungen. Nimm eines an, um es deinem Questlog hinzuzufügen, schließe das Ziel ab, und du verdienst Token sowie XP. Die Tafel erneuert sich nach einem Zeitplan, und du kannst einen einzelnen Auftrag, der dir nicht gefällt, für ein paar Token neu auswürfeln.
+ui.hub.tutorial.bounties.body = Kopfgelder sind Aufträge, die eine Weile an der Tafel hängen und dann gegen neue getauscht werden. Nimm eines an, um es deinem Questlog hinzuzufügen, schließe das Ziel ab, und du verdienst Token sowie XP. Wenn dir ein Auftrag nicht gefällt, kannst du ihn für ein paar Token neu auswürfeln.
 ui.hub.tutorial.shop.title = Token-Shop
-ui.hub.tutorial.shop.body = Gib die verdienten Token in meinem Token-Shop aus: XP-Boosts, Gegenstände und mehr. Manche vorgestellten Angebote rotieren täglich, und du kannst ein vorgestelltes Angebot neu auswürfeln, um es gegen ein anderes zu tauschen.
+ui.hub.tutorial.shop.body = Gib die verdienten Token in meinem Token-Shop für XP-Boosts und Gegenstände aus. Manche vorgestellten Angebote rotieren täglich, und du kannst ein vorgestelltes Angebot neu auswürfeln, um es gegen ein anderes zu tauschen.
 
 # --- Shop-Storefront-Namen + Beschreibungen (shop.<id>.title / .desc, per Konvention aufgelöst) ---
 shop.general.title = Token-Shop
@@ -204,7 +204,7 @@ shop.featured_boost_excavation.desc = Die Erde gibt ihre Geheimnisse bereitwilli
 # --- Täglich: neues Töten ---
 quest.bounty_scorpion_sweep.title = Skorpion-Säuberung
 quest.bounty_scorpion_sweep.flavor = Skorpione haben sich unter den Dünen eingenistet und die Karawanen wollen sie los. Zertritt den Schwarm.
-quest.bounty_cull_cactee.title = Stacheliges Problem
+quest.bounty_cull_cactee.title = Wandelnde Kaktee
 quest.bounty_cull_cactee.flavor = Die Kaktee haben ihre Wurzeln gezogen und streifen über die Ebene. Fäll sie, bevor sie die Straße erreichen.
 quest.bounty_toad_rumble.title = Krötenkrawall
 quest.bounty_toad_rumble.flavor = Nashornkröten drängen alles vom Wasserloch weg. Schlag die großen nieder.
@@ -227,10 +227,10 @@ quest.bounty_mine_silver.flavor = Der Münze fehlt Silber und der Prüfer will e
 quest.bounty_weekly_fen_stalkers.title = Pirscher des Moors
 quest.bounty_weekly_fen_stalkers.flavor = Die ganze Woche zogen die Moorpirscher Vieh in den Sumpf. Jag sie durch das Moor, bis der Morast still wird.
 quest.bounty_weekly_feran_pack.title = Das Feran-Rudel
-quest.bounty_weekly_feran_pack.flavor = Ein Feran-Jagdrudel hat den Grat beansprucht. Es braucht eine Woche, um ihren Griff zu brechen.
+quest.bounty_weekly_feran_pack.flavor = Ein Feran-Jagdrudel hat den Grat besetzt. Es braucht eine Woche Arbeit, um seinen Griff zu brechen.
 quest.bounty_weekly_yeti.title = Yeti der Gipfel
 quest.bounty_weekly_yeti.flavor = Yetis sind von den weißen Gipfeln herabgestiegen und die Pässe sind nicht mehr sicher. Treib sie zurück in den Schnee.
-quest.bounty_weekly_trillodon.title = Trillodon-Schrecken
+quest.bounty_weekly_trillodon.title = Der Trillodon
 quest.bounty_weekly_trillodon.flavor = Ein Trillodon zertrampelt alles zwischen Fluss und Grat. Streck den Koloss nieder.
 quest.bounty_weekly_spirits.title = Ruhelose Geister
 quest.bounty_weekly_spirits.flavor = Elementargeister reißen sich die ganze Woche von den alten Schreinen los. Bring sie zur Ruhe, bevor die Banne nachgeben.
@@ -241,13 +241,13 @@ quest.bounty_weekly_mine_gold.flavor = Ein Wochenauftrag für die Schatzkammer. 
 
 # --- Bossjagden (schwer, große Auszahlung) ---
 quest.bounty_aberrant_horror.title = Aberranter Schrecken
-quest.bounty_aberrant_horror.flavor = Etwas hat die Toten im Osten verdorben, und die aberranten fallen nicht leicht. Wappne dich und mach ihnen ein Ende.
+quest.bounty_aberrant_horror.flavor = Etwas hat die Toten im Osten verdorben, und die aberranten fallen nicht leicht. Schlag weiter zu, bis sie es tun.
 quest.bounty_weekly_goblin_duke.title = Der Goblin-Herzog
 quest.bounty_weekly_goblin_duke.flavor = Der Bau gehorcht nun einem gekrönten Unhold. Beende den Herzog und die Überfälle enden mit ihm.
 quest.bounty_weekly_shadow_knight.title = Der Schattenritter
-quest.bounty_weekly_shadow_knight.flavor = Ein gepanzerter Schemen wandelt durch die Ruinen, und Stahl beißt ihn kaum. Wenige, die dem Ritter begegnen, kehren zurück. Sei einer davon.
+quest.bounty_weekly_shadow_knight.flavor = Ein gepanzerter Schemen wandelt durch die Ruinen, und Stahl beißt ihn kaum. Nimm Freunde mit, und etwas Schweres.
 quest.bounty_weekly_broodmother.title = Die Brutmutter
-quest.bounty_weekly_broodmother.flavor = Jeder Scarak der Dünen schlüpft aus einer geschwollenen Königin. Find sie im tiefen Nest und beende die Brut an der Quelle.
+quest.bounty_weekly_broodmother.flavor = Jeder Scarak in den Dünen schlüpft aus einer einzigen geschwollenen Königin. Finde sie im tiefen Nest und töte sie.
 
 # --- Bosskämpfe (Bounty_Encounter-Aufträge: jeder skriptgesteuerte Boss zählt) ---
 quest.bounty_weekly_open_warrant.title = Offener Steckbrief
