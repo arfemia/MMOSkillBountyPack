@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Scarak",
-      "Amount": 14
+      "Amount": 14,
+      "TextKey": "objective.text.bounty.scaraks"
     }
   },
   "Rewards": {

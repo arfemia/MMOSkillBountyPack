@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Outlander",
-      "Amount": 40
+      "Amount": 40,
+      "TextKey": "objective.text.bounty.outlanders"
     }
   },
   "Rewards": {

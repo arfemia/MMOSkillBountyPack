@@ -1,4 +1,5 @@
 {
+  "$Comment": "A Hard weekly hunt for skeleton knights, any mix; Amount is the total. A step takes one Target, matched on the victim's role id without case (CONTAINS here), so Knight counts every role with Knight in its id: Skeleton_Knight, Skeleton_Burnt_Knight and Skeleton_Frost_Knight with their _Patrol and _Wander roles, and also Risen_Knight (the ally a Rekindle Embers spellbook raises, one book per raise), Shadow_Knight (nothing spawns it) and the dev-only Test_Combat_Knight. No single stem covers the nine skeleton-knight roles and leaves those three out: to name only the skeleton knights, split the step into three (Skeleton_Knight, Skeleton_Burnt_Knight, Skeleton_Frost_Knight), each with its own Amount, which turns any mix into a quota per kind. No name key matches Knight, so the step carries its own line (objective.text.bounty.skeleton_knights); change the target and that key together. Keep this file name: saved progress is filed under the id, so a retarget rewords the quest.bounty_weekly_shadow_knight keys rather than renaming the file.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_weekly_shadow_knight.title",
@@ -13,8 +14,9 @@
   ],
   "Objectives": {
     "main": {
-      "Target": "Shadow_Knight",
-      "Amount": 2
+      "Target": "Knight",
+      "Amount": 15,
+      "TextKey": "objective.text.bounty.skeleton_knights"
     }
   },
   "Rewards": {

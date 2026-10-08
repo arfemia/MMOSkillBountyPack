@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Trork",
-      "Amount": 30
+      "Amount": 30,
+      "TextKey": "objective.text.bounty.trorks"
     }
   },
   "Rewards": {

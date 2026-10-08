@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Golem",
-      "Amount": 18
+      "Amount": 18,
+      "TextKey": "objective.text.bounty.golems"
     }
   },
   "Rewards": {

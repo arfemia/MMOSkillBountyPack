@@ -7,7 +7,7 @@
 
 # --- Ежедневные: убийство ---
 quest.bounty_swat_bats.title = Прихлопнуть летучих мышей
-quest.bounty_swat_bats.flavor = Сегодня ночью пещеры кишат кожекрылами. Проредите стаю, пока она не свила гнездо.
+quest.bounty_swat_bats.flavor = Из-за летучих мышей в пещерах шахтёры шарахаются от каждой тени. Выгоните их.
 quest.bounty_clear_spiders.title = Расчистить паутину
 quest.bounty_clear_spiders.flavor = Пауки затянули старые тропы. Прорубите путь, пока кто-нибудь не влетел в паутину лицом.
 quest.bounty_slay_zombies.title = Отбраковка зомби
@@ -21,13 +21,13 @@ quest.bounty_goblin_cleanup.flavor = Гоблины снова грабят по
 quest.bounty_cull_scaraks.title = Отбраковка скараков
 quest.bounty_cull_scaraks.flavor = Скараки выползают из дюн. Истребите их, пока они ещё разрозненны.
 quest.bounty_hunt_trork.title = Охота на торков
-quest.bounty_hunt_trork.flavor = Военные отряды торков собираются в холмах. Сократите их число, пока они не сплотились.
+quest.bounty_hunt_trork.flavor = Торки всё спускаются из своих лагерей в холмах и грабят дорогу. Поднимитесь и встретьте их.
 quest.bounty_bear_hunt.title = Охота на медведей
 quest.bounty_bear_hunt.flavor = Огромные медведи захватили северную тропу. Это дело только для твёрдой руки.
 quest.bounty_smash_ogres.title = Сокрушить огров
 quest.bounty_smash_ogres.flavor = Плотники за неделю уже дважды отстраивали частокол. Свалите огров, которые его ломают.
-quest.bounty_snapdragon_hunt.title = Snapdragon
-quest.bounty_snapdragon_hunt.flavor = Ядовитая рептилия охотится в глубоких зарослях, и ничто другое не смеет вторгаться на её охотничьи угодья. Выследите Snapdragon, пока она не повернула к поселениям.
+quest.bounty_snapdragon_hunt.title = Охота на Snapdragon
+quest.bounty_snapdragon_hunt.flavor = Snapdragon хозяйничают на тропах джунглей, и охотники к ним не подходят. Свалите нескольких и берегитесь укуса.
 quest.bounty_burnt_skeletons.title = Пепел и кости
 quest.bounty_burnt_skeletons.flavor = Обугленные скелеты выходят из пепельных руин, всё ещё тлея. Уложите обугленных мертвецов.
 quest.bounty_boar_hunt.title = Охота на кабана
@@ -43,7 +43,7 @@ quest.bounty_mine_iron.flavor = У кузнецов кончилось желе�
 quest.bounty_mine_adamantite.title = Поход за адамантитом
 quest.bounty_mine_adamantite.flavor = Адамантит залегает только в самых глубоких жилах. Возьмите побольше факелов.
 quest.bounty_cache_copper.title = Запас меди
-quest.bounty_cache_copper.flavor = Литейная обменяет свежевыплавленные слитки на сырую медь. Принесите руду, уйдите с металлом.
+quest.bounty_cache_copper.flavor = Вскройте для литейной несколько медных жил. Там платят слитками.
 quest.bounty_cache_repairs.title = Инструменты ремесла
 quest.bounty_cache_repairs.flavor = Наломайте камня для каменоломни, и кузнец подкинет вам пару ремонтных наборов за труды.
 
@@ -57,7 +57,7 @@ quest.bounty_train_excavation.flavor = Кому-то нужно перекопа
 
 # --- Ежедневные: доставка ---
 quest.bounty_deliver_iron.title = Доставка железа
-quest.bounty_deliver_iron.flavor = Квартирмейстер хорошо платит за железо и без лишних вопросов. Принесите его к доске.
+quest.bounty_deliver_iron.flavor = Квартирмейстер скупает железную руду телегами. Несите её к доске.
 quest.bounty_deliver_hides.title = Партия шкур
 quest.bounty_deliver_hides.flavor = Дубильщикам нужны лёгкие шкуры целыми возами. Сложите их здесь.
 quest.bounty_deliver_essence.title = Поставка эссенции
@@ -75,7 +75,7 @@ quest.bounty_weekly_goblin_purge.flavor = Логово плодится без �
 quest.bounty_weekly_mine_adamantite.title = Квота на адамантит
 quest.bounty_weekly_mine_adamantite.flavor = Недельный контракт для глубинных кузниц. Выполните квоту.
 quest.bounty_weekly_outlander.title = Награда за чужеземцев
-quest.bounty_weekly_outlander.flavor = Всю неделю чужеземцы давят на границы. Отбросьте их назад.
+quest.bounty_weekly_outlander.flavor = Налётчики-чужеземцы грабят дальние фермы. Отбросьте их назад.
 quest.bounty_weekly_burnt_legion.title = Сожжённый легион
 quest.bounty_weekly_burnt_legion.flavor = Обугленные мертвецы маршируют из пепельных земель. Рассейте легион навсегда.
 quest.bounty_weekly_wraiths.title = Охота на призраков
@@ -89,9 +89,9 @@ quest.bounty_weekly_train_swords.flavor = Неделя упражнений с �
 quest.bounty_weekly_train_defense.title = Держать строй
 quest.bounty_weekly_train_defense.flavor = Проведите неделю, принимая удары и оставаясь на ногах. Захватите бинты.
 quest.bounty_weekly_sharks.title = Окровавленные воды
-quest.bounty_weekly_sharks.flavor = Акулы-молоты превратили судоходные пути в кормовые угодья. Проредите стаю, пока не пропала очередная команда.
-quest.bounty_weekly_leviathan.title = Левиафан
-quest.bounty_weekly_leviathan.flavor = Киты таранят рыбацкие лодки. Свалите несколько этих громадин.
+quest.bounty_weekly_sharks.flavor = Рыбаки хотят избавить тёплые рифы от акул-молотов. Там, где они плавают, ничего стоящего не поймать.
+quest.bounty_weekly_leviathan.title = Охота на китов
+quest.bounty_weekly_leviathan.flavor = Кому-то дальше по побережью нужен кит, а так далеко больше никто не выгребет. Найдите горбачей в открытом море.
 quest.bounty_weekly_sand_skeletons.title = Кости дюн
 quest.bounty_weekly_sand_skeletons.flavor = Покрытые песком скелеты выбираются везде, где пустыня поглотила мертвецов. Потратьте неделю на очистку захороненного воинства.
 quest.bounty_weekly_frost_skeletons.title = Ледяное воинство
@@ -116,49 +116,49 @@ ui.hub.tutorial.shop.body = Тратьте заработанные токены
 
 # --- Названия и описания витрины магазина (shop.<id>.title / .desc, разрешаются по соглашению) ---
 shop.general.title = Магазин токенов
-shop.general.desc = Тратьте свои честно заработанные токены на усиления, ящики и избранные предложения.
+shop.general.desc = Усиления, припасы и избранные предложения дня.
 shop.xpexchange.title = Обмен опыта
-shop.xpexchange.desc = Обменивайте заработанное на всплеск опыта навыка.
+shop.xpexchange.desc = Опыт навыков, купленный напрямую.
 shop.xpexchange.featured = Сегодняшние предложения опыта
 
 # --- Названия и описания предложений магазина (предложения задают явные titleKey/descriptionKey -> эти ключи) ---
 shop.boost_mining.title = Рывок добычи
-shop.boost_mining.desc = Всплеск обострённого шахтёрского чутья; порода будто сама поддаётся.
+shop.boost_mining.desc = Опыт навыка «Добыча» ненадолго идёт быстрее.
 shop.boost_all_skills.title = Всплеск всех навыков
-shop.boost_all_skills.desc = Волна озарения, оттачивающая каждый ваш навык.
+shop.boost_all_skills.desc = Какое-то время каждый навык учится быстрее.
 shop.cache_iron_ore.title = Ящик железа
-shop.cache_iron_ore.desc = Крепкий ящик железа, доставляется прямо в инвентарь.
+shop.cache_iron_ore.desc = Железная руда, целым ящиком.
 shop.cache_adamantite_ore.title = Ящик адамантита
-shop.cache_adamantite_ore.desc = Адамантит из глубинных выработок, только для бывалых бойцов.
-shop.cache_scaled_hide.title = Связка шкур охотника
-shop.cache_scaled_hide.desc = Прочные шкуры, снятые с глубинных хищников.
-shop.featured_cache_iron.title = Избранное: ящик железа
-shop.featured_cache_iron.desc = Избранный ящик свежедобытого железа.
-shop.featured_cache_adamantite.title = Избранное: тайник адамантита
-shop.featured_cache_adamantite.desc = Избранный тайник из самых глубоких жил.
-shop.featured_cache_essence.title = Избранное: флаконы эссенции
-shop.featured_cache_essence.desc = Избранная партия жизни в флаконах.
-shop.featured_cache_hides.title = Избранное: связка шкур
-shop.featured_cache_hides.desc = Избранная связка мягких шкур.
-shop.featured_cache_lobster.title = Избранное: улов рыбака
-shop.featured_cache_lobster.desc = Избранная добыча из недельного улова.
+shop.cache_adamantite_ore.desc = Адамантитовая руда из глубоких шахт, продаётся только бывалым бойцам.
+shop.cache_scaled_hide.title = Связка чешуйчатых шкур
+shop.cache_scaled_hide.desc = Чешуйчатые шкуры, выделанные и связанные.
+shop.featured_cache_iron.title = Большой ящик железа
+shop.featured_cache_iron.desc = Больше железной руды, чем обычно продают за прилавком.
+shop.featured_cache_adamantite.title = Тайник адамантита
+shop.featured_cache_adamantite.desc = Тайник адамантитовой руды, отложенный для бывалых бойцов.
+shop.featured_cache_essence.title = Флаконы эссенции
+shop.featured_cache_essence.desc = Эссенция жизни, разлитая по флаконам партиями.
+shop.featured_cache_hides.title = Связка лёгких шкур
+shop.featured_cache_hides.desc = Лёгкие шкуры связкой, готовые для дубильни.
+shop.featured_cache_lobster.title = Улов рыбака
+shop.featured_cache_lobster.desc = Омары из недельного улова.
 shop.featured_boost_combat.title = Грань воина
-shop.featured_boost_combat.desc = Ваш клинок поёт; каждый взмах чему-то учит.
+shop.featured_boost_combat.desc = Опыт навыка «Мечи» ненадолго идёт быстрее.
 shop.featured_boost_woodcutting.title = Неистовство лесоруба
-shop.featured_boost_woodcutting.desc = Деревья валятся быстрее, чем вы успеваете считать.
+shop.featured_boost_woodcutting.desc = Опыт навыка «Рубка» ненадолго идёт быстрее.
 shop.xp_all_skills.title = Набор опыта всех навыков
-shop.xp_all_skills.desc = Премиальный набор опыта сразу для каждого навыка.
+shop.xp_all_skills.desc = Немного опыта сразу во всех навыках.
 shop.boost_essence_surge.title = Всплеск эссенции
-shop.boost_essence_surge.desc = Направьте чистую жизнь в озарение; каждый навык учится быстрее, пока действует эффект.
+shop.boost_essence_surge.desc = Частично оплачивается эссенцией. Какое-то время каждый навык учится быстрее.
 shop.cache_iron_bars.title = Запас кузнеца
-shop.cache_iron_bars.desc = Выплавленные слитки из запаса гильдии, частично оплаченные эссенцией.
-shop.featured_cache_enchanter.title = Избранное: посылка зачарователя
-shop.featured_cache_enchanter.desc = Избранная посылка сияющих кристаллов, гудящих от заряда.
+shop.cache_iron_bars.desc = Железные слитки из запаса гильдии, частично оплачиваются эссенцией.
+shop.featured_cache_enchanter.title = Посылка зачарователя
+shop.featured_cache_enchanter.desc = Осколки фиолетовых и синих кристаллов, частично оплачиваются эссенцией.
 
 # --- Генерируемые пакеты опыта: по одной строке на размер, навык подставляется в {0} ---
 shop.xp_packet.lesser.title = {0}: урок
 shop.xp_packet.greater.title = {0}: тренировка
-shop.xp_packet.master.title = {0}: мастерство
+shop.xp_packet.master.title = {0}: ученичество
 
 # --- Валюты (currency.<id>.name, разрешается по соглашению; id = имя файла в нижнем регистре) ---
 currency.bounty_token.name = Токен контракта
@@ -172,10 +172,10 @@ achievement.bounty_board_daily_t2.title = Бывалый подрядчик
 achievement.bounty_board_daily_t3.title = Ежедневный центурион
 achievement.bounty_board_weekly_t1.title = Недельный ордер
 achievement.bounty_board_weekly_t2.title = Недельный исполнитель
-achievement.bounty_board_weekly_t3.title = Недельная легенда
+achievement.bounty_board_weekly_t3.title = Ветеран ордеров
 achievement.bounty_board_bihourly_t1.title = Быстрый подрядчик
-achievement.bounty_board_bihourly_t2.title = Быстрый исполнитель
-achievement.bounty_board_bihourly_t3.title = Легенда скорости
+achievement.bounty_board_bihourly_t2.title = Завсегдатай подработок
+achievement.bounty_board_bihourly_t3.title = Ветеран подработок
 # Общие шаблоны описания серий: {0} = число выполнений для уровня, подставляется из @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Выполните {0} ежедневных контрактов.
 achievement.bounty_streak.weekly.desc = Выполните {0} еженедельных контрактов.
@@ -187,17 +187,17 @@ achievement.snapdragon_bounty_t2.title = Бич Snapdragon
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Ящик меди
-shop.cache_copper_ore.desc = Стартовый ящик сырой меди. Никаких лишних вопросов.
-shop.featured_cache_copper.title = Избранное: ящик меди
-shop.featured_cache_copper.desc = Избранный ящик блестящей сырой меди.
-shop.featured_cache_repair_kits.title = Избранное: полевой ремонт
-shop.featured_cache_repair_kits.desc = Избранный комплект наборов, готовых к походу.
-shop.featured_cache_copper_bars.title = Избранное: связка плавильщика
-shop.featured_cache_copper_bars.desc = Избранная связка прямо из плавильни.
+shop.cache_copper_ore.desc = Сырая медная руда, целым ящиком.
+shop.featured_cache_copper.title = Большой ящик меди
+shop.featured_cache_copper.desc = Тяжёлый ящик медной руды.
+shop.featured_cache_repair_kits.title = Полевой ремонт
+shop.featured_cache_repair_kits.desc = Несколько грубых ремонтных наборов в дорогу.
+shop.featured_cache_copper_bars.title = Связка плавильщика
+shop.featured_cache_copper_bars.desc = Медные слитки прямо из плавильни.
 shop.featured_boost_defense.title = Решимость бастиона
-shop.featured_boost_defense.desc = Каждый выдержанный удар закаляет вас ещё сильнее.
+shop.featured_boost_defense.desc = Опыт навыка «Блок» ненадолго идёт быстрее.
 shop.featured_boost_excavation.title = Рвение землекопа
-shop.featured_boost_excavation.desc = Земля охотно отдаёт свои секреты.
+shop.featured_boost_excavation.desc = Опыт навыка «Раскопки» ненадолго идёт быстрее.
 
 # === Контентное обновление 1.0.0: новые охоты, сбор-и-сдача, контракты на боссов ===
 
@@ -211,7 +211,7 @@ quest.bounty_toad_rumble.flavor = Жабы-носороги сгоняют вс�
 quest.bounty_hunt_crocodile.title = Охота на крокодилов
 quest.bounty_hunt_crocodile.flavor = Крокодилы пробрались к броду, где переправляются люди. Очистите берега, пока кто-нибудь не лишился ноги.
 quest.bounty_sabertooth_hunt.title = Охота на саблезубов
-quest.bounty_sabertooth_hunt.flavor = Прайд саблезубов крадётся по горной тропе. Снимите их издали, пока они не сняли путников.
+quest.bounty_sabertooth_hunt.flavor = Прайд саблезубов занял горную тропу. Держитесь на расстоянии и берите лук.
 quest.bounty_raptor_cull.title = Отбраковка рапторов
 quest.bounty_raptor_cull.flavor = Пещерные рапторы охотятся стаей у раскопа. Проредите их, чтобы шахтёры могли работать.
 quest.bounty_ghoul_purge.title = Чистка упырей
@@ -225,27 +225,27 @@ quest.bounty_mine_silver.flavor = Монетному двору не хвата�
 
 # --- Еженедельные: новое убийство ---
 quest.bounty_weekly_fen_stalkers.title = Болотные охотники
-quest.bounty_weekly_fen_stalkers.flavor = Всю неделю болотные охотники тащили скот в трясину. Выслеживайте их по топи, пока болото не затихнет.
+quest.bounty_weekly_fen_stalkers.flavor = Болотные охотники всё таскают скот в трясину. Идите за ними.
 quest.bounty_weekly_feran_pack.title = Стая феранов
-quest.bounty_weekly_feran_pack.flavor = Охотничья стая феранов захватила хребет. Чтобы сломить их хватку, нужна неделя труда.
+quest.bounty_weekly_feran_pack.flavor = Остроклыкие фераны заняли хребет и бросаются на всякого, кто его переходит. Выследите их.
 quest.bounty_weekly_yeti.title = Йети вершин
 quest.bounty_weekly_yeti.flavor = Йети спустились с белых вершин, и перевалы больше не безопасны. Загоните их обратно в снега.
 quest.bounty_weekly_trillodon.title = Триллодон
-quest.bounty_weekly_trillodon.flavor = Триллодон топчет всё между рекой и хребтом. Свалите громадину.
+quest.bounty_weekly_trillodon.flavor = Триллодоны топчут джунгли между рекой и хребтом. Свалите громадин.
 quest.bounty_weekly_spirits.title = Неупокоенные духи
-quest.bounty_weekly_spirits.flavor = Всю неделю стихийные духи вырываются из старых святилищ. Упокойте их, пока печати не сдали.
+quest.bounty_weekly_spirits.flavor = Духи снова собрались у стихийных кругов, а гостей они не любят. Разгоните их.
 quest.bounty_weekly_voidspawn.title = Вторжение из Пустоты
 quest.bounty_weekly_voidspawn.flavor = Пустота снова сочится сквозь разлом. Рубите тех, кто выползает, пока брешь не расширилась.
 quest.bounty_weekly_mine_gold.title = Квота на золото
-quest.bounty_weekly_mine_gold.flavor = Недельный наряд для казны. Добудьте золото из глубокой породы и сдайте оговорённую долю.
+quest.bounty_weekly_mine_gold.flavor = Золото для казны, и там всё считают. Добудьте побольше и сдайте их долю.
 
 # --- Охоты на боссов (сложно, крупная награда) ---
 quest.bounty_aberrant_horror.title = Аберрантный ужас
 quest.bounty_aberrant_horror.flavor = Что-то испортило мёртвых на востоке, и аберрантные нелегко падают. Бейте их, пока не упадут.
 quest.bounty_weekly_goblin_duke.title = Гоблинский герцог
 quest.bounty_weekly_goblin_duke.flavor = Теперь логово подчиняется коронованному громиле. Прикончите Герцога, и набеги закончатся вместе с ним.
-quest.bounty_weekly_shadow_knight.title = Теневой рыцарь
-quest.bounty_weekly_shadow_knight.flavor = Бронированная тень бродит по руинам, и сталь её едва берёт. Возьмите друзей и что-нибудь потяжелее.
+quest.bounty_weekly_shadow_knight.title = Павшие рыцари
+quest.bounty_weekly_shadow_knight.flavor = Рыцари-скелеты всё ещё бродят по руинам в старых доспехах, подняв щиты. Возьмите друзей и что-нибудь потяжелее.
 quest.bounty_weekly_broodmother.title = Матка выводка
 quest.bounty_weekly_broodmother.flavor = Каждый скарак в дюнах вылупляется из одной разбухшей королевы. Найдите её в глубоком гнезде и убейте.
 
@@ -256,6 +256,21 @@ quest.bounty_muster_roll.title = Перекличка
 quest.bounty_muster_roll.flavor = Никто не просит вас победить. Продержитесь в бою с боссом, пока он не решится, чем бы он ни кончился, и доска отметит вас присутствующим.
 objective.text.bounty.open_warrant = Сразите {0} босса
 objective.text.bounty.muster_roll = Продержитесь до конца в {0} бою с боссом
+objective.text.bounty.skeleton_knights = Победите рыцарей-скелетов: {0}
+objective.text.bounty.burnt_skeletons = Победите обугленных скелетов: {0}
+objective.text.bounty.frost_skeletons = Победите промёрзших скелетов: {0}
+objective.text.bounty.sand_skeletons = Победите покрытых песком скелетов: {0}
+objective.text.bounty.bears = Победите медведей: {0}
+objective.text.bounty.goblins = Победите гоблинов: {0}
+objective.text.bounty.scaraks = Победите скараков: {0}
+objective.text.bounty.trorks = Победите торков: {0}
+objective.text.bounty.wolves = Победите волков: {0}
+objective.text.bounty.golems = Победите големов: {0}
+objective.text.bounty.spirits = Победите духов: {0}
+objective.text.bounty.outlanders = Победите чужеземцев: {0}
+objective.text.bounty.whales = Добудьте горбатых китов: {0}
+objective.text.bounty.sharks = Добудьте акул-молотов: {0}
+objective.text.bounty.crops = Соберите урожай: {0}
 
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
@@ -273,8 +288,8 @@ quest.bounty_daily_fishing.flavor = Повара хотят рыбу на сто
 quest.bounty_daily_monster_cull.title = Ежедневная зачистка
 quest.bounty_daily_monster_cull.flavor = Что-то всегда нужно проредить. Очистите дикие земли от всего, что встретится на пути.
 quest.bounty_daily_zombie_patrol.title = Патруль зомби
-quest.bounty_daily_zombie_patrol.flavor = Мертвецы снова бродят слишком близко к стенам. Уложите их обратно.
-quest.bounty_daily_bear_hunt.title = Охота на медведей
+quest.bounty_daily_zombie_patrol.flavor = Зомби снова у ворот. Кому-то придётся выйти к ним.
+quest.bounty_daily_bear_hunt.title = Медведи на складах
 quest.bounty_daily_bear_hunt.flavor = Медведи разоряют склады. Доска хочет, чтобы самых дерзких из них извели.
 quest.bounty_daily_essence.title = Доставка эссенции
 quest.bounty_daily_essence.flavor = Алхимикам не хватает бутилированной жизни. Сдайте партию на доске.
@@ -297,7 +312,7 @@ quest.bounty_quick_rot.flavor = Ходячие мертвецы снова об�
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Завсегдатай рынка
-quest.bounty_market_patron.flavor = Биржа вознаграждает верного покупателя. Торгуйте за прилавком, и доска отплатит вам сполна.
+quest.bounty_market_patron.flavor = За прилавком торговля идёт вяло. Потратьте там немного эссенции, и доска вам это возместит.
 
 # === 1.3.0: сезонные контракты (сезонный слот ежедневной доски, вывешивается, пока идёт событие календаря) ===
 

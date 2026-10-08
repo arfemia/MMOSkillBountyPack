@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Skeleton_Frost",
-      "Amount": 18
+      "Amount": 18,
+      "TextKey": "objective.text.bounty.frost_skeletons"
     }
   },
   "Rewards": {

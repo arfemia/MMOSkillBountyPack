@@ -7,7 +7,7 @@
 
 # --- Diario: matar ---
 quest.bounty_swat_bats.title = Aplasta los Murciélagos
-quest.bounty_swat_bats.flavor = Las cuevas están plagadas de alasdecuero esta noche. Reduce el enjambre antes de que aniden.
+quest.bounty_swat_bats.flavor = Los murciélagos de las cuevas tienen a los mineros sobresaltados con cada sombra. Échalos de ahí.
 quest.bounty_clear_spiders.title = Despeja las Telarañas
 quest.bounty_clear_spiders.flavor = Las arañas han cerrado los viejos senderos con sus telas. Abre un paso antes de que alguien se choque de cara con una.
 quest.bounty_slay_zombies.title = Sacrificio de Zombis
@@ -21,13 +21,13 @@ quest.bounty_goblin_cleanup.flavor = Los goblins vuelven a asaltar los carros de
 quest.bounty_cull_scaraks.title = Sacrificio de Scaraks
 quest.bounty_cull_scaraks.flavor = Los Scaraks brotan de las dunas. Sacrifícalos mientras siguen dispersos.
 quest.bounty_hunt_trork.title = Caza de Trorks
-quest.bounty_hunt_trork.flavor = Las bandas de guerra Trork se concentran en las colinas. Mengua sus filas antes de que se organicen.
+quest.bounty_hunt_trork.flavor = Los Trorks no dejan de bajar de sus campamentos en las colinas para asaltar el camino. Sube a recibirlos.
 quest.bounty_bear_hunt.title = Caza del Oso
 quest.bounty_bear_hunt.flavor = Grandes osos se han adueñado del sendero del norte. Esta solo es para un pulso firme.
 quest.bounty_smash_ogres.title = Aplasta Ogros
 quest.bounty_smash_ogres.flavor = Los carpinteros han reconstruido la empalizada dos veces esta semana. Abate a los ogros que la echan abajo.
-quest.bounty_snapdragon_hunt.title = El Snapdragon
-quest.bounty_snapdragon_hunt.flavor = Un reptil venenoso acecha en los matorrales profundos, y nada más se atreve a compartir su territorio de caza. Localiza al Snapdragon antes de que se desvíe hacia los asentamientos.
+quest.bounty_snapdragon_hunt.title = Caza de Snapdragons
+quest.bounty_snapdragon_hunt.flavor = Los Snapdragons tienen los senderos de la jungla para ellos solos, y los cazadores no se acercan. Abate a unos cuantos, y cuidado con el mordisco.
 quest.bounty_burnt_skeletons.title = Ceniza y Hueso
 quest.bounty_burnt_skeletons.flavor = Esqueletos carbonizados vagan por las ruinas chamuscadas, aún humeantes. Devuelve a los muertos quemados al descanso.
 quest.bounty_boar_hunt.title = Caza del Jabalí
@@ -43,7 +43,7 @@ quest.bounty_mine_iron.flavor = Los herreros se han quedado sin hierro. Trae min
 quest.bounty_mine_adamantite.title = Búsqueda de Adamantita
 quest.bounty_mine_adamantite.flavor = La adamantita solo descansa en las vetas más profundas. Lleva antorchas de sobra.
 quest.bounty_cache_copper.title = Alijo de Cobre
-quest.bounty_cache_copper.flavor = La fundición cambiará barras recién fundidas por cobre en bruto. Trae mineral, vuelve con metal.
+quest.bounty_cache_copper.flavor = Abre unas cuantas vetas de cobre para la fundición. Pagan en lingotes.
 quest.bounty_cache_repairs.title = Herramientas del Oficio
 quest.bounty_cache_repairs.flavor = Pica piedra para la cantera y el herrero te añadirá unos cuantos kits de reparación por las molestias.
 
@@ -57,7 +57,7 @@ quest.bounty_train_excavation.flavor = Alguien quiere mover mucha tierra y no le
 
 # --- Diario: entregar ---
 quest.bounty_deliver_iron.title = Entrega de Hierro
-quest.bounty_deliver_iron.flavor = El intendente paga bien por el hierro, sin preguntas. Tráelo al tablón.
+quest.bounty_deliver_iron.flavor = El intendente compra mineral de hierro a carretadas. Tráelo al tablón.
 quest.bounty_deliver_hides.title = Acarreo de Pieles
 quest.bounty_deliver_hides.flavor = Los curtidores necesitan pieles ligeras a carretadas. Déjalas aquí.
 quest.bounty_deliver_essence.title = Consignación de Esencia
@@ -75,7 +75,7 @@ quest.bounty_weekly_goblin_purge.flavor = La madriguera no para de reproducirse.
 quest.bounty_weekly_mine_adamantite.title = Cupo de Adamantita
 quest.bounty_weekly_mine_adamantite.flavor = Un contrato de una semana para las forjas profundas. Cumple el cupo.
 quest.bounty_weekly_outlander.title = Recompensa Outlander
-quest.bounty_weekly_outlander.flavor = Los Outlanders presionan las fronteras toda la semana. Hazlos retroceder.
+quest.bounty_weekly_outlander.flavor = Los saqueadores Outlander han estado atacando las granjas de las afueras. Hazlos retroceder.
 quest.bounty_weekly_burnt_legion.title = La Legión Calcinada
 quest.bounty_weekly_burnt_legion.flavor = Muertos carbonizados marchan desde las tierras de ceniza. Dispersa la legión para siempre.
 quest.bounty_weekly_wraiths.title = Caza de Espectros
@@ -89,9 +89,9 @@ quest.bounty_weekly_train_swords.flavor = Una semana de instrucción con la espa
 quest.bounty_weekly_train_defense.title = Aguanta la Línea
 quest.bounty_weekly_train_defense.flavor = Pasa la semana encajando golpes y aguantando en pie. Lleva vendas.
 quest.bounty_weekly_sharks.title = Aguas Ensangrentadas
-quest.bounty_weekly_sharks.flavor = Los tiburones martillo han convertido las rutas comerciales en un coto de caza. Mengua la manada antes de que desaparezca la próxima tripulación.
-quest.bounty_weekly_leviathan.title = El Leviatán
-quest.bounty_weekly_leviathan.flavor = Las ballenas están embistiendo a los barcos de pesca. Abate a unas cuantas de esas grandes bestias.
+quest.bounty_weekly_sharks.flavor = Los pescadores quieren a los tiburones martillo fuera de los arrecifes cálidos. Nada que merezca la pena pescar se queda donde ellos nadan.
+quest.bounty_weekly_leviathan.title = Caza de Ballenas
+quest.bounty_weekly_leviathan.flavor = Alguien costa arriba quiere ballena, y nadie más va a remar tan lejos. Busca a las jorobadas en mar abierto.
 quest.bounty_weekly_sand_skeletons.title = Huesos de las Dunas
 quest.bounty_weekly_sand_skeletons.flavor = Esqueletos barridos por la arena trepan donde el desierto traga a los muertos. Pasa la semana despejando la hueste enterrada de las dunas.
 quest.bounty_weekly_frost_skeletons.title = La Hueste Congelada
@@ -116,49 +116,49 @@ ui.hub.tutorial.shop.body = En mi Tienda de Tokens puedes gastar los tokens que 
 
 # --- Nombres + descripciones de la tienda (shop.<id>.title / .desc, resueltos por convención) ---
 shop.general.title = Tienda de Tokens
-shop.general.desc = Gasta los tokens que tanto te ha costado ganar en boosts, cofres y ofertas destacadas.
+shop.general.desc = Boosts, suministros y las ofertas destacadas del día.
 shop.xpexchange.title = Intercambio de XP
-shop.xpexchange.desc = Cambia tus ganancias por una ráfaga de XP de habilidad.
+shop.xpexchange.desc = Experiencia de habilidad, comprada directamente.
 shop.xpexchange.featured = Ofertas de XP del Día
 
 # --- Nombres + descripciones de las ofertas (las ofertas fijan titleKey/descriptionKey explícitos -> estas claves) ---
 shop.boost_mining.title = Fiebre Minera
-shop.boost_mining.desc = Una ráfaga de instinto minero concentrado; la roca prácticamente cede sola.
+shop.boost_mining.desc = La experiencia de Minería llega más rápido durante un rato.
 shop.boost_all_skills.title = Oleada de Todas las Habilidades
-shop.boost_all_skills.desc = Una oleada de lucidez que agudiza todas tus habilidades.
+shop.boost_all_skills.desc = Todas las habilidades aprenden más rápido durante un tiempo.
 shop.cache_iron_ore.title = Cajón de Hierro
-shop.cache_iron_ore.desc = Un cajón robusto de hierro, entregado directamente a tu inventario.
+shop.cache_iron_ore.desc = Mineral de hierro, por cajones.
 shop.cache_adamantite_ore.title = Cajón de Adamantita
-shop.cache_adamantite_ore.desc = Adamantita extraída de las profundidades, solo para luchadores experimentados.
-shop.cache_scaled_hide.title = Fardo de Pieles del Cazador
-shop.cache_scaled_hide.desc = Pieles duras arrancadas a los cazadores de las profundidades.
-shop.featured_cache_iron.title = Destacado: Cajón de Hierro
-shop.featured_cache_iron.desc = Un cajón destacado de hierro recién extraído.
-shop.featured_cache_adamantite.title = Destacado: Reserva de Adamantita
-shop.featured_cache_adamantite.desc = Una reserva destacada de las vetas más profundas.
-shop.featured_cache_essence.title = Destacado: Viales de Esencia
-shop.featured_cache_essence.desc = Un lote destacado de vida embotellada.
-shop.featured_cache_hides.title = Destacado: Fardo de Pieles
-shop.featured_cache_hides.desc = Un fardo destacado de pieles flexibles.
-shop.featured_cache_lobster.title = Destacado: Botín del Pescador
-shop.featured_cache_lobster.desc = Un botín destacado de la pesca de la semana.
+shop.cache_adamantite_ore.desc = Mineral de adamantita de las minas profundas, que solo se vende a luchadores experimentados.
+shop.cache_scaled_hide.title = Fardo de Pieles Escamosas
+shop.cache_scaled_hide.desc = Pieles escamosas, curadas y atadas.
+shop.featured_cache_iron.title = Cajón Grande de Hierro
+shop.featured_cache_iron.desc = Más mineral de hierro del que suele vender el mostrador.
+shop.featured_cache_adamantite.title = Reserva de Adamantita
+shop.featured_cache_adamantite.desc = Una reserva de mineral de adamantita, apartada para luchadores experimentados.
+shop.featured_cache_essence.title = Viales de Esencia
+shop.featured_cache_essence.desc = Esencia de Vida, embotellada por lotes.
+shop.featured_cache_hides.title = Fardo de Pieles Ligeras
+shop.featured_cache_hides.desc = Pieles ligeras por fardos, listas para la curtiduría.
+shop.featured_cache_lobster.title = Botín del Pescador
+shop.featured_cache_lobster.desc = Langosta de la pesca de la semana.
 shop.featured_boost_combat.title = Filo del Guerrero
-shop.featured_boost_combat.desc = Tu hoja canta; cada tajo te enseña algo.
+shop.featured_boost_combat.desc = La experiencia de Espadas llega más rápido durante un rato.
 shop.featured_boost_woodcutting.title = Frenesí del Leñador
-shop.featured_boost_woodcutting.desc = La madera cae más rápido de lo que puedes contar.
+shop.featured_boost_woodcutting.desc = La experiencia de Tala llega más rápido durante un rato.
 shop.xp_all_skills.title = Lote de XP de Todas las Habilidades
-shop.xp_all_skills.desc = Un lote premium de XP para todas las habilidades a la vez.
+shop.xp_all_skills.desc = Un poco de experiencia en todas las habilidades a la vez.
 shop.boost_essence_surge.title = Oleada de Esencia
-shop.boost_essence_surge.desc = Canaliza vida en estado puro hacia la lucidez; todas las habilidades aprenden más rápido mientras dura.
+shop.boost_essence_surge.desc = Se paga en parte con esencia. Todas las habilidades aprenden más rápido durante un tiempo.
 shop.cache_iron_bars.title = Reserva del Herrero
-shop.cache_iron_bars.desc = Barras fundidas de la reserva del gremio, pagadas en parte con esencia.
-shop.featured_cache_enchanter.title = Destacado: Paquete del Encantador
-shop.featured_cache_enchanter.desc = Un paquete destacado de cristales radiantes que zumban de energía.
+shop.cache_iron_bars.desc = Lingotes de hierro de la reserva del gremio, pagados en parte con esencia.
+shop.featured_cache_enchanter.title = Paquete del Encantador
+shop.featured_cache_enchanter.desc = Fragmentos de cristal morado y azul, pagados en parte con esencia.
 
 # --- Paquetes de XP generados: una línea por tamaño, la habilidad rellena {0} ---
 shop.xp_packet.lesser.title = {0}: Lección
 shop.xp_packet.greater.title = {0}: Entrenamiento
-shop.xp_packet.master.title = {0}: Maestría
+shop.xp_packet.master.title = {0}: Aprendizaje
 
 # --- Monedas (currency.<id>.name, resuelto por convención; id = nombre de archivo en minúsculas) ---
 currency.bounty_token.name = Token de Contrato
@@ -172,13 +172,13 @@ achievement.bounty_board_daily_t2.title = Contratista Curtido
 achievement.bounty_board_daily_t3.title = Centurión Diario
 achievement.bounty_board_weekly_t1.title = Orden Semanal
 achievement.bounty_board_weekly_t2.title = Ejecutor Semanal
-achievement.bounty_board_weekly_t3.title = Leyenda Semanal
+achievement.bounty_board_weekly_t3.title = Veterano de las Órdenes
 # Plantillas de descripción de racha compartidas: {0} = el número de finalizaciones del nivel, inyectado desde @amount (requiredAmount).
 achievement.bounty_streak.daily.desc = Completa {0} contratos diarios.
 achievement.bounty_streak.weekly.desc = Completa {0} contratos semanales.
 achievement.bounty_board_bihourly_t1.title = Contratista Rápido
-achievement.bounty_board_bihourly_t2.title = Respondedor Rápido
-achievement.bounty_board_bihourly_t3.title = Leyenda Rápida
+achievement.bounty_board_bihourly_t2.title = Habitual de los Encargos
+achievement.bounty_board_bihourly_t3.title = Veterano de los Encargos
 achievement.bounty_streak.bihourly.desc = Completa {0} contratos rápidos.
 achievement.snapdragon_bounty.desc = Completa el contrato de Snapdragon {0} veces.
 achievement.snapdragon_bounty_t1.title = Cazador de Snapdragons
@@ -186,17 +186,17 @@ achievement.snapdragon_bounty_t2.title = Azote de Snapdragons
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Cajón de Cobre
-shop.cache_copper_ore.desc = Un cajón inicial de cobre en bruto. Sin preguntas.
-shop.featured_cache_copper.title = Destacado: Cajón de Cobre
-shop.featured_cache_copper.desc = Un cajón destacado de cobre en bruto reluciente.
-shop.featured_cache_repair_kits.title = Destacado: Reparaciones de Campaña
-shop.featured_cache_repair_kits.desc = Un juego destacado de kits, listos para el campo.
-shop.featured_cache_copper_bars.title = Destacado: Lote del Fundidor
-shop.featured_cache_copper_bars.desc = Un lote destacado recién salido de la fundición.
+shop.cache_copper_ore.desc = Mineral de cobre en bruto, por cajones.
+shop.featured_cache_copper.title = Cajón Grande de Cobre
+shop.featured_cache_copper.desc = Un cajón pesado de mineral de cobre.
+shop.featured_cache_repair_kits.title = Reparaciones de Campaña
+shop.featured_cache_repair_kits.desc = Unos cuantos kits de reparación toscos para el camino.
+shop.featured_cache_copper_bars.title = Lote del Fundidor
+shop.featured_cache_copper_bars.desc = Lingotes de cobre, recién salidos de la fundición.
 shop.featured_boost_defense.title = Determinación del Baluarte
-shop.featured_boost_defense.desc = Cada golpe que aguantas te endurece aún más.
+shop.featured_boost_defense.desc = La experiencia de Bloqueo llega más rápido durante un rato.
 shop.featured_boost_excavation.title = Fervor del Excavador
-shop.featured_boost_excavation.desc = La tierra entrega sus secretos de buena gana.
+shop.featured_boost_excavation.desc = La experiencia de Excavación llega más rápido durante un rato.
 
 # === Pase de contenido 1.0.0: nuevas cacerías, recolectar-y-entregar, contratos de jefe ===
 
@@ -210,7 +210,7 @@ quest.bounty_toad_rumble.flavor = Los sapos rinoceronte echan a todos del abreva
 quest.bounty_hunt_crocodile.title = Caza del Cocodrilo
 quest.bounty_hunt_crocodile.flavor = Los cocodrilos se han metido en el vado donde cruza la gente. Despeja las orillas antes de que alguien pierda una pierna.
 quest.bounty_sabertooth_hunt.title = Caza del Dientes de Sable
-quest.bounty_sabertooth_hunt.flavor = Una manada de dientes de sable acecha el sendero alto. Abátelos a distancia antes de que abatan a los viajeros.
+quest.bounty_sabertooth_hunt.flavor = Una manada de dientes de sable se ha adueñado del sendero alto. Mantén la distancia y usa un arco.
 quest.bounty_raptor_cull.title = Sacrificio de Raptores
 quest.bounty_raptor_cull.flavor = Los raptores de cueva cazan en manada alrededor de la excavación. Méngualos para que los mineros puedan trabajar.
 quest.bounty_ghoul_purge.title = Purga de Gules
@@ -224,27 +224,27 @@ quest.bounty_mine_silver.flavor = A la ceca le falta plata y el ensayador quiere
 
 # --- Semanal: nueva matanza ---
 quest.bounty_weekly_fen_stalkers.title = Acechadores de la Ciénaga
-quest.bounty_weekly_fen_stalkers.flavor = Toda la semana los acechadores de la ciénaga han arrastrado ganado al fango. Cázalos por el pantano hasta que la marisma calle.
+quest.bounty_weekly_fen_stalkers.flavor = Los acechadores de la ciénaga no dejan de arrastrar ganado al pantano. Entra tras ellos.
 quest.bounty_weekly_feran_pack.title = La Manada Feran
-quest.bounty_weekly_feran_pack.flavor = Una manada de caza Feran ha reclamado la cresta. Hace falta una semana de trabajo para romper su dominio.
+quest.bounty_weekly_feran_pack.flavor = Los Feran Colmillo Afilado se han adueñado de la cresta y asaltan a cualquiera que la cruce. Dales caza.
 quest.bounty_weekly_yeti.title = Yeti de las Cumbres
 quest.bounty_weekly_yeti.flavor = Los yetis han bajado de las cumbres blancas y los pasos ya no son seguros. Hazlos volver a la nieve.
 quest.bounty_weekly_trillodon.title = El Trillodón
-quest.bounty_weekly_trillodon.flavor = Un trillodón pisotea todo entre el río y la cresta. Abate a la bestia.
+quest.bounty_weekly_trillodon.flavor = Los trillodones pisotean la jungla entre el río y la cresta. Abate a esos brutos.
 quest.bounty_weekly_spirits.title = Espíritus Inquietos
-quest.bounty_weekly_spirits.flavor = Los espíritus elementales se sueltan de los viejos santuarios toda la semana. Dales descanso antes de que cedan las protecciones.
+quest.bounty_weekly_spirits.flavor = Los espíritus se han vuelto a reunir en los círculos elementales, y no les gustan las visitas. Échalos de ahí.
 quest.bounty_weekly_voidspawn.title = Incursión del Vacío
 quest.bounty_weekly_voidspawn.flavor = El vacío vuelve a sangrar por la grieta. Abate lo que se arrastra fuera antes de que la brecha se ensanche.
 quest.bounty_weekly_mine_gold.title = Cupo de Oro
-quest.bounty_weekly_mine_gold.flavor = Una carta de una semana para el tesoro. Saca oro de la roca profunda y entrega la porción acordada.
+quest.bounty_weekly_mine_gold.flavor = Oro para el tesoro, y llevan la cuenta. Extrae bastante y entrega su parte.
 
 # --- Cacerías de jefe (difícil, gran recompensa) ---
 quest.bounty_aberrant_horror.title = Horror Aberrante
 quest.bounty_aberrant_horror.flavor = Algo corrompió a los muertos del este, y los aberrantes no caen fácil. Sigue golpeándolos hasta que caigan.
 quest.bounty_weekly_goblin_duke.title = El Duque Goblin
 quest.bounty_weekly_goblin_duke.flavor = La madriguera responde ahora a un bruto coronado. Acaba con el Duque y las redadas acaban con él.
-quest.bounty_weekly_shadow_knight.title = El Caballero Sombrío
-quest.bounty_weekly_shadow_knight.flavor = Una sombra acorazada recorre las ruinas, y el acero apenas la muerde. Ve con amigos, y con algo pesado.
+quest.bounty_weekly_shadow_knight.title = Caballeros Caídos
+quest.bounty_weekly_shadow_knight.flavor = Los caballeros esqueleto aún recorren las ruinas con su vieja armadura, escudo en alto. Ve con amigos, y con algo pesado.
 quest.bounty_weekly_broodmother.title = La Reina Madre
 quest.bounty_weekly_broodmother.flavor = Cada Scarak de las dunas nace de una sola reina henchida. Encuéntrala en el nido profundo y mátala.
 
@@ -255,6 +255,21 @@ quest.bounty_muster_roll.title = Lista de Revista
 quest.bounty_muster_roll.flavor = Nadie te pide que ganes. Aguanta en una pelea contra un jefe hasta que se decida, salga como salga, y el tablón te da por presente.
 objective.text.bounty.open_warrant = Abate {0} jefe
 objective.text.bounty.muster_roll = Aguanta {0} pelea contra un jefe hasta el final
+objective.text.bounty.skeleton_knights = Derrota a {0} Caballeros Esqueleto
+objective.text.bounty.burnt_skeletons = Derrota a {0} Esqueletos Carbonizados
+objective.text.bounty.frost_skeletons = Derrota a {0} Esqueletos Helados
+objective.text.bounty.sand_skeletons = Derrota a {0} Esqueletos Barridos por la Arena
+objective.text.bounty.bears = Derrota a {0} Osos
+objective.text.bounty.goblins = Derrota a {0} Goblins
+objective.text.bounty.scaraks = Derrota a {0} Scaraks
+objective.text.bounty.trorks = Derrota a {0} Trorks
+objective.text.bounty.wolves = Derrota a {0} Lobos
+objective.text.bounty.golems = Derrota a {0} Gólems
+objective.text.bounty.spirits = Derrota a {0} Espíritus
+objective.text.bounty.outlanders = Derrota a {0} Outlanders
+objective.text.bounty.whales = Caza {0} Ballenas Jorobadas
+objective.text.bounty.sharks = Caza {0} Tiburones Martillo
+objective.text.bounty.crops = Cosecha {0} cultivos
 
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
@@ -272,8 +287,8 @@ quest.bounty_daily_fishing.flavor = Los cocineros quieren pescado en la mesa est
 quest.bounty_daily_monster_cull.title = Batida del Día
 quest.bounty_daily_monster_cull.flavor = Siempre hay algo que conviene reducir. Limpia la naturaleza de cuanto se cruce en tu camino.
 quest.bounty_daily_zombie_patrol.title = Patrulla de Zombis
-quest.bounty_daily_zombie_patrol.flavor = Los muertos vuelven a merodear demasiado cerca de las murallas. Vuelve a tumbarlos.
-quest.bounty_daily_bear_hunt.title = Caza del Oso
+quest.bounty_daily_zombie_patrol.flavor = Zombis en la puerta otra vez. Alguien tiene que salir ahí fuera.
+quest.bounty_daily_bear_hunt.title = Osos en los Almacenes
 quest.bounty_daily_bear_hunt.flavor = Los osos han estado asaltando los almacenes. El tablón quiere abatir a los más bravos.
 quest.bounty_daily_essence.title = Entrega de Esencia
 quest.bounty_daily_essence.flavor = A los alquimistas les falta vida embotellada. Entrega un lote en el tablón.
@@ -296,7 +311,7 @@ quest.bounty_quick_rot.flavor = Los muertos tambaleantes vuelven a ser numerosos
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercado
-quest.bounty_market_patron.flavor = La lonja recompensa a sus clientes fieles. Comercia en el mostrador y el tablón hará que te merezca la pena.
+quest.bounty_market_patron.flavor = El comercio va lento en el mostrador. Gasta algo de esencia allí y el tablón te lo devolverá.
 
 # === 1.3.0: contratos de temporada (la casilla de Temporada del tablón Diario, publicada mientras dura un evento del calendario) ===
 

@@ -1,4 +1,6 @@
 {
+  "$Comment": "Off the boards: nothing in the game spawns a Ghoul, so the only kills this contract counts are Hallow's Eve's Hollow Ghouls, which the Seasonal slot's Ghoul Season already pays for. Enabled false keeps it out of every draw. Keep the file and its two lang keys all the same: a player who took it earlier still sees it on the board's Mine tab, where they can finish it, collect it or give it up. Set Enabled to true if a mod on your server spawns ghouls.",
+  "Enabled": false,
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_ghoul_purge.title",

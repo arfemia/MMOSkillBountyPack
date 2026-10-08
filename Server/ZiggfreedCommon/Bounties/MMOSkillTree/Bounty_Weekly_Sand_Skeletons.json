@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Skeleton_Sand",
-      "Amount": 20
+      "Amount": 20,
+      "TextKey": "objective.text.bounty.sand_skeletons"
     }
   },
   "Rewards": {

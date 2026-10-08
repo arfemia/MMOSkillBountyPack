@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Spirit",
-      "Amount": 18
+      "Amount": 18,
+      "TextKey": "objective.text.bounty.spirits"
     }
   },
   "Rewards": {

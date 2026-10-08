@@ -14,6 +14,7 @@
   "Objectives": {
     "main": {
       "Target": "Bat",
+      "MatchMode": "PREFIX",
       "Amount": 15
     }
   },

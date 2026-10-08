@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Skeleton_Burnt",
-      "Amount": 12
+      "Amount": 12,
+      "TextKey": "objective.text.bounty.burnt_skeletons"
     }
   },
   "Rewards": {

@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Bear",
-      "Amount": 12
+      "Amount": 12,
+      "TextKey": "objective.text.bounty.bears"
     }
   },
   "Rewards": {

@@ -14,7 +14,8 @@
   "Objectives": {
     "main": {
       "Target": "Goblin",
-      "Amount": 30
+      "Amount": 30,
+      "TextKey": "objective.text.bounty.goblins"
     }
   },
   "Rewards": {

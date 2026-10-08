@@ -15,7 +15,8 @@
   "Objectives": {
     "main": {
       "Target": "Plant_Crop_",
-      "Amount": 40
+      "Amount": 40,
+      "TextKey": "objective.text.bounty.crops"
     }
   },
   "Rewards": {

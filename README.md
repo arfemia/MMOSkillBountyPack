@@ -16,7 +16,7 @@ The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pag
 | `Server/NPC/Roles/Passive/*.json` | The press-F "open a page" NPC roles, per board and per shop |
 | `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
 | `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
-| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 81 contracts (the three seasonal haunt contracts in Haunt/) |
+| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 81 contracts (the three seasonal haunt contracts in Haunt/). Three are switched off with `"Enabled": false` because the game never spawns their creatures: the werewolf, aberrant zombie and ghoul hunts |
 | `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
 | `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
 | `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |

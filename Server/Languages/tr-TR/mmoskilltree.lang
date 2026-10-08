@@ -7,7 +7,7 @@
 
 # --- Günlük: öldürme ---
 quest.bounty_swat_bats.title = Yarasaları Ez
-quest.bounty_swat_bats.flavor = Bu gece mağaralar deri kanatlılarla dolu. Bir yuva kurmadan önce sürüyü seyrelt.
+quest.bounty_swat_bats.flavor = Mağaralardaki yarasalar yüzünden madenciler her gölgede yerinden sıçrıyor. Onları temizle.
 quest.bounty_clear_spiders.title = Ağları Temizle
 quest.bounty_clear_spiders.flavor = Örümcekler eski yolları örerek kapadı. Biri yüzü önde içine yürümeden önce bir geçit aç.
 quest.bounty_slay_zombies.title = Zombi İtlafı
@@ -21,13 +21,13 @@ quest.bounty_goblin_cleanup.flavor = Goblinler yine erzak arabalarına saldırı
 quest.bounty_cull_scaraks.title = Scarak İtlafı
 quest.bounty_cull_scaraks.flavor = Scaraklar kumullardan kaynayıp çıkıyor. Hâlâ dağınıkken onları seyrelt.
 quest.bounty_hunt_trork.title = Trork Avı
-quest.bounty_hunt_trork.flavor = Trork savaş takımları tepelerde toplanıyor. Örgütlenmeden önce sayılarını kır.
+quest.bounty_hunt_trork.flavor = Trorklar tepedeki kamplarından inip yolu basmaya devam ediyor. Yukarı çık ve onları karşıla.
 quest.bounty_bear_hunt.title = Ayı Avı
 quest.bounty_bear_hunt.flavor = Büyük ayılar kuzey patikasını ele geçirdi. Bu yalnızca sağlam ellere göre.
 quest.bounty_smash_ogres.title = Devleri Ezme
 quest.bounty_smash_ogres.flavor = Marangozlar bu hafta palisadı iki kez yeniden yaptı. Onu yıkıp duran devleri indir.
 quest.bounty_snapdragon_hunt.title = Snapdragon Avı
-quest.bounty_snapdragon_hunt.flavor = Zehirli bir sürüngen derin çalılıkta pusuda bekliyor ve başka hiçbir şey onun avlanma alanını paylaşmaz. Snapdragon'u yerleşimlere doğru sürüklemeden önce takip et.
+quest.bounty_snapdragon_hunt.flavor = Cengel patikaları Snapdragon'ların elinde ve avcılar yanlarına yaklaşmıyor. Birkaçını indir, ısırığına da dikkat et.
 quest.bounty_burnt_skeletons.title = Kül ve Kemik
 quest.bounty_burnt_skeletons.flavor = Kavrulmuş iskeleler yanık harabelerin dışına hâlâ yanan halde dolaşarak çıkıyor. Yanık ölüleri huzura kavuştur.
 quest.bounty_boar_hunt.title = Yaban Domuzu Avı
@@ -43,7 +43,7 @@ quest.bounty_mine_iron.flavor = Demircilerin demiri kalmadı. Derin damarlardan 
 quest.bounty_mine_adamantite.title = Adamantit Seferi
 quest.bounty_mine_adamantite.flavor = Adamantit yalnızca en derin damarlarda bulunur. Bol meşale götür.
 quest.bounty_cache_copper.title = Bakır Stoku
-quest.bounty_cache_copper.flavor = Dökümhane ham bakır karşılığında taze eritilmiş külçe verir. Cevher getir, metalle ayrıl.
+quest.bounty_cache_copper.flavor = Dökümhane için birkaç bakır damarı aç. Külçeyle ödüyorlar.
 quest.bounty_cache_repairs.title = İşin Aletleri
 quest.bounty_cache_repairs.flavor = Taş ocağı için taş kır, demirci de zahmetin karşılığında birkaç tamir kiti ekler.
 
@@ -57,7 +57,7 @@ quest.bounty_train_excavation.flavor = Birisi bolca toprak kazdırmak istiyor ve
 
 # --- Günlük: teslimat ---
 quest.bounty_deliver_iron.title = Demir Teslimatı
-quest.bounty_deliver_iron.flavor = Levazımcı demir için iyi para öder, soru sormadan. Tahtaya getir.
+quest.bounty_deliver_iron.flavor = Levazımcı araba dolusu demir cevheri alıyor. Panoya getir.
 quest.bounty_deliver_hides.title = Post Taşıma
 quest.bounty_deliver_hides.flavor = Tabakçılar araba dolusu hafif post istiyor. Onları buraya bırak.
 quest.bounty_deliver_essence.title = Öz Sevkiyatı
@@ -75,7 +75,7 @@ quest.bounty_weekly_goblin_purge.flavor = İn üremeye devam ediyor. Seyreltmek 
 quest.bounty_weekly_mine_adamantite.title = Adamantit Kotası
 quest.bounty_weekly_mine_adamantite.flavor = Derin ocaklar için bir haftalık sözleşme. Kotayı doldur.
 quest.bounty_weekly_outlander.title = Outlander Ödülü
-quest.bounty_weekly_outlander.flavor = Outlanderlar hafta boyunca sınırları zorluyor. Onları geri püskürt.
+quest.bounty_weekly_outlander.flavor = Outlander akıncıları uzaktaki çiftliklere saldırıp duruyor. Onları geri püskürt.
 quest.bounty_weekly_burnt_legion.title = Yanık Lejyon
 quest.bounty_weekly_burnt_legion.flavor = Kavrulmuş ölüler kül topraklarından yürüyor. Lejyonu temelli dağıt.
 quest.bounty_weekly_wraiths.title = Hayalet Avı
@@ -89,9 +89,9 @@ quest.bounty_weekly_train_swords.flavor = Bir hafta boyunca, her gün kılıç t
 quest.bounty_weekly_train_defense.title = Hattı Tut
 quest.bounty_weekly_train_defense.flavor = Haftayı darbe alarak ve ayakta kalarak geçir. Yanına sargı bezi al.
 quest.bounty_weekly_sharks.title = Kanlı Sular
-quest.bounty_weekly_sharks.flavor = Çekiç başlı köpekbalıkları nakliye yollarını av sahasına çevirdi. Bir sonraki mürettebat kaybolmadan sürüyü seyrelt.
-quest.bounty_weekly_leviathan.title = Leviathan
-quest.bounty_weekly_leviathan.flavor = Balinalar balıkçı teknelerine çarpıp duruyor. Bu dev canavarlardan birkaçını indir.
+quest.bounty_weekly_sharks.flavor = Balıkçılar çekiç başlı köpekbalıklarının ılık resiflerden gitmesini istiyor. Onların yüzdüğü yerde tutmaya değer bir şey kalmıyor.
+quest.bounty_weekly_leviathan.title = Balina Avı
+quest.bounty_weekly_leviathan.flavor = Kıyının yukarısında biri balina istiyor ve başka kimse o kadar açığa kürek çekmiyor. Kambur balinaları açık denizde bul.
 quest.bounty_weekly_sand_skeletons.title = Kumların Kemikleri
 quest.bounty_weekly_sand_skeletons.flavor = Kumdan sürünen iskeleler çöl ölüleri yuttuğu her yerde tırmalar. Hafta boyunca gömülü orduyu kumdan temizle.
 quest.bounty_weekly_frost_skeletons.title = Donmuş Ordu
@@ -116,49 +116,49 @@ ui.hub.tutorial.shop.body = Kazandığın jetonları Jeton Mağazamda XP boostla
 
 # --- Mağaza vitrin adları + açıklamaları (shop.<id>.title / .desc, kurala göre çözülür) ---
 shop.general.title = Jeton Mağazası
-shop.general.desc = Alın teriyle kazandığın jetonları boostlara, kasalara ve öne çıkan fırsatlara harca.
+shop.general.desc = Boostlar, malzemeler ve günün öne çıkan teklifleri.
 shop.xpexchange.title = XP Takası
-shop.xpexchange.desc = Kazancını bir patlama yetenek XP'siyle takas et.
+shop.xpexchange.desc = Yetenek deneyimi, doğrudan satın alınır.
 shop.xpexchange.featured = Bugünün XP Fırsatları
 
 # --- Mağaza teklifi adları + açıklamaları (teklifler açık titleKey/descriptionKey ayarlar -> bu anahtarlar) ---
 shop.boost_mining.title = Madencilik Hücumu
-shop.boost_mining.desc = Yoğunlaşmış madenci içgüdüsünden bir patlama; kaya neredeyse kendiliğinden açılıyor.
+shop.boost_mining.desc = Kısa bir süre Madencilik deneyimi daha hızlı gelir.
 shop.boost_all_skills.title = Tüm Yetenek Dalgası
-shop.boost_all_skills.desc = Sahip olduğun her yeteneği keskinleştiren bir kavrayış dalgası.
+shop.boost_all_skills.desc = Bir süreliğine her yetenek daha hızlı öğrenir.
 shop.cache_iron_ore.title = Demir Sandığı
-shop.cache_iron_ore.desc = Sağlam bir demir sandığı, doğrudan envanterine teslim edilir.
+shop.cache_iron_ore.desc = Demir cevheri, sandıkla.
 shop.cache_adamantite_ore.title = Adamantit Sandığı
-shop.cache_adamantite_ore.desc = Derinlerden çıkarılmış adamantit, yalnızca deneyimli dövüşçüler için.
-shop.cache_scaled_hide.title = Avcının Post Demeti
-shop.cache_scaled_hide.desc = Derin avcılardan soyulmuş sert postlar.
-shop.featured_cache_iron.title = Öne Çıkan: Demir Sandığı
-shop.featured_cache_iron.desc = Taze kazılmış demirden öne çıkan bir sandık.
-shop.featured_cache_adamantite.title = Öne Çıkan: Adamantit Zulası
-shop.featured_cache_adamantite.desc = En derin damarlardan öne çıkan bir zula.
-shop.featured_cache_essence.title = Öne Çıkan: Öz Şişeleri
-shop.featured_cache_essence.desc = Şişelenmiş yaşamdan öne çıkan bir parti.
-shop.featured_cache_hides.title = Öne Çıkan: Post Demeti
-shop.featured_cache_hides.desc = Yumuşak postlardan öne çıkan bir demet.
-shop.featured_cache_lobster.title = Öne Çıkan: Balıkçının Avı
-shop.featured_cache_lobster.desc = Haftanın avından öne çıkan bir yük.
+shop.cache_adamantite_ore.desc = Derin madenlerden adamantit cevheri; yalnızca deneyimli dövüşçülere satılır.
+shop.cache_scaled_hide.title = Pullu Post Demeti
+shop.cache_scaled_hide.desc = Pullu postlar, işlenmiş ve bağlanmış.
+shop.featured_cache_iron.title = Büyük Demir Sandığı
+shop.featured_cache_iron.desc = Tezgâhın genelde sattığından daha çok demir cevheri.
+shop.featured_cache_adamantite.title = Adamantit Zulası
+shop.featured_cache_adamantite.desc = Deneyimli dövüşçüler için ayrılmış bir adamantit cevheri zulası.
+shop.featured_cache_essence.title = Öz Şişeleri
+shop.featured_cache_essence.desc = Parti parti şişelenmiş Yaşam Özü.
+shop.featured_cache_hides.title = Hafif Post Demeti
+shop.featured_cache_hides.desc = Demet demet hafif post, tabakhaneye hazır.
+shop.featured_cache_lobster.title = Balıkçının Avı
+shop.featured_cache_lobster.desc = Haftanın avından ıstakoz.
 shop.featured_boost_combat.title = Savaşçının Keskinliği
-shop.featured_boost_combat.desc = Kılıcın şarkı söylüyor; her savuruş sana bir şey öğretiyor.
+shop.featured_boost_combat.desc = Kısa bir süre Kılıçlar deneyimi daha hızlı gelir.
 shop.featured_boost_woodcutting.title = Oduncunun Çılgınlığı
-shop.featured_boost_woodcutting.desc = Kereste sayabileceğinden hızlı deviriliyor.
+shop.featured_boost_woodcutting.desc = Kısa bir süre Odunculuk deneyimi daha hızlı gelir.
 shop.xp_all_skills.title = Tüm Yetenek XP Paketi
-shop.xp_all_skills.desc = Her yetenek için aynı anda premium bir XP paketi.
+shop.xp_all_skills.desc = Aynı anda her yetenekte biraz deneyim.
 shop.boost_essence_surge.title = Öz Dalgası
-shop.boost_essence_surge.desc = Ham yaşamı kavrayışa dönüştür; sürdüğü sürece her yetenek daha hızlı öğrenir.
+shop.boost_essence_surge.desc = Bedelinin bir kısmı özle ödenir. Bir süreliğine her yetenek daha hızlı öğrenir.
 shop.cache_iron_bars.title = Demircinin Rezervi
-shop.cache_iron_bars.desc = Lonca rezervinden eritilmiş külçeler, bedelinin bir kısmı özle ödenmiş.
-shop.featured_cache_enchanter.title = Öne Çıkan: Büyücünün Paketi
-shop.featured_cache_enchanter.desc = Yükle uğuldayan ışıltılı kristallerden öne çıkan bir paket.
+shop.cache_iron_bars.desc = Lonca rezervinden demir külçeleri; bedelinin bir kısmı özle ödenir.
+shop.featured_cache_enchanter.title = Büyücünün Paketi
+shop.featured_cache_enchanter.desc = Mor ve mavi kristal kırıkları; bedelinin bir kısmı özle ödenir.
 
 # --- Üretilen XP paketleri: her boy için tek satır, yetenek {0} yerine geçer ---
 shop.xp_packet.lesser.title = {0}: Ders
 shop.xp_packet.greater.title = {0}: Eğitim
-shop.xp_packet.master.title = {0}: Ustalık
+shop.xp_packet.master.title = {0}: Çıraklık
 
 # --- Para birimleri (currency.<id>.name, kurala göre çözülür; id = küçük harfli dosya adı) ---
 currency.bounty_token.name = Ödül Jetonu
@@ -172,10 +172,10 @@ achievement.bounty_board_daily_t2.title = Deneyimli Sözleşmeci
 achievement.bounty_board_daily_t3.title = Günlük Yüzbaşı
 achievement.bounty_board_weekly_t1.title = Haftalık Yetki
 achievement.bounty_board_weekly_t2.title = Haftalık İcracı
-achievement.bounty_board_weekly_t3.title = Haftalık Efsane
+achievement.bounty_board_weekly_t3.title = Ferman Emektarı
 achievement.bounty_board_bihourly_t1.title = Hızlı Sözleşmeci
-achievement.bounty_board_bihourly_t2.title = Hızlı Yanıtlayan
-achievement.bounty_board_bihourly_t3.title = Hızlı Efsane
+achievement.bounty_board_bihourly_t2.title = Ufak İş Müdavimi
+achievement.bounty_board_bihourly_t3.title = Ufak İş Emektarı
 # Paylaşılan seri açıklama şablonları: {0} = kademenin tamamlama sayısı, @amount (requiredAmount) üzerinden eklenir.
 achievement.bounty_streak.daily.desc = {0} günlük ödül avı tamamla.
 achievement.bounty_streak.weekly.desc = {0} haftalık ödül avı tamamla.
@@ -187,17 +187,17 @@ achievement.snapdragon_bounty_t2.title = Snapdragon'un Belası
 
 # --- Filled translations (1.3.0 exhaustive localization pass; en-US key order) ---
 shop.cache_copper_ore.title = Bakır Sandığı
-shop.cache_copper_ore.desc = Ham bakırdan bir başlangıç sandığı. Soru sorulmaz.
-shop.featured_cache_copper.title = Öne Çıkan: Bakır Sandığı
-shop.featured_cache_copper.desc = Parlak ham bakırdan öne çıkan bir sandık.
-shop.featured_cache_repair_kits.title = Öne Çıkan: Saha Tamiratı
-shop.featured_cache_repair_kits.desc = Sahaya hazır kitlerden öne çıkan bir set.
-shop.featured_cache_copper_bars.title = Öne Çıkan: Dökümcünün Demeti
-shop.featured_cache_copper_bars.desc = Eritme ocağından doğruca gelen öne çıkan bir demet.
+shop.cache_copper_ore.desc = Ham bakır cevheri, sandıkla.
+shop.featured_cache_copper.title = Büyük Bakır Sandığı
+shop.featured_cache_copper.desc = Ağır bir bakır cevheri sandığı.
+shop.featured_cache_repair_kits.title = Saha Tamiratı
+shop.featured_cache_repair_kits.desc = Yol için birkaç kaba tamir kiti.
+shop.featured_cache_copper_bars.title = Dökümcünün Demeti
+shop.featured_cache_copper_bars.desc = Doğruca eritme ocağından gelen bakır külçeleri.
 shop.featured_boost_defense.title = Siperin Azmi
-shop.featured_boost_defense.desc = Göğüslediğin her darbe seni biraz daha sertleştirir.
+shop.featured_boost_defense.desc = Kısa bir süre Blok deneyimi daha hızlı gelir.
 shop.featured_boost_excavation.title = Kazıcının Şevki
-shop.featured_boost_excavation.desc = Toprak sırlarını gönüllüce teslim eder.
+shop.featured_boost_excavation.desc = Kısa bir süre Kazı deneyimi daha hızlı gelir.
 
 # === 1.0.0 içerik güncellemesi: yeni av sözleşmeleri, topla-ve-teslim-et, boss sözleşmeleri ===
 
@@ -211,7 +211,7 @@ quest.bounty_toad_rumble.flavor = Gergedan kurbağalar herkesi su birikintisinde
 quest.bounty_hunt_crocodile.title = Timsah Avı
 quest.bounty_hunt_crocodile.flavor = Timsahlar insanların geçtiği sığ geçide süzüldü. Biri bacağını kaybetmeden kıyıları temizle.
 quest.bounty_sabertooth_hunt.title = Kılıç Dişli Avı
-quest.bounty_sabertooth_hunt.flavor = Bir kılıç dişli sürüsü yüksek patikada sinsice dolaşıyor. Onlar yolcuları indirmeden sen onları uzaktan indir.
+quest.bounty_sabertooth_hunt.flavor = Bir kılıç dişli sürüsü yüksek patikayı ele geçirdi. Mesafeni koru ve yay kullan.
 quest.bounty_raptor_cull.title = Raptor İtlafı
 quest.bounty_raptor_cull.flavor = Mağara raptorları kazı alanının çevresinde sürü hâlinde avlanıyor. Madenciler çalışabilsin diye onları seyrelt.
 quest.bounty_ghoul_purge.title = Hortlak Tasfiyesi
@@ -225,27 +225,27 @@ quest.bounty_mine_silver.flavor = Darphanenin gümüşü az ve ayarcı bir payı
 
 # --- Haftalık: yeni öldürme ---
 quest.bounty_weekly_fen_stalkers.title = Bataklık Sinsileri
-quest.bounty_weekly_fen_stalkers.flavor = Bütün hafta bataklık sinsileri hayvanları batağa sürükledi. Bataklık susana dek onları sazlıkta avla.
+quest.bounty_weekly_fen_stalkers.flavor = Bataklık sinsileri hayvanları batağa sürüklemeye devam ediyor. Peşlerinden içeri gir.
 quest.bounty_weekly_feran_pack.title = Feran Sürüsü
-quest.bounty_weekly_feran_pack.flavor = Bir Feran av sürüsü sırtı ele geçirdi. Hakimiyetlerini kırmak bir haftalık iş ister.
+quest.bounty_weekly_feran_pack.flavor = Feran Sivridişleri sırtı ele geçirdi ve oradan geçen herkesin üstüne atlıyor. Onları avla.
 quest.bounty_weekly_yeti.title = Zirvelerin Yetisi
 quest.bounty_weekly_yeti.flavor = Yetiler beyaz zirvelerden indi ve geçitler artık güvenli değil. Onları kara geri sür.
 quest.bounty_weekly_trillodon.title = Trillodon
-quest.bounty_weekly_trillodon.flavor = Bir trillodon nehir ile sırt arasındaki her şeyi eziyor. Devasa yaratığı indir.
+quest.bounty_weekly_trillodon.flavor = Trillodonlar nehir ile sırt arasındaki cengeli eziyor. Bu devasa yaratıkları indir.
 quest.bounty_weekly_spirits.title = Huzursuz Ruhlar
-quest.bounty_weekly_spirits.flavor = Bütün hafta elementsel ruhlar eski tapınaklardan kopuyor. Mühürler boşa çıkmadan onları huzura kavuştur.
+quest.bounty_weekly_spirits.flavor = Ruhlar yine elementsel çemberlerde toplandı ve ziyaretçiden hoşlanmıyorlar. Onları temizle.
 quest.bounty_weekly_voidspawn.title = Boşluk İstilası
 quest.bounty_weekly_voidspawn.flavor = Boşluk yine yarıktan sızıyor. Gedik genişlemeden dışarı sürünen ne varsa indir.
 quest.bounty_weekly_mine_gold.title = Altın Kotası
-quest.bounty_weekly_mine_gold.flavor = Hazine için bir haftalık ferman. Derin kayadan altın çıkar ve kararlaştırılan payı teslim et.
+quest.bounty_weekly_mine_gold.flavor = Hazine için altın, ve sayıyorlar. Bolca kaz, paylarını da teslim et.
 
 # --- Boss avları (zor, büyük ödül) ---
 quest.bounty_aberrant_horror.title = Sapkın Dehşet
 quest.bounty_aberrant_horror.flavor = Doğuda ölüleri bir şey bozdu ve sapkın olanlar kolay düşmüyor. Düşene kadar vurmaya devam et.
 quest.bounty_weekly_goblin_duke.title = Goblin Dükü
 quest.bounty_weekly_goblin_duke.flavor = İn artık taçlı bir zorbaya boyun eğiyor. Dük'ü bitir, akınlar da onunla biter.
-quest.bounty_weekly_shadow_knight.title = Gölge Şövalye
-quest.bounty_weekly_shadow_knight.flavor = Zırhlı bir gölge harabelerde dolaşıyor ve çelik onu zar zor ısırıyor. Yanına dostlarını ve ağır bir şey al.
+quest.bounty_weekly_shadow_knight.title = Düşmüş Şövalyeler
+quest.bounty_weekly_shadow_knight.flavor = İskelet şövalyeler eski zırhlarıyla, kalkanları havada, hâlâ harabelerde dolaşıyor. Yanına dostlarını ve ağır bir şey al.
 quest.bounty_weekly_broodmother.title = Kuluçka Anası
 quest.bounty_weekly_broodmother.flavor = Kumullardaki her Scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve öldür.
 
@@ -256,6 +256,21 @@ quest.bounty_muster_roll.title = Yoklama
 quest.bounty_muster_roll.flavor = Kimse senden kazanmanı istemiyor. Bir patron dövüşünde iş bitene kadar dur, nasıl biterse bitsin, tahta seni hazır yazar.
 objective.text.bounty.open_warrant = {0} patron indir
 objective.text.bounty.muster_roll = {0} patron dövüşünde sonuna kadar dur
+objective.text.bounty.skeleton_knights = {0} İskelet Şövalye yen
+objective.text.bounty.burnt_skeletons = {0} Yanık İskelet yen
+objective.text.bounty.frost_skeletons = {0} Donmuş İskelet yen
+objective.text.bounty.sand_skeletons = {0} Kum İskeleti yen
+objective.text.bounty.bears = {0} Ayı yen
+objective.text.bounty.goblins = {0} Goblin yen
+objective.text.bounty.scaraks = {0} Scarak yen
+objective.text.bounty.trorks = {0} Trork yen
+objective.text.bounty.wolves = {0} Kurt yen
+objective.text.bounty.golems = {0} Golem yen
+objective.text.bounty.spirits = {0} Ruh yen
+objective.text.bounty.outlanders = {0} Outlander yen
+objective.text.bounty.whales = {0} Kambur Balina avla
+objective.text.bounty.sharks = {0} Çekiç Başlı Köpekbalığı avla
+objective.text.bounty.crops = {0} ekin topla
 
 # === 1.4.0: training (daily-board) + bihourly contracts ===
 
@@ -273,8 +288,8 @@ quest.bounty_daily_fishing.flavor = Aşçılar bu gece sofrada balık istiyor. S
 quest.bounty_daily_monster_cull.title = Günlük Temizlik
 quest.bounty_daily_monster_cull.flavor = Daima seyreltilmesi gereken bir şeyler vardır. Yoluna çıkan her şeyi yabanlardan temizle.
 quest.bounty_daily_zombie_patrol.title = Zombi Devriyesi
-quest.bounty_daily_zombie_patrol.flavor = Ölüler yine surlara fazla yaklaşıyor. Onları yeniden yere ser.
-quest.bounty_daily_bear_hunt.title = Ayı Avı
+quest.bounty_daily_zombie_patrol.flavor = Kapıda yine zombiler var. Birinin dışarı çıkması lazım.
+quest.bounty_daily_bear_hunt.title = Erzak Deposunda Ayılar
 quest.bounty_daily_bear_hunt.flavor = Ayılar erzak depolarını basıyor. Pano, en gözü pek olanların avlanmasını istiyor.
 quest.bounty_daily_essence.title = Öz Teslimatı
 quest.bounty_daily_essence.flavor = Simyacıların şişelenmiş can özü tükenmek üzere. Panoya bir parti teslim et.
@@ -297,7 +312,7 @@ quest.bounty_quick_rot.flavor = Sendelese yürüyen ölüler yol kenarında yoğ
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Pazar Müdavimi
-quest.bounty_market_patron.flavor = Borsa sadık bir müşteriyi ödüllendirir. Tezgahta alışveriş yap, pano bunun karşılığını verecektir.
+quest.bounty_market_patron.flavor = Tezgâhta alışveriş durgun. Orada biraz öz harca, pano da karşılığını sana geri ödesin.
 
 # === 1.3.0: seasonal contracts (the Daily board's Seasonal slot, posted while a calendar event runs) ===
 
