@@ -1,5 +1,5 @@
 {
-  "$Comment": "The shared skeleton for training contracts: the step counts experience earned in one skill while the contract is held, so the Target is a skill id and the Amount is raw experience rather than a number of things. Pair it with a Requires bound on that same skill, so it is only offered to somebody who can actually work on it.",
+  "$Comment": "The shared skeleton for training contracts: the step counts experience earned in one skill while the contract is held, so the Target is a skill id and the Amount is raw experience rather than a number of things. A Requires bound on that same skill is written for a later library release that reads a contract's own Requires; today the board posts the contract to everyone and checks only its own gate, the band's and the slot's.",
   "Abstract": true,
   "Listing": {
     "Category": "bounty"

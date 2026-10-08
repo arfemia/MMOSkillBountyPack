@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.2.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Life Essence wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.2.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Essence of Life wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
 The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
@@ -116,7 +116,7 @@ A gather-and-deliver contract retunes both steps by name. Keep the delivered cou
 
 For an ore, the mined block and the returned item share an id. Check any `Target` against the item ids in the game's own assets. A mining contract whose block has no clean single item to hand in (stone, wood) stays on `Bounty_Gather`.
 
-A training contract pairs its step with a bound on the same skill, so it is never posted to somebody who cannot work on it:
+A training contract pairs its step with a bound on the same skill. On ZiggfreedCommon 2.2.0 that bound does nothing yet: the board posts the contract to everyone and, when someone takes it, checks only its own gate, the band's and the slot's, so a player who clears the band's combat level can take it without having started the skill. The bound is written for a later library release that reads it:
 
 ```json
 { "Parent": "Bounty_Xp",
@@ -150,7 +150,7 @@ A seasonal contract is posted only while a calendar event runs. Put the event's 
   "Rewards": { "Claim": [ ... ] } }
 ```
 
-ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on while the event is switched on and between its dates, off otherwise, and off on a server that does not have the event at all. While it reads off, the contract is never posted; a player who took it before the event ended still finds it on the board's Mine tab. Keep the condition at the top level: inside `AllOf`, `AnyOf` or `Not` it becomes an ordinary lock, and the contract sits on the board all year, locked. The three in `Haunt/` are this pack's own, written for the Hallow's Eve creatures of the Seasons of Orbis pack.
+ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on while the event is switched on and between its dates, off otherwise, and off on a server that does not have the event at all. While it reads off, the contract is never posted; a player who took it before the event ended still finds it on the board's Mine tab. Keep the condition at the top level: inside `AllOf`, `AnyOf` or `Not` the board does not read it at all on ZiggfreedCommon 2.2.0, and the contract sits on the board all year, open to anyone. The three in `Haunt/` are this pack's own, written for the Hallow's Eve creatures of the Seasons of Orbis pack.
 
 **A note on pay.** The `Training` band and the whole Bihourly board pay little or no tokens on purpose. Training contracts pay a small token amount plus flat experience, and Bihourly contracts pay experience only. The Bihourly board turns over several times a day, so full token payouts there would flood the economy. The token income is the Daily and Weekly easy, normal and hard ladder. The Bihourly reroll still costs tokens, which gives free-experience contracts a small sink.
 

@@ -1,5 +1,5 @@
 {
-  "$Comment": "A training contract: the step counts raw experience earned in one skill, so the Amount is an experience total rather than a number of blocks. Requires keeps it off the board for anybody who has not started that skill, which is why the gate names the same skill the step does.",
+  "$Comment": "A training contract: the step counts raw experience earned in one skill, so the Amount is an experience total rather than a number of blocks. The level bound in Requires names the same skill as the step and is written for a later library release that reads a contract's own Requires. Today the board posts this contract to everyone and checks only its own gate, the band's and the slot's, so a player who clears the Normal band's combat level can take it without having started Mining.",
   "Parent": "Bounty_Xp",
   "Text": {
     "TitleKey": "quest.bounty_train_mining.title",
