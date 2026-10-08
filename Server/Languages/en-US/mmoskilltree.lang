@@ -173,7 +173,9 @@ shop.xp_packet.greater.title = {0}: Training
 shop.xp_packet.master.title = {0}: Apprenticeship
 
 # --- Currencies (currency.<id>.name, resolved by convention; id = filename lowercased) ---
+# currency.<id>.amount is a count with its name, {0} the number: price and balance chips read it.
 currency.bounty_token.name = Bounty Token
+currency.bounty_token.amount = {0, number} {0, plural, one {Bounty Token} other {Bounty Tokens}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Bounty Tokens
