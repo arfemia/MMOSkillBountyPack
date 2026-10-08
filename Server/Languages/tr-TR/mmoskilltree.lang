@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = Kısa bir süre Odunculuk deneyimi daha h
 shop.xp_all_skills.title = Tüm Yetenek XP Paketi
 shop.xp_all_skills.desc = Aynı anda her yetenekte biraz deneyim.
 shop.boost_essence_surge.title = Öz Dalgası
-shop.boost_essence_surge.desc = Bedelinin bir kısmı özle ödenir. Bir süreliğine her yetenek daha hızlı öğrenir.
+shop.boost_essence_surge.desc = Kısa bir süre her yetenek daha hızlı öğrenir.
 shop.cache_iron_bars.title = Demircinin Rezervi
-shop.cache_iron_bars.desc = Lonca rezervinden demir külçeleri; bedelinin bir kısmı özle ödenir.
+shop.cache_iron_bars.desc = Lonca rezervinden demir külçeleri.
 shop.featured_cache_enchanter.title = Büyücünün Paketi
-shop.featured_cache_enchanter.desc = Mor ve mavi kristal kırıkları; bedelinin bir kısmı özle ödenir.
+shop.featured_cache_enchanter.desc = Mor ve mavi kristal kırıkları, samana sarılmış.
 
 # --- Üretilen XP paketleri: her boy için tek satır, yetenek {0} yerine geçer ---
 shop.xp_packet.lesser.title = {0}: Ders
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = Sendelese yürüyen ölüler yol kenarında yoğ
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Pazar Müdavimi
-quest.bounty_market_patron.flavor = Tezgâhta alışveriş durgun. Orada biraz öz harca, pano da karşılığını sana geri ödesin.
+quest.bounty_market_patron.flavor = Tezgâhta alışveriş durgun. Orada biraz harca, pano da karşılığını sana geri ödesin.
 
 # === 1.3.0: seasonal contracts (the Daily board's Seasonal slot, posted while a calendar event runs) ===
 

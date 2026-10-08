@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = La experiencia de Tala llega más rápido
 shop.xp_all_skills.title = Lote de XP de Todas las Habilidades
 shop.xp_all_skills.desc = Un poco de experiencia en todas las habilidades a la vez.
 shop.boost_essence_surge.title = Oleada de Esencia
-shop.boost_essence_surge.desc = Se paga en parte con esencia. Todas las habilidades aprenden más rápido durante un tiempo.
+shop.boost_essence_surge.desc = Todas las habilidades aprenden más rápido durante un rato.
 shop.cache_iron_bars.title = Reserva del Herrero
-shop.cache_iron_bars.desc = Lingotes de hierro de la reserva del gremio, pagados en parte con esencia.
+shop.cache_iron_bars.desc = Lingotes de hierro de la reserva del gremio.
 shop.featured_cache_enchanter.title = Paquete del Encantador
-shop.featured_cache_enchanter.desc = Fragmentos de cristal morado y azul, pagados en parte con esencia.
+shop.featured_cache_enchanter.desc = Fragmentos de cristal morado y azul, embalados en paja.
 
 # --- Paquetes de XP generados: una línea por tamaño, la habilidad rellena {0} ---
 shop.xp_packet.lesser.title = {0}: Lección
@@ -311,7 +311,7 @@ quest.bounty_quick_rot.flavor = Los muertos tambaleantes vuelven a ser numerosos
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercado
-quest.bounty_market_patron.flavor = El comercio va lento en el mostrador. Gasta algo de esencia allí y el tablón te lo devolverá.
+quest.bounty_market_patron.flavor = El comercio va lento en el mostrador. Gasta un poco allí y el tablón te lo devolverá.
 
 # === 1.3.0: contratos de temporada (la casilla de Temporada del tablón Diario, publicada mientras dura un evento del calendario) ===
 

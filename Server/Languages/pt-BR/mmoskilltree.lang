@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = A experiência em Lenhador vem mais rápi
 shop.xp_all_skills.title = Pacote de XP de Todas as Habilidades
 shop.xp_all_skills.desc = Um pouco de experiência em todas as habilidades de uma vez.
 shop.boost_essence_surge.title = Onda de Essência
-shop.boost_essence_surge.desc = Pago em parte com essência. Todas as habilidades aprendem mais rápido por um tempo.
+shop.boost_essence_surge.desc = Todas as habilidades aprendem mais rápido por pouco tempo.
 shop.cache_iron_bars.title = Reserva do Ferreiro
-shop.cache_iron_bars.desc = Lingotes de ferro da reserva da guilda, pagos em parte com essência.
+shop.cache_iron_bars.desc = Lingotes de ferro da reserva da guilda.
 shop.featured_cache_enchanter.title = Pacote do Encantador
-shop.featured_cache_enchanter.desc = Fragmentos de cristal roxo e azul, pagos em parte com essência.
+shop.featured_cache_enchanter.desc = Fragmentos de cristal roxo e azul, embalados em palha.
 
 # --- Pacotes de XP gerados: uma linha por tamanho, a habilidade preenche {0} ---
 shop.xp_packet.lesser.title = {0}: Lição
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = Os mortos cambaleantes estão de novo perto da e
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente do Mercado
-quest.bounty_market_patron.flavor = O movimento anda fraco no balcão. Gaste um pouco de essência lá e o quadro te devolve o valor.
+quest.bounty_market_patron.flavor = O movimento anda fraco no balcão. Gaste um pouco lá e o quadro te devolve o valor.
 
 # === 1.3.0: contratos sazonais (o espaço Sazonal do quadro Diário, publicado enquanto um evento do calendário acontece) ===
 

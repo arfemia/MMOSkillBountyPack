@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = L'expérience en Bûcheronnage vient plus
 shop.xp_all_skills.title = Lot d'XP toutes compétences
 shop.xp_all_skills.desc = Un peu d'expérience dans chaque compétence à la fois.
 shop.boost_essence_surge.title = Déferlante d'essence
-shop.boost_essence_surge.desc = Payé en partie en essence. Chaque compétence apprend plus vite pendant un moment.
+shop.boost_essence_surge.desc = Chaque compétence apprend plus vite pendant un court moment.
 shop.cache_iron_bars.title = Réserve du forgeron
-shop.cache_iron_bars.desc = Des lingots de fer de la réserve de la guilde, payés en partie en essence.
+shop.cache_iron_bars.desc = Des lingots de fer de la réserve de la guilde.
 shop.featured_cache_enchanter.title = Colis de l'enchanteur
-shop.featured_cache_enchanter.desc = Des éclats de cristal violets et bleus, payés en partie en essence.
+shop.featured_cache_enchanter.desc = Des éclats de cristal violets et bleus, emballés dans de la paille.
 
 # --- Paquets d'XP générés : une ligne par taille, la compétence remplit {0} ---
 shop.xp_packet.lesser.title = {0} : leçon
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = Les morts titubants sont nombreux près de la ro
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Habitué du marché
-quest.bounty_market_patron.flavor = Le commerce est lent au comptoir. Dépensez-y un peu d'essence et le tableau vous le rendra.
+quest.bounty_market_patron.flavor = Le commerce est lent au comptoir. Dépensez-y un peu et le tableau vous remboursera.
 
 # === 1.3.0 : contrats saisonniers (l'emplacement saisonnier du tableau quotidien, affiché tant qu'un événement du calendrier est en cours) ===
 

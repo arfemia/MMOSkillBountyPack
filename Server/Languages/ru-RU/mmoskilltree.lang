@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = Опыт навыка «Рубка» не
 shop.xp_all_skills.title = Набор опыта всех навыков
 shop.xp_all_skills.desc = Немного опыта сразу во всех навыках.
 shop.boost_essence_surge.title = Всплеск эссенции
-shop.boost_essence_surge.desc = Частично оплачивается эссенцией. Какое-то время каждый навык учится быстрее.
+shop.boost_essence_surge.desc = Каждый навык ненадолго учится быстрее.
 shop.cache_iron_bars.title = Запас кузнеца
-shop.cache_iron_bars.desc = Железные слитки из запаса гильдии, частично оплачиваются эссенцией.
+shop.cache_iron_bars.desc = Железные слитки из запаса гильдии.
 shop.featured_cache_enchanter.title = Посылка зачарователя
-shop.featured_cache_enchanter.desc = Осколки фиолетовых и синих кристаллов, частично оплачиваются эссенцией.
+shop.featured_cache_enchanter.desc = Осколки фиолетовых и синих кристаллов, переложенные соломой.
 
 # --- Генерируемые пакеты опыта: по одной строке на размер, навык подставляется в {0} ---
 shop.xp_packet.lesser.title = {0}: урок
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = Ходячие мертвецы снова об�
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Завсегдатай рынка
-quest.bounty_market_patron.flavor = За прилавком торговля идёт вяло. Потратьте там немного эссенции, и доска вам это возместит.
+quest.bounty_market_patron.flavor = За прилавком торговля идёт вяло. Потратьте там немного, и доска вам это возместит.
 
 # === 1.3.0: сезонные контракты (сезонный слот ежедневной доски, вывешивается, пока идёт событие календаря) ===
 

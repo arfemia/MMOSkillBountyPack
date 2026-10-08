@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = L'esperienza di Woodcutting arriva più i
 shop.xp_all_skills.title = Pacchetto XP Tutte le Abilita'
 shop.xp_all_skills.desc = Un po' di esperienza in tutte le abilità insieme.
 shop.boost_essence_surge.title = Ondata d'Essenza
-shop.boost_essence_surge.desc = Si paga in parte in essenza. Ogni abilità impara più in fretta per un po'.
+shop.boost_essence_surge.desc = Ogni abilità impara più in fretta per un breve periodo.
 shop.cache_iron_bars.title = Riserva del Fabbro
-shop.cache_iron_bars.desc = Barre di ferro dalla riserva della gilda, pagate in parte in essenza.
+shop.cache_iron_bars.desc = Barre di ferro dalla riserva della gilda.
 shop.featured_cache_enchanter.title = Pacco dell'Incantatore
-shop.featured_cache_enchanter.desc = Frammenti di cristallo viola e blu, pagati in parte in essenza.
+shop.featured_cache_enchanter.desc = Frammenti di cristallo viola e blu, imballati nella paglia.
 
 # --- Pacchetti XP generati: una riga per taglia, l'abilità riempie {0} ---
 shop.xp_packet.lesser.title = {0}: Lezione
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = I morti barcollanti sono di nuovo spessi vicino 
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Cliente del Mercato
-quest.bounty_market_patron.flavor = Al banco gli affari vanno a rilento. Spendi lì un po' di essenza e la bacheca te la ripagherà.
+quest.bounty_market_patron.flavor = Al banco gli affari vanno a rilento. Spendi un po' lì e la bacheca ti ripagherà.
 
 # === 1.3.0: contratti stagionali (lo slot Stagionale della bacheca Giornaliera, pubblicato mentre è in corso un evento del calendario) ===
 

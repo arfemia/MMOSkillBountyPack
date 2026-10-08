@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = Für kurze Zeit gewinnst du schneller Hol
 shop.xp_all_skills.title = Allskill-XP-Paket
 shop.xp_all_skills.desc = Ein wenig Erfahrung in jeder Fähigkeit auf einmal.
 shop.boost_essence_surge.title = Essenz-Woge
-shop.boost_essence_surge.desc = Zum Teil in Essenz bezahlt. Eine Weile lernt jede Fähigkeit schneller.
+shop.boost_essence_surge.desc = Für kurze Zeit lernt jede Fähigkeit schneller.
 shop.cache_iron_bars.title = Schmiede-Reserve
-shop.cache_iron_bars.desc = Eisenbarren aus der Gildenreserve, zum Teil in Essenz bezahlt.
+shop.cache_iron_bars.desc = Eisenbarren aus der Gildenreserve.
 shop.featured_cache_enchanter.title = Verzauberer-Paket
-shop.featured_cache_enchanter.desc = Lila und blaue Kristallsplitter, zum Teil in Essenz bezahlt.
+shop.featured_cache_enchanter.desc = Lila und blaue Kristallsplitter, in Stroh verpackt.
 
 # --- Generierte XP-Pakete: eine Zeile je Größe, die Fähigkeit füllt {0} ---
 shop.xp_packet.lesser.title = {0}: Lektion
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = Die Untoten sind wieder überall an der Straße.
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Stammkunde des Marktes
-quest.bounty_market_patron.flavor = Am Tresen läuft der Handel schleppend. Gib dort etwas Essenz aus, und die Tafel zahlt es dir zurück.
+quest.bounty_market_patron.flavor = Am Tresen läuft der Handel schleppend. Gib dort ein wenig aus, und die Tafel zahlt es dir zurück.
 
 # === 1.3.0: Saisonaufträge (der Saisonplatz der Tagestafel, ausgehängt, solange ein Kalenderereignis läuft) ===
 

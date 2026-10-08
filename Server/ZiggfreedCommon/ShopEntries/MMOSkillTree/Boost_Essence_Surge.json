@@ -13,7 +13,7 @@
   "Cost": {
     "Currencies": {
       "Bounty_Token": 200,
-      "Life_Essence": 300
+      "Life_Essence": 450
     }
   },
   "Limits": {
@@ -24,7 +24,7 @@
       "Kind": "Mmo_Boost_Token",
       "Params": {
         "Skill": "ALL",
-        "Multiplier": "2.0",
+        "Multiplier": "2.5",
         "DurationMinutes": "30"
       }
     }

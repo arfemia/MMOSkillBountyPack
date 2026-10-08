@@ -245,9 +245,9 @@ An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
   "ForEach": [
     { "Token": "skill", "Source": "mmoskilltree:skills" },
     { "Token": "tier", "Values": [
-      { "tier": "lesser",  "tokens": 75,  "essence": 30,  "xp": "1500",  "minLevel": 1,  "order": 40, "daily": 3 },
-      { "tier": "greater", "tokens": 165, "essence": 65,  "xp": "7500",  "minLevel": 30, "order": 42, "daily": 3 },
-      { "tier": "master",  "tokens": 330, "essence": 100, "xp": "40000", "minLevel": 60, "order": 44, "daily": 2 } ] } ],
+      { "tier": "lesser",  "tokens": 75,  "essence": 45,  "xp": "1500",  "minLevel": 1,  "order": 40, "daily": 3 },
+      { "tier": "greater", "tokens": 165, "essence": 100, "xp": "7500",  "minLevel": 30, "order": 42, "daily": 3 },
+      { "tier": "master",  "tokens": 330, "essence": 150, "xp": "40000", "minLevel": 60, "order": 44, "daily": 2 } ] } ],
   "Child": {
     "Text": { "TitleKey": "shop.xp_packet.{tier}.title", "TextArgs": { "Title": [ "{skill}" ] } },
     "Cost": { "Currencies": { "bounty_token": "{tokens}", "life_essence": "{essence}" } },

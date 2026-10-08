@@ -161,11 +161,11 @@ shop.featured_boost_excavation.desc = Excavation experience comes faster for a s
 shop.xp_all_skills.title = All-Skills XP Bundle
 shop.xp_all_skills.desc = A little experience in every skill at once.
 shop.boost_essence_surge.title = Essence Surge
-shop.boost_essence_surge.desc = Paid partly in essence. Every skill learns faster for a while.
+shop.boost_essence_surge.desc = Every skill learns faster for a short while.
 shop.cache_iron_bars.title = Smith's Reserve
-shop.cache_iron_bars.desc = Iron ingots from the guild's reserve, paid partly in essence.
+shop.cache_iron_bars.desc = Iron ingots from the guild's reserve.
 shop.featured_cache_enchanter.title = Enchanter's Parcel
-shop.featured_cache_enchanter.desc = Purple and blue crystal shards, paid partly in essence.
+shop.featured_cache_enchanter.desc = Purple and blue crystal shards, packed in straw.
 
 # --- Generated XP packets: one line per size, the skill fills {0} ---
 shop.xp_packet.lesser.title = {0}: Lesson
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = The shambling dead are thick near the road again
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = Market Patron
-quest.bounty_market_patron.flavor = Trade is slow at the counter. Spend some essence there and the board will pay you back for it.
+quest.bounty_market_patron.flavor = Trade is slow at the counter. Spend a little there and the board will pay you back for it.
 
 # === 1.3.0: seasonal contracts (the Daily board's Seasonal slot, posted while a calendar event runs) ===
 

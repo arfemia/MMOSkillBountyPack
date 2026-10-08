@@ -149,11 +149,11 @@ shop.featured_boost_woodcutting.desc = Egy rövid ideig gyorsabban gyűlik a Fav
 shop.xp_all_skills.title = Összes Képesség XP Csomag
 shop.xp_all_skills.desc = Egy kevés XP minden képességhez egyszerre.
 shop.boost_essence_surge.title = Esszencia Hullám
-shop.boost_essence_surge.desc = Részben esszenciával fizetendő. Egy ideig minden képesség gyorsabban fejlődik.
+shop.boost_essence_surge.desc = Egy rövid ideig minden képesség gyorsabban fejlődik.
 shop.cache_iron_bars.title = Kovács Tartaléka
-shop.cache_iron_bars.desc = Vasrudak a céh tartalékából, részben esszenciával fizetve.
+shop.cache_iron_bars.desc = Vasrudak a céh tartalékából.
 shop.featured_cache_enchanter.title = Bűvölő Csomagja
-shop.featured_cache_enchanter.desc = Lila és kék kristályszilánkok, részben esszenciával fizetve.
+shop.featured_cache_enchanter.desc = Lila és kék kristályszilánkok, szalmába csomagolva.
 
 # --- Generált XP-csomagok: méretenként egy sor, a képesség tölti ki a {0} helyet ---
 shop.xp_packet.lesser.title = {0}: Lecke
@@ -312,7 +312,7 @@ quest.bounty_quick_rot.flavor = A nyughatatlan holtak ismét sűrűn járőrözn
 
 # --- Daily board: SPEND_CURRENCY showcase ---
 quest.bounty_market_patron.title = A piac törzsvendége
-quest.bounty_market_patron.flavor = Lassú a forgalom a pultnál. Költs el ott némi esszenciát, és a tábla visszafizeti neked.
+quest.bounty_market_patron.flavor = Lassú a forgalom a pultnál. Költs el ott egy keveset, és a tábla visszafizeti neked.
 
 # === 1.3.0: szezonális szerződések (a Napi tábla Szezonális helye, amíg egy naptári esemény tart) ===
 
