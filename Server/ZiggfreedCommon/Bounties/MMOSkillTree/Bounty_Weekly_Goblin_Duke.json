@@ -1,5 +1,5 @@
 {
-  "$Comment": "A marquee weekly warrant: one named target, and a payout to match. A count of 1 is how a boss hunt is written, and the weight keeps it drawn no more often than its rivals for the same hard slot.",
+  "$Comment": "A marquee weekly warrant: one named target, and a payout to match. A count of 1 is how a boss hunt is written, and the weight keeps it drawn no more often than its rivals for the same hard slot. The target is the Voidtaken Grizzly, which a player calls up by baiting a Hunt_Trap with a Voidheart, once in each fragment world. MatchMode EXACT keeps the Grizzly's own tentacle roles (Bear_Voidtaken_Tentacle and its marker) from counting, which the Bounty_Kill parent's CONTAINS would let in. Keep this file name: saved progress is filed under the id, so a new target rewords the quest.bounty_weekly_goblin_duke keys rather than renaming the file.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_weekly_goblin_duke.title",
@@ -14,7 +14,8 @@
   ],
   "Objectives": {
     "main": {
-      "Target": "Goblin_Duke",
+      "Target": "Bear_Voidtaken",
+      "MatchMode": "EXACT",
       "Amount": 1
     }
   },

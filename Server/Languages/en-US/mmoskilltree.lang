@@ -243,8 +243,8 @@ quest.bounty_weekly_mine_gold.flavor = Gold for the treasury, and they're counti
 # --- Boss hunts (hard, big payout) ---
 quest.bounty_aberrant_horror.title = Aberrant Horror
 quest.bounty_aberrant_horror.flavor = Something soured the dead out east, and the aberrant ones do not fall easy. Keep hitting them until they do.
-quest.bounty_weekly_goblin_duke.title = The Goblin Duke
-quest.bounty_weekly_goblin_duke.flavor = The warren answers to a crowned brute now. End the Duke and the raids end with him.
+quest.bounty_weekly_goblin_duke.title = The Voidtaken Grizzly
+quest.bounty_weekly_goblin_duke.flavor = A Voidtaken Grizzly is loose in the Guttering Hollows. Find it with a spyglass, bait the bear trap with a Voidheart, and bring it down.
 quest.bounty_weekly_shadow_knight.title = Fallen Knights
 quest.bounty_weekly_shadow_knight.flavor = Skeleton knights still walk the ruins in their old armor, shields up. Take friends, and something heavy.
 quest.bounty_weekly_broodmother.title = The Broodmother
