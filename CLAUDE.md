@@ -9,5 +9,5 @@ Content pack for the bounty boards, shops and wallets. The family-wide rules app
 - Offer purchase limits are stored per player under the offer id, so renaming an offer resets everyone's counts.
 - An offer on a fully slotted shelf needs a `Pool.Tier`; without one it only fits an unslotted draw.
 - `Life_Essence.json` ships identically here and in the mastery pack so each works alone; change both together.
-- For an ore the mined block and the returned item share an id. Verify a `Target` against `hytale-shared-source/HytaleAssets/Server/Item/Items` (id = filename) and let `dev-server.ps1 -Check` confirm it ships.
+- For an ore the mined block and the returned item share an id. Verify a `Target` against `shared-source/release/HytaleAssets/Server/Item/Items` (id = filename) and let `dev-server.ps1 -Check` confirm it ships.
 - Copy naming: the feature is "the shops"; "Token Shop" names only the General storefront, beside the per-skill "XP Exchange".
