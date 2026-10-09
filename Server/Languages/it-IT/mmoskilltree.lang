@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Apprendistato
 
 # --- Valute (currency.<id>.name, risolte per convenzione; id = nome del file in minuscolo) ---
 currency.bounty_token.name = Gettone Taglia
+currency.bounty_token.amount = {0, number} {0, plural, one {Gettone Taglia} other {Gettoni Taglia}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Gettoni Taglia

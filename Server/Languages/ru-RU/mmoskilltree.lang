@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: ученичество
 
 # --- Валюты (currency.<id>.name, разрешается по соглашению; id = имя файла в нижнем регистре) ---
 currency.bounty_token.name = Токен контракта
+currency.bounty_token.amount = {0, number} {0, plural, one {Токен контракта} few {Токена контракта} many {Токенов контракта} other {Токена контракта}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Токенов контракта

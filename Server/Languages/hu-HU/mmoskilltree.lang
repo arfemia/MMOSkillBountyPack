@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Tanonckodás
 
 # --- Valuták (currency.<id>.name, konvenció szerint feloldva; id = a fájlnév kisbetűsítve) ---
 currency.bounty_token.name = Bounty Token
+currency.bounty_token.amount = {0, number} {0, plural, one {Bounty Token} other {Bounty Token}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Bounty Token

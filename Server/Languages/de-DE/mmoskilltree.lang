@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Lehrzeit
 
 # --- Währungen (currency.<id>.name, per Konvention aufgelöst; id = Dateiname in Kleinbuchstaben) ---
 currency.bounty_token.name = Kopfgeld-Token
+currency.bounty_token.amount = {0, number} {0, plural, one {Kopfgeld-Token} other {Kopfgeld-Token}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Kopfgeld-Token

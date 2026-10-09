@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0} : apprentissage
 
 # --- Monnaies (currency.<id>.name, résolu par convention ; id = nom de fichier en minuscules) ---
 currency.bounty_token.name = Token de prime
+currency.bounty_token.amount = {0, number} {0, plural, one {Token de prime} other {Tokens de prime}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Tokens de prime

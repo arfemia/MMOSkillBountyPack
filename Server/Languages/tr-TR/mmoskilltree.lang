@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Çıraklık
 
 # --- Para birimleri (currency.<id>.name, kurala göre çözülür; id = küçük harfli dosya adı) ---
 currency.bounty_token.name = Ödül Jetonu
+currency.bounty_token.amount = {0, number} {0, plural, one {Ödül Jetonu} other {Ödül Jetonu}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Ödül Jetonu

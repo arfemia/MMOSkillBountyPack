@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Aprendizaje
 
 # --- Monedas (currency.<id>.name, resuelto por convención; id = nombre de archivo en minúsculas) ---
 currency.bounty_token.name = Token de Contrato
+currency.bounty_token.amount = {0, number} {0, plural, one {Token de Contrato} other {Tokens de Contrato}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Tokens de Contrato

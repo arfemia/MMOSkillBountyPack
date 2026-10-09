@@ -162,6 +162,7 @@ shop.xp_packet.master.title = {0}: Aprendizado
 
 # --- Moedas (currency.<id>.name, resolvido por convenção; id = nome do arquivo em minúsculas) ---
 currency.bounty_token.name = Ficha de Recompensa
+currency.bounty_token.amount = {0, number} {0, plural, one {Ficha de Recompensa} other {Fichas de Recompensa}}
 
 # --- Counted reward-chip label (the Currency reward kind; {0} = Amount) ---
 reward.currency.bounty_token = +{0} Fichas de Recompensa
