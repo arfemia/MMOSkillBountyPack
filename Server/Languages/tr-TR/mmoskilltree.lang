@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Kumdan sürünen iskeleler çöl öl
 quest.bounty_weekly_frost_skeletons.title = Donmuş Ordu
 quest.bounty_weekly_frost_skeletons.flavor = Donmuş iskeletler buzullardan aşağı yürüyor. Vadilere varmadan onları parçala.
 
-# --- Karşılama / başlangıç (sunucu sahipleri jar'a dokunmadan başlangıç metnini yeniden yazabilsin diye ---
-# --- burada gönderilir; jar bu İngilizce değerleri anahtar bazında geri dönüş olarak tutar). ---
-ui.hub.subtitle = Senin için ne yapabilirim, maceracı?
-ui.hub.bounties_button = Ödülleri Görüntüle
-ui.hub.bounties_hint = Ödüller için rotasyonlu sözleşmeler üstlen.
-ui.hub.shop_button = Jeton Mağazası
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = İleri
-ui.hub.tutorial.back = Geri
-ui.hub.tutorial.finish = Anladım!
-ui.hub.tutorial.welcome.title = Hoş geldin
-ui.hub.tutorial.welcome.body = Ben Ödül Ustasıyım. Sözleşme üstlenmek ve ticaret yapmak için istediğin zaman benimle konuş. Nasıl işlediğini anlatayım.
-ui.hub.tutorial.bounties.title = Ödüller
-ui.hub.tutorial.bounties.body = Ödüller, tahtada bir süre asılı kalan, sonra yenileriyle değiştirilen sözleşmelerdir. Birini kabul ederek görev günlüğüne ekle, hedefi tamamla; jetonlar ile birlikte XP kazanırsın. Bir sözleşmeyi beğenmezsen, birkaç jeton karşılığında yeniden çevirebilirsin.
-ui.hub.tutorial.shop.title = Jeton Mağazası
-ui.hub.tutorial.shop.body = Kazandığın jetonları Jeton Mağazamda XP boostlarına ve eşyalara harca. Bazı öne çıkan teklifler her gün değişir ve öne çıkan bir teklifi başkasıyla değiştirmek için yeniden çevirebilirsin.
-
 # --- Mağaza vitrin adları + açıklamaları (shop.<id>.title / .desc, kurala göre çözülür) ---
 shop.general.title = Jeton Mağazası
 shop.general.desc = Boostlar, malzemeler ve günün öne çıkan teklifleri.

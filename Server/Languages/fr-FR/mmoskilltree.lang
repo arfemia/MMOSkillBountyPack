@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Des squelettes emportés par le sabl
 quest.bounty_weekly_frost_skeletons.title = La légion gelée
 quest.bounty_weekly_frost_skeletons.flavor = Des squelettes gelés descendent des glaciers. Brisez-les avant qu'ils n'atteignent les vallées.
 
-# --- Hub / accueil (livré ici pour que les administrateurs reformulent l'accueil sans ---
-# --- toucher au jar ; le jar conserve ces valeurs anglaises comme repli clé par clé). ---
-ui.hub.subtitle = Que puis-je faire pour vous, aventurier ?
-ui.hub.bounties_button = Voir les primes
-ui.hub.bounties_hint = Relevez des contrats rotatifs pour des récompenses.
-ui.hub.shop_button = Boutique de tokens
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Suivant
-ui.hub.tutorial.back = Retour
-ui.hub.tutorial.finish = Compris !
-ui.hub.tutorial.welcome.title = Bienvenue
-ui.hub.tutorial.welcome.body = Je suis le Maître des primes. Venez me voir à tout moment pour relever des contrats et commercer. Voici comment ça marche.
-ui.hub.tutorial.bounties.title = Primes
-ui.hub.tutorial.bounties.body = Les primes sont des contrats affichés au tableau pendant un temps, puis remplacés par de nouveaux. Acceptez-en une pour l'ajouter à votre journal de quêtes, terminez l'objectif, et vous gagnez des tokens ainsi que de l'XP. Si un contrat ne vous plaît pas, vous pouvez le relancer contre quelques tokens.
-ui.hub.tutorial.shop.title = Boutique de tokens
-ui.hub.tutorial.shop.body = Dépensez les tokens que vous gagnez à ma Boutique de tokens en boosts d'XP et en objets. Certaines offres à la une changent chaque jour, et vous pouvez relancer une offre à la une pour l'échanger contre une autre.
-
 # --- Noms + descriptions de la devanture de la boutique (shop.<id>.title / .desc, résolus par convention) ---
 shop.general.title = Boutique de tokens
 shop.general.desc = Boosts, fournitures et offres du jour.

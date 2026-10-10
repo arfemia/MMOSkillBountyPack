@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Scheletri sospinti dalla sabbia risa
 quest.bounty_weekly_frost_skeletons.title = L'Armata Gelata
 quest.bounty_weekly_frost_skeletons.flavor = Scheletri congelati marciano giù dai ghiacciai. Falli a pezzi prima che arrivino alle valli.
 
-# --- Hub / accoglienza (spedito qui cosi' i proprietari del server possono riscrivere ---
-# --- l'accoglienza senza toccare il jar; il jar conserva questi valori inglesi come fallback per chiave). ---
-ui.hub.subtitle = Cosa posso fare per te, avventuriero?
-ui.hub.bounties_button = Vedi le Taglie
-ui.hub.bounties_hint = Accetta contratti a rotazione per ottenere ricompense.
-ui.hub.shop_button = Negozio Gettoni
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Avanti
-ui.hub.tutorial.back = Indietro
-ui.hub.tutorial.finish = Capito!
-ui.hub.tutorial.welcome.title = Benvenuto
-ui.hub.tutorial.welcome.body = Sono il Maestro delle Taglie. Parlami quando vuoi per accettare contratti e commerciare. Ecco come funziona.
-ui.hub.tutorial.bounties.title = Taglie
-ui.hub.tutorial.bounties.body = Le taglie sono contratti che restano sulla bacheca per un po', poi vengono sostituiti da altri nuovi. Accettane una per aggiungerla al tuo diario delle missioni, completa l'obiettivo e guadagni gettoni più XP. Se un contratto non ti piace, puoi rigenerarlo per qualche gettone.
-ui.hub.tutorial.shop.title = Negozio Gettoni
-ui.hub.tutorial.shop.body = Spendi i gettoni che guadagni al mio Negozio Gettoni in boost XP e oggetti. Alcune offerte in evidenza ruotano ogni giorno, e puoi rigenerare un'offerta in evidenza per sostituirla con un'altra.
-
 # --- Nomi e descrizioni del negozio (shop.<id>.title / .desc, risolti per convenzione) ---
 shop.general.title = Negozio Gettoni
 shop.general.desc = Boost, provviste e le offerte in evidenza del giorno.

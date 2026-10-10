@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Sandswept skeletons claw up wherever
 quest.bounty_weekly_frost_skeletons.title = The Frozen Host
 quest.bounty_weekly_frost_skeletons.flavor = Frozen skeletons are marching down from the glaciers. Break them up before they reach the valleys.
 
-# --- Hub / onboarding (shipped here so server owners can reword onboarding without ---
-# --- touching the jar; the jar keeps these English values as a per-key fallback). ---
-ui.hub.subtitle = What can I do for you, adventurer?
-ui.hub.bounties_button = View Bounties
-ui.hub.bounties_hint = Take rotating contracts for rewards.
-ui.hub.shop_button = Token Shop
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Next
-ui.hub.tutorial.back = Back
-ui.hub.tutorial.finish = Got it!
-ui.hub.tutorial.welcome.title = Welcome
-ui.hub.tutorial.welcome.body = I'm the Bounty Master. Talk to me any time to take on contracts and trade. Here's how it works.
-ui.hub.tutorial.bounties.title = Bounties
-ui.hub.tutorial.bounties.body = Bounties are contracts posted on the board for a while, then swapped for new ones. Accept one to add it to your quest log, finish the objective, and you earn tokens plus XP. If you don't like a contract, you can reroll it for a few tokens.
-ui.hub.tutorial.shop.title = Token Shop
-ui.hub.tutorial.shop.body = Spend the tokens you earn at my Token Shop on XP boosts and items. Some featured offers rotate daily, and you can reroll a featured offer to swap it for another.
-
 # --- Shop storefront names + descriptions (shop.<id>.title / .desc, resolved by convention) ---
 shop.general.title = Token Shop
 shop.general.desc = Boosts, supplies and the day's featured offers.

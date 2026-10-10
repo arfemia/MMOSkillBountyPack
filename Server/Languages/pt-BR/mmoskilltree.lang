@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Esqueletos varridos pela areia saem 
 quest.bounty_weekly_frost_skeletons.title = A Legião Congelada
 quest.bounty_weekly_frost_skeletons.flavor = Esqueletos congelados estão descendo dos glaciares. Despedace-os antes que cheguem aos vales.
 
-# --- Hub / integração (enviado aqui para que donos de servidor possam reescrever a integração sem ---
-# --- mexer no jar; o jar mantém estes valores em inglês como fallback por chave). ---
-ui.hub.subtitle = O que posso fazer por você, aventureiro?
-ui.hub.bounties_button = Ver Recompensas
-ui.hub.bounties_hint = Aceite contratos rotativos por prêmios.
-ui.hub.shop_button = Loja de Fichas
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Avançar
-ui.hub.tutorial.back = Voltar
-ui.hub.tutorial.finish = Entendi!
-ui.hub.tutorial.welcome.title = Boas-vindas
-ui.hub.tutorial.welcome.body = Sou o Mestre de Recompensas. Fale comigo a qualquer momento para aceitar contratos e negociar. Veja como funciona.
-ui.hub.tutorial.bounties.title = Recompensas
-ui.hub.tutorial.bounties.body = Recompensas são contratos que ficam no quadro por um tempo e depois são trocados por novos. Aceite uma para adicioná-la ao seu registro de missões, conclua o objetivo e você ganha fichas mais XP. Se não gostar de um contrato, você pode rerrolá-lo por algumas fichas.
-ui.hub.tutorial.shop.title = Loja de Fichas
-ui.hub.tutorial.shop.body = Gaste as fichas que você ganha na minha Loja de Fichas em boosts de XP e itens. Algumas ofertas em destaque são renovadas diariamente, e você pode rerrolar uma oferta em destaque para trocá-la por outra.
-
 # --- Nomes + descrições da loja (shop.<id>.title / .desc, resolvidos por convenção) ---
 shop.general.title = Loja de Fichas
 shop.general.desc = Boosts, suprimentos e as ofertas em destaque do dia.

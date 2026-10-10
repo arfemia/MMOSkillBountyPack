@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Homokkal söpört csontvázak kapasz
 quest.bounty_weekly_frost_skeletons.title = A Fagyos Sereg
 quest.bounty_weekly_frost_skeletons.flavor = Fagyott csontvázak vonulnak le a gleccserekről. Törd szét őket, mielőtt elérik a völgyeket.
 
-# --- Hub / bevezetés (itt szállítjuk, hogy a szervergazdák átfogalmazhassák a bevezetőt anélkül, ---
-# --- hogy a jar-hoz nyúlnának; a jar megtartja ezeket az angol értékeket kulcsonkénti tartalékként). ---
-ui.hub.subtitle = Mit tehetek érted, kalandor?
-ui.hub.bounties_button = Bountyk Megtekintése
-ui.hub.bounties_hint = Vállalj forgó szerződéseket jutalmakért.
-ui.hub.shop_button = Token Shop
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Tovább
-ui.hub.tutorial.back = Vissza
-ui.hub.tutorial.finish = Értem!
-ui.hub.tutorial.welcome.title = Üdvözöllek
-ui.hub.tutorial.welcome.body = Én vagyok a Bounty Mester. Beszélj velem bármikor, ha szerződéseket vállalnál vagy kereskednél. Így működik.
-ui.hub.tutorial.bounties.title = Bountyk
-ui.hub.tutorial.bounties.body = A bountyk olyan szerződések, amelyek egy ideig kint vannak a táblán, aztán újakra cserélődnek. Fogadj el egyet, hogy bekerüljön a küldetésnaplódba, teljesítsd a célt, és tokeneket plusz XP-t kapsz. Ha egy szerződés nem tetszik, néhány tokenért újradobhatod.
-ui.hub.tutorial.shop.title = Token Shop
-ui.hub.tutorial.shop.body = Költsd el a megszerzett tokeneket a Token Shopomban XP boostokra és tárgyakra. Néhány kiemelt ajánlat naponta forog, és egy kiemelt ajánlatot újradobhatsz, hogy másikra cseréld.
-
 # --- Bolti kirakatnevek + leírások (shop.<id>.title / .desc, konvenció szerint feloldva) ---
 shop.general.title = Token Shop
 shop.general.desc = Boostok, készletek és a nap kiemelt ajánlatai.

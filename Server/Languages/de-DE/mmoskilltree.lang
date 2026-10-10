@@ -97,23 +97,6 @@ quest.bounty_weekly_sand_skeletons.flavor = Vom Sand überwaschene Skelette krat
 quest.bounty_weekly_frost_skeletons.title = Die gefrorene Heerschar
 quest.bounty_weekly_frost_skeletons.flavor = Gefrorene Skelette marschieren von den Gletschern herab. Zerschlag sie, bevor sie die Täler erreichen.
 
-# --- Hub / Einführung (hier ausgeliefert, damit Serverbetreiber die Einführung umformulieren können, ---
-# --- ohne das Jar anzufassen; das Jar behält diese englischen Werte als Rückfall pro Schlüssel). ---
-ui.hub.subtitle = Was kann ich für dich tun, Abenteurer?
-ui.hub.bounties_button = Kopfgelder ansehen
-ui.hub.bounties_hint = Nimm rotierende Aufträge für Belohnungen an.
-ui.hub.shop_button = Token-Shop
-ui.hub.tutorial.step = {0} / {1}
-ui.hub.tutorial.next = Weiter
-ui.hub.tutorial.back = Zurück
-ui.hub.tutorial.finish = Verstanden!
-ui.hub.tutorial.welcome.title = Willkommen
-ui.hub.tutorial.welcome.body = Ich bin der Kopfgeldmeister. Sprich mich jederzeit an, um Aufträge anzunehmen und zu handeln. So funktioniert's.
-ui.hub.tutorial.bounties.title = Kopfgelder
-ui.hub.tutorial.bounties.body = Kopfgelder sind Aufträge, die eine Weile an der Tafel hängen und dann gegen neue getauscht werden. Nimm eines an, um es deinem Questlog hinzuzufügen, schließe das Ziel ab, und du verdienst Token sowie XP. Wenn dir ein Auftrag nicht gefällt, kannst du ihn für ein paar Token neu auswürfeln.
-ui.hub.tutorial.shop.title = Token-Shop
-ui.hub.tutorial.shop.body = Gib die verdienten Token in meinem Token-Shop für XP-Boosts und Gegenstände aus. Manche vorgestellten Angebote rotieren täglich, und du kannst ein vorgestelltes Angebot neu auswürfeln, um es gegen ein anderes zu tauschen.
-
 # --- Shop-Storefront-Namen + Beschreibungen (shop.<id>.title / .desc, per Konvention aufgelöst) ---
 shop.general.title = Token-Shop
 shop.general.desc = Boosts, Vorräte und die Angebote des Tages.
