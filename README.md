@@ -58,7 +58,7 @@ Everything below is data. You write JSON files and `.lang` lines; no code is inv
 - **A contract is a quest.** A file under `Bounties/` carries the usual quest groups (`Text`, `Listing`, `Objectives`, `Rewards`, `Requires`) plus one of its own, `Boards`, a list of the boards that may post it.
 - **The type decides the lifecycle.** A contract is never handed out on its own, never takes a slot in the quest log, repeats on whatever its board's schedule says, and is handed in at the board that posted it. None of that is authorable, which is why a contract file is only a few lines long. The one payout choice you make is `Auto` or `Claim`; every contract here parks its pay under `Claim`, so the reward survives the board turning over.
 - **A board is a rotating view over the contract pool.** It declares a cadence, a selection rule and some slots, and draws one contract per slot each period. The draw is seeded from the clock, so every player sees the same board and a restart changes nothing.
-- **Membership is typed.** A contract lists `{"Board": "Daily", "Difficulty": "Hard", "Weight": 1}` for each board that can post it. `Difficulty` is a free word you invent; it is matched against a board slot's own `Difficulty`, and it is also the band a board gates through `AcceptRequires`.
+- **Membership is typed.** A contract lists `{"Board": "Daily", "Difficulty": "Hard", "Weight": 1}` for each board that can post it. `Difficulty` is a free word you invent; it is matched against a board slot's own `Difficulty`, and it is also the band a board gates through `AcceptRequires`. An entry can carry an `AcceptRequires` of its own, which stands in place of the band's gate on that board for that one contract: `{}` opens it to everyone, and leaving it out keeps the band's gate.
 - **A requirement is a bound on a factor.** `Requires` holds `Factors` (numeric bounds), `Permission`, `Quests`, and `AllOf` / `AnyOf` / `Not` groups to combine them. MMO Skill Tree answers `hytale:stat` for its own numbers, so `MMO_Level_MINING` and `MMO_CombatLevel` are just parameters.
 - **A price is a `Cost`:** `{"Currencies": {...}, "Items": [...], "Combine": "All"}`. The same object prices an offer or a reroll. `All` (the default) charges every part; `Any` charges the first one the player can afford.
 
@@ -100,7 +100,7 @@ Each is an ordinary `Abstract` contract. A child of one is a real contract, beca
 | `Bounty_Xp` | `GAIN_XP` | EXACT | a skill id, an experience total |
 | `Bounty_Encounter` | `ENCOUNTER_DEFEATED` | EXACT | an encounter script id, or nothing for any boss |
 
-A step with no `Target` means "any", so `Bounty_Daily_Monster_Cull` counts every kill and `Bounty_Quick_Catch` counts every fish.
+A step with no `Target` and no `Targets` means "any", so `Bounty_Daily_Monster_Cull` counts every kill and `Bounty_Quick_Catch` counts every fish.
 
 A gather-and-deliver contract retunes both steps by name. Keep the delivered count well under the gathered one so the player keeps most of the haul:
 
@@ -116,16 +116,32 @@ A gather-and-deliver contract retunes both steps by name. Keep the delivered cou
 
 For an ore, the mined block and the returned item share an id. Check any `Target` against the item ids in the game's own assets. A mining contract whose block has no clean single item to hand in (stone, wood) stays on `Bounty_Gather`.
 
-A training contract pairs its step with a bound on the same skill. On ZiggfreedCommon 2.2.0 that bound does nothing yet: the board posts the contract to everyone and, when someone takes it, checks only its own gate, the band's and the slot's, so a player who clears the band's combat level can take it without having started the skill. The bound is written for a later library release that reads it:
+The shipped mining contracts ask for a Mining level instead of the band's combat level, through their board entry's own `AcceptRequires`: Mining 25 in the Normal band (Copper Cache, Iron for the Forge, Silver Consignment) and Mining 60 in the Hard band (Adamantite Run, Adamantite Consignment, Adamantite Quota, Gold Quota). The Easy ones stay open to everyone. In `Bounty_Mine_Iron`:
+
+```json
+"Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2,
+              "AcceptRequires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 25 } ] } } ]
+```
+
+A training contract pairs its step with a bound on the same skill in its own `Requires`. The board checks a contract's `Requires` on every board it hangs on, after the board's own gate and the entry's (or the band's), so a server without that skill never lets anyone take it. `Min 1` is every player's starting level, so it locks nobody out; raise it to save a contract for players further along. The shipped training contracts in the Normal and Hard bands open their entry with an empty `AcceptRequires`, so anyone can take them whatever the band asks:
 
 ```json
 { "Parent": "Bounty_Xp",
   "Text": { "TitleKey": "quest.bounty_train_mining.title", "FlavorKey": "quest.bounty_train_mining.flavor" },
-  "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 1 } ],
+  "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 1, "AcceptRequires": {} } ],
   "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
   "Objectives": { "main": { "Target": "MINING", "Amount": 3000 } },
   "Rewards": { "Claim": [ ... ] } }
 ```
+
+A hunt that should count a few named creatures toward one total lists them in `Targets`, with `"MatchMode": "EXACT"` so nothing else that shares a word counts. The bear hunts count the Grizzly, the Polar bear and the Voidtaken Grizzly, and leave out the Voidtaken Grizzly's tentacles:
+
+```json
+"Objectives": { "main": { "Targets": [ "Bear_Grizzly", "Bear_Polar", "Bear_Voidtaken" ], "MatchMode": "EXACT",
+                          "Amount": 6, "TextKey": "objective.text.bounty.bears" } }
+```
+
+`Targets` works on kill, gather, pickup and the other counting steps. A hand-in step (`Bounty_TurnIn`, the `deliver` step of `Bounty_GatherDeliver`) takes only the one item its `Target` names.
 
 A boss contract names the fight by its encounter script id (the file under `Server/EncounterManager/`), not the creature, because a fight that swaps roles between phases has no single creature id. Leave `Target` out and any boss on the server counts, which is how the shipped pair is written, so it works with whichever boss a server stands up. Everyone the fight credited completes it, whoever landed the last blow. A single fight reads badly through the shared step sentence, so the shipped contracts give their step a `TextKey` of their own:
 
@@ -150,7 +166,7 @@ A seasonal contract is posted only while a calendar event runs. Put the event's 
   "Rewards": { "Claim": [ ... ] } }
 ```
 
-ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on while the event is switched on and between its dates, off otherwise, and off on a server that does not have the event at all. While it reads off, the contract is never posted; a player who took it before the event ended still finds it on the board's Mine tab. Keep the condition at the top level: inside `AllOf`, `AnyOf` or `Not` the board does not read it at all on ZiggfreedCommon 2.2.0, and the contract sits on the board all year, open to anyone. The three in `Haunt/` are this pack's own, written for the Hallow's Eve creatures of the Seasons of Orbis pack.
+ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on while the event is switched on and between its dates, off otherwise, and off on a server that does not have the event at all. While it reads off, the contract is never posted; a player who took it before the event ended still finds it on the board's Mine tab. Keep the condition at the top level: inside `AllOf`, `AnyOf` or `Not` it is only an ordinary lock, so the contract sits on the board all year, locked whenever the event is off. The three in `Haunt/` are this pack's own, written for the Hallow's Eve creatures of the Seasons of Orbis pack.
 
 **A note on pay.** The `Training` band and the whole Bihourly board pay little or no tokens on purpose. Training contracts pay a small token amount plus flat experience, and Bihourly contracts pay experience only. The Bihourly board turns over several times a day, so full token payouts there would flood the economy. The token income is the Daily and Weekly easy, normal and hard ladder. The Bihourly reroll still costs tokens, which gives free-experience contracts a small sink.
 
@@ -180,7 +196,7 @@ ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on
 - **`Grades`** is an optional map that says what a band is called on a contract's badge and detail panel, keyed by the band's own word: `"Grades": { "Skirmish": { "TitleKey": "board.grade.skirmish" } }`. The five bands the framework already names (`training`, `easy`, `normal`, `hard`, `elite`) read in all nine languages with nothing authored, so skip it for those. Write a `Grades` entry for a band you invent, and point `TitleKey` at a line in your own `.lang` file. A band named nowhere reads as its own word. On a board that has slots, a `Grades` entry for a band no slot posts is a `NAME_FOR_UNPOSTED_BAND` finding, which is how a misspelled band shows up at boot.
 - **`Currencies`** is the balance strip in the page header. List every wallet a player earns or spends at this board; an unlisted wallet does not appear.
 - **`Reroll.Cost`** is a full `Cost`, so a reroll can be priced in several wallets or in items. `MaxPerPeriod` caps paid rerolls per period.
-- **`AcceptRequires`** is a map of ordinary `Requires` blocks keyed by band. It is checked only when a player accepts: a contract they are not ready for is still posted and shown, locked, so they can see what to work towards. Leave a band out and it is ungated (which is what `Training` and `Easy` are here). It merges per band under a `Parent`, so a child board can raise one band and keep the rest.
+- **`AcceptRequires`** is a map of ordinary `Requires` blocks keyed by band. It is checked only when a player accepts: a contract they are not ready for is still posted and shown, locked, so they can see what to work towards. Leave a band out and it is ungated (which is what `Training` and `Easy` are here). It merges per band under a `Parent`, so a child board can raise one band and keep the rest. A contract whose own board entry carries `AcceptRequires` skips its band's gate on this board and is checked against its own instead; the shipped mining and training contracts use that. The board checks, in order, its own `Requires`, the entry's or band's gate, the contract's own `Requires` and the slot's.
 - **Optional extras:** `Requires` gates the whole board, `Where` limits it to some worlds (absent means everywhere), `Enabled` turns it off, `Icon` and `Order` decide how it shows in a list.
 
 2. **The in-world block (optional, recommended).** Add `Server/Item/Items/MMO_Bounty_Board_<Name>.json` (copy an existing block and point `BlockType.Interactions.Use` at your interaction), plus `Server/Item/RootInteractions/MMO_BountyBoard_<Name>_Open.json`:

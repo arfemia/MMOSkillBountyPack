@@ -1,5 +1,5 @@
 {
-  "$Comment": "A training contract: the step counts raw experience earned in one skill, so the Amount is an experience total rather than a number of blocks. The level bound in Requires names the same skill as the step and is written for a later library release that reads a contract's own Requires. Today the board posts this contract to everyone and checks only its own gate, the band's and the slot's, so a player who clears the Normal band's combat level can take it without having started Mining.",
+  "$Comment": "A training contract: the step counts raw experience earned in one skill, so the Amount is an experience total rather than a number of blocks. The level bound in Requires names the same skill as the step, and the board checks it when a player takes the contract. Min 1 is every player's starting level, so it locks nobody out; raise it to save the contract for players further along. The board entry's empty AcceptRequires {} opens the contract to everyone in place of the Normal band's combat level, so a new player can train Mining from the start. Leave AcceptRequires out to put the band's gate back.",
   "Parent": "Bounty_Xp",
   "Text": {
     "TitleKey": "quest.bounty_train_mining.title",
@@ -9,7 +9,8 @@
     {
       "Board": "Daily",
       "Difficulty": "Normal",
-      "Weight": 1
+      "Weight": 1,
+      "AcceptRequires": {}
     }
   ],
   "Requires": {

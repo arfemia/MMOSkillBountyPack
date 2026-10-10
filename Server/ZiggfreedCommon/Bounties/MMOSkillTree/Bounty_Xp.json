@@ -1,5 +1,5 @@
 {
-  "$Comment": "The shared skeleton for training contracts: the step counts experience earned in one skill while the contract is held, so the Target is a skill id and the Amount is raw experience rather than a number of things. A Requires bound on that same skill is written for a later library release that reads a contract's own Requires; today the board posts the contract to everyone and checks only its own gate, the band's and the slot's.",
+  "$Comment": "The shared skeleton for training contracts: the step counts experience earned in one skill while the contract is held, so the Target is a skill id and the Amount is raw experience rather than a number of things. Give each child a Requires bound on that same skill, such as MMO_Level_MINING Min 1: the board checks it when a player takes the contract, after the board's own gate and the band's. Min 1 is every player's starting level, so it locks the contract only on a server that lacks the skill. To let anyone take a training contract posted in a gated band, give its Boards entry an empty AcceptRequires {}.",
   "Abstract": true,
   "Listing": {
     "Category": "bounty"

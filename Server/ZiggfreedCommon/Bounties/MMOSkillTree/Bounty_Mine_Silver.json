@@ -8,7 +8,16 @@
     {
       "Board": "Daily",
       "Difficulty": "Normal",
-      "Weight": 2
+      "Weight": 2,
+      "AcceptRequires": {
+        "Factors": [
+          {
+            "Factor": "hytale:stat",
+            "Param": "MMO_Level_MINING",
+            "Min": 25
+          }
+        ]
+      }
     }
   ],
   "Objectives": {

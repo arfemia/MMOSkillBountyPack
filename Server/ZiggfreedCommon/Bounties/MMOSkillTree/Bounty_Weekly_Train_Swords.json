@@ -8,7 +8,8 @@
     {
       "Board": "Weekly",
       "Difficulty": "Hard",
-      "Weight": 1
+      "Weight": 1,
+      "AcceptRequires": {}
     }
   ],
   "Requires": {

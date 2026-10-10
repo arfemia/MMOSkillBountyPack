@@ -13,7 +13,12 @@
   ],
   "Objectives": {
     "main": {
-      "Target": "Bear",
+      "Targets": [
+        "Bear_Grizzly",
+        "Bear_Polar",
+        "Bear_Voidtaken"
+      ],
+      "MatchMode": "EXACT",
       "Amount": 12,
       "TextKey": "objective.text.bounty.bears"
     }

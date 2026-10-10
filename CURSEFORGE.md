@@ -33,7 +33,7 @@ Requires MMO Skill Tree 1.6.1 or newer and Ziggfreed's CommonLib 2.2.0 or newer.
 - Finished contracts wait for you at the board. They never pay out in the field, so a full inventory or the board rotating can't cost you a reward: walk back, make room if you need to, press Collect.
 - Running a bigger world? Stand up several boards: put the daily board in the town square and the weekly board at the guild hall. Each block opens the board it belongs to.
 - Don't like a contract? Reroll just that one - it swaps for a fresh contract while the rest of the board stays - up to a daily cap (rerolls cost Bounty Tokens).
-- Tougher contracts ask for a minimum combat level before you can accept them. You still see them, marked locked, so you know what to train towards.
+- Tougher contracts ask for a level before you can accept them. Most want a combat level, but the mining contracts want a Mining level: 25 for the normal ones and 60 for the hard ones. Hide Haul and Essence Consignment ask for combat level 25, and the train-a-skill contracts are open to anyone. A contract you can't take yet still shows, marked locked, so you know what to train towards.
 - The mod's **Adventurer's Guide** is placed at your world spawn the first time someone joins, so bounties just work with no setup. It appears once per world and never duplicates on restart.
 
 ## Don't want the spawn NPC?
