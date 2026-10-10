@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.6.1+) and ZiggfreedCommon (2.2.0+). It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Essence of Life wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.7.1+) and ZiggfreedCommon (2.3.0+), on a Hytale Update 7 server. It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Essence of Life wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
 The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
@@ -331,4 +331,4 @@ To add a broker for a new board `<x>`, copy `MMO_Bounty_Daily.json` to `MMO_Boun
 
 ## Requires
 
-MMO Skill Tree 1.6.1 or newer, and ZiggfreedCommon 2.2.0 or newer.
+A Hytale Update 7 server, MMO Skill Tree 1.7.1 or newer, and ZiggfreedCommon 2.3.0 or newer.
