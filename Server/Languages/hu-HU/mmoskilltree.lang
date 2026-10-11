@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Arany a kincstárnak, és számolják. B�
 # --- Boss vadászatok (nehéz, nagy jutalom) ---
 quest.bounty_aberrant_horror.title = Aberráns Rémség
 quest.bounty_aberrant_horror.flavor = Valami megrontotta a holtakat keleten, és az aberránsak nem esnek el könnyen. Üsd őket, amíg el nem esnek.
-quest.bounty_weekly_goblin_duke.title = A Goblin Herceg
-quest.bounty_weekly_goblin_duke.flavor = Az odú most egy koronás szörnyetegnek engedelmeskedik. Végezz a Herceggel, és a rajtaütések is vele érnek véget.
+quest.bounty_weekly_goblin_duke.title = Az Ürességmegszállta Grizzly
+quest.bounty_weekly_goblin_duke.flavor = Egy Ürességmegszállta Grizzly kószál a Pislákoló Üregekben. Találd meg egy távcsővel, csalizd meg a medvecsapdát egy Ürességszívvel, és teríts le.
 quest.bounty_weekly_shadow_knight.title = Elesett Lovagok
 quest.bounty_weekly_shadow_knight.flavor = Csontváz lovagok járják még mindig a romokat a régi páncéljukban, feltartott pajzzsal. Vigyél barátokat, és valami nehezet.
 quest.bounty_weekly_broodmother.title = A Költőanya

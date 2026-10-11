@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Ouro para o tesouro, e eles estão contan
 # --- Caçadas de chefe (difícil, grande recompensa) ---
 quest.bounty_aberrant_horror.title = Horror Aberrante
 quest.bounty_aberrant_horror.flavor = Algo corrompeu os mortos a leste, e os aberrantes não caem fácil. Continue batendo até que caiam.
-quest.bounty_weekly_goblin_duke.title = O Duque Goblin
-quest.bounty_weekly_goblin_duke.flavor = O covil agora obedece a um bruto coroado. Acabe com o Duque e as pilhagens acabam com ele.
+quest.bounty_weekly_goblin_duke.title = O Urso-Pardo do Vazio
+quest.bounty_weekly_goblin_duke.flavor = Um Urso-Pardo do Vazio anda solto nas Grotas Gotejantes. Encontre-o com uma luneta, isque a armadilha de urso com um Coração do Vazio e abata-o.
 quest.bounty_weekly_shadow_knight.title = Cavaleiros Caídos
 quest.bounty_weekly_shadow_knight.flavor = Cavaleiros esqueletos ainda percorrem as ruínas na armadura antiga, de escudo erguido. Leve amigos, e algo pesado.
 quest.bounty_weekly_broodmother.title = A Rainha-Mãe

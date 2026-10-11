@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Gold für die Schatzkammer, und dort wird
 # --- Bossjagden (schwer, große Auszahlung) ---
 quest.bounty_aberrant_horror.title = Aberranter Schrecken
 quest.bounty_aberrant_horror.flavor = Etwas hat die Toten im Osten verdorben, und die aberranten fallen nicht leicht. Schlag weiter zu, bis sie es tun.
-quest.bounty_weekly_goblin_duke.title = Der Goblin-Herzog
-quest.bounty_weekly_goblin_duke.flavor = Der Bau gehorcht nun einem gekrönten Unhold. Beende den Herzog und die Überfälle enden mit ihm.
+quest.bounty_weekly_goblin_duke.title = Der leerenbesessene Grizzly
+quest.bounty_weekly_goblin_duke.flavor = Ein leerenbesessener Grizzly streift durch die Verlöschenden Höhlen. Finde ihn mit einem Fernrohr, ködere die Bärenfalle mit einem Leerenherz und erlege ihn.
 quest.bounty_weekly_shadow_knight.title = Gefallene Ritter
 quest.bounty_weekly_shadow_knight.flavor = Skelettritter ziehen noch immer in ihrer alten Rüstung durch die Ruinen, die Schilde oben. Nimm Freunde mit, und etwas Schweres.
 quest.bounty_weekly_broodmother.title = Die Brutmutter

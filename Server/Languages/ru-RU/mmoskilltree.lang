@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Золото для казны, и там
 # --- Охоты на боссов (сложно, крупная награда) ---
 quest.bounty_aberrant_horror.title = Аберрантный ужас
 quest.bounty_aberrant_horror.flavor = Что-то испортило мёртвых на востоке, и аберрантные нелегко падают. Бейте их, пока не упадут.
-quest.bounty_weekly_goblin_duke.title = Гоблинский герцог
-quest.bounty_weekly_goblin_duke.flavor = Теперь логово подчиняется коронованному громиле. Прикончите Герцога, и набеги закончатся вместе с ним.
+quest.bounty_weekly_goblin_duke.title = Гризли, взятый пустотой
+quest.bounty_weekly_goblin_duke.flavor = В Гаснущих Низинах бродит Гризли, взятый пустотой. Найдите его с подзорной трубой, заправьте медвежий капкан Сердцем пустоты и прикончите зверя.
 quest.bounty_weekly_shadow_knight.title = Павшие рыцари
 quest.bounty_weekly_shadow_knight.flavor = Рыцари-скелеты всё ещё бродят по руинам в старых доспехах, подняв щиты. Возьмите друзей и что-нибудь потяжелее.
 quest.bounty_weekly_broodmother.title = Матка выводка

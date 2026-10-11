@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Hazine için altın, ve sayıyorlar. Bolc
 # --- Boss avları (zor, büyük ödül) ---
 quest.bounty_aberrant_horror.title = Sapkın Dehşet
 quest.bounty_aberrant_horror.flavor = Doğuda ölüleri bir şey bozdu ve sapkın olanlar kolay düşmüyor. Düşene kadar vurmaya devam et.
-quest.bounty_weekly_goblin_duke.title = Goblin Dükü
-quest.bounty_weekly_goblin_duke.flavor = İn artık taçlı bir zorbaya boyun eğiyor. Dük'ü bitir, akınlar da onunla biter.
+quest.bounty_weekly_goblin_duke.title = Boşluğa Kapılmış Boz Ayı
+quest.bounty_weekly_goblin_duke.flavor = Sönük Oyuklar'da Boşluğa Kapılmış bir Boz Ayı başıboş dolaşıyor. Onu dürbünle bul, ayı kapanına bir Boşluk Kalbi yem koy ve alt et.
 quest.bounty_weekly_shadow_knight.title = Düşmüş Şövalyeler
 quest.bounty_weekly_shadow_knight.flavor = İskelet şövalyeler eski zırhlarıyla, kalkanları havada, hâlâ harabelerde dolaşıyor. Yanına dostlarını ve ağır bir şey al.
 quest.bounty_weekly_broodmother.title = Kuluçka Anası

@@ -227,8 +227,8 @@ quest.bounty_weekly_mine_gold.flavor = Oro per il tesoro, e tengono il conto. Es
 # --- Cacce ai boss (difficile, grande ricompensa) ---
 quest.bounty_aberrant_horror.title = Orrore Aberrante
 quest.bounty_aberrant_horror.flavor = Qualcosa ha corrotto i morti a oriente, e gli aberranti non cadono facilmente. Continua a colpirli finché non cadono.
-quest.bounty_weekly_goblin_duke.title = Il Duca Goblin
-quest.bounty_weekly_goblin_duke.flavor = La tana ora risponde a un bruto coronato. Poni fine al Duca e le razzie finiscono con lui.
+quest.bounty_weekly_goblin_duke.title = Il Grizzly Divorato dal Vuoto
+quest.bounty_weekly_goblin_duke.flavor = Un Grizzly Divorato dal Vuoto è in libertà nelle Cavità Tremolanti. Trovalo con un cannocchiale, innesca la trappola per orsi con un Cuore del Vuoto e abbattilo.
 quest.bounty_weekly_shadow_knight.title = Cavalieri Caduti
 quest.bounty_weekly_shadow_knight.flavor = I cavalieri scheletro percorrono ancora le rovine nelle loro vecchie armature, scudi alzati. Porta degli amici, e qualcosa di pesante.
 quest.bounty_weekly_broodmother.title = La Madre della Covata

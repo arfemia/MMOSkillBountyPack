@@ -226,8 +226,8 @@ quest.bounty_weekly_mine_gold.flavor = Oro para el tesoro, y llevan la cuenta. E
 # --- Cacerías de jefe (difícil, gran recompensa) ---
 quest.bounty_aberrant_horror.title = Horror Aberrante
 quest.bounty_aberrant_horror.flavor = Algo corrompió a los muertos del este, y los aberrantes no caen fácil. Sigue golpeándolos hasta que caigan.
-quest.bounty_weekly_goblin_duke.title = El Duque Goblin
-quest.bounty_weekly_goblin_duke.flavor = La madriguera responde ahora a un bruto coronado. Acaba con el Duque y las redadas acaban con él.
+quest.bounty_weekly_goblin_duke.title = El Grizzly Tomado por el Vacío
+quest.bounty_weekly_goblin_duke.flavor = Un Grizzly Tomado por el Vacío anda suelto por las Hondonadas Mortecinas. Encuéntralo con un catalejo, pon un Corazón del Vacío de cebo en la trampa para osos y abátelo.
 quest.bounty_weekly_shadow_knight.title = Caballeros Caídos
 quest.bounty_weekly_shadow_knight.flavor = Los caballeros esqueleto aún recorren las ruinas con su vieja armadura, escudo en alto. Ve con amigos, y con algo pesado.
 quest.bounty_weekly_broodmother.title = La Reina Madre
