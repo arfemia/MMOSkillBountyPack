@@ -20,10 +20,11 @@
   "Rewards": {
     "Claim": [
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "ARCHERY",
-          "Amount": 400
+          "Amount": 400,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

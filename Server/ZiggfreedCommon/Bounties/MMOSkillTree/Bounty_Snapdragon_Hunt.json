@@ -27,10 +27,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "SWORDS",
-          "Amount": 2800
+          "Amount": 2800,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

@@ -28,10 +28,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "POLEARMS",
-          "Amount": 6000
+          "Amount": 6000,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

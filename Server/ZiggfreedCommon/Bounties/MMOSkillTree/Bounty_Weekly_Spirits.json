@@ -28,10 +28,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "STAVES",
-          "Amount": 8000
+          "Amount": 8000,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

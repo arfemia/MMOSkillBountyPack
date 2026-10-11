@@ -41,7 +41,7 @@ Each board has its own placeable block. The block's interaction reads the board 
 
 ## Author your own
 
-- **A contract** is a file under `Bounties/MMOSkillTree/` naming one of the ten skeletons as its `Parent`, its board memberships as `Boards`, and its steps and pay. Give it a `quest.<id>.title` and `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both a `Currency` and an `Mmo_Xp` payout. A boss contract (`Bounty_Encounter`) names an encounter script id, or no target at all for any boss, and pays everyone the fight credited.
+- **A contract** is a file under `Bounties/MMOSkillTree/` naming one of the ten skeletons as its `Parent`, its board memberships as `Boards`, and its steps and pay. Give it a `quest.<id>.title` and `quest.<id>.flavor` in `mmoskilltree.lang`, and reward both a `Currency` and an experience payout (an `Mmo_Lamp` on a kill contract, an `Mmo_Xp` otherwise). A boss contract (`Bounty_Encounter`) names an encounter script id, or no target at all for any boss, and pays everyone the fight credited.
 - **A board** is a schedule file under `Boards/MMOSkillTree/`; its file name is the board id contracts name.
 - **An offer** is a file under `ShopEntries/MMOSkillTree/` (static by default; add a `Pool` group to rotate it). **A shelf** is a schedule file under `ShopPools/MMOSkillTree/` with the same cadence, selection and reroll shape a board uses. **A family of near-identical offers** is one file under `ShopEntryGenerators/MMOSkillTree/`.
 - **A broker NPC** is a native Hytale role under `Server/NPC/Roles/Passive/`, and it decides only the look, the nameplate and the press-F prompt. Which screen opens comes from the **placement** that stands the character up, so this pack ships the six roles and no placements: none of them appears until you author one at `Server/ZiggfreedCommon/NpcPlacements/<YourId>.json` naming a role plus `"Interact": {"Open": {"Type": "Mmo_Board", "Board": "Daily"}}` (or `"Mmo_Shop"` with a `Shop`). Each role file's `$Comment` carries the full recipe with its own id filled in. Manage what is standing with `/mmonpc list|enable|disable`.
@@ -73,11 +73,11 @@ One file in `Bounties/MMOSkillTree/`:
   "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2 } ],
   "Objectives": { "main": { "Target": "Zombie", "Amount": 12 } },
   "Rewards": { "Claim": [ { "Kind": "Currency", "Params": { "Currency": "bounty_token", "Amount": 150 } },
-                          { "Kind": "Mmo_Xp", "Params": { "Skill": "SWORDS", "Amount": 1200 } } ] } }
+                          { "Kind": "Mmo_Lamp", "Params": { "Amount": 1200, "Picks": 1, "Skills": "COMBAT" } } ] } }
 ```
 
 - **`Parent`** names one of the ten skeletons below. A skeleton supplies the step kind, the match mode and the shape of the pay. `Objectives` merges per step name, so naming `main` retunes that one step and keeps the rest.
-- **`Rewards.Claim`** is one leaf, so writing it replaces the skeleton's list instead of adding to it. Give a contract a `Currency` reward and an `Mmo_Xp` reward, except on the Bihourly board and the `Training` band (see the pay note below).
+- **`Rewards.Claim`** is one leaf, so writing it replaces the skeleton's list instead of adding to it. Give a contract a `Currency` reward and an experience reward, except on the Bihourly board and the `Training` band (see the pay note below). A kill contract pays its combat experience as an `Mmo_Lamp` with `Picks` 1 and `Skills` `COMBAT`, so the player rubs the lamp and puts the XP into the combat skill they fight with. Every other experience reward, a kill contract's Defense or Acrobatics pay included, is an `Mmo_Xp` in one named skill.
 - **Step wording is generated.** The game builds a localized "Defeat 12 Zombie" from the step itself in every language. Author `TextKey` on a step only when the generated line would read badly.
 - **`Weight`** biases the draw against other contracts competing for the same slot. Unwritten means 1, and 2 is twice as likely.
 - **Item payouts are safe here**, because a contract always waits at the board until the player presses Claim, so they can clear inventory space first. `Bounty_Cache_Copper` is the worked example. A `Command` reward must use the named form `/give {player} <item> --quantity=N`; Hytale's give command ignores a positional quantity.
@@ -245,7 +245,7 @@ An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
 - **`Pool`** puts an offer on a rotating shelf: `{"Id": "Featured", "Tier": "<x>", "Weight": 2}`. Leave it out and the offer is static and always listed. An offer with no `Tier` fits an unslotted draw but no filtered slot, so an offer on a fully slotted shelf needs one.
 - **`Limits`** is `{"Daily": N, "Total": N}`, two independent caps; leave one out for no such cap. Counts are kept per player on the server under the offer's id, so renaming an offer starts its counts over.
 - **`Cost`** can name items as well as wallets. `Life_Essence` is item-backed, so a price in it means the player must be carrying that many.
-- **`Rewards`** use the shared kinds: `Item`, `Command`, `Currency`, `Mmo_Xp` and `Mmo_Boost_Token`. Item payouts are checked against inventory space before anything is charged, so they cannot be lost.
+- **`Rewards`** use the shared kinds: `Item`, `Command`, `Currency`, `Mmo_Xp`, `Mmo_Lamp` and `Mmo_Boost_Token`. Item payouts are checked against inventory space before anything is charged, so they cannot be lost.
 - **Icons come free where the payout implies one.** With no `Icon`, an offer takes its art from its first reward: a `Currency` reward shows the wallet's icon, a `Command` `/give` shows the given item, and an `Mmo_Xp` reward for a concrete skill shows that skill's icon. An `Icon` you write always wins, and it inherits: `Xp_Packet` sets the purple crystal, so every generated packet wears it. Drop the `Icon` from the base if you would rather each packet show its own skill.
 - **Validate** with `/mmoshop validate`. It reports a missing or disabled cost currency, a non-positive cost, an unknown reward kind, an empty rewards list, an offer that names no storefront, an unknown `Pool.Id`, and, for shelves, empty pools, unfillable slots and oversubscribed pools.
 

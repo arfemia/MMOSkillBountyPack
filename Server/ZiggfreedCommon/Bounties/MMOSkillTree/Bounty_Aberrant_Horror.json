@@ -29,10 +29,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "BLUNT",
-          "Amount": 3200
+          "Amount": 3200,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

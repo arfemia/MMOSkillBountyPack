@@ -33,10 +33,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "AXES",
-          "Amount": 1500
+          "Amount": 1500,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

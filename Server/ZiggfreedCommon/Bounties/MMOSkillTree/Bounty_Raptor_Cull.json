@@ -27,10 +27,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "DAGGERS",
-          "Amount": 1200
+          "Amount": 1200,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

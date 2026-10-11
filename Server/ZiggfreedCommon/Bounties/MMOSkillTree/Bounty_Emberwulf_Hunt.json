@@ -27,10 +27,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "ARCHERY",
-          "Amount": 2700
+          "Amount": 2700,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

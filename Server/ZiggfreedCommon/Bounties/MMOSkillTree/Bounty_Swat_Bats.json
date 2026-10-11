@@ -28,10 +28,11 @@
         }
       },
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "UNARMED",
-          "Amount": 600
+          "Amount": 600,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]

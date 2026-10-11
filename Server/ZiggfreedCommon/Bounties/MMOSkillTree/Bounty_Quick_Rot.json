@@ -1,5 +1,5 @@
 {
-  "$Comment": "A fast-board contract, and the reason the fast board exists: it pays experience only, no tokens. The fast board turns over several times a day, so paying it in tokens would flood the economy. Keep the token faucet on the daily and weekly boards.",
+  "$Comment": "A fast-board contract, and the reason the fast board exists: it pays a Skill Lamp and no tokens. The fast board turns over several times a day, so paying it in tokens would flood the economy. Keep the token faucet on the daily and weekly boards.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_quick_rot.title",
@@ -21,10 +21,11 @@
   "Rewards": {
     "Claim": [
       {
-        "Kind": "Mmo_Xp",
+        "Kind": "Mmo_Lamp",
         "Params": {
-          "Skill": "SWORDS",
-          "Amount": 400
+          "Amount": 400,
+          "Picks": 1,
+          "Skills": "COMBAT"
         }
       }
     ]
