@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Trork Hunt
 quest.bounty_hunt_trork.flavor = Trorks keep coming down from their hill camps to raid the road. Go up and meet them.
 quest.bounty_bear_hunt.title = Bear Hunt
 quest.bounty_bear_hunt.flavor = Great bears have claimed the north trail. This one is for a steady hand only.
-quest.bounty_smash_ogres.title = Feastmaster Smash
-quest.bounty_smash_ogres.flavor = The carpenters have rebuilt the palisade twice this week. Bring down the Goblin Feastmasters doing the knocking.
+quest.bounty_smash_ogres.title = Glutton Smash
+quest.bounty_smash_ogres.flavor = The carpenters have rebuilt the palisade twice this week. Bring down the Goblin Gluttons doing the knocking.
 quest.bounty_snapdragon_hunt.title = Snapdragon Hunt
 quest.bounty_snapdragon_hunt.flavor = Snapdragons have the jungle trails to themselves, and the hunters won't go near them. Bring a few down, and mind the bite.
 quest.bounty_burnt_skeletons.title = Ash and Bone
@@ -232,6 +232,8 @@ quest.bounty_weekly_shadow_knight.title = Fallen Knights
 quest.bounty_weekly_shadow_knight.flavor = Skeleton knights still walk the ruins in their old armor, shields up. Take friends, and something heavy.
 quest.bounty_weekly_broodmother.title = The Broodmother
 quest.bounty_weekly_broodmother.flavor = Every Scarak in the dunes hatches from one swollen queen. Find her in the deep nest and kill her.
+quest.bounty_weekly_gluttons.title = Glutton Cull
+quest.bounty_weekly_gluttons.flavor = The Goblin Gluttons have eaten through the camp's winter stores. Thin them out before they come back for seconds.
 
 # --- Boss fights (Bounty_Encounter contracts: any scripted boss counts) ---
 quest.bounty_weekly_open_warrant.title = Open Warrant
@@ -240,6 +242,12 @@ quest.bounty_muster_roll.title = The Muster Roll
 quest.bounty_muster_roll.flavor = Nobody is asking you to win. Stand in a boss fight until it is settled, whichever way it goes, and the board marks you present.
 objective.text.bounty.open_warrant = Bring down {0} boss
 objective.text.bounty.muster_roll = Stand in {0} boss fight to the end
+quest.bounty_weekly_feastmaster.title = The Feastmaster
+quest.bounty_weekly_feastmaster.flavor = Down in the goblin Deepworks the Feastmaster eats while the rest of its clan goes hungry. Go down there and end the feast.
+objective.text.bounty.feastmaster = Bring down the Feastmaster
+
+# --- Requirement lines: a lock names what a player still has to do ---
+factor.counter.goblin_glutton = beating a Goblin Glutton
 
 # --- Step lines for kill and pickup targets the game has no name for (a step's own TextKey; {0} = Amount) ---
 objective.text.bounty.skeleton_knights = Defeat {0} Skeleton Knights

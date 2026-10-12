@@ -1,0 +1,6 @@
+{
+  "$Comment": "Names one lifetime tally for requirement lines: a player's Goblin Glutton kills (the ziggfreedcommon:counter reading under Mob_Kills/Goblin_Glutton). The Glutton contracts are locked until a player has beaten one, and without this name the lock would read as the generic requirements line; with it the board says what to do. To gate another contract on a different tally, ship a file like this one with that tally's Param and your own lang key.",
+  "Factor": "ziggfreedcommon:counter",
+  "Param": "Mob_Kills/Goblin_Glutton",
+  "Text": { "TitleKey": "mmoskilltree.factor.counter.goblin_glutton" }
+}

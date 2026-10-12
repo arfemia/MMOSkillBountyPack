@@ -1,0 +1,49 @@
+{
+  "$Comment": "A Hard weekly hunt for the Goblin Glutton; CONTAINS matching also counts the Coffer and Deepworks Gluttons. Requires keeps it locked, shown with its reason, until the player has beaten a Goblin Glutton once, the same gate as the daily Bounty_Smash_Ogres.",
+  "Parent": "Bounty_Kill",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_gluttons.title",
+    "FlavorKey": "quest.bounty_weekly_gluttons.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "ziggfreedcommon:counter",
+        "Param": "Mob_Kills/Goblin_Glutton",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "Goblin_Glutton",
+      "Amount": 15
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 700
+        }
+      },
+      {
+        "Kind": "Mmo_Lamp",
+        "Params": {
+          "Amount": 8000,
+          "Picks": 1,
+          "Skills": "COMBAT"
+        }
+      }
+    ]
+  }
+}

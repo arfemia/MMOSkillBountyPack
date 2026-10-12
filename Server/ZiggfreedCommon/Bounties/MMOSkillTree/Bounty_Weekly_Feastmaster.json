@@ -1,0 +1,50 @@
+{
+  "$Comment": "A Hard weekly boss contract for the Feastmaster, the boss of the goblin Deepworks. Its fight shows a boss bar, so the step names the encounter SCRIPT id, Dungeon_Feastmaster_Encounter, which holds while the boss swaps to its feeding phase and back, and every player the fight credits counts it. Requires keeps it locked, shown with its reason, until the player has earned Goblin_Feastmaster_T1, the first rung of the Feastmaster ladder (one defeat). The step's own line (objective.text.bounty.feastmaster) is worded for a single fight, so raise Amount and reword that key with it.",
+  "Parent": "Bounty_Encounter",
+  "Text": {
+    "TitleKey": "quest.bounty_weekly_feastmaster.title",
+    "FlavorKey": "quest.bounty_weekly_feastmaster.flavor"
+  },
+  "Boards": [
+    {
+      "Board": "Weekly",
+      "Difficulty": "Hard",
+      "Weight": 1
+    }
+  ],
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "ziggfreedcommon:achievement_earned",
+        "Param": "Goblin_Feastmaster_T1",
+        "Min": 1
+      }
+    ]
+  },
+  "Objectives": {
+    "main": {
+      "Target": "Dungeon_Feastmaster_Encounter",
+      "Amount": 1,
+      "TextKey": "objective.text.bounty.feastmaster"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      {
+        "Kind": "Currency",
+        "Params": {
+          "Currency": "bounty_token",
+          "Amount": 1200
+        }
+      },
+      {
+        "Kind": "Mmo_Lamp",
+        "Params": {
+          "Amount": 12000,
+          "Picks": 1,
+          "Skills": "COMBAT"
+        }
+      }
+    ]
+  }
+}
