@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Никто не просит вас побед
 objective.text.bounty.open_warrant = Сразите {0} босса
 objective.text.bounty.muster_roll = Продержитесь до конца в {0} бою с боссом
 quest.bounty_weekly_feastmaster.title = Хозяин пира
-quest.bounty_weekly_feastmaster.flavor = В гоблинских Глубинных Мастерских хозяин пира жрёт, пока остальной клан голодает. Спуститесь туда и покончите с пиром.
+quest.bounty_weekly_feastmaster.flavor = В гоблинских Глубинных Мастерских хозяин пира жрёт, пока остальной клан голодает. Создайте фрагмент Глубинных Мастерских на верстаке гоблина-мастера в гоблинской лаборатории за Забытым храмом, поместите его в Древние врата, шагните внутрь и покончите с пиром.
 objective.text.bounty.feastmaster = Сразите хозяина пира
 
 # --- Requirement lines: a lock names what a player still has to do ---

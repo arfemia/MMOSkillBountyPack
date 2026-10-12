@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Nessuno ti chiede di vincere. Resisti in uno s
 objective.text.bounty.open_warrant = Abbatti {0} boss
 objective.text.bounty.muster_roll = Resisti in {0} scontro con un boss fino alla fine
 quest.bounty_weekly_feastmaster.title = Il Maestro del Banchetto
-quest.bounty_weekly_feastmaster.flavor = Giù nelle Opere Profonde dei goblin il Maestro del Banchetto mangia mentre il resto del clan soffre la fame. Scendi e metti fine al banchetto.
+quest.bounty_weekly_feastmaster.flavor = Giù nelle Opere Profonde dei goblin il Maestro del Banchetto mangia mentre il resto del clan soffre la fame. Fabbrica il frammento delle Opere Profonde al Banco da Lavoro dell'Inventore Goblin nel laboratorio goblin oltre il Tempio Dimenticato, mettilo in un Portale Antico, attraversalo e metti fine al banchetto.
 objective.text.bounty.feastmaster = Abbatti il Maestro del Banchetto
 
 # --- Righe dei requisiti: un blocco indica cosa deve ancora fare un giocatore ---

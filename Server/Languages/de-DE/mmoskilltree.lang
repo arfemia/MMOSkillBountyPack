@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Niemand verlangt, dass du gewinnst. Steh in ei
 objective.text.bounty.open_warrant = Bring {0} Boss zur Strecke
 objective.text.bounty.muster_roll = Steh {0} Bosskampf bis zum Ende durch
 quest.bounty_weekly_feastmaster.title = Der Festmeister
-quest.bounty_weekly_feastmaster.flavor = Unten in den Tiefwerken der Goblins frisst der Festmeister, während der Rest seines Clans hungert. Geh runter und mach dem Festmahl ein Ende.
+quest.bounty_weekly_feastmaster.flavor = Unten in den Tiefwerken der Goblins frisst der Festmeister, während der Rest seines Clans hungert. Stell das Tiefwerke-Fragment an der Goblin-Tüftlerwerkbank im Goblin-Labor hinter dem Vergessenen Tempel her, setz es in ein Uraltes Tor, tritt hindurch und mach dem Festmahl ein Ende.
 objective.text.bounty.feastmaster = Bring den Festmeister zur Strecke
 
 # --- Requirement lines: a lock names what a player still has to do ---

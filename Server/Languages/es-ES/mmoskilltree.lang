@@ -243,7 +243,7 @@ quest.bounty_muster_roll.flavor = Nadie te pide que ganes. Aguanta en una pelea 
 objective.text.bounty.open_warrant = Abate {0} jefe
 objective.text.bounty.muster_roll = Aguanta {0} pelea contra un jefe hasta el final
 quest.bounty_weekly_feastmaster.title = El Maestro del Festín
-quest.bounty_weekly_feastmaster.flavor = Allá abajo, en las Obras Profundas de los goblins, el Maestro del Festín come mientras el resto de su clan pasa hambre. Baja y acaba con el festín.
+quest.bounty_weekly_feastmaster.flavor = Allá abajo, en las Obras Profundas de los goblins, el Maestro del Festín come mientras el resto de su clan pasa hambre. Fabrica el fragmento de las Obras Profundas en el Banco de Trabajo del Manitas Goblin del laboratorio goblin que hay más allá del Templo Olvidado, colócalo en un Portal Antiguo, cruza y acaba con el festín.
 objective.text.bounty.feastmaster = Abate al Maestro del Festín
 
 # --- Líneas de requisito: un bloqueo nombra lo que al jugador aún le falta por hacer ---

@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Kimse senden kazanmanı istemiyor. Bir patron 
 objective.text.bounty.open_warrant = {0} patron indir
 objective.text.bounty.muster_roll = {0} patron dövüşünde sonuna kadar dur
 quest.bounty_weekly_feastmaster.title = Ziyafet Efendisi
-quest.bounty_weekly_feastmaster.flavor = Goblinlerin Derin Atölyeler'inde Ziyafet Efendisi yer, klanının geri kalanı aç kalır. Aşağı in ve ziyafeti bitir.
+quest.bounty_weekly_feastmaster.flavor = Goblinlerin Derin Atölyeler'inde Ziyafet Efendisi yer, klanının geri kalanı aç kalır. Unutulmuş Tapınak'ın ötesindeki goblin laboratuvarında Goblin Tamircisinin Tezgahı'nda Derin Atölyeler parçasını üret, bir Kadim Geçit'e yerleştir, içinden geç ve ziyafeti bitir.
 objective.text.bounty.feastmaster = Ziyafet Efendisini indir
 
 # --- Requirement lines: a lock names what a player still has to do ---

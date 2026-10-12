@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Senki sem kéri, hogy nyerj. Állj helyt egy f
 objective.text.bounty.open_warrant = Terítsd le {0} főellenséget
 objective.text.bounty.muster_roll = Állj végig {0} főellenség-harcot
 quest.bounty_weekly_feastmaster.title = A Lakomamester
-quest.bounty_weekly_feastmaster.flavor = Lent a goblin Mélyművekben a Lakomamester lakmározik, miközben a klánja többi tagja éhezik. Menj le, és vess véget a lakomának.
+quest.bounty_weekly_feastmaster.flavor = Lent a goblin Mélyművekben a Lakomamester lakmározik, miközben a klánja többi tagja éhezik. Készítsd el a Mélyművek töredékét a goblin ezermester munkapadján, abban a goblin laborban, amely a Feledett Templomon túl van, helyezd egy Ősi Kapuba, lépj át rajta, és vess véget a lakomának.
 objective.text.bounty.feastmaster = Terítsd le a Lakomamestert
 
 # --- Requirement lines: a lock names what a player still has to do ---
