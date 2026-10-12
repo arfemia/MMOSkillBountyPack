@@ -244,7 +244,7 @@ quest.bounty_muster_roll.flavor = Ninguém está pedindo que você vença. Fique
 objective.text.bounty.open_warrant = Derrube {0} chefe
 objective.text.bounty.muster_roll = Aguente {0} luta contra um chefe até o fim
 quest.bounty_weekly_feastmaster.title = O Banqueteiro
-quest.bounty_weekly_feastmaster.flavor = Lá embaixo, nas Profundezas dos goblins, o Banqueteiro come enquanto o resto do clã passa fome. Desça e acabe com o banquete.
+quest.bounty_weekly_feastmaster.flavor = Lá embaixo, nas Forjas Profundas dos goblins, o Banqueteiro come enquanto o resto do clã passa fome. Desça e acabe com o banquete.
 objective.text.bounty.feastmaster = Derrube o Banqueteiro
 
 # --- Linhas de requisito: um bloqueio nomeia o que o jogador ainda precisa fazer ---

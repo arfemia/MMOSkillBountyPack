@@ -244,8 +244,8 @@ quest.bounty_muster_roll.flavor = Personne ne vous demande de gagner. Tenez dans
 objective.text.bounty.open_warrant = Abattez {0} boss
 objective.text.bounty.muster_roll = Tenez {0} combat de boss jusqu'au bout
 quest.bounty_weekly_feastmaster.title = Le Maître des festins
-quest.bounty_weekly_feastmaster.flavor = Dans les Ouvrages Profonds des gobelins, le maître des festins se gave pendant que le reste de son clan a faim. Descendez là-bas et mettez fin au festin.
-objective.text.bounty.feastmaster = Abattez le maître des festins
+quest.bounty_weekly_feastmaster.flavor = Dans les Ateliers du Bas-Fond des gobelins, le Maître des festins se gave pendant que le reste de son clan a faim. Descendez là-bas et mettez fin au festin.
+objective.text.bounty.feastmaster = Abattez le Maître des festins
 
 # --- Lignes de prérequis : un verrou nomme ce qu'un joueur doit encore accomplir ---
 factor.counter.goblin_glutton = une victoire sur un gobelin glouton
