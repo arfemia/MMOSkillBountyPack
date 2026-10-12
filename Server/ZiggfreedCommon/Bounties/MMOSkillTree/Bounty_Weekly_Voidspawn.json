@@ -1,5 +1,5 @@
 {
-  "$Comment": "A Hard weekly hunt for the void spawn. Target Void_Spawn counts Void_Spawn_Entombed, its anomaly twin and Void_Spawn_Surge. No name key matches that target, so the step carries its own line (objective.text.bounty.voidspawn), worded with the name the game shows over these creatures, Void Fiend; change the target and that key together.",
+  "$Comment": "A Hard weekly hunt for the void spawn. Target Void_Spawn counts Void_Spawn_Entombed, its anomaly twin, Void_Spawn_Surge and the plain Void_Spawn the game uses outside the Hollows. No name key matches that target, so the step carries its own line (objective.text.bounty.voidspawn), worded with the name the game shows over these creatures, Void Fiend; change the target and that key together.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_weekly_voidspawn.title",

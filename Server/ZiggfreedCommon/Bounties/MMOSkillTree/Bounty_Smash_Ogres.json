@@ -1,5 +1,5 @@
 {
-  "$Comment": "A Hard daily hunt for the Goblin Glutton, the heaviest goblin out in the world; CONTAINS matching also counts the Coffer Glutton a coffer wave raises and the Deepworks' own Gluttons. Requires keeps it locked, shown with its reason, until the player has beaten a Goblin Glutton once (their Mob_Kills tally for Goblin_Glutton; the Bounty_Goblin_Glutton_Kills factor file names it on the lock). Keep this file name: saved progress and any criterion naming the contract are filed under the id, so change the target and reword the two quest.bounty_smash_ogres keys here rather than renaming the file.",
+  "$Comment": "A Hard daily hunt for the Goblin Glutton, the heaviest goblin out in the world; CONTAINS matching also counts the Coffer Glutton a coffer wave raises and the Deepworks' own Gluttons. Requires keeps it locked, shown with its reason, until the player has beaten a Goblin Glutton of any kind once (the pack's Bounty_Glutton_Kills stat, which counts all three; the Bounty_Goblin_Glutton_Kills factor file names it on the lock). Keep this file name: saved progress and any criterion naming the contract are filed under the id, so change the target and reword the two quest.bounty_smash_ogres keys here rather than renaming the file.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_smash_ogres.title",
@@ -16,7 +16,7 @@
     "Factors": [
       {
         "Factor": "ziggfreedcommon:counter",
-        "Param": "Mob_Kills/Goblin_Glutton",
+        "Param": "Bounty_Glutton_Kills",
         "Min": 1
       }
     ]

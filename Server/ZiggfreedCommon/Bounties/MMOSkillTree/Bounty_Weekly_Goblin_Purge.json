@@ -1,4 +1,5 @@
 {
+  "$Comment": "A Normal weekly goblin cull. Target Goblin, under the Bounty_Kill parent's CONTAINS, counts every goblin role, the Deepworks' and the Coffer goblins included; Targets adds Dungeon_Feastmaster_Scrapper, the Goblin Scrappers the Feastmaster calls in during its fight, whose id carries no Goblin. A step counts its Target and every Targets entry under the one MatchMode.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_weekly_goblin_purge.title",
@@ -14,6 +15,7 @@
   "Objectives": {
     "main": {
       "Target": "Goblin",
+      "Targets": [ "Dungeon_Feastmaster_Scrapper" ],
       "Amount": 30,
       "TextKey": "objective.text.bounty.goblins"
     }

@@ -1,5 +1,5 @@
 {
-  "$Comment": "A Hard weekly hunt for the Goblin Glutton; CONTAINS matching also counts the Coffer and Deepworks Gluttons. Requires keeps it locked, shown with its reason, until the player has beaten a Goblin Glutton once, the same gate as the daily Bounty_Smash_Ogres.",
+  "$Comment": "A Hard weekly hunt for the Goblin Glutton; CONTAINS matching also counts the Coffer and Deepworks Gluttons. Requires keeps it locked, shown with its reason, until the player has beaten a Goblin Glutton of any kind once (the pack's Bounty_Glutton_Kills stat), the same gate as the daily Bounty_Smash_Ogres.",
   "Parent": "Bounty_Kill",
   "Text": {
     "TitleKey": "quest.bounty_weekly_gluttons.title",
@@ -16,7 +16,7 @@
     "Factors": [
       {
         "Factor": "ziggfreedcommon:counter",
-        "Param": "Mob_Kills/Goblin_Glutton",
+        "Param": "Bounty_Glutton_Kills",
         "Min": 1
       }
     ]

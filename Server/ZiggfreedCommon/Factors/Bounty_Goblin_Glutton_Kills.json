@@ -1,6 +1,6 @@
 {
-  "$Comment": "Names one lifetime tally for requirement lines: a player's Goblin Glutton kills (the ziggfreedcommon:counter reading under Mob_Kills/Goblin_Glutton). The Glutton contracts are locked until a player has beaten one, and without this name the lock would read as the generic requirements line; with it the board says what to do. To gate another contract on a different tally, ship a file like this one with that tally's Param and your own lang key.",
+  "$Comment": "Names one lifetime tally for requirement lines: a player's Goblin Glutton kills of every kind, the ziggfreedcommon:counter reading of this pack's Bounty_Glutton_Kills stat (Stats/Bounty_Glutton_Kills.json), which counts the overworld, Coffer and Deepworks Gluttons together. The Glutton contracts are locked until a player has beaten one, and without this name the lock would read as the generic requirements line; with it the board says what to do. To gate another contract on a different tally, ship a file like this one with that tally's Param and your own lang key.",
   "Factor": "ziggfreedcommon:counter",
-  "Param": "Mob_Kills/Goblin_Glutton",
+  "Param": "Bounty_Glutton_Kills",
   "Text": { "TitleKey": "mmoskilltree.factor.counter.goblin_glutton" }
 }

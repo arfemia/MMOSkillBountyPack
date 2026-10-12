@@ -16,7 +16,7 @@ The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pag
 | `Server/NPC/Roles/Passive/*.json` | The press-F "open a page" NPC roles, per board and per shop |
 | `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
 | `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
-| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 81 contracts (the three seasonal haunt contracts in Haunt/). Three are switched off with `"Enabled": false` because the game never spawns their creatures: the werewolf, aberrant zombie and ghoul hunts |
+| `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 83 contracts (the three seasonal haunt contracts in Haunt/). Three are switched off with `"Enabled": false` because the game never spawns their creatures: the werewolf, aberrant zombie and ghoul hunts |
 | `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
 | `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
 | `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |
@@ -143,17 +143,19 @@ A hunt that should count a few named creatures toward one total lists them in `T
 
 `Targets` works on kill, gather, pickup and the other counting steps. A hand-in step (`Bounty_TurnIn`, the `deliver` step of `Bounty_GatherDeliver`) takes only the one item its `Target` names.
 
-A boss contract names the fight by its encounter script id (the file under `Server/EncounterManager/`), not the creature, because a fight that swaps roles between phases has no single creature id. Leave `Target` out and any boss on the server counts, which is how the shipped pair is written, so it works with whichever boss a server stands up. Everyone the fight credited completes it, whoever landed the last blow. A single fight reads badly through the shared step sentence, so the shipped contracts give their step a `TextKey` of their own:
+A boss contract names the fight by its encounter script id (the file under `Server/EncounterManager/`), not the creature, because a fight that swaps roles between phases has no single creature id. The pack ships three. `Bounty_Weekly_Feastmaster` is the worked example: its step's `Target` is `Dungeon_Feastmaster_Encounter`, the Feastmaster's fight in the goblin Deepworks, which holds while the boss swaps to its feeding phase and back. Everyone the fight credited completes it, whoever landed the last blow. A single fight reads badly through the shared step sentence, so the shipped contracts give their step a `TextKey` of their own:
 
 ```json
 { "Parent": "Bounty_Encounter",
-  "Text": { "TitleKey": "quest.bounty_weekly_open_warrant.title", "FlavorKey": "quest.bounty_weekly_open_warrant.flavor" },
+  "Text": { "TitleKey": "quest.bounty_weekly_feastmaster.title", "FlavorKey": "quest.bounty_weekly_feastmaster.flavor" },
   "Boards": [ { "Board": "Weekly", "Difficulty": "Hard", "Weight": 1 } ],
-  "Objectives": { "main": { "Amount": 1, "TextKey": "objective.text.bounty.open_warrant" } },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:achievement_earned", "Param": "Goblin_Feastmaster_T1", "Min": 1 } ] },
+  "Objectives": { "main": { "Target": "Dungeon_Feastmaster_Encounter", "Amount": 1,
+                            "TextKey": "objective.text.bounty.feastmaster" } },
   "Rewards": { "Claim": [ ... ] } }
 ```
 
-`Bounty_Muster_Roll` is the same skeleton with `"Kind": "ENCOUNTER_ATTEMPT"` on its step. It is credited when a fight ends either way, win or wipe, so "stand in it to the end" is a different contract from "bring it down". On a server where no boss stands anywhere, both are dead warrants; take them off with `"Enabled": false`.
+Its `Requires` keeps it locked until the player has MMO Skill Tree's Feastmaster Down, the achievement for a first win. Leave `Target` out and any boss on the server counts, which is how `Bounty_Weekly_Open_Warrant` is written, so it works with whichever boss a server stands up. `Bounty_Muster_Roll` is that same open step with `"Kind": "ENCOUNTER_ATTEMPT"`. It is credited when a fight ends either way, win or wipe, so "stand in it to the end" is a different contract from "bring it down". On a server where no boss stands anywhere, those two are dead warrants; take them off with `"Enabled": false`.
 
 A seasonal contract is posted only while a calendar event runs. Put the event's running switch at the top level of `Requires`, and give the contract a band that only a seasonal slot posts:
 

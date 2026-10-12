@@ -1,0 +1,6 @@
+{
+  "$Comment": "Every Goblin Glutton a player brings down, whichever kind: CONTAINS on Goblin_Glutton counts the overworld Goblin_Glutton, the Coffer_Goblin_Glutton a coffer wave raises and the Deepworks' Dungeon_Goblin_Glutton alike, where the library's Mob_Kills keeps one line per exact role. The Glutton contracts' locks read this total through ziggfreedcommon:counter (Param Bounty_Glutton_Kills), and Factors/Bounty_Goblin_Glutton_Kills.json names it on the lock. The file name is the key each player's tally is kept under, so keep it; it counts from the moment the pack loads, with nothing carried over from earlier kills. To count another family of creatures toward a lock, ship a file like this one with its own name and Target.",
+  "Kind": "Sum",
+  "Format": "Count",
+  "From": [ { "Kind": "KILL_ENTITY", "Target": "Goblin_Glutton", "MatchMode": "CONTAINS" } ]
+}

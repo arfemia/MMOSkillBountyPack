@@ -243,7 +243,7 @@ quest.bounty_muster_roll.flavor = Nobody is asking you to win. Stand in a boss f
 objective.text.bounty.open_warrant = Bring down {0} boss
 objective.text.bounty.muster_roll = Stand in {0} boss fight to the end
 quest.bounty_weekly_feastmaster.title = The Feastmaster
-quest.bounty_weekly_feastmaster.flavor = Down in the goblin Deepworks the Feastmaster eats while the rest of its clan goes hungry. Go down there and end the feast.
+quest.bounty_weekly_feastmaster.flavor = Down in the goblin Deepworks the Feastmaster eats while the rest of its clan goes hungry. Craft the Deepworks fragment at the Goblin Tinkerer's Workbench in the goblin lab beyond the Forgotten Temple, place it in an Ancient Gateway, step through and end the feast.
 objective.text.bounty.feastmaster = Bring down the Feastmaster
 
 # --- Requirement lines: a lock names what a player still has to do ---
