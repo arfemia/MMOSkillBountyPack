@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Chasse aux Trorks
 quest.bounty_hunt_trork.flavor = Les Trorks descendent sans cesse de leurs camps des collines pour piller la route. Montez à leur rencontre.
 quest.bounty_bear_hunt.title = Chasse à l'ours
 quest.bounty_bear_hunt.flavor = De grands ours ont pris le sentier du nord. Celle-ci n'est que pour une main sûre.
-quest.bounty_smash_ogres.title = Écraser les maîtres des festins
-quest.bounty_smash_ogres.flavor = Les charpentiers ont reconstruit la palissade deux fois cette semaine. Abattez les gobelins maîtres des festins qui la démolissent.
+quest.bounty_smash_ogres.title = Écraser les gloutons
+quest.bounty_smash_ogres.flavor = Les charpentiers ont reconstruit la palissade deux fois cette semaine. Abattez les gobelins gloutons qui la démolissent.
 quest.bounty_snapdragon_hunt.title = Chasse au Snapdragon
 quest.bounty_snapdragon_hunt.flavor = Les Snapdragons ont les sentiers de la jungle pour eux seuls, et les chasseurs refusent d'en approcher. Abattez-en quelques-uns, et gare à la morsure.
 quest.bounty_burnt_skeletons.title = Cendres et os
@@ -233,6 +233,8 @@ quest.bounty_weekly_shadow_knight.title = Chevaliers déchus
 quest.bounty_weekly_shadow_knight.flavor = Des chevaliers squelettes arpentent encore les ruines dans leur vieille armure, bouclier levé. Venez avec des amis, et quelque chose de lourd.
 quest.bounty_weekly_broodmother.title = La Mère de couvée
 quest.bounty_weekly_broodmother.flavor = Chaque Scarak des dunes éclôt d'une seule reine gonflée. Trouvez-la dans le nid profond et tuez-la.
+quest.bounty_weekly_gluttons.title = Purge des gloutons
+quest.bounty_weekly_gluttons.flavor = Les gobelins gloutons ont dévoré les réserves d'hiver du camp. Éclaircissez leurs rangs avant qu'ils reviennent en redemander.
 
 # --- Combats de boss (contrats Bounty_Encounter : tout boss scripté compte) ---
 quest.bounty_weekly_open_warrant.title = Mandat ouvert
@@ -241,6 +243,12 @@ quest.bounty_muster_roll.title = L'Appel
 quest.bounty_muster_roll.flavor = Personne ne vous demande de gagner. Tenez dans un combat de boss jusqu'à ce qu'il soit réglé, quelle qu'en soit l'issue, et le tableau vous compte présent.
 objective.text.bounty.open_warrant = Abattez {0} boss
 objective.text.bounty.muster_roll = Tenez {0} combat de boss jusqu'au bout
+quest.bounty_weekly_feastmaster.title = Le Maître des festins
+quest.bounty_weekly_feastmaster.flavor = Dans les Ouvrages Profonds des gobelins, le maître des festins se gave pendant que le reste de son clan a faim. Descendez là-bas et mettez fin au festin.
+objective.text.bounty.feastmaster = Abattez le maître des festins
+
+# --- Lignes de prérequis : un verrou nomme ce qu'un joueur doit encore accomplir ---
+factor.counter.goblin_glutton = une victoire sur un gobelin glouton
 objective.text.bounty.skeleton_knights = Vainquez {0} chevaliers squelettes
 objective.text.bounty.burnt_skeletons = Vainquez {0} squelettes calcinés
 objective.text.bounty.frost_skeletons = Vainquez {0} squelettes gelés

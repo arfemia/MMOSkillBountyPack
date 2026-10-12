@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Caccia ai Trork
 quest.bounty_hunt_trork.flavor = I Trork continuano a scendere dai loro accampamenti sulle colline per razziare la strada. Sali ad affrontarli.
 quest.bounty_bear_hunt.title = Caccia all'Orso
 quest.bounty_bear_hunt.flavor = Grandi orsi hanno reclamato il sentiero del nord. Questa e' solo per una mano ferma.
-quest.bounty_smash_ogres.title = Sfracella i Mastri del Banchetto
-quest.bounty_smash_ogres.flavor = I carpentieri hanno ricostruito la palizzata due volte questa settimana. Abbatti i Mastri del Banchetto dei goblin che la buttano giù.
+quest.bounty_smash_ogres.title = Sfracella gli Ingordi
+quest.bounty_smash_ogres.flavor = I carpentieri hanno ricostruito la palizzata due volte questa settimana. Abbatti i Goblin Ingordi che la buttano giù.
 quest.bounty_snapdragon_hunt.title = Caccia alla Snapdragon
 quest.bounty_snapdragon_hunt.flavor = Le Snapdragon si sono prese i sentieri della giungla, e i cacciatori non ci si avvicinano. Abbattine qualcuna, e attento al morso.
 quest.bounty_burnt_skeletons.title = Cenere e Ossa
@@ -233,6 +233,8 @@ quest.bounty_weekly_shadow_knight.title = Cavalieri Caduti
 quest.bounty_weekly_shadow_knight.flavor = I cavalieri scheletro percorrono ancora le rovine nelle loro vecchie armature, scudi alzati. Porta degli amici, e qualcosa di pesante.
 quest.bounty_weekly_broodmother.title = La Madre della Covata
 quest.bounty_weekly_broodmother.flavor = Ogni Scarak delle dune nasce da un'unica regina gonfia. Trovala nel nido profondo e uccidila.
+quest.bounty_weekly_gluttons.title = Sfoltimento degli Ingordi
+quest.bounty_weekly_gluttons.flavor = I Goblin Ingordi hanno divorato le scorte invernali del campo. Sfoltiscili prima che tornino a chiedere il bis.
 
 # --- Scontri con i boss (contratti Bounty_Encounter: conta qualsiasi boss con script) ---
 quest.bounty_weekly_open_warrant.title = Mandato Aperto
@@ -241,6 +243,12 @@ quest.bounty_muster_roll.title = L'Appello
 quest.bounty_muster_roll.flavor = Nessuno ti chiede di vincere. Resisti in uno scontro con un boss finché non è deciso, comunque vada, e la bacheca ti segna presente.
 objective.text.bounty.open_warrant = Abbatti {0} boss
 objective.text.bounty.muster_roll = Resisti in {0} scontro con un boss fino alla fine
+quest.bounty_weekly_feastmaster.title = Il Maestro del Banchetto
+quest.bounty_weekly_feastmaster.flavor = Giù nelle Opere Profonde dei goblin il Maestro del Banchetto mangia mentre il resto del clan soffre la fame. Scendi e metti fine al banchetto.
+objective.text.bounty.feastmaster = Abbatti il Maestro del Banchetto
+
+# --- Righe dei requisiti: un blocco indica cosa deve ancora fare un giocatore ---
+factor.counter.goblin_glutton = una vittoria su un Goblin Ingordo
 objective.text.bounty.skeleton_knights = Sconfiggi {0} Cavalieri Scheletro
 objective.text.bounty.burnt_skeletons = Sconfiggi {0} Scheletri Carbonizzati
 objective.text.bounty.frost_skeletons = Sconfiggi {0} Scheletri del Gelo

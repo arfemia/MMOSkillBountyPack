@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Caça aos Trorks
 quest.bounty_hunt_trork.flavor = Os Trorks não param de descer dos acampamentos nas colinas para saquear a estrada. Suba e vá ao encontro deles.
 quest.bounty_bear_hunt.title = Caça ao Urso
 quest.bounty_bear_hunt.flavor = Grandes ursos tomaram a trilha do norte. Esta é só para mãos firmes.
-quest.bounty_smash_ogres.title = Esmague os Banqueteiros
-quest.bounty_smash_ogres.flavor = Os carpinteiros já reconstruíram a paliçada duas vezes esta semana. Derrube os Goblins Banqueteiros que andam batendo nela.
+quest.bounty_smash_ogres.title = Esmague os Glutões
+quest.bounty_smash_ogres.flavor = Os carpinteiros já reconstruíram a paliçada duas vezes esta semana. Derrube os Goblins Glutões que andam batendo nela.
 quest.bounty_snapdragon_hunt.title = Caça ao Snapdragon
 quest.bounty_snapdragon_hunt.flavor = Os Snapdragons têm as trilhas da selva só para eles, e os caçadores não chegam perto. Derrube alguns, e cuidado com a mordida.
 quest.bounty_burnt_skeletons.title = Cinzas e Ossos
@@ -233,6 +233,8 @@ quest.bounty_weekly_shadow_knight.title = Cavaleiros Caídos
 quest.bounty_weekly_shadow_knight.flavor = Cavaleiros esqueletos ainda percorrem as ruínas na armadura antiga, de escudo erguido. Leve amigos, e algo pesado.
 quest.bounty_weekly_broodmother.title = A Rainha-Mãe
 quest.bounty_weekly_broodmother.flavor = Cada Scarak das dunas eclode de uma única rainha inchada. Encontre-a no ninho profundo e mate-a.
+quest.bounty_weekly_gluttons.title = Poda de Glutões
+quest.bounty_weekly_gluttons.flavor = Os Goblins Glutões devoraram os estoques de inverno do acampamento. Reduza o bando antes que voltem para repetir.
 
 # --- Lutas contra chefes (contratos Bounty_Encounter: qualquer chefe com script conta) ---
 quest.bounty_weekly_open_warrant.title = Mandado Aberto
@@ -241,6 +243,13 @@ quest.bounty_muster_roll.title = A Chamada
 quest.bounty_muster_roll.flavor = Ninguém está pedindo que você vença. Fique numa luta contra um chefe até ela se decidir, seja qual for o resultado, e o quadro marca a sua presença.
 objective.text.bounty.open_warrant = Derrube {0} chefe
 objective.text.bounty.muster_roll = Aguente {0} luta contra um chefe até o fim
+quest.bounty_weekly_feastmaster.title = O Banqueteiro
+quest.bounty_weekly_feastmaster.flavor = Lá embaixo, nas Profundezas dos goblins, o Banqueteiro come enquanto o resto do clã passa fome. Desça e acabe com o banquete.
+objective.text.bounty.feastmaster = Derrube o Banqueteiro
+
+# --- Linhas de requisito: um bloqueio nomeia o que o jogador ainda precisa fazer ---
+factor.counter.goblin_glutton = derrotar um Goblin Glutão
+
 objective.text.bounty.skeleton_knights = Derrote {0} Cavaleiros Esqueletos
 objective.text.bounty.burnt_skeletons = Derrote {0} Esqueletos Carbonizados
 objective.text.bounty.frost_skeletons = Derrote {0} Esqueletos Congelados

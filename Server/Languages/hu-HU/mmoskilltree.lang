@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Trork Vadászat
 quest.bounty_hunt_trork.flavor = A trorkok folyton lejönnek a dombi táboraikból, hogy fosztogassák az utat. Menj fel eléjük.
 quest.bounty_bear_hunt.title = Medvevadászat
 quest.bounty_bear_hunt.flavor = A nagy medvék elfoglalták az északi ösvényt. Ez csak biztos kéznek való.
-quest.bounty_smash_ogres.title = Lakomamester-zúzás
-quest.bounty_smash_ogres.flavor = Az ácsok a héten már kétszer építették újra a cölöpkerítést. Terítsd le a goblin lakomamestereket, akik folyton ledöntik.
+quest.bounty_smash_ogres.title = Falánk-zúzás
+quest.bounty_smash_ogres.flavor = Az ácsok a héten már kétszer építették újra a cölöpkerítést. Terítsd le a goblin falánkokat, akik folyton ledöntik.
 quest.bounty_snapdragon_hunt.title = Snapdragon-vadászat
 quest.bounty_snapdragon_hunt.flavor = A dzsungelösvények a snapdragonokéi, a vadászok a közelükbe sem mennek. Teríts le néhányat, és vigyázz a harapásukra.
 quest.bounty_burnt_skeletons.title = Hamu és Csont
@@ -233,6 +233,8 @@ quest.bounty_weekly_shadow_knight.title = Elesett Lovagok
 quest.bounty_weekly_shadow_knight.flavor = Csontváz lovagok járják még mindig a romokat a régi páncéljukban, feltartott pajzzsal. Vigyél barátokat, és valami nehezet.
 quest.bounty_weekly_broodmother.title = A Költőanya
 quest.bounty_weekly_broodmother.flavor = A dűnék minden Scarakja egyetlen duzzadt királynőből kel ki. Találd meg a mély fészekben, és öld meg.
+quest.bounty_weekly_gluttons.title = Falánkok Gyérítése
+quest.bounty_weekly_gluttons.flavor = A goblin falánkok felfalták a tábor téli készleteit. Gyérítsd őket, mielőtt visszajönnek repetáért.
 
 # --- Főellenség-harcok (Bounty_Encounter megbízások: bármelyik szkriptelt főellenség számít) ---
 quest.bounty_weekly_open_warrant.title = Nyílt Megbízás
@@ -241,6 +243,12 @@ quest.bounty_muster_roll.title = Névsorolvasás
 quest.bounty_muster_roll.flavor = Senki sem kéri, hogy nyerj. Állj helyt egy főellenség-harcban, amíg el nem dől, bárhogy is végződik, és a tábla jelenlévőnek jegyez.
 objective.text.bounty.open_warrant = Terítsd le {0} főellenséget
 objective.text.bounty.muster_roll = Állj végig {0} főellenség-harcot
+quest.bounty_weekly_feastmaster.title = A Lakomamester
+quest.bounty_weekly_feastmaster.flavor = Lent a goblin Mélyművekben a Lakomamester lakmározik, miközben a klánja többi tagja éhezik. Menj le, és vess véget a lakomának.
+objective.text.bounty.feastmaster = Terítsd le a Lakomamestert
+
+# --- Requirement lines: a lock names what a player still has to do ---
+factor.counter.goblin_glutton = egy Goblin Falánk legyőzése
 objective.text.bounty.skeleton_knights = Győzz le {0} Csontváz Lovagot
 objective.text.bounty.burnt_skeletons = Győzz le {0} Égett Csontvázat
 objective.text.bounty.frost_skeletons = Győzz le {0} Fagyos Csontvázat

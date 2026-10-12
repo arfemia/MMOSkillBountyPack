@@ -24,8 +24,8 @@ quest.bounty_hunt_trork.title = Trork Avı
 quest.bounty_hunt_trork.flavor = Trorklar tepedeki kamplarından inip yolu basmaya devam ediyor. Yukarı çık ve onları karşıla.
 quest.bounty_bear_hunt.title = Ayı Avı
 quest.bounty_bear_hunt.flavor = Büyük ayılar kuzey patikasını ele geçirdi. Bu yalnızca sağlam ellere göre.
-quest.bounty_smash_ogres.title = Ziyafet Efendilerini Ez
-quest.bounty_smash_ogres.flavor = Marangozlar bu hafta palisadı iki kez yeniden yaptı. Onu yıkıp duran Goblin Ziyafet Efendilerini indir.
+quest.bounty_smash_ogres.title = Oburları Ez
+quest.bounty_smash_ogres.flavor = Marangozlar bu hafta palisadı iki kez yeniden yaptı. Onu yıkıp duran Goblin Oburları indir.
 quest.bounty_snapdragon_hunt.title = Snapdragon Avı
 quest.bounty_snapdragon_hunt.flavor = Cengel patikaları Snapdragon'ların elinde ve avcılar yanlarına yaklaşmıyor. Birkaçını indir, ısırığına da dikkat et.
 quest.bounty_burnt_skeletons.title = Kül ve Kemik
@@ -233,6 +233,8 @@ quest.bounty_weekly_shadow_knight.title = Düşmüş Şövalyeler
 quest.bounty_weekly_shadow_knight.flavor = İskelet şövalyeler eski zırhlarıyla, kalkanları havada, hâlâ harabelerde dolaşıyor. Yanına dostlarını ve ağır bir şey al.
 quest.bounty_weekly_broodmother.title = Kuluçka Anası
 quest.bounty_weekly_broodmother.flavor = Kumullardaki her Scarak tek bir şişkin kraliçeden çıkar. Onu derin yuvada bul ve öldür.
+quest.bounty_weekly_gluttons.title = Obur Temizliği
+quest.bounty_weekly_gluttons.flavor = Goblin Oburlar kampın kış erzakını yedi bitirdi. İkinci tur için dönmeden onları seyrelt.
 
 # --- Patron dövüşleri (Bounty_Encounter sözleşmeleri: betikli her patron sayılır) ---
 quest.bounty_weekly_open_warrant.title = Açık Ferman
@@ -241,6 +243,12 @@ quest.bounty_muster_roll.title = Yoklama
 quest.bounty_muster_roll.flavor = Kimse senden kazanmanı istemiyor. Bir patron dövüşünde iş bitene kadar dur, nasıl biterse bitsin, tahta seni hazır yazar.
 objective.text.bounty.open_warrant = {0} patron indir
 objective.text.bounty.muster_roll = {0} patron dövüşünde sonuna kadar dur
+quest.bounty_weekly_feastmaster.title = Ziyafet Efendisi
+quest.bounty_weekly_feastmaster.flavor = Goblinlerin Derin Atölyeler'inde Ziyafet Efendisi yer, klanının geri kalanı aç kalır. Aşağı in ve ziyafeti bitir.
+objective.text.bounty.feastmaster = Ziyafet Efendisini indir
+
+# --- Requirement lines: a lock names what a player still has to do ---
+factor.counter.goblin_glutton = bir Goblin Obur yenmek
 objective.text.bounty.skeleton_knights = {0} İskelet Şövalye yen
 objective.text.bounty.burnt_skeletons = {0} Yanık İskelet yen
 objective.text.bounty.frost_skeletons = {0} Donmuş İskelet yen
