@@ -1,5 +1,5 @@
 {
-  "$Comment": "The weekly warrant board: three heavier contracts that turn over every Monday. A Weekly cadence starts on Monday unless a Weekday says otherwise. The third slot is Optional, so a week short of eligible hard contracts posts two rather than reading as broken. Currencies is the balance strip in the header; these contracts pay bounty tokens, so that is the only wallet worth showing. Add an id to the list if you author contracts that pay or spend another.",
+  "$Comment": "The weekly warrant board: three heavier contracts that turn over every Monday. A Weekly cadence starts on Monday unless a Weekday says otherwise. The third slot is Optional, so a week short of eligible hard contracts posts two rather than reading as broken. Currencies is the balance strip in the header; these contracts pay bounty tokens, so that is the only wallet worth showing. Add an id to the list if you author contracts that pay or spend another. Grades gives each band the colour its grade pill wears on a contract's page and in the quest log.",
   "Text": {
     "TitleKey": "ui.bounty.board.weekly",
     "FlavorKey": "ui.bounty.board.weekly.desc"
@@ -33,6 +33,14 @@
       }
     },
     "MaxPerPeriod": 2
+  },
+  "Grades": {
+    "Normal": {
+      "Color": "#4a9eff"
+    },
+    "Hard": {
+      "Color": "#ffaa4a"
+    }
   },
   "AcceptRequires": {
     "Normal": {

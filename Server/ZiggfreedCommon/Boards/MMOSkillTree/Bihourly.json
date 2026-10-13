@@ -1,5 +1,5 @@
 {
-  "$Comment": "The fast board: one easy contract that changes every two hours. A span cadence rather than a calendar one, because two hours is not a boundary a calendar has - author Every for anything that is not Daily or Weekly, and never both. Its contracts pay skill experience rather than tokens, so Currencies lists only the wallet the reroll is charged in, which keeps the header honest about what a player spends here.",
+  "$Comment": "The fast board: one easy contract that changes every two hours. A span cadence rather than a calendar one, because two hours is not a boundary a calendar has - author Every for anything that is not Daily or Weekly, and never both. Its contracts pay skill experience rather than tokens, so Currencies lists only the wallet the reroll is charged in, which keeps the header honest about what a player spends here. Grades gives the band the colour its grade pill wears on a contract's page and in the quest log.",
   "Text": {
     "TitleKey": "ui.bounty.board.bihourly",
     "FlavorKey": "ui.bounty.board.bihourly.desc"
@@ -28,5 +28,10 @@
       }
     },
     "MaxPerPeriod": 3
+  },
+  "Grades": {
+    "Easy": {
+      "Color": "#4aff7f"
+    }
   }
 }
