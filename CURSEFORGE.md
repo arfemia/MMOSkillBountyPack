@@ -25,8 +25,8 @@ A free content pack. It needs MMO Skill Tree 1.7.1 or newer and Ziggfreed's Comm
 
 ## How it works
 
-1. Find the Adventurer's Guide. He stands beside your world's spawn point and in the Forgotten Temple. Press F, open the menu and pick a board.
-2. Take the contracts you want. One you can't take yet still shows, locked, with the level it asks for.
+1. Find the Adventurer's Guide. He stands beside your world's spawn point and in the Forgotten Temple. Press F, open the menu and pick a board. With MMO Skill Tree 1.7.2 and CommonLib 2.4.0 it opens on the quest page, with the board's wallets at the top and a countdown to its next contracts.
+2. Take the contracts you want. One you can't take yet still shows, locked, with what it still needs.
 3. Do the work anywhere in the world.
 4. Go back to the board and press Collect. Your reward waits there, so a full inventory or a new rotation never costs you one.
 5. Don't like a contract? Reroll it for a few Bounty Tokens, a few times a day.
