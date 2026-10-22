@@ -1,6 +1,6 @@
 # MMO Skill Bounty Pack
 
-A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.7.1+) and ZiggfreedCommon (2.3.0+), on a Hytale Update 7 server. It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token and Essence of Life wallets, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
+A standalone Hytale content pack for the [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) mod (1.7.1+) and ZiggfreedCommon (2.3.0+), on a Hytale Update 7 server. It ships the entire **bounty board** and **shop** content: three boards (Daily, Weekly, and a fast-rotating Bihourly), the contract pool with localized titles and flavor, the reusable contract skeletons, the Bounty Token wallet, two storefronts with their rotating shelves and offers, and the in-world blocks (all wall posters).
 
 The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pages, the registered interaction types, the commands). They ship no content, so this pack is what makes bounties and shops appear. It is a **hard dependency** on both, declared in `manifest.json`.
 
@@ -17,7 +17,7 @@ The mod jar and ZiggfreedCommon ship the *engines* (the commerce module, the pag
 | `Server/MMOSkillTree/Control/*.json` | Names the stores the MOD itself owns; this pack ships none |
 | `Server/ZiggfreedCommon/Boards/MMOSkillTree/*.json` | The board schedules (cadence, selection, slots, per-band gates) |
 | `Server/ZiggfreedCommon/Bounties/MMOSkillTree/**/*.json` | Ten Abstract contract skeletons plus the 83 contracts (the three seasonal haunt contracts in Haunt/). Three are switched off with `"Enabled": false` because the game never spawns their creatures: the werewolf, aberrant zombie and ghoul hunts |
-| `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The two wallets |
+| `Server/ZiggfreedCommon/Currencies/MMOSkillTree/*.json` | The Bounty Token wallet (the Essence of Life wallet comes with MMO Skill Tree itself) |
 | `Server/ZiggfreedCommon/Shops/MMOSkillTree/*.json` | The two storefronts |
 | `Server/ZiggfreedCommon/ShopPools/MMOSkillTree/*.json` | The rotating shelves (schedule + reroll) |
 | `Server/ZiggfreedCommon/ShopEntries/MMOSkillTree/*.json` | The offers, static and pooled, plus one Abstract skeleton |

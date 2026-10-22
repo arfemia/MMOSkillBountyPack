@@ -8,6 +8,6 @@ Content pack for the bounty boards, shops and wallets. The family-wide rules app
 - A seasonal contract gates on its event's running switch, `{"Factor": "ziggfreedcommon:feature", "Param": "<Event>_Live", "Min": 1}`, at the top level of `Requires` (never `ziggfreedcommon:calendar_live`, which only locks, and never the MMO's `Bounties` feature, which reads the contracts back), and posts in the Daily board's `Seasonal` band, whose optional slot stays last so it never moves a regular posting.
 - Offer purchase limits are stored per player under the offer id, so renaming an offer resets everyone's counts.
 - An offer on a fully slotted shelf needs a `Pool.Tier`; without one it only fits an unslotted draw.
-- `Life_Essence.json` defines the same wallet here and in the mastery pack (every field but `$Comment` matches) so each works alone; change both together.
+- The Life Essence wallet ships in the MMO jar (`Currencies/MMOSkillTree/Life_Essence.json`): this pack reads it and never ships a copy (M513). Bounty Token is this pack's only wallet.
 - For an ore the mined block and the returned item share an id. Check a `Target` id against the installed `Assets.zip` (the assets rule's one-liner, items pattern; id = filename), never the reference tree, which can run ahead of the install, and let a lane boot (`tools\lane\lane.ps1 boot`, the `dev-server` skill) confirm it ships.
 - Copy naming: the feature is "the shops"; "Token Shop" names only the General storefront, beside the per-skill "XP Exchange".
