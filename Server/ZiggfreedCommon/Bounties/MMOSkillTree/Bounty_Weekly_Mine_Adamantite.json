@@ -13,7 +13,7 @@
         "Factors": [
           {
             "Factor": "hytale:stat",
-            "Param": "MMO_Level_MINING",
+            "Param": "Level_Mining",
             "Min": 60
           }
         ]

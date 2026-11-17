@@ -16,7 +16,7 @@
     "Factors": [
       {
         "Factor": "hytale:stat",
-        "Param": "MMO_Level_DEFENSE",
+        "Param": "Level_Defense",
         "Min": 1
       }
     ]

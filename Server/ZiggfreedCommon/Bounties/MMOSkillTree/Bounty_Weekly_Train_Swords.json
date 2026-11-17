@@ -16,7 +16,7 @@
     "Factors": [
       {
         "Factor": "hytale:stat",
-        "Param": "MMO_Level_SWORDS",
+        "Param": "Level_Swords",
         "Min": 1
       }
     ]

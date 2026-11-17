@@ -24,7 +24,7 @@
     "Factors": [
       {
         "Factor": "hytale:stat",
-        "Param": "MMO_Level_EXCAVATION",
+        "Param": "Level_Excavation",
         "Min": 1
       }
     ]

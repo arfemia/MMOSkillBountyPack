@@ -59,7 +59,7 @@ Everything below is data. You write JSON files and `.lang` lines; no code is inv
 - **The type decides the lifecycle.** A contract is never handed out on its own, never takes a slot in the quest log, repeats on whatever its board's schedule says, and is handed in at the board that posted it. None of that is authorable, which is why a contract file is only a few lines long. The one payout choice you make is `Auto` or `Claim`; every contract here parks its pay under `Claim`, so the reward survives the board turning over.
 - **A board is a rotating view over the contract pool.** It declares a cadence, a selection rule and some slots, and draws one contract per slot each period. The draw is seeded from the clock, so every player sees the same board and a restart changes nothing.
 - **Membership is typed.** A contract lists `{"Board": "Daily", "Difficulty": "Hard", "Weight": 1}` for each board that can post it. `Difficulty` is a free word you invent; it is matched against a board slot's own `Difficulty`, and it is also the band a board gates through `AcceptRequires`. An entry can carry an `AcceptRequires` of its own, which stands in place of the band's gate on that board for that one contract: `{}` opens it to everyone, and leaving it out keeps the band's gate.
-- **A requirement is a bound on a factor.** `Requires` holds `Factors` (numeric bounds), `Permission`, `Quests`, and `AllOf` / `AnyOf` / `Not` groups to combine them. MMO Skill Tree answers `hytale:stat` for its own numbers, so `MMO_Level_MINING` and `MMO_CombatLevel` are just parameters.
+- **A requirement is a bound on a factor.** `Requires` holds `Factors` (numeric bounds), `Permission`, `Quests`, and `AllOf` / `AnyOf` / `Not` groups to combine them. MMO Skill Tree answers `hytale:stat` for its own numbers, so `Level_Mining` and `CombatLevel` are just parameters.
 - **A price is a `Cost`:** `{"Currencies": {...}, "Items": [...], "Combine": "All"}`. The same object prices an offer or a reroll. `All` (the default) charges every part; `Any` charges the first one the player can afford.
 
 ### A contract
@@ -120,7 +120,7 @@ The shipped mining contracts ask for a Mining level instead of the band's combat
 
 ```json
 "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 2,
-              "AcceptRequires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 25 } ] } } ]
+              "AcceptRequires": { "Factors": [ { "Factor": "hytale:stat", "Param": "Level_Mining", "Min": 25 } ] } } ]
 ```
 
 A training contract pairs its step with a bound on the same skill in its own `Requires`. The board checks a contract's `Requires` on every board it hangs on, after the board's own gate and the entry's (or the band's), so a server without that skill never lets anyone take it. `Min 1` is every player's starting level, so it locks nobody out; raise it to save a contract for players further along. The shipped training contracts in the Normal and Hard bands open their entry with an empty `AcceptRequires`, so anyone can take them whatever the band asks:
@@ -129,7 +129,7 @@ A training contract pairs its step with a bound on the same skill in its own `Re
 { "Parent": "Bounty_Xp",
   "Text": { "TitleKey": "quest.bounty_train_mining.title", "FlavorKey": "quest.bounty_train_mining.flavor" },
   "Boards": [ { "Board": "Daily", "Difficulty": "Normal", "Weight": 1, "AcceptRequires": {} } ],
-  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
+  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "Level_Mining", "Min": 1 } ] },
   "Objectives": { "main": { "Target": "MINING", "Amount": 3000 } },
   "Rewards": { "Claim": [ ... ] } }
 ```
@@ -188,8 +188,8 @@ ZiggfreedCommon answers `<Event>_Live` for every calendar event a pack ships: on
   "Currencies": [ "Bounty_Token", "Life_Essence" ],
   "Reroll": { "Cost": { "Currencies": { "Bounty_Token": 25 } }, "MaxPerPeriod": 3 },
   "AcceptRequires": {
-    "Normal": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 25 } ] },
-    "Hard":   { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_CombatLevel", "Min": 60 } ] } } }
+    "Normal": { "Factors": [ { "Factor": "hytale:stat", "Param": "CombatLevel", "Min": 25 } ] },
+    "Hard":   { "Factors": [ { "Factor": "hytale:stat", "Param": "CombatLevel", "Min": 60 } ] } } }
 ```
 
 - **`Rotation` is `Period` or `Every`, never both.** Authoring both is a validator error. `Period` is a calendar cadence, `Daily` or `Weekly`, counted from a fixed UTC boundary so everybody's board turns over at the same moment. `Weekly` starts on Monday unless a `Weekday` says otherwise. `Every` is a plain repeating span in whole units that add up: `{"Hours": 2}` is the Bihourly board. `OffsetMinutes` moves the rollover past the boundary; 240 puts a daily at 04:00 UTC.
@@ -238,7 +238,7 @@ An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
   "Listing": { "Category": "boosts", "SortOrder": 20 },
   "Cost": { "Currencies": { "Bounty_Token": 150 } },
   "Limits": { "Daily": 3 },
-  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_MINING", "Min": 1 } ] },
+  "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "Level_Mining", "Min": 1 } ] },
   "Rewards": [ { "Kind": "Mmo_Boost_Token",
                  "Params": { "Skill": "MINING", "Multiplier": "3.0", "DurationMinutes": "20" } } ] }
 ```

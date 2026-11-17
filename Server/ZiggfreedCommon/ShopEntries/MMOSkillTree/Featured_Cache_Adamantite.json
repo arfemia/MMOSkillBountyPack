@@ -24,7 +24,7 @@
     "Factors": [
       {
         "Factor": "hytale:stat",
-        "Param": "MMO_CombatLevel",
+        "Param": "CombatLevel",
         "Min": 60
       }
     ]
