@@ -271,7 +271,7 @@ An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
     "Cost": { "Currencies": { "bounty_token": "{tokens}", "life_essence": "{essence}" } },
     "Limits": { "Daily": "{daily}" },
     "Pool": { "Id": "XpExchange", "Tier": "{tier}" },
-    "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_{skill}", "Min": "{minLevel}" } ] },
+    "Requires": { "Factors": [ { "Factor": "hytale:stat", "Param": "Level_{skill}", "Min": "{minLevel}" } ] },
     "Rewards": [ { "Kind": "Mmo_Xp", "Params": { "Skill": "{skill}", "Amount": "{xp}" } } ] } }
 ```
 
@@ -279,7 +279,7 @@ An **offer** (`ShopEntries/MMOSkillTree/<Id>.json`) is one thing on sale:
 
 - **`Base`** is an ordinary `Abstract` offer (`Xp_Packet`) that carries what every packet shares: the storefront, the shelf and the icon. It has no numbers, because every number differs per skill and per size.
 - **`ForEach`** is a list of axes. `Source` reads a list some mod supplies (`mmoskilltree:skills` is every active skill), so a skill added later gets its packets with no edit here. `Values` binds several tokens on one row, so "the greater packet costs 165 and wants level 30" is stated once.
-- **Substitution covers every string value, every object key, and `IdPattern`.** Substituting a key is how each packet's requirement names its own level channel, `MMO_Level_{skill}`. A value that is exactly one token keeps that token's type.
+- **Substitution covers every string value, every object key, and `IdPattern`.** Substituting a key is how each packet's requirement names its own skill's level, `Level_{skill}`. A value that is exactly one token keeps that token's type.
 - **A token nothing binds is an error**, and that one offer is skipped with the file named.
 - **`Text.TextArgs`** lets one written line serve the whole family: `shop.xp_packet.{tier}.title` is translated once per size and the skill fills `{0}`.
 - **To override one generated packet,** write an explicit `ShopEntries` file with that generated id. An authored file beats a generated offer of the same id, and the load reports the collision, so a too-coarse `IdPattern` is never mistaken for a deliberate special case.

@@ -76,7 +76,7 @@
       "Factors": [
         {
           "Factor": "hytale:stat",
-          "Param": "MMO_Level_{skill}",
+          "Param": "Level_{skill}",
           "Min": "{minLevel}"
         }
       ]
