@@ -1,0 +1,43 @@
+{
+  "$Comment": "The Essence Infusion: bounty tokens for a pair of one element's essence, three times a day at the General storefront. It pays the Mastery Pack's Mmo_Mastery_Element_Pair table, the materials a Focus's steps ask for, so it exists only beside that pack: the top-level hytale:mod_installed condition on Ziggfreed:MMOSkillMasteryPack keeps the offer off a server without it. It pays no Mastery Point, since those come only from levelling and one-time content. The filename IS this offer's id, and each player's daily and lifetime purchase counts are filed under it, so renaming the file resets those counts for everyone; keep the name as it is.",
+  "Text": {
+    "TitleKey": "shop.convert_mastery_point.title",
+    "FlavorKey": "shop.convert_mastery_point.desc"
+  },
+  "Icon": "Ingredient_Fire_Essence",
+  "Shop": "General",
+  "Listing": {
+    "Category": "conversion",
+    "SortOrder": 10
+  },
+  "Cost": {
+    "Currencies": {
+      "Bounty_Token": 500
+    }
+  },
+  "Limits": {
+    "Daily": 3
+  },
+  "Requires": {
+    "Factors": [
+      {
+        "Factor": "hytale:mod_installed",
+        "Param": "Ziggfreed:MMOSkillMasteryPack",
+        "Min": 1
+      },
+      {
+        "Factor": "mmoskilltree:feature",
+        "Param": "mastery",
+        "Min": 1
+      }
+    ]
+  },
+  "Rewards": [
+    {
+      "Kind": "Lootable",
+      "Params": {
+        "Lootable": "Mmo_Mastery_Element_Pair"
+      }
+    }
+  ]
+}

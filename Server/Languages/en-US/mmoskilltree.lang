@@ -149,6 +149,8 @@ shop.cache_iron_bars.title = Smith's Reserve
 shop.cache_iron_bars.desc = Iron ingots from the guild's reserve.
 shop.featured_cache_enchanter.title = Enchanter's Parcel
 shop.featured_cache_enchanter.desc = Purple and blue crystal shards, packed in straw.
+shop.convert_mastery_point.title = Essence Infusion
+shop.convert_mastery_point.desc = Essences of one element, picked at random.
 
 # --- Generated XP packets: one line per size, the skill fills {0} ---
 shop.xp_packet.lesser.title = {0}: Lesson
